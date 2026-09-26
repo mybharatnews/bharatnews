@@ -19,8 +19,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install gnews
-
+        run: pip install feedparser deep-translator
       - name: Run script
         run: python news_fetcher.py
       - name: Commit and Push changes
