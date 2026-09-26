@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>માર્કેટ ન્યૂઝ (હિન્દી)</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #e74c3c; padding-bottom: 10px; }
+        .news-card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .news-title { font-size: 18px; color: #333; margin: 0 0 10px 0; }
+        .news-link { display: inline-block; background: #e74c3c; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-size: 14px; }
+        .news-link:hover { background: #c0392b; }
+        .source { font-size: 12px; color: #7f8c8d; margin-top: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 તાજા માર્કેટ ન્યૂઝ (હિન્દી)</h1>
+        <div id="news-container">લોડ થઈ રહ્યું છે...</div>
+    </div>
+
+    <script>
+        // JSON ફાઈલ વાંચો અને ન્યૂઝ દેખાડો
+        fetch('news_data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('news-container');
+                container.innerHTML = '';
+                data.forEach(news => {
+                    const card = document.createElement('div');
+                    card.className = 'news-card';
+                    card.innerHTML = `
+                        <h3 class="news-title">${news.title}</h3>
+                        <a href="${news.hindi_link}" target="_blank" class="news-link">હિન્દીમાં વાંચો →</a>
+                        <p class="source">સ્રોત: ${news.source} | ${news.date}</p>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                document.getElementById('news-container').innerHTML = 'ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.';
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
