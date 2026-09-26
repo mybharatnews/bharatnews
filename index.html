@@ -3,44 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>માર્કેટ ન્યૂઝ (હિન્દી)</title>
+    <title>માર્કેટ ન્યૂઝ (હિન્દી) - તાજા અપડેટ્સ</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; }
-        .container { max-width: 800px; margin: auto; }
-        h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #e74c3c; padding-bottom: 10px; }
-        .news-card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .news-title { font-size: 18px; color: #333; margin: 0 0 10px 0; }
-        .news-link { display: inline-block; background: #e74c3c; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-size: 14px; }
-        .news-link:hover { background: #c0392b; }
-        .source { font-size: 12px; color: #7f8c8d; margin-top: 8px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; 
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container { max-width: 900px; margin: auto; }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            color: #a0a0a0;
+            font-size: 14px;
+        }
+        
+        .live-badge {
+            display: inline-block;
+            background: #ff4757;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        /* News Card */
+        .news-card {
+            background: rgba(255, 255, 255, 0.07);
+            border-left: 4px solid #ff6b6b;
+            padding: 20px 22px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2);
+            border-left-color: #feca57;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .news-title {
+            font-size: 19px;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+        
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .news-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(90deg, #ff6b6b, #ee5a6f);
+            color: white;
+            padding: 9px 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .news-link:hover {
+            background: linear-gradient(90deg, #feca57, #ff9f43);
+            transform: scale(1.05);
+        }
+        
+        .source {
+            font-size: 12px;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+            font-size: 13px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 16px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 24px; }
+            .news-title { font-size: 16px; }
+            .news-meta { flex-direction: column; align-items: flex-start; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📈 તાજા માર્કેટ ન્યૂઝ (હિન્દી)</h1>
-        <div id="news-container">લોડ થઈ રહ્યું છે...</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>📈 માર્કેટ ન્યૂઝ (હિન્દી)</h1>
+            <p>શેર બજાર અને બિઝનેસની તાજી અપડેટ્સ</p>
+            <span class="live-badge">🔴 LIVE</span>
+        </div>
+        
+        <!-- News Container -->
+        <div id="news-container">
+            <div class="loading">⏳ ન્યૂઝ લોડ થઈ રહ્યા છે...</div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            © 2026 માર્કેટ ન્યૂઝ | સ્રોત: Moneycontrol<br>
+            આ વેબસાઈટ AI દ્વારા ઓટોમેટિક અપડેટ થાય છે.
+        </div>
     </div>
 
     <script>
-        // JSON ફાઈલ વાંચો અને ન્યૂઝ દેખાડો
         fetch('news_data.json')
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('news-container');
                 container.innerHTML = '';
+                
+                if (data.length === 0) {
+                    container.innerHTML = '<div class="loading">હાલમાં કોઈ ન્યૂઝ ઉપલબ્ધ નથી.</div>';
+                    return;
+                }
+                
                 data.forEach(news => {
                     const card = document.createElement('div');
                     card.className = 'news-card';
                     card.innerHTML = `
-                        <h3 class="news-title">${news.title}</h3>
-                        <a href="${news.hindi_link}" target="_blank" class="news-link">હિન્દીમાં વાંચો →</a>
-                        <p class="source">સ્રોત: ${news.source} | ${news.date}</p>
+                        <div class="news-title">${news.title}</div>
+                        <div class="news-meta">
+                            <a href="${news.link}" target="_blank" class="news-link">પૂરી ન્યૂઝ વાંચો →</a>
+                            <span class="source">📰 સ્રોત: ${news.source} | 🕐 ${news.date}</span>
+                        </div>
                     `;
                     container.appendChild(card);
                 });
             })
             .catch(error => {
-                document.getElementById('news-container').innerHTML = 'ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.';
+                document.getElementById('news-container').innerHTML = 
+                    '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.</div>';
                 console.error('Error:', error);
             });
     </script>
