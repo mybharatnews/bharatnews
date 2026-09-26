@@ -1,34 +1,28 @@
-import feedparser
 import datetime
 import json
-from deep_translator import GoogleTranslator
+from gnews import GNews
 
-RSS_URL = "https://www.moneycontrol.com/rss/business.xml"
-
-def fetch_and_translate_news():
-    feed = feedparser.parse(RSS_URL)
+def fetch_hindi_news():
+    # ભારતના હિન્દી ન્યૂઝ માટે સેટિંગ
+    google_news = GNews(language='hi', country='IN', period='1d', max_results=10)
+    
+    # બિઝનેસ/માર્કેટ સંબંધિત ન્યૂઝ શોધો
+    news = google_news.get_news('શેર બજાર')
+    
     news_list = []
     
-    for entry in feed.entries[:10]:
-        title_en = entry.title
-        link = entry.link
-        
-        try:
-            title_hi = GoogleTranslator(source='en', target='hi').translate(title_en)
-        except Exception as e:
-            title_hi = title_en
-        
+    for article in news:
         news_list.append({
-            "title": title_hi,
-            "original_title": title_en,
-            "link": link,
-            "source": "Moneycontrol",
+            "title": article['title'],
+            "link": article['url'],
+            "source": article['publisher']['title'],
             "date": datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
         })
+    
     return news_list
 
 if __name__ == "__main__":
-    news = fetch_and_translate_news()
+    news = fetch_hindi_news()
     with open('news_data.json', 'w', encoding='utf-8') as f:
         json.dump(news, f, ensure_ascii=False, indent=4)
-    print(f"{len(news)} ન્યૂઝ સેવ થયા!")
+    print(f"{len(news)} હિન્દી ન્યૂઝ સેવ થયા!")
