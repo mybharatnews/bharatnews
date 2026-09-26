@@ -9,10 +9,9 @@ def fetch_news():
     feed = feedparser.parse(RSS_URL)
     news_list = []
     
-    for entry in feed.entries[:10]: # હવે 10 ન્યૂઝ લઈએ
+    for entry in feed.entries[:10]:  # હવે 10 ન્યૂઝ લઈએ
         title = entry.title
         link = entry.link
-        # હિન્દીમાં ટ્રાન્સલેટ કરવા માટે Google Translate ની લિંક
         hindi_link = f"https://translate.google.com/translate?sl=auto&tl=hi&u={urllib.parse.quote(link)}"
         
         news_list.append({
