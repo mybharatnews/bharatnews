@@ -22,6 +22,9 @@ jobs:
         run: pip install feedparser deep-translator
       - name: Run script
         run: python news_fetcher.py
+      - name: Run script
+        run: python news_fetcher.py
+        continue-on-error: true
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions"
