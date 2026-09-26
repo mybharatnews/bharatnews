@@ -23,3 +23,10 @@ jobs:
 
       - name: Run script
         run: python news_fetcher.py
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add news_data.json
+          git commit -m "Auto-update news data" || exit 0
+          git push
