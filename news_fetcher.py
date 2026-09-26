@@ -3,7 +3,6 @@ import datetime
 import json
 from deep_translator import GoogleTranslator
 
-# Moneycontrol નું RSS ફીડ
 RSS_URL = "https://www.moneycontrol.com/rss/business.xml"
 
 def fetch_and_translate_news():
@@ -12,12 +11,10 @@ def fetch_and_translate_news():
     
     print(f"કુલ {len(feed.entries)} ન્યૂઝ મળ્યા RSS માંથી")
     
-    # છેલ્લા 10 ન્યૂઝ લઈએ
     for entry in feed.entries[:10]:
         title_en = entry.title
         link = entry.link
         
-        # અંગ્રેજી ટાઈટલને હિન્દીમાં ટ્રાન્સલેટ કરો
         try:
             title_hi = GoogleTranslator(source='en', target='hi').translate(title_en)
             print(f"✅ ટ્રાન્સલેટ: {title_hi[:50]}...")
