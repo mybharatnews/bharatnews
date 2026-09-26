@@ -13,11 +13,10 @@ def fetch_and_translate_news():
         title_en = entry.title
         link = entry.link
         
-        # અંગ્રેજી ટાઈટલને હિન્દીમાં ટ્રાન્સલેટ કરો
         try:
             title_hi = GoogleTranslator(source='en', target='hi').translate(title_en)
         except Exception as e:
-            title_hi = title_en  # એરર આવે તો અંગ્રેજી રાખો
+            title_hi = title_en
         
         news_list.append({
             "title": title_hi,
