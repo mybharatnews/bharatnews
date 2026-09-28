@@ -2,9 +2,8 @@ name: Auto Market News Update
 
 on:
   schedule:
-    # દર 30 મિનિટે ઓટોમેટિક ચાલશે
     - cron: '*/30 * * * *'
-  workflow_dispatch: # તમે જાતે પણ ચાલુ કરી શકો છો
+  workflow_dispatch:
 
 jobs:
   update-news:
@@ -19,9 +18,12 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install feedparser deep-translator
+        run: pip install feedparser deep-translator requests
 
       - name: Run script
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python news_fetcher.py
         continue-on-error: true
 
