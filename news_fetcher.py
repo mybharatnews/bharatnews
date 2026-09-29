@@ -23,13 +23,13 @@ RSS_SCHEDULE = {
     ],
     "12:30": [
         "https://www.moneycontrol.com/rss/results.xml",
-        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
         "https://www.livemint.com/rss/companies",
+        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
     ],
     "15:30": [
         "https://www.moneycontrol.com/rss/economy.xml",
-        "https://economictimes.indiatimes.com/economy/rssfeeds/1373380680.cms",
         "https://www.livemint.com/rss/industry",
+        "https://economictimes.indiatimes.com/economy/rssfeeds/1373380680.cms",
     ],
     "18:30": [
         "https://www.moneycontrol.com/rss/latestnews.xml",
@@ -38,8 +38,8 @@ RSS_SCHEDULE = {
     ],
     "21:30": [
         "https://www.moneycontrol.com/rss/iponews.xml",
-        "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
         "https://www.livemint.com/rss/technology",
+        "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
     ],
 }
 
