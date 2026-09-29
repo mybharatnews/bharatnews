@@ -7,7 +7,7 @@ from datetime import datetime
 os.makedirs('news', exist_ok=True)
 
 def clean_filename(text, index=0):
-    """ફાઈલ નામ બનાવો (ફક્ત અંગ્રેજી)"""
+    """SEO ફ્રેન્ડલી ફાઈલ નામ બનાવો"""
     # હિન્દી અક્ષરો દૂર કરો (ફક્ત ASCII રાખો)
     text = re.sub(r'[^\x00-\x7F]+', '', text)
     # ખાસ અક્ષરો દૂર કરો
@@ -19,11 +19,13 @@ def clean_filename(text, index=0):
     # શરૂઆત અને અંતમાંથી ડેશ દૂર કરો
     text = text.strip('-')
     
-    # જો ખાલી હોય તો timestamp + index વાપરો
+    # જો નામ ખૂબ ટૂંકું હોય, તો "market-news" ઉમેરો
     if not text or len(text) < 5:
-        text = f"news-{int(datetime.now().timestamp())}-{index}"
+        text = f"market-news-{int(datetime.now().timestamp())}-{index}"
+    else:
+        text = f"market-news-{text}"
     
-    return text[:50].lower()
+    return text[:60].lower()
 
 def generate_article_page(news_item, index):
     """દરેક ન્યૂઝ માટે અલગ પેજ બનાવો"""
@@ -58,7 +60,7 @@ def generate_article_page(news_item, index):
     <p>શેર બજારમાં રોકાણ કરતા પહેલા હંમેશા સંશોધન કરો. કોઈપણ સમાચારને આધારે તરત જ નિર્ણય ના લો. તમારા નાણાકીય સલાહકારની સલાહ લો. ડાઇવર્સિફિકેશન એ સૌથી સારો રસ્તો છે.</p>
     """
     
-    # ફાઈલ નામ (અંગ્રેજીમાં)
+    # ફાઈલ નામ (SEO ફ્રેન્ડલી)
     filename = clean_filename(title, index) + '.html'
     
     # HTML પેજ
