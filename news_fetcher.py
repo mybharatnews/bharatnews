@@ -81,7 +81,8 @@ def fetch_and_translate_news():
             "summary": summary_hi,
             "link": link,
             "source": "Moneycontrol",
-            "date": datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
+            "date": datetime.datetime.now().strftime("%d-%m-%Y %H:%M"),
+            "id": link.split('/')[-1][:20]  # યુનિક ID
         }
         news_list.append(news_item)
         
