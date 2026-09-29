@@ -202,7 +202,7 @@ def fetch_and_translate_news():
     sent_count = 0
     max_telegram = 5
 
-    for entry in unique_entries[:20]:
+    for entry in unique_entries[:30]:
         title_en = entry.title
         link = entry.link
         summary_en = clean_html(entry.get('summary', entry.get('description', '')))
@@ -240,7 +240,7 @@ def fetch_and_translate_news():
         }
         new_news.append(news_item)
 
-        # Telegram પર ફક્ત 5 નવા ન્યૂઝ
+        # Telegram પર ફક્ત 8 નવા ન્યૂઝ
         if sent_count < max_telegram:
             success = send_to_telegram(title_hi, link, summary_hi, source_name)
             if success:
@@ -248,13 +248,13 @@ def fetch_and_translate_news():
                 sent_count += 1
             time.sleep(2)
 
-        # વેબસાઇટ માટે 15 ન્યૂઝ પૂરતા
-        if len(new_news) >= 15:
+        # વેબસાઇટ માટે 25 ન્યૂઝ પૂરતા
+        if len(new_news) >= 25:
             break
 
-    # જૂના + નવા ન્યૂઝ (ફક્ત 20 રાખો)
+    # જૂના + નવા ન્યૂઝ (ફક્ત 30 રાખો)
     all_news = new_news + existing_news
-    all_news = all_news[:20]
+    all_news = all_news[:30]
 
     save_sent_news(sent_news)
 
