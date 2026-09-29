@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="KrbT-SoFa0ArKD_ZVTAZoJ5a56Qgx6u8xwtlDPLSaTE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ભારત ન્યૂઝ - તાજા માર્કેટ અપડેટ્સ (હિન્દી)</title>
-    <meta name="description" content="ભારત ન્યૂઝ - શેર બજાર, બિઝનેસ અને અર્થતંત્રની તાજી હિન્દીમાં અપડેટ્સ">
+    <title>भारत न्यूज़ - शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
+    <meta name="description" content="भारत न्यूज़ - शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी में अपडेट्स। हर 3 घंटे में नई खबरें।">
+    <meta name="keywords" content="शेयर बाजार, हिंदी न्यूज़, Nifty, Sensex, Business News, Market News">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -20,6 +21,7 @@
         
         .container { max-width: 900px; margin: auto; }
         
+        /* ═══ HEADER ═══ */
         .header {
             text-align: center;
             padding: 30px 20px;
@@ -58,6 +60,84 @@
             50% { opacity: 0.6; }
         }
         
+        /* ═══ LIVE TICKER ═══ */
+        .ticker-wrap {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-left: 4px solid #feca57;
+        }
+        
+        .ticker {
+            display: flex;
+            animation: ticker-scroll 30s linear infinite;
+            white-space: nowrap;
+        }
+        
+        .ticker-item {
+            display: inline-block;
+            padding: 0 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .ticker-up { color: #2ecc71; }
+        .ticker-down { color: #e74c3c; }
+        
+        @keyframes ticker-scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* ═══ SEARCH & CATEGORY ═══ */
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        
+        .search-box::placeholder { color: #888; }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: #feca57;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .category-btn {
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        
+        .category-btn:hover, .category-btn.active {
+            background: linear-gradient(90deg, #ff6b6b, #ee5a6f);
+            border-color: transparent;
+        }
+        
+        /* ═══ NEWS CARD ═══ */
         .news-card {
             background: rgba(255, 255, 255, 0.07);
             border-left: 4px solid #ff6b6b;
@@ -122,13 +202,22 @@
             transform: scale(1.05);
         }
         
-        /* Share Buttons */
+        .source {
+            font-size: 12px;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* ═══ SHARE BUTTONS ═══ */
         .share-buttons {
             display: flex;
             gap: 8px;
             margin-top: 15px;
             padding-top: 15px;
             border-top: 1px solid rgba(255, 255, 255, 0.08);
+            align-items: center;
         }
         
         .share-btn {
@@ -149,32 +238,39 @@
         }
         
         .share-whatsapp { background: #25D366; }
-        .share-whatsapp:hover { box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); }
-        
         .share-telegram { background: #0088cc; }
-        .share-telegram:hover { box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4); }
-        
         .share-facebook { background: #1877F2; }
-        .share-facebook:hover { box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4); }
-        
         .share-twitter { background: #000; }
-        .share-twitter:hover { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
         
         .share-label {
             font-size: 12px;
             color: #888;
             margin-right: 5px;
-            align-self: center;
         }
         
-        .source {
-            font-size: 12px;
-            color: #888;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        /* ═══ LOAD MORE ═══ */
+        .load-more {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: #feca57;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
         }
         
+        .load-more:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #feca57;
+        }
+        
+        /* ═══ FOOTER ═══ */
         .footer {
             text-align: center;
             padding: 25px;
@@ -215,73 +311,157 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <div class="header">
-            <h1>📈 ભારત ન્યૂઝ</h1>
-            <p>શેર બજાર અને બિઝનેસની તાજી હિન્દી અપડેટ્સ</p>
+            <h1>📈 भारत न्यूज़</h1>
+            <p>शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <span class="live-badge">🔴 LIVE</span>
         </div>
         
-        <div id="news-container">
-            <div class="loading">⏳ ન્યૂઝ લોડ થઈ રહ્યા છે...</div>
+        <!-- Live Ticker -->
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span class="ticker-item">📈 NIFTY 50: <span class="ticker-up">+1.2%</span></span>
+                <span class="ticker-item">📊 SENSEX: <span class="ticker-up">+0.8%</span></span>
+                <span class="ticker-item">💰 BANK NIFTY: <span class="ticker-up">+1.5%</span></span>
+                <span class="ticker-item">📉 NIFTY IT: <span class="ticker-down">-0.3%</span></span>
+                <span class="ticker-item">🏦 USD/INR: <span class="ticker-up">₹83.45</span></span>
+                <span class="ticker-item">🥇 GOLD: <span class="ticker-up">₹62,500</span></span>
+                <span class="ticker-item">📈 NIFTY 50: <span class="ticker-up">+1.2%</span></span>
+                <span class="ticker-item">📊 SENSEX: <span class="ticker-up">+0.8%</span></span>
+            </div>
         </div>
         
+        <!-- Search & Category -->
+        <div class="controls">
+            <input type="text" id="searchBox" class="search-box" placeholder="🔍 न्यूज़ खोजें...">
+            <button class="category-btn active" onclick="filterNews('all', this)">सभी</button>
+            <button class="category-btn" onclick="filterNews('Moneycontrol', this)">Moneycontrol</button>
+            <button class="category-btn" onclick="filterNews('Economic Times', this)">ET</button>
+            <button class="category-btn" onclick="filterNews('Livemint', this)">Livemint</button>
+        </div>
+        
+        <!-- News Container -->
+        <div id="news-container">
+            <div class="loading">⏳ न्यूज़ लोड हो रहे हैं...</div>
+        </div>
+        
+        <!-- Load More -->
+        <button class="load-more" id="loadMore" onclick="loadMore()" style="display:none;">और न्यूज़ देखें ⬇️</button>
+        
+        <!-- Footer -->
         <div class="footer">
-            © 2026 ભારત ન્યૂઝ | સ્રોત: Moneycontrol<br>
-            <a href="about.html">અમારા વિશે</a> | 
-            <a href="privacy.html">ગોપનીયતા નીતિ</a> | 
-            <a href="contact.html">સંપર્ક કરો</a>
+            © 2026 भारत न्यूज़ | स्रोत: Moneycontrol, Economic Times, Livemint<br>
+            <a href="about.html">अमारा विशे</a> | 
+            <a href="privacy.html">गोपनीयता नीति</a> | 
+            <a href="contact.html">संपर्क करो</a>
             <br>
-            આ વેબસાઈટ AI દ્વારા ઓટોમેટિક અપડેટ થાય છે.
+            आ वेबसाइट AI द्वारा ऑटोमेटिक अपडेट थाय छे.
         </div>
     </div>
 
     <script>
+        let allNews = [];
+        let filteredNews = [];
+        let displayCount = 10;
+        
+        // News Load
         fetch('news_data.json?v=' + new Date().getTime())
             .then(response => response.json())
             .then(data => {
-                const container = document.getElementById('news-container');
-                container.innerHTML = '';
-                
-                if (data.length === 0) {
-                    container.innerHTML = '<div class="loading">હાલમાં કોઈ ન્યૂઝ ઉપલબ્ધ નથી.</div>';
-                    return;
-                }
-                
-                data.forEach(news => {
-                    const card = document.createElement('div');
-                    card.className = 'news-card';
-                    
-                    // Share માટે title અને link encode કરો
-                    const shareTitle = encodeURIComponent(news.title);
-                    const shareUrl = encodeURIComponent(news.link);
-                    
-                    // સારાંશ હોય તો જ દેખાડો
-                    const summaryHTML = news.summary ? 
-                        `<p class="news-summary">${news.summary}...</p>` : '';
-                    
-                    card.innerHTML = `
-                        <div class="news-title">${news.title}</div>
-                        ${summaryHTML}
-                        <div class="news-meta">
-                            <a href="${news.link}" target="_blank" class="news-link">પૂરી ન્યૂઝ વાંચો →</a>
-                            <span class="source">📰 સ્રોત: ${news.source} | 🕐 ${news.date}</span>
-                        </div>
-                        <div class="share-buttons">
-                            <span class="share-label">શેર કરો:</span>
-                            <a href="https://wa.me/?text=${shareTitle}%20-%20${shareUrl}" target="_blank" class="share-btn share-whatsapp" title="WhatsApp પર શેર કરો">📱</a>
-                            <a href="https://t.me/share/url?url=${shareUrl}&text=${shareTitle}" target="_blank" class="share-btn share-telegram" title="Telegram પર શેર કરો">✈️</a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="share-btn share-facebook" title="Facebook પર શેર કરો">📘</a>
-                            <a href="https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}" target="_blank" class="share-btn share-twitter" title="X (Twitter) પર શેર કરો">𝕏</a>
-                        </div>
-                    `;
-                    container.appendChild(card);
-                });
+                allNews = data;
+                filteredNews = data;
+                displayNews();
             })
             .catch(error => {
                 document.getElementById('news-container').innerHTML = 
-                    '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.</div>';
+                    '<div class="loading">❌ न्यूज़ लोड करवामां समस्या आवी.</div>';
                 console.error('Error:', error);
             });
+        
+        // News Display
+        function displayNews() {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            
+            if (filteredNews.length === 0) {
+                container.innerHTML = '<div class="loading">हालमां कोई न्यूज़ उपलब्ध नथी.</div>';
+                return;
+            }
+            
+            const newsToShow = filteredNews.slice(0, displayCount);
+            
+            newsToShow.forEach(news => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+                
+                const shareTitle = encodeURIComponent(news.title);
+                const shareUrl = encodeURIComponent(news.link);
+                
+                const summaryHTML = news.summary ? 
+                    `<p class="news-summary">${news.summary}...</p>` : '';
+                
+                card.innerHTML = `
+                    <div class="news-title">${news.title}</div>
+                    ${summaryHTML}
+                    <div class="news-meta">
+                        <a href="${news.link}" target="_blank" class="news-link">पूरी न्यूज़ वांचो →</a>
+                        <span class="source">📰 ${news.source} | 🕐 ${news.date}</span>
+                    </div>
+                    <div class="share-buttons">
+                        <span class="share-label">शेयर करो:</span>
+                        <a href="https://wa.me/?text=${shareTitle}%20-%20${shareUrl}" target="_blank" class="share-btn share-whatsapp">📱</a>
+                        <a href="https://t.me/share/url?url=${shareUrl}&text=${shareTitle}" target="_blank" class="share-btn share-telegram">✈️</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="share-btn share-facebook">📘</a>
+                        <a href="https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}" target="_blank" class="share-btn share-twitter">𝕏</a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            
+            // Load More Button
+            const loadMoreBtn = document.getElementById('loadMore');
+            if (displayCount < filteredNews.length) {
+                loadMoreBtn.style.display = 'block';
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+        
+        // Load More
+        function loadMore() {
+            displayCount += 10;
+            displayNews();
+        }
+        
+        // Search
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            if (query === '') {
+                filteredNews = allNews;
+            } else {
+                filteredNews = allNews.filter(news => 
+                    news.title.toLowerCase().includes(query) || 
+                    (news.summary && news.summary.toLowerCase().includes(query))
+                );
+            }
+            displayCount = 10;
+            displayNews();
+        });
+        
+        // Category Filter
+        function filterNews(source, btn) {
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            if (source === 'all') {
+                filteredNews = allNews;
+            } else {
+                filteredNews = allNews.filter(news => news.source === source);
+            }
+            displayCount = 10;
+            displayNews();
+        }
     </script>
 </body>
 </html>
