@@ -178,13 +178,14 @@ def fetch_and_translate_news():
     for url in rss_urls:
         try:
             feed = feedparser.parse(url)
-            all_entries.extend(feed.entries)
-            print(f"   └─ {url.split('/')[-1][:40]}: {len(feed.entries)} ન્યૂઝ")
+            # દરેક RSS માંથી ફક્ત 4 ન્યૂઝ લો
+            entries_from_feed = feed.entries[:4]
+            all_entries.extend(entries_from_feed)
+            print(f"   └─ {url.split('/')[-1][:40]}: {len(entries_from_feed)} ન્યૂઝ")
         except Exception as e:
             print(f"   └─ ❌ RSS એરર: {e}")
 
-    print(f"\n📊 કુલ {len(all_entries)} ન્યૂઝ મળ્યા")
-
+    print(f"\n📊 કુલ {len(all_entries)} ન્યૂઝ મળ્યા (દરેક સ્રોતમાંથી 4)")
     # ડુપ્લિકેટ દૂર કરો
     seen_links = set()
     unique_entries = []
