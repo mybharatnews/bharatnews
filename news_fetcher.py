@@ -200,7 +200,7 @@ def fetch_and_translate_news():
 
     new_news = []
     sent_count = 0
-    max_telegram = 5
+    max_telegram = 8
 
     for entry in unique_entries[:30]:
         title_en = entry.title
