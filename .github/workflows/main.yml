@@ -2,8 +2,18 @@ name: Auto Market News Update
 
 on:
   schedule:
-    # દર 15 મિનિટે ચેક કરો (નવા ન્યૂઝ માટે)
-    - cron: '*/15 * * * *'
+    # 6:30 AM IST (1:00 UTC)
+    - cron: '0 1 * * *'
+    # 9:30 AM IST (4:00 UTC)
+    - cron: '0 4 * * *'
+    # 12:30 PM IST (7:00 UTC)
+    - cron: '0 7 * * *'
+    # 3:30 PM IST (10:00 UTC)
+    - cron: '0 10 * * *'
+    # 6:30 PM IST (13:00 UTC)
+    - cron: '0 13 * * *'
+    # 9:30 PM IST (16:00 UTC)
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:
