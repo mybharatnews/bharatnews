@@ -8,23 +8,25 @@ os.makedirs('news', exist_ok=True)
 
 def clean_filename(text, index=0):
     """SEO ફ્રેન્ડલી ફાઈલ નામ બનાવો"""
-    # હિન્દી અક્ષરો દૂર કરો (ફક્ત ASCII રાખો)
+    # હિન્દી અક્ષરો દૂર કરો
     text = re.sub(r'[^\x00-\x7F]+', '', text)
     # ખાસ અક્ષરો દૂર કરો
     text = re.sub(r'[^\w\s-]', '', text)
     # સ્પેસને ડેશમાં બદલો
     text = re.sub(r'\s+', '-', text)
-    # વધારાના ડેશ દૂર કરો
     text = re.sub(r'-+', '-', text)
-    # શરૂઆત અને અંતમાંથી ડેશ દૂર કરો
     text = text.strip('-')
     
-    # જો નામ ખૂબ ટૂંકું હોય, તો "market-news" ઉમેરો
-    if not text or len(text) < 5:
-        text = f"market-news-{int(datetime.now().timestamp())}-{index}"
+    # આજની તારીખ
+    today = datetime.now().strftime('%Y%m%d')
+    
+    # જો નામ ટૂંકું હોય, તો index + date વાપરો
+    if not text or len(text) < 10:
+        text = f"market-news-{index}-{today}"
     else:
         text = f"market-news-{text}"
     
+    # ફાઈલ નામ 60 અક્ષર સુધી
     return text[:60].lower()
 
 def generate_article_page(news_item, index):
