@@ -1,5 +1,89 @@
 [
     {
+        "title": "एंथ्रोपिक का कहना है कि दुष्ट एआई एजेंट कंपनी के लिए अनिश्चित कानूनी जोखिम पैदा करते हैं",
+        "summary": "एंथ्रोपिक को दुष्ट आर्टिफिशियल इंटेलिजेंस एजेंटों की कार्रवाइयों पर ग्राहकों और उपयोगकर्ताओं से कानूनी दावों का सामना करना पड़ सकता है, हालांकि कानूनी ढांचा अनिश्चित है, कंपनी ने रॉयटर्स द्वारा देखे गए अपने शेयर बाजार की शुरुआत के लिए प्रॉस्पेक्टस में कहा।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-says-rogue-ai-agents-pose-uncertain-legal-risk-for-the-company/articleshow/134570817.cms",
+        "source": "Economic Times",
+        "date": "29-09-2026 17:19"
+    },
+    {
+        "title": "AI - संचालित जोखिमों पर बढ़ते खतरे में शामिल हुआ वीज़ा",
+        "summary": "एआई मॉडल द्वारा उजागर की गई कमजोरियों से \"विनम्र\" सबक लेने के बाद वीज़ा के पास अपने एआई - संचालित साइबर रक्षा प्रणाली का ओपन - सोर्स वाला हिस्सा है। इसके प्रौद्योगिकी अध्यक्ष, रजत तनेजा ने रॉयटर्स को बताया कि कंपनी ने एएन द्वारा उजागर की गई कमजोरियों के बाद अपनी साइबर रक्षा प्रणाली को ओपन - सोर्स सॉफ्टवेयर के रूप में उपलब्ध कराया है",
+        "link": "https://economictimes.indiatimes.com/tech/technology/visa-joins-growing-alarm-over-ai-powered-risks/articleshow/134569852.cms",
+        "source": "Economic Times",
+        "date": "29-09-2026 17:19"
+    },
+    {
+        "title": "एंथ्रोपिक का आईपीओ प्रॉस्पेक्टस एआई मूल्यांकन पर ध्यान केंद्रित करता है",
+        "summary": "रॉयटर्स द्वारा देखे गए अपने आईपीओ प्रॉस्पेक्टस के अनुसार, एंथ्रोपिक शर्त लगा रहा है कि एआई औद्योगिकीकरण, बिजली और इंटरनेट की तुलना में वैश्विक अर्थव्यवस्था को अधिक गहराई से आकार देगा।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropics-ipo-prospectus-sharpens-focus-on-ai-valuations/articleshow/134569723.cms",
+        "source": "Economic Times",
+        "date": "29-09-2026 17:19"
+    },
+    {
+        "title": "भारत का तकनीकी क्षेत्र जेनएआई, क्लाउड में 53 -60% प्रतिभा अंतर का सामना कर रहा है: रिपोर्ट",
+        "summary": "भारत का तकनीकी उद्योग तेजी से बढ़ रहा है, लेकिन एआई - तैयार प्रतिभा की आपूर्ति गति पकड़ नहीं रही है, क्योंकि टीमलीज डिजिटल के 'डिजिटल स्किल्स एंड सैलरी प्राइमर वित्त वर्ष 27 में, जेनएआई और क्लाउड में 53 -60% प्रतिभा का अंतर पाया गया।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/indias-tech-sector-faces-53-60-talent-gap-in-genai-cloud-report/articleshow/134569583.cms",
+        "source": "Economic Times",
+        "date": "29-09-2026 17:19"
+    },
+    {
+        "title": "HMD Vibe2 Pro 5G के पहले इंप्रेशन: 120Hz डिस्प्ले, 64MP कैमरा और 6,000mAh की बैटरी",
+        "summary": "HMD Vibe2 Pro 5G को भारत में लॉन्च कर दिया गया है, जिसकी कीमत ₹ 14,999 से शुरू होती है। इसमें 6.78इंच की 120Hz FHD+ डिस्प्ले, डायमेंसिटी 6300 चिपसेट, 33W चार्जिंग के साथ 6,000mAh की बैटरी, सोनी कैमरा सेंसर, एंड्रॉइड 16 और 8GB तक की रैम दी गई है। यह फोन 8 अक्टूबर से फ्लिपकार्ट पर सेल के लिए उपलब्ध होगा।",
+        "link": "https://www.livemint.com/technology/hmd-vibe2-pro-5g-first-impressions-120hz-display-64mp-camera-and-6-000mah-battery-11790681172292.html",
+        "source": "Livemint",
+        "date": "29-09-2026 17:19"
+    },
+    {
+        "title": "पेबल कोर अल्ट्रा फिटनेस बैंड AI स्वास्थ्य अंतर्दृष्टि और बॉडी एज ट्रैकिंग के साथ आता है: मूल्य, विशेषताएं और बिक्री की तारीख",
+        "summary": "पेबल ने एआई - संचालित स्वास्थ्य अंतर्दृष्टि, तत्परता स्कोर और बॉडी एज ट्रैकिंग के साथ भारत में कोर अल्ट्रा वेलनेस बैंड लॉन्च किया है। पहनने योग्य 24x7 स्वास्थ्य निगरानी, 100+ स्पोर्ट्स मोड और सदस्यता शुल्क के बिना 15 दिनों तक की बैटरी लाइफ प्रदान करता है।",
+        "link": "https://www.livemint.com/technology/pebble-qore-ultra-arrives-with-ai-health-insights-and-body-age-tracking-price-features-and-sale-date-11790680683475.html",
+        "source": "Livemint",
+        "date": "29-09-2026 17:20"
+    },
+    {
+        "title": "कुछ भी नहीं हेडफ़ोन (1) प्रो ट्रिपल ड्राइवर, 46dB ANC और 68 - घंटे की बैटरी के साथ लॉन्च किया गया: मूल्य, चश्मा",
+        "summary": "किसी भी चीज़ ने $ 399 में हेडफ़ोन (1) प्रो लॉन्च नहीं किया है, जिसमें एक xMEMS ट्वीटर और हाई - रेस ऑडियो सपोर्ट के साथ ट्रिपल - ड्राइवर सेटअप है। हेडफ़ोन 46dB अनुकूली ANC, हेड ट्रैकिंग के साथ डायनेमिक स्थानिक ऑडियो, ब्लूटूथ 6.1 और LDAC तक प्रदान करते हैं।",
+        "link": "https://www.livemint.com/technology/nothing-headphone-1-pro-launched-with-triple-drivers-46db-anc-and-68-hour-battery-price-specs-11790678674852.html",
+        "source": "Livemint",
+        "date": "29-09-2026 17:20"
+    },
+    {
+        "title": "Google यूरोपीय संघ के खोज - डेटा ऑर्डर को चुनौती देता है: निजता और खोजों के लिए इसका क्या मतलब है",
+        "summary": "Google ने यूरोपीय संघ के उन आदेशों को चुनौती दी है जिनके तहत उसे प्रतिद्वंद्वियों के साथ अनाम खोज डेटा साझा करने और प्रतिद्वंद्वियों के लिए कुछ एंड्रॉइड सुविधाओं को खोलने की आवश्यकता होती है। कंपनी निजता और सुरक्षा जोखिमों के बारे में चेतावनी देती है, जबकि यूरोपीय संघ के नियामकों का कहना है कि डिजिटल मार्केट्स एक्ट के तहत सुरक्षा उपाय किए गए हैं।",
+        "link": "https://www.livemint.com/technology/google-challenges-eu-search-data-order-what-it-means-for-privacy-and-searches-11790662008258.html",
+        "source": "Livemint",
+        "date": "29-09-2026 17:20"
+    },
+    {
+        "title": "'गुटखा मुफ़्त’ Uber ड्राइवर बैज? नागरिक भावना पर मुंबई के आदमी की पोस्ट ने ऑनलाइन बहस छेड़ दी",
+        "summary": "इस व्यवहार को ‘काफी घृणित और घृणित’ बताते हुए, सिद्धांत बख्शी ने कहा कि उन्होंने ड्राइवरों से सवारी के दौरान थूकने के लिए नहीं कहा था, लेकिन अक्सर उन्हें खारिज करने वाली या उलझी हुई प्रतिक्रियाएं मिलीं।",
+        "link": "https://www.livemint.com/news/trends/gutkha-free-uber-driver-badge-mumbai-man-s-post-on-civic-sense-sparks-online-debate-11790699369412.html",
+        "source": "Livemint",
+        "date": "29-09-2026 17:20"
+    },
+    {
+        "title": "सीएक्यूएम ने जीआरएपी (GRAP) नियमों में बदलाव किया है: दिल्ली - एनसीआर के नए प्रतिबंधों के बारे में आपको यह जानने की ज़रूरत है",
+        "summary": "सीएक्यूएम ने दिल्ली - एनसीआर के लिए जीआरएपी नियमों में संशोधन किया है, पुराने वाहनों पर प्रतिबंध सोनीपत तक बढ़ा दिया है और कुछ बस प्रतिबंधों को जीआरएपी -1 में स्थानांतरित कर दिया है। कुछ माल वाहनों के लिए छूट भी हटा दी गई है, जबकि निर्माण मानदंडों का विस्तार किया गया है।",
+        "link": "https://www.livemint.com/news/india/caqm-modifies-grap-rules-here-s-what-you-need-to-know-about-new-delhi-ncr-restrictions-11790700338936.html",
+        "source": "Livemint",
+        "date": "29-09-2026 17:20"
+    },
+    {
+        "title": "भारत के मीडिया उद्योग को पैमाने से मूल्य की ओर बढ़ने की आवश्यकता है: प्रभात",
+        "summary": "प्रभात ने स्थायी आर्थिक मूल्य बनाने के लिए भारत के मीडिया और मनोरंजन उद्योग की आवश्यकता पर जोर दिया। उन्होंने कहा कि रचनात्मक उद्यमों में स्थिरता और विकास के लिए सामग्री उत्पादन का भारी पैमाने अपर्याप्त है। मूल बौद्धिक संपदा में अधिक निवेश और सुधार",
+        "link": "https://economictimes.indiatimes.com/industry/media/entertainment/media/indias-media-industry-needs-to-move-from-scale-to-value-prabhat/articleshow/134571074.cms",
+        "source": "Economic Times",
+        "date": "29-09-2026 17:20"
+    },
+    {
+        "title": "सीपीपी इन्वेस्टमेंट्स ने 3,000 करोड़ रुपये के प्रेस्टीज डील के साथ भारत में हॉस्पिटैलिटी की शुरुआत की",
+        "summary": "निवेश के माध्यम से, सीपीपी इन्वेस्टमेंट्स पीएचवीएल में लगभग 27% हिस्सेदारी का अधिग्रहण करेगा, जिसमें अधिकांश पूंजी प्लेटफॉर्म के निरंतर विस्तार का समर्थन करेगी।",
+        "link": "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/cpp-investments-makes-india-hospitality-debut-with-rs-3000-cr-prestige-deal/articleshow/134570965.cms",
+        "source": "Economic Times",
+        "date": "29-09-2026 17:20"
+    },
+    {
         "title": "YouTube India के क्रिएटिव इकोसिस्टम ने 2025 में GDP में ₹ 18,000 करोड़ से अधिक का योगदान दिया",
         "summary": "क्रिएटर समुदाय का काफी विस्तार हुआ है, जिसमें 73% क्रिएटर आय के लिए YouTube पर भरोसा करते हैं, जबकि प्लेटफ़ॉर्म युवा दर्शकों के लिए सुरक्षा उपायों को लागू करता है।",
         "link": "https://www.livemint.com/companies/news/youtube-india-s-creative-ecosystem-adds-over-rs-18-000-crore-to-gdp-in-2025-11790695581398.html",
@@ -124,89 +208,5 @@
         "link": "https://www.livemint.com/technology/pebble-qore-ultra-arrives-with-ai-health-insights-and-body-age-tracking-price-features-and-sale-date-11790680683475.html",
         "source": "Livemint",
         "date": "29-09-2026 17:10"
-    },
-    {
-        "title": "कुछ भी नहीं हेडफ़ोन (1) प्रो ट्रिपल ड्राइवर, 46dB ANC और 68 - घंटे की बैटरी के साथ लॉन्च किया गया: मूल्य, चश्मा",
-        "summary": "किसी भी चीज़ ने $ 399 में हेडफ़ोन (1) प्रो लॉन्च नहीं किया है, जिसमें एक xMEMS ट्वीटर और हाई - रेस ऑडियो सपोर्ट के साथ ट्रिपल - ड्राइवर सेटअप है। हेडफ़ोन 46dB अनुकूली ANC, हेड ट्रैकिंग के साथ डायनेमिक स्थानिक ऑडियो, ब्लूटूथ 6.1 और LDAC तक प्रदान करते हैं।",
-        "link": "https://www.livemint.com/technology/nothing-headphone-1-pro-launched-with-triple-drivers-46db-anc-and-68-hour-battery-price-specs-11790678674852.html",
-        "source": "Livemint",
-        "date": "29-09-2026 17:10"
-    },
-    {
-        "title": "Google यूरोपीय संघ के खोज - डेटा ऑर्डर को चुनौती देता है: निजता और खोजों के लिए इसका क्या मतलब है",
-        "summary": "Google ने यूरोपीय संघ के उन आदेशों को चुनौती दी है जिनके तहत उसे प्रतिद्वंद्वियों के साथ अनाम खोज डेटा साझा करने और प्रतिद्वंद्वियों के लिए कुछ एंड्रॉइड सुविधाओं को खोलने की आवश्यकता होती है। कंपनी निजता और सुरक्षा जोखिमों के बारे में चेतावनी देती है, जबकि यूरोपीय संघ के नियामकों का कहना है कि डिजिटल मार्केट्स एक्ट के तहत सुरक्षा उपाय किए गए हैं।",
-        "link": "https://www.livemint.com/technology/google-challenges-eu-search-data-order-what-it-means-for-privacy-and-searches-11790662008258.html",
-        "source": "Livemint",
-        "date": "29-09-2026 17:10"
-    },
-    {
-        "title": "जेएनके इंडिया आईपीओ: घरेलू विनिर्माण को बढ़ावा देने पर एक मजबूत खेल",
-        "summary": "मजबूत ऑर्डर बुक अच्छी राजस्व दृश्यता प्रदान करती है और मूल्यांकन उचित दिखता है",
-        "link": "https://www.moneycontrol.com/news/result-analysis/jnk-india-ipo-a-strong-playthe-domestic-manufacturing-push_17531311.html",
-        "source": "Moneycontrol",
-        "date": "29-09-2026 17:00"
-    },
-    {
-        "title": "रिलायंस समेकित मार्च 2024 की शुद्ध बिक्री 11.08% की वृद्धि के साथ 236,533.00 करोड़ रुपये पर",
-        "summary": "Comment",
-        "link": "https://www.moneycontrol.com/news/results/reliance-consolidated-march-2024-net-sales-at-rs-23653300-crore1108-y-o-y_17531151.html",
-        "source": "Moneycontrol",
-        "date": "29-09-2026 17:00"
-    },
-    {
-        "title": "एपिग्रल समेकित मार्च 2024 की शुद्ध बिक्री 524.63 करोड़ रुपये रही, जो सालाना आधार पर 6.68% कम है",
-        "summary": "Comment",
-        "link": "https://www.moneycontrol.com/news/results/epigral-consolidated-march-2024-net-sales-at-rs-52463-crore-down-668-y-o-y_17531141.html",
-        "source": "Moneycontrol",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "तेजस नेटवर्क की समेकित मार्च 2024 की शुद्ध बिक्री 1,326.88 करोड़ रुपये रही, जो सालाना आधार पर 343.3% अधिक है",
-        "summary": "Comment",
-        "link": "https://www.moneycontrol.com/news/results/tejas-networks-consolidated-march-2024-net-sales-at-rs-132688-crore3433-y-o-y_17531131.html",
-        "source": "Moneycontrol",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "यूएस 30 - वर्षीय ट्रेजरी यील्ड 5.6% से ऊपर है, जो 2002 के बाद से उच्चतम स्तर पर पहुंच गया है",
-        "summary": "30 साल के अमेरिकी ट्रेजरी बॉन्ड पर प्रतिफल 2002 के बाद से नहीं देखे गए स्तरों तक बढ़ गया है। यह वृद्धि विभिन्न आर्थिक कारकों से प्रेरित वैश्विक ट्रेजरी बाजार में लंबे समय तक बिकवाली का हिस्सा है। ऊर्जा की बढ़ती कीमतें उच्च मुद्रास्फीति और दरों में वृद्धि की उम्मीदों में योगदान दे रही हैं। Notabl",
-        "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-30-year-treasury-yield-tops-5-6-reaching-highest-level-since-2002/articleshow/134570770.cms",
-        "source": "Economic Times",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "बाजार से पहले: 10 चीजें जो बुधवार को शेयर बाजार की कार्रवाई तय करेंगी",
-        "summary": "मासिक समाप्ति पर समापन नीलामी सत्र के दौरान निफ्टी की सांकेतिक कीमत में तेजी से उबरने से पहले दो सेकंड में 2% की गिरावट आई। विश्लेषकों ने बाजार के प्रमुख दबावों के रूप में कच्चे तेल की अस्थिरता, उच्च अमेरिकी ट्रेजरी प्रतिफल, एफआईआई बहिर्वाह, आईपीओ धन उगाहने और भू - राजनीतिक तनाव का हवाला दिया।",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-wednesday/articleshow/134570219.cms",
-        "source": "Economic Times",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "कारमैक्स का तिमाही मुनाफा, रेवेन्यू बढ़ा क्योंकि किराया इस्तेमाल की गई कारों की बिक्री को बढ़ाता है",
-        "summary": "कारमैक्स ने मंगलवार को दूसरी तिमाही के मुनाफे और राजस्व में वृद्धि की सूचना दी क्योंकि प्रयुक्त कार खुदरा विक्रेता बिक्री में तेजी लाने के लिए अपनी मूल्य निर्धारण रणनीति पर झुक गया। कंपनी के शेयर",
-        "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/carmaxs-quarterly-profit-revenue-rise-as-pricing-boosts-used-car-sales/articleshow/134569823.cms",
-        "source": "Economic Times",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "मार्केट ट्रेडिंग गाइड: बुधवार के लिए 6 स्टॉक सिफारिशों में अडानी पोर्ट्स, राशि पेरिफेरल्स शामिल हैं",
-        "summary": "",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-adani-ports-rashi-peripherals-among-6-stock-recommendations-for-wednesday/slideshow/134569608.cms",
-        "source": "Economic Times",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "HMD Vibe2 Pro 5G के पहले इंप्रेशन: 120Hz डिस्प्ले, 64MP कैमरा और 6,000mAh की बैटरी",
-        "summary": "HMD Vibe2 Pro 5G को भारत में लॉन्च कर दिया गया है, जिसकी कीमत ₹ 14,999 से शुरू होती है। इसमें 6.78इंच की 120Hz FHD+ डिस्प्ले, डायमेंसिटी 6300 चिपसेट, 33W चार्जिंग के साथ 6,000mAh की बैटरी, सोनी कैमरा सेंसर, एंड्रॉइड 16 और 8GB तक की रैम दी गई है। यह फोन 8 अक्टूबर से फ्लिपकार्ट पर सेल के लिए उपलब्ध होगा।",
-        "link": "https://www.livemint.com/technology/hmd-vibe2-pro-5g-first-impressions-120hz-display-64mp-camera-and-6-000mah-battery-11790681172292.html",
-        "source": "Livemint",
-        "date": "29-09-2026 17:01"
-    },
-    {
-        "title": "पेबल कोर अल्ट्रा फिटनेस बैंड AI स्वास्थ्य अंतर्दृष्टि और बॉडी एज ट्रैकिंग के साथ आता है: मूल्य, विशेषताएं और बिक्री की तारीख",
-        "summary": "पेबल ने एआई - संचालित स्वास्थ्य अंतर्दृष्टि, तत्परता स्कोर और बॉडी एज ट्रैकिंग के साथ भारत में कोर अल्ट्रा वेलनेस बैंड लॉन्च किया है। पहनने योग्य 24x7 स्वास्थ्य निगरानी, 100+ स्पोर्ट्स मोड और सदस्यता शुल्क के बिना 15 दिनों तक की बैटरी लाइफ प्रदान करता है।",
-        "link": "https://www.livemint.com/technology/pebble-qore-ultra-arrives-with-ai-health-insights-and-body-age-tracking-price-features-and-sale-date-11790680683475.html",
-        "source": "Livemint",
-        "date": "29-09-2026 17:01"
     }
 ]
