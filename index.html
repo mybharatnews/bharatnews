@@ -236,7 +236,7 @@
     </div>
 
     <script>
-        fetch('news_data.json')
+        fetch('news_data.json?v=' + new Date().getTime())
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('news-container');
