@@ -352,11 +352,11 @@
         <!-- Footer -->
         <div class="footer">
             © 2026 भारत न्यूज़ | स्रोत: Moneycontrol, Economic Times, Livemint<br>
-            <a href="about.html">अमारा विशे</a> | 
-            <a href="privacy.html">गोपनीयता नीति</a> | 
-            <a href="contact.html">संपर्क करो</a>
+            <a href="about.html">અમારા વિશે</a> | 
+            <a href="privacy.html">ગોપનીયતા નીતિ</a> | 
+            <a href="contact.html">સંપર્ક કરો</a>
             <br>
-            आ वेबसाइट AI द्वारा ऑटोमेटिक अपडेट थाय छे.
+            આ વેબસાઈટ AI દ્વારા ઓટોમેટિક અપડેટ થાય છે.
         </div>
     </div>
 
@@ -375,7 +375,7 @@
             })
             .catch(error => {
                 document.getElementById('news-container').innerHTML = 
-                    '<div class="loading">❌ न्यूज़ लोड करवामां समस्या आवी.</div>';
+                    '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.</div>';
                 console.error('Error:', error);
             });
         
@@ -385,7 +385,7 @@
             container.innerHTML = '';
             
             if (filteredNews.length === 0) {
-                container.innerHTML = '<div class="loading">हालमां कोई न्यूज़ उपलब्ध नथी.</div>';
+                container.innerHTML = '<div class="loading">હાલમાં કોઈ ન્યૂઝ ઉપલબ્ધ નથી.</div>';
                 return;
             }
             
@@ -405,11 +405,11 @@
                     <div class="news-title">${news.title}</div>
                     ${summaryHTML}
                     <div class="news-meta">
-                        <a href="${news.link}" target="_blank" class="news-link">पूरी न्यूज़ वांचो →</a>
+                        <a href="${news.link}" target="_blank" class="news-link">પૂરી ન્યૂઝ વાંચો →</a>
                         <span class="source">📰 ${news.source} | 🕐 ${news.date}</span>
                     </div>
                     <div class="share-buttons">
-                        <span class="share-label">शेयर करो:</span>
+                        <span class="share-label">શેર કરો:</span>
                         <a href="https://wa.me/?text=${shareTitle}%20-%20${shareUrl}" target="_blank" class="share-btn share-whatsapp">📱</a>
                         <a href="https://t.me/share/url?url=${shareUrl}&text=${shareTitle}" target="_blank" class="share-btn share-telegram">✈️</a>
                         <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="share-btn share-facebook">📘</a>
