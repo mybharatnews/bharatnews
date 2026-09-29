@@ -6,10 +6,23 @@ from datetime import datetime
 # ફોલ્ડર બનાવો
 os.makedirs('news', exist_ok=True)
 
-def clean_filename(text):
-    """ફાઈલ નામ બનાવો"""
+def clean_filename(text, index=0):
+    """ફાઈલ નામ બનાવો (ફક્ત અંગ્રેજી)"""
+    # હિન્દી અક્ષરો દૂર કરો (ફક્ત ASCII રાખો)
+    text = re.sub(r'[^\x00-\x7F]+', '', text)
+    # ખાસ અક્ષરો દૂર કરો
     text = re.sub(r'[^\w\s-]', '', text)
+    # સ્પેસને ડેશમાં બદલો
     text = re.sub(r'\s+', '-', text)
+    # વધારાના ડેશ દૂર કરો
+    text = re.sub(r'-+', '-', text)
+    # શરૂઆત અને અંતમાંથી ડેશ દૂર કરો
+    text = text.strip('-')
+    
+    # જો ખાલી હોય તો timestamp + index વાપરો
+    if not text or len(text) < 5:
+        text = f"news-{int(datetime.now().timestamp())}-{index}"
+    
     return text[:50].lower()
 
 def generate_article_page(news_item, index):
@@ -41,10 +54,12 @@ def generate_article_page(news_item, index):
     <p>આ સમાચાર વિશે વધુ માહિતી માટે, મૂળ સ્રોત પર જાઓ. ત્યાં તમને સંપૂર્ણ વિગતો મળશે. અમારી વેબસાઇટ પર રોજ નવા સમાચાર આવે છે, તેથી નિયમિત મુલાકાત લેતા રહો.</p>
     
     <p>અમારી વેબસાઇટ ભારતીય શેર બજાર, બિઝનેસ અને અર્થતંત્ર સંબંધિત તાજા સમાચાર પ્રદાન કરે છે. અમે Moneycontrol, Economic Times, Livemint જેવા વિશ્વસનીય સ્રોતોમાંથી સમાચાર લાવીએ છીએ અને તેને સરળ હિન્દીમાં રજૂ કરીએ છીએ.</p>
+    
+    <p>શેર બજારમાં રોકાણ કરતા પહેલા હંમેશા સંશોધન કરો. કોઈપણ સમાચારને આધારે તરત જ નિર્ણય ના લો. તમારા નાણાકીય સલાહકારની સલાહ લો. ડાઇવર્સિફિકેશન એ સૌથી સારો રસ્તો છે.</p>
     """
     
-    # ફાઈલ નામ
-    filename = clean_filename(title) + '.html'
+    # ફાઈલ નામ (અંગ્રેજીમાં)
+    filename = clean_filename(title, index) + '.html'
     
     # HTML પેજ
     html_content = f"""<!DOCTYPE html>
@@ -126,7 +141,7 @@ def main():
     print(f"📰 કુલ {len(news_list)} ન્યૂઝ મળ્યા")
     
     generated = []
-    for i, news in enumerate(news_list[:30]):  # પહેલા 30 ન્યૂઝ
+    for i, news in enumerate(news_list[:30]):
         try:
             filename = generate_article_page(news, i)
             generated.append(filename)
@@ -136,7 +151,7 @@ def main():
     
     print(f"\n🎉 કુલ {len(generated)} પેજ બન્યા!")
     
-    # index.json બનાવો (બધા પેજની લિસ્ટ)
+    # index.json બનાવો
     with open('news_index.json', 'w', encoding='utf-8') as f:
         json.dump(generated, f, ensure_ascii=False, indent=4)
 
