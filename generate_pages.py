@@ -26,7 +26,6 @@ def clean_filename(text, index=0):
     else:
         text = f"market-news-{text}"
     
-    # ફાઈલ નામ 60 અક્ષર સુધી
     return text[:60].lower()
 
 def generate_article_page(news_item, index):
@@ -38,7 +37,6 @@ def generate_article_page(news_item, index):
     source = news_item.get('source', '')
     date = news_item.get('date', '')
     
-    # પૂરો લેખ બનાવો (1000+ શબ્દો)
     full_article = f"""
     <p><strong>{summary}</strong></p>
     
@@ -58,14 +56,10 @@ def generate_article_page(news_item, index):
     <p>આ સમાચાર વિશે વધુ માહિતી માટે, મૂળ સ્રોત પર જાઓ. ત્યાં તમને સંપૂર્ણ વિગતો મળશે. અમારી વેબસાઇટ પર રોજ નવા સમાચાર આવે છે, તેથી નિયમિત મુલાકાત લેતા રહો.</p>
     
     <p>અમારી વેબસાઇટ ભારતીય શેર બજાર, બિઝનેસ અને અર્થતંત્ર સંબંધિત તાજા સમાચાર પ્રદાન કરે છે. અમે Moneycontrol, Economic Times, Livemint જેવા વિશ્વસનીય સ્રોતોમાંથી સમાચાર લાવીએ છીએ અને તેને સરળ હિન્દીમાં રજૂ કરીએ છીએ.</p>
-    
-    <p>શેર બજારમાં રોકાણ કરતા પહેલા હંમેશા સંશોધન કરો. કોઈપણ સમાચારને આધારે તરત જ નિર્ણય ના લો. તમારા નાણાકીય સલાહકારની સલાહ લો. ડાઇવર્સિફિકેશન એ સૌથી સારો રસ્તો છે.</p>
     """
     
-    # ફાઈલ નામ (SEO ફ્રેન્ડલી)
     filename = clean_filename(title, index) + '.html'
     
-    # HTML પેજ
     html_content = f"""<!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -127,14 +121,12 @@ def generate_article_page(news_item, index):
 </body>
 </html>"""
     
-    # ફાઈલ સેવ કરો
     with open(f'news/{filename}', 'w', encoding='utf-8') as f:
         f.write(html_content)
     
     return filename
 
 def main():
-    # news_data.json વાંચો
     if not os.path.exists('news_data.json'):
         print("❌ news_data.json મળી નથી!")
         return
@@ -155,9 +147,39 @@ def main():
     
     print(f"\n🎉 કુલ {len(generated)} પેજ બન્યા!")
     
-    # index.json બનાવો
+    # news_index.json બનાવો
     with open('news_index.json', 'w', encoding='utf-8') as f:
         json.dump(generated, f, ensure_ascii=False, indent=4)
+    
+    # ═══════════════════════════════════════
+    # sitemap.xml બનાવો (ઓટોમેટિક)
+    # ═══════════════════════════════════════
+    sitemap_urls = [
+        "https://mybharatnews.github.io/bharatnews/",
+        "https://mybharatnews.github.io/bharatnews/about.html",
+        "https://mybharatnews.github.io/bharatnews/contact.html",
+        "https://mybharatnews.github.io/bharatnews/privacy.html",
+    ]
+    
+    for filename in generated:
+        sitemap_urls.append(f"https://mybharatnews.github.io/bharatnews/news/{filename}")
+    
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    
+    for url in sitemap_urls:
+        sitemap += f'    <url>\n'
+        sitemap += f'        <loc>{url}</loc>\n'
+        sitemap += f'        <changefreq>daily</changefreq>\n'
+        sitemap += f'        <priority>0.8</priority>\n'
+        sitemap += f'    </url>\n'
+    
+    sitemap += '</urlset>'
+    
+    with open('sitemap.xml', 'w', encoding='utf-8') as f:
+        f.write(sitemap)
+    
+    print(f"\n📄 sitemap.xml બન્યું ({len(sitemap_urls)} URLs)")
 
 if __name__ == "__main__":
     main()
