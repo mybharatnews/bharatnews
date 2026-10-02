@@ -60,37 +60,6 @@
             50% { opacity: 0.6; }
         }
         
-        /* ═══ LIVE TICKER ═══ */
-        .ticker-wrap {
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
-            padding: 10px 0;
-            margin-bottom: 20px;
-            overflow: hidden;
-            border-left: 4px solid #feca57;
-        }
-        
-        .ticker {
-            display: flex;
-            animation: ticker-scroll 30s linear infinite;
-            white-space: nowrap;
-        }
-        
-        .ticker-item {
-            display: inline-block;
-            padding: 0 30px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        
-        .ticker-up { color: #2ecc71; }
-        .ticker-down { color: #e74c3c; }
-        
-        @keyframes ticker-scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        
         /* ═══ SEARCH & CATEGORY ═══ */
         .controls {
             display: flex;
@@ -318,8 +287,6 @@
             <span class="live-badge">🔴 LIVE</span>
         </div>
         
-       
-        
         <!-- Search & Category -->
         <div class="controls">
             <input type="text" id="searchBox" class="search-box" placeholder="🔍 न्यूज़ खोजें...">
@@ -336,7 +303,8 @@
         
         <!-- Load More -->
         <button class="load-more" id="loadMore" onclick="loadMore()" style="display:none;">और न्यूज़ देखें ⬇️</button>
-                <!-- ═══ DRAVY'S APP DOWNLOAD ═══ -->
+
+        <!-- ═══ DRAVY'S APP DOWNLOAD ═══ -->
         <div style="
             text-align: center;
             margin: 40px auto 30px;
