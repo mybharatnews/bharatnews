@@ -238,45 +238,6 @@
             background: rgba(255, 255, 255, 0.1);
             border-color: #feca57;
         }
-                <!-- ═══ WHATSAPP CHANNEL ═══ -->
-        <div style="
-            text-align: center;
-            margin: 30px auto;
-            padding: 25px 20px;
-            background: linear-gradient(135deg, #25D366, #128C7E);
-            border-radius: 15px;
-            max-width: 600px;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-        ">
-            <h2 style="
-                color: white;
-                font-size: 22px;
-                margin-bottom: 12px;
-            ">📱 WhatsApp Channel</h2>
-            
-            <p style="
-                color: rgba(255,255,255,0.9);
-                font-size: 14px;
-                margin-bottom: 20px;
-            ">દર 3 કલાકે નવા ન્યૂઝ સીધા WhatsApp પર!</p>
-            
-            <a href=" https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V 
-               target="_blank"
-               style="
-                   display: inline-block;
-                   background: white;
-                   color: #25D366;
-                   padding: 15px 40px;
-                   border-radius: 50px;
-                   text-decoration: none;
-                   font-size: 16px;
-                   font-weight: bold;
-                   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-               "
-            >
-                📱 Join WhatsApp Channel
-            </a>
-        </div>
         
         /* ═══ FOOTER ═══ */
         .footer {
@@ -343,6 +304,46 @@
         <!-- Load More -->
         <button class="load-more" id="loadMore" onclick="loadMore()" style="display:none;">और न्यूज़ देखें ⬇️</button>
 
+        <!-- ═══ WHATSAPP CHANNEL ═══ -->
+        <div style="
+            text-align: center;
+            margin: 30px auto;
+            padding: 25px 20px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 15px;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        ">
+            <h2 style="
+                color: white;
+                font-size: 22px;
+                margin-bottom: 12px;
+            ">📱 WhatsApp Channel</h2>
+            
+            <p style="
+                color: rgba(255,255,255,0.9);
+                font-size: 14px;
+                margin-bottom: 20px;
+            ">દર 3 કલાકે નવા ન્યૂઝ સીધા WhatsApp પર!</p>
+            
+            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" 
+               target="_blank"
+               style="
+                   display: inline-block;
+                   background: white;
+                   color: #25D366;
+                   padding: 15px 40px;
+                   border-radius: 50px;
+                   text-decoration: none;
+                   font-size: 16px;
+                   font-weight: bold;
+                   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+               "
+            >
+                📱 Join WhatsApp Channel
+            </a>
+        </div>
+
         <!-- ═══ DRAVY'S APP DOWNLOAD ═══ -->
         <div style="
             text-align: center;
@@ -377,10 +378,7 @@
                    font-size: 16px;
                    font-weight: bold;
                    box-shadow: 0 8px 25px rgba(0,119,182,0.5);
-                   transition: all 0.3s;
                "
-               onmouseover="this.style.transform='translateY(-3px) scale(1.05)'; this.style.boxShadow='0 12px 35px rgba(0,119,182,0.7)';"
-               onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(0,119,182,0.5)';"
             >
                 📥 Download for Windows
             </a>
@@ -408,7 +406,6 @@
         let filteredNews = [];
         let displayCount = 10;
         
-        // News Load
         fetch('news_data.json?v=' + new Date().getTime())
             .then(response => response.json())
             .then(data => {
@@ -422,7 +419,6 @@
                 console.error('Error:', error);
             });
         
-        // News Display
         function displayNews() {
             const container = document.getElementById('news-container');
             container.innerHTML = '';
@@ -462,7 +458,6 @@
                 container.appendChild(card);
             });
             
-            // Load More Button
             const loadMoreBtn = document.getElementById('loadMore');
             if (displayCount < filteredNews.length) {
                 loadMoreBtn.style.display = 'block';
@@ -471,13 +466,11 @@
             }
         }
         
-        // Load More
         function loadMore() {
             displayCount += 10;
             displayNews();
         }
         
-        // Search
         document.getElementById('searchBox').addEventListener('input', function(e) {
             const query = e.target.value.toLowerCase();
             if (query === '') {
@@ -492,7 +485,6 @@
             displayNews();
         });
         
-        // Category Filter
         function filterNews(source, btn) {
             document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
