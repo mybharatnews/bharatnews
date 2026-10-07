@@ -11,32 +11,62 @@ from deep_translator import MyMemoryTranslator
 # RSS ફીડ ગ્રુપ (સમય પ્રમાણે, અલગ સ્રોત)
 # ═══════════════════════════════════════
 RSS_SCHEDULE = {
-    "06:30": [
+    "00:30": [
         "https://www.moneycontrol.com/rss/business.xml",
         "https://www.livemint.com/rss/news",
         "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
     ],
-    "09:30": [
+    "02:30": [
+        "https://www.business-standard.com/rss/markets-106.rss",
+        "https://www.thehindubusinessline.com/markets/feeder/default.rss",
+        "https://www.financialexpress.com/market/feed/",
+    ],
+    "04:30": [
         "https://www.moneycontrol.com/rss/marketreports.xml",
         "https://www.livemint.com/rss/markets",
+        "https://www.ndtvprofit.com/rss/markets",
+    ],
+    "06:30": [
         "https://www.zeebiz.com/rss/markets.xml",
+        "https://www.moneycontrol.com/rss/economy.xml",
+        "https://www.livemint.com/rss/companies",
+    ],
+    "08:30": [
+        "https://www.moneycontrol.com/rss/latestnews.xml",
+        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+        "https://www.moneycontrol.com/rss/results.xml",
+    ],
+    "10:30": [
+        "https://www.moneycontrol.com/rss/iponews.xml",
+        "https://www.livemint.com/rss/technology",
+        "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
     ],
     "12:30": [
-        "https://www.moneycontrol.com/rss/results.xml",
-        "https://www.livemint.com/rss/companies",
-        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+        "https://www.moneycontrol.com/rss/business.xml",
+        "https://www.livemint.com/rss/news",
+        "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
     ],
-    "15:30": [
-        "https://www.moneycontrol.com/rss/economy.xml",
-        "https://www.livemint.com/rss/industry",
-        "https://economictimes.indiatimes.com/economy/rssfeeds/1373380680.cms",
+    "14:30": [
+        "https://www.business-standard.com/rss/markets-106.rss",
+        "https://www.thehindubusinessline.com/markets/feeder/default.rss",
+        "https://www.financialexpress.com/market/feed/",
+    ],
+    "16:30": [
+        "https://www.moneycontrol.com/rss/marketreports.xml",
+        "https://www.livemint.com/rss/markets",
+        "https://www.ndtvprofit.com/rss/markets",
     ],
     "18:30": [
-        "https://www.moneycontrol.com/rss/latestnews.xml",
-        "https://www.livemint.com/rss/money",
-        "https://www.zeebiz.com/rss/business.xml",
+        "https://www.zeebiz.com/rss/markets.xml",
+        "https://www.moneycontrol.com/rss/economy.xml",
+        "https://www.livemint.com/rss/companies",
     ],
-    "21:30": [
+    "20:30": [
+        "https://www.moneycontrol.com/rss/latestnews.xml",
+        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+        "https://www.moneycontrol.com/rss/results.xml",
+    ],
+    "22:30": [
         "https://www.moneycontrol.com/rss/iponews.xml",
         "https://www.livemint.com/rss/technology",
         "https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms",
