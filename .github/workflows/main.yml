@@ -2,18 +2,20 @@ name: Auto Market News Update
 
 on:
   schedule:
-    # 6:30 AM IST (1:00 UTC)
-    - cron: '0 1 * * *'
-    # 9:30 AM IST (4:00 UTC)
-    - cron: '0 4 * * *'
-    # 12:30 PM IST (7:00 UTC)
-    - cron: '0 7 * * *'
-    # 3:30 PM IST (10:00 UTC)
-    - cron: '0 10 * * *'
-    # 6:30 PM IST (13:00 UTC)
-    - cron: '0 13 * * *'
-    # 9:30 PM IST (16:00 UTC)
-    - cron: '0 16 * * *'
+    # દર 2 કલાકે (IST)
+    # IST = UTC + 5:30
+    - cron: '0 19 * * *'   # 00:30 IST
+    - cron: '0 21 * * *'   # 02:30 IST
+    - cron: '0 23 * * *'   # 04:30 IST
+    - cron: '0 1 * * *'    # 06:30 IST
+    - cron: '0 3 * * *'    # 08:30 IST
+    - cron: '0 5 * * *'    # 10:30 IST
+    - cron: '0 7 * * *'    # 12:30 IST
+    - cron: '0 9 * * *'    # 14:30 IST
+    - cron: '0 11 * * *'   # 16:30 IST
+    - cron: '0 13 * * *'   # 18:30 IST
+    - cron: '0 15 * * *'   # 20:30 IST
+    - cron: '0 17 * * *'   # 22:30 IST
   workflow_dispatch:
 
 jobs:
