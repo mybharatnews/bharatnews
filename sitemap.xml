@@ -31,7 +31,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-2-20261007.html</loc>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-2026-26-ubs.html</loc>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
@@ -76,6 +76,26 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-11-20261007.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-12-20261007.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-13-20261007.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-14-20261007.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://mybharatnews.github.io/bharatnews/news/market-news-32-23622-gwh-349.html</loc>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -91,26 +111,6 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-14-20261007.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-15-20261007.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-16-20261007.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-17-20261007.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://mybharatnews.github.io/bharatnews/news/market-news-18-20261007.html</loc>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -121,7 +121,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-rbi-mpc-25-bps-rate-hike-nbfcs-sbi-icici.html</loc>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-20-20261007.html</loc>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
@@ -141,7 +141,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-24-20261007.html</loc>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-rbi-mpc-25-bps-rate-hike-nbfcs-sbi-icici.html</loc>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
