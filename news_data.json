@@ -1,5 +1,26 @@
 [
     {
+        "title": "एंथ्रोपिक ने तीसरा क्लाउड 5.5 मॉडल लॉन्च किया, जो नियोजित आईपीओ से पहले एआई लाइनअप का विस्तार कर रहा है",
+        "summary": "हाइकू 5.5 को लाइव सपोर्ट, वॉयस एजेंट और इन - ऐप सहायकों सहित वर्गीकरण, सारांश और निष्कर्षण जैसे कार्यों के लिए बनाया गया है। इसकी लागत अपने पूर्ववर्ती, हाइकू 4.5 की तुलना में 75% कम है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-launches-third-claude-5-5-model-expanding-ai-lineup-before-planned-ipo/articleshow/134773835.cms",
+        "source": "Economic Times",
+        "date": "07-10-2026 23:26"
+    },
+    {
+        "title": "पश्चिमी यूरोप के सीईओ का कहना है कि क्रांति डेटा हैक से प्रभावित ग्राहकों के लिए लागत को कवर करेगी",
+        "summary": "यूरोप के सबसे मूल्यवान स्टार्टअप, Revolut ने कहा कि उसने ग्राहकों के व्यक्तिगत डेटा को हैकर्स को भेजा था, जिन्होंने पिछले महीने पहली बार खुलासा की गई एक घटना में एक इतालवी सरकारी एजेंसी के ईमेल पते पर नियंत्रण कर लिया था।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/revolut-will-cover-costs-for-customers-hit-by-data-hack-western-europe-ceo-says/articleshow/134770459.cms",
+        "source": "Economic Times",
+        "date": "07-10-2026 23:26"
+    },
+    {
+        "title": "AI बायोलॉजी डेटा के लिए $ 1.8 बिलियन के पुश में अमेरिकी सरकार, Google जुकरबर्ग - समर्थित बायोहब में शामिल हुए",
+        "summary": "Biohub ने बुधवार को कहा कि अमेरिकी सरकार और तकनीकी क्षेत्र के दिग्गज Meta Platforms और Google पेरेंट अल्फाबेट बायोलॉजिकल रीसर्च के लिए AI मॉडलों को प्रशिक्षित करने के लिए खुले डेटासेट बनाने के लिए निर्लाभ Biohub में शामिल हो रहे हैं, जिससे इस प्रयास में कुल निवेश $ 1.8 बिलियन हो गया है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/us-government-google-join-zuckerberg-backed-biohub-in-1-8-billion-push-for-ai-biology-data/articleshow/134770321.cms",
+        "source": "Economic Times",
+        "date": "07-10-2026 23:26"
+    },
+    {
         "title": "Apple 13 अक्टूबर को इवेंट आयोजित करेगा? नए स्मार्ट होम हब, होमपॉड मिनी और ऐप्पल टीवी की उम्मीद है",
         "summary": "Apple द्वारा अक्टूबर के अंतिम सप्ताह में उत्पादों के एक और बैच की घोषणा करने की उम्मीद है, 13 अक्टूबर के आसपास रिपोर्ट किए गए स्मार्ट होम उत्पाद लॉन्च के तुरंत बाद।",
         "link": "https://www.livemint.com/technology/apple-to-hold-event-on-october-13-new-smart-home-hub-homepod-mini-and-apple-tv-expected-11791375338832.html",
@@ -187,26 +208,5 @@
         "link": "https://www.thehindubusinessline.com/markets/rbi-rate-hike-pulls-markets-lower/article71555634.ece",
         "source": "thehindubusinessline.com",
         "date": "07-10-2026 14:18"
-    },
-    {
-        "title": "केंद्रीय बैंकों का सोना अगस्त में शुद्ध सकारात्मक खरीदता है क्योंकि चीन इसका नेतृत्व करता है",
-        "summary": "बीजिंग ने 20 टन खरीदा क्योंकि अगस्त में शुद्ध खरीद 39 टन थी; साल - दर - साल संचय बढ़कर 170 टन हो गया",
-        "link": "https://www.thehindubusinessline.com/markets/gold/central-banks-gold-purchases-net-positive-in-august-as-china-leads-the-way/article71555583.ece",
-        "source": "thehindubusinessline.com",
-        "date": "07-10-2026 14:18"
-    },
-    {
-        "title": "क्या आपका क्रेडिट कार्ड खो गया है? धोखाधड़ी से बचने के लिए आपको तुरंत 5 कदम उठाने चाहिए",
-        "summary": "क्या आपका क्रेडिट कार्ड खो गया है? जल्दी से काम करने से अनधिकृत लेन - देन और धोखाधड़ी के जोखिम को सीमित करने में मदद मिल सकती है। कार्ड को ब्लॉक करें, संपर्क रहित भुगतान अक्षम करें, हाल के लेन - देन की जाँच करें, डिजिटल वॉलेट सुरक्षित करें, संदिग्ध गतिविधि की रिपोर्ट करें और रिप्लेसमेंट कार्ड का अनुरोध करें।",
-        "link": "https://www.livemint.com/money/personal-finance/lost-your-credit-card-5-steps-you-should-take-immediately-to-avoid-fraud-11791362293108.html",
-        "source": "Livemint",
-        "date": "07-10-2026 10:48"
-    },
-    {
-        "title": "आरबीआई दर में वृद्धि: डेट फंड, इक्विटी, एफडी या गोल्ड, दर चक्र के बदलते ही किन परिसंपत्ति वर्गों को लाभ हो सकता है? विशेषज्ञ का विचार",
-        "summary": "आरबीआई की 25 बीपीएस रेपो दर में वृद्धि ऋण, इक्विटी, एफडी और सोने में रिटर्न को नया रूप दे सकती है। विशेषज्ञ बताते हैं कि किन परिसंपत्ति वर्गों को लाभ हो सकता है, जहां निवेशकों को दबाव का सामना करना पड़ सकता है और दर चक्र के बदलते ही पोर्टफोलियो को कैसे रखा जाए।",
-        "link": "https://www.livemint.com/money/personal-finance/rbi-rate-hike-debt-funds-equities-fds-or-gold-which-asset-classes-may-benefit-as-the-rate-cycle-turns-expert-view-11791364017739.html",
-        "source": "Livemint",
-        "date": "07-10-2026 10:48"
     }
 ]
