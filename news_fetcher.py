@@ -8,7 +8,7 @@ import requests
 from deep_translator import MyMemoryTranslator
 
 # ═══════════════════════════════════════
-# RSS ફીડ ગ્રુપ (સમય પ્રમાણે, અલગ સ્રોત)
+# RSS ફીડ ગ્રુપ (દર 2 કલાકે - 12 સ્લોટ)
 # ═══════════════════════════════════════
 RSS_SCHEDULE = {
     "00:30": [
@@ -17,24 +17,24 @@ RSS_SCHEDULE = {
         "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
     ],
     "02:30": [
-        "https://www.business-standard.com/rss/markets-106.rss",
         "https://www.thehindubusinessline.com/markets/feeder/default.rss",
-        "https://www.financialexpress.com/market/feed/",
-    ],
-    "04:30": [
         "https://www.moneycontrol.com/rss/marketreports.xml",
         "https://www.livemint.com/rss/markets",
-        "https://www.ndtvprofit.com/rss/markets",
+    ],
+    "04:30": [
+        "https://www.moneycontrol.com/rss/economy.xml",
+        "https://economictimes.indiatimes.com/economy/rssfeeds/1373380680.cms",
+        "https://www.livemint.com/rss/industry",
     ],
     "06:30": [
         "https://www.zeebiz.com/rss/markets.xml",
-        "https://www.moneycontrol.com/rss/economy.xml",
+        "https://www.moneycontrol.com/rss/latestnews.xml",
         "https://www.livemint.com/rss/companies",
     ],
     "08:30": [
-        "https://www.moneycontrol.com/rss/latestnews.xml",
-        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
         "https://www.moneycontrol.com/rss/results.xml",
+        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+        "https://www.livemint.com/rss/money",
     ],
     "10:30": [
         "https://www.moneycontrol.com/rss/iponews.xml",
@@ -47,24 +47,24 @@ RSS_SCHEDULE = {
         "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
     ],
     "14:30": [
-        "https://www.business-standard.com/rss/markets-106.rss",
         "https://www.thehindubusinessline.com/markets/feeder/default.rss",
-        "https://www.financialexpress.com/market/feed/",
-    ],
-    "16:30": [
         "https://www.moneycontrol.com/rss/marketreports.xml",
         "https://www.livemint.com/rss/markets",
-        "https://www.ndtvprofit.com/rss/markets",
+    ],
+    "16:30": [
+        "https://www.moneycontrol.com/rss/economy.xml",
+        "https://economictimes.indiatimes.com/economy/rssfeeds/1373380680.cms",
+        "https://www.livemint.com/rss/industry",
     ],
     "18:30": [
         "https://www.zeebiz.com/rss/markets.xml",
-        "https://www.moneycontrol.com/rss/economy.xml",
+        "https://www.moneycontrol.com/rss/latestnews.xml",
         "https://www.livemint.com/rss/companies",
     ],
     "20:30": [
-        "https://www.moneycontrol.com/rss/latestnews.xml",
-        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
         "https://www.moneycontrol.com/rss/results.xml",
+        "https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms",
+        "https://www.livemint.com/rss/money",
     ],
     "22:30": [
         "https://www.moneycontrol.com/rss/iponews.xml",
@@ -121,6 +121,8 @@ def get_source_name(url):
             return 'Economic Times'
         elif 'zeebiz' in domain:
             return 'Zee Business'
+        elif 'thehindubusinessline' in domain:
+            return 'Hindu Business Line'
         else:
             return domain
     except:
@@ -174,7 +176,7 @@ def get_rss_urls_for_now():
         print(f"📡 {current_time} સ્લોટ ચેક થઈ રહ્યો છે...")
         return RSS_SCHEDULE[current_time]
 
-    # જો ચોક્કસ સમય ના મળે, તો સૌથી નજીકનો સમય લો
+    # જો ચોક્કસ સમય ના મળે, તો સૌથી નજીકનો સમય લો (60 મિનિટની અંદર)
     current_minutes = now.hour * 60 + now.minute
 
     closest_slot = None
@@ -193,12 +195,9 @@ def get_rss_urls_for_now():
         print(f"📡 {closest_slot} સ્લોટ (નજીકનો) ચેક થઈ રહ્યો છે...")
         return RSS_SCHEDULE[closest_slot]
 
-    # જો કોઈ સ્લોટ ના મળે, તો બધા ફીડ ચેક કરો
-    print("📡 બધા RSS ફીડ ચેક થઈ રહ્યા છે...")
-    all_urls = []
-    for urls in RSS_SCHEDULE.values():
-        all_urls.extend(urls)
-    return list(set(all_urls))
+    # જો કોઈ સ્લોટ ના મળે, તો ડિફોલ્ટ
+    print("📡 ડિફોલ્ટ સ્લોટ ચેક થઈ રહ્યો છે...")
+    return RSS_SCHEDULE["12:30"]
 
 
 def fetch_and_translate_news():
@@ -215,7 +214,8 @@ def fetch_and_translate_news():
         except Exception as e:
             print(f"   └─ ❌ RSS એરર: {e}")
 
-    print(f"\n📊 કુલ {len(all_entries)} ન્યૂઝ મળ્યા (દરેક સ્રોતમાંથી 4)")
+    print(f"\n📊 કુલ {len(all_entries)} ન્યૂઝ મળ્યા")
+
     # ડુપ્લિકેટ દૂર કરો
     seen_links = set()
     unique_entries = []
@@ -231,9 +231,9 @@ def fetch_and_translate_news():
 
     new_news = []
     sent_count = 0
-    max_telegram = 8
+    max_telegram = 5
 
-    for entry in unique_entries[:30]:
+    for entry in unique_entries[:20]:
         title_en = entry.title
         link = entry.link
         summary_en = clean_html(entry.get('summary', entry.get('description', '')))
@@ -243,7 +243,6 @@ def fetch_and_translate_news():
         if link in sent_news:
             continue
 
-        # સ્રોતનું નામ
         source_name = get_source_name(link)
 
         try:
@@ -271,7 +270,7 @@ def fetch_and_translate_news():
         }
         new_news.append(news_item)
 
-        # Telegram પર ફક્ત 8 નવા ન્યૂઝ
+        # Telegram પર ફક્ત 5 નવા ન્યૂઝ
         if sent_count < max_telegram:
             success = send_to_telegram(title_hi, link, summary_hi, source_name)
             if success:
@@ -279,8 +278,8 @@ def fetch_and_translate_news():
                 sent_count += 1
             time.sleep(2)
 
-        # વેબસાઇટ માટે 25 ન્યૂઝ પૂરતા
-        if len(new_news) >= 25:
+        # વેબસાઇટ માટે 15 ન્યૂઝ પૂરતા
+        if len(new_news) >= 15:
             break
 
     # જૂના + નવા ન્યૂઝ (ફક્ત 30 રાખો)
