@@ -7,7 +7,7 @@
     <title>भारत न्यूज़ - शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
     <meta name="description" content="भारत न्यूज़ - शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी में अपडेट्स। हर 2 घंटे में नई खबरें।">
     <meta name="keywords" content="शेयर बाजार, हिंदी न्यूज़, Nifty, Sensex, Business News, Market News">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -33,17 +33,18 @@
             max-width: 900px;
             margin: 0 auto 25px;
             background: linear-gradient(135deg, #16162a, #1e1e3a);
-            padding: 20px 25px;
+            padding: 25px 20px;
             border-radius: 20px;
             box-shadow: 0 0 30px rgba(255, 0, 128, 0.2),
                         0 0 60px rgba(0, 200, 255, 0.15);
             border: 1px solid rgba(255, 255, 255, 0.08);
+            gap: 10px;
         }
         
         .icon-glow-wrap {
             position: relative;
-            width: 120px;
-            height: 120px;
+            width: 170px;
+            height: 170px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -56,7 +57,7 @@
             position: absolute;
             inset: 0;
             border-radius: 50%;
-            padding: 4px;
+            padding: 5px;
             background: conic-gradient(
                 #ff0080, #ff8c00, #ffd700, #00ff88,
                 #00c6ff, #8a2be2, #ff0080
@@ -67,25 +68,31 @@
             -webkit-mask-composite: xor;
                     mask-composite: exclude;
             animation: spin 4s linear infinite;
-            filter: drop-shadow(0 0 12px #ff0080)
-                    drop-shadow(0 0 22px #00c6ff);
+            filter: drop-shadow(0 0 15px #ff0080)
+                    drop-shadow(0 0 25px #00c6ff);
         }
         
         /* વચ્ચેનું icon - તમારો ફોટો */
         .center-icon {
-            width: 60px;
-            height: 60px;
+            width: 95px;
+            height: 95px;
             border-radius: 50%;
             z-index: 3;
             animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 0 20px #ffd700, 0 0 40px #ff0080;
+            box-shadow: 0 0 25px #ffd700, 0 0 50px #ff0080;
             object-fit: cover;
-            border: 2px solid #ffd700;
+            border: 3px solid #ffd700;
         }
         
-        /* ફરતું સુવાક્ય */
+        /* ફરતું સુવાક્ય - મોટું, જાડું, ચમકતું */
+        .rotating-text {
+            position: absolute;
+            inset: 0;
+            animation: spin 18s linear infinite;
+        }
+        .rotating-text svg { width: 100%; height: 100%; }
         .rotating-text text {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 900;
             letter-spacing: 2px;
             fill: #ffd700;
@@ -93,28 +100,20 @@
                     drop-shadow(0 0 15px #ffd700);
             transition: fill 0.5s ease, filter 0.5s ease;
         }
-        .rotating-text svg { width: 100%; height: 100%; }
-        .rotating-text text {
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-            fill: #ffd700;
-            filter: drop-shadow(0 0 5px #ffd700);
-            transition: fill 0.5s ease, filter 0.5s ease;
-        }
         .rotating-text.right text {
             fill: #00e0ff;
-            filter: drop-shadow(0 0 5px #00e0ff);
+            filter: drop-shadow(0 0 8px #00e0ff) 
+                    drop-shadow(0 0 15px #00e0ff);
         }
         
         /* વચ્ચેનું Title */
         .center-title {
             text-align: center;
             flex: 1;
-            padding: 0 15px;
+            padding: 0 10px;
         }
         .center-title h1 {
-            font-size: 34px;
+            font-size: 36px;
             font-weight: 900;
             margin: 0;
             background: linear-gradient(90deg, #ffd700, #ff0080, #00c6ff, #ffd700);
@@ -126,8 +125,8 @@
             letter-spacing: 2px;
         }
         .center-title p {
-            margin: 6px 0 0;
-            font-size: 13px;
+            margin: 8px 0 0;
+            font-size: 14px;
             color: #b0b0d0;
             letter-spacing: 1px;
         }
@@ -137,7 +136,7 @@
         }
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50%      { transform: scale(1.12); }
+            50%      { transform: scale(1.1); }
         }
         @keyframes shine {
             to { background-position: 300% 0; }
@@ -357,10 +356,11 @@
         }
         
         @media (max-width: 600px) {
-            .header-section { flex-direction: column; gap: 15px; padding: 20px 15px; }
-            .icon-glow-wrap { width: 100px; height: 100px; }
-            .center-icon { width: 50px; height: 50px; }
-            .center-title h1 { font-size: 26px; }
+            .header-section { flex-direction: column; gap: 20px; padding: 20px 15px; }
+            .icon-glow-wrap { width: 140px; height: 140px; }
+            .center-icon { width: 80px; height: 80px; }
+            .rotating-text text { font-size: 14px; letter-spacing: 1.5px; }
+            .center-title h1 { font-size: 28px; }
             .center-title p { font-size: 12px; }
             .news-title { font-size: 16px; }
             .news-summary { font-size: 14px; }
@@ -382,7 +382,7 @@
                     <svg viewBox="0 0 200 200">
                         <defs>
                             <path id="pathLeft"
-                                d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                                d="M 100,100 m -82,0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0"/>
                         </defs>
                         <text id="textLeft">
                             <textPath href="#pathLeft" startOffset="0%" id="textPathLeft">
@@ -406,7 +406,7 @@
                     <svg viewBox="0 0 200 200">
                         <defs>
                             <path id="pathRight"
-                                d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                                d="M 100,100 m -82,0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0"/>
                         </defs>
                         <text id="textRight">
                             <textPath href="#pathRight" startOffset="0%" id="textPathRight">
@@ -537,7 +537,7 @@
                 const textPathL = document.getElementById("textPathLeft");
                 if (textPathL) textPathL.textContent = tagline.text;
                 textLeft.style.fill = tagline.color;
-                textLeft.style.filter = `drop-shadow(0 0 5px ${tagline.color})`;
+                textLeft.style.filter = `drop-shadow(0 0 8px ${tagline.color}) drop-shadow(0 0 15px ${tagline.color})`;
             }
 
             // જમણી બાજુ (અલગ સુવાક્ય + રંગ)
@@ -545,7 +545,7 @@
                 const textPathR = document.getElementById("textPathRight");
                 if (textPathR) textPathR.textContent = nextTagline.text;
                 textRight.style.fill = nextTagline.color;
-                textRight.style.filter = `drop-shadow(0 0 5px ${nextTagline.color})`;
+                textRight.style.filter = `drop-shadow(0 0 8px ${nextTagline.color}) drop-shadow(0 0 15px ${nextTagline.color})`;
             }
         }, 3000);  // 3 સેકન્ડે બદલાય
     </script>
