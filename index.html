@@ -5,7 +5,7 @@
     <meta name="google-site-verification" content="KrbT-SoFa0ArKD_ZVTAZoJ5a56Qgx6u8xwtlDPLSaTE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>भारत न्यूज़ - शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
-    <meta name="description" content="भारत न्यूज़ - शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी में अपडेट्स। हर 3 घंटे में नई खबरें।">
+    <meta name="description" content="भारत न्यूज़ - शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी में अपडेट्स। हर 2 घंटे में नई खबरें।">
     <meta name="keywords" content="शेयर बाजार, हिंदी न्यूज़, Nifty, Sensex, Business News, Market News">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -21,44 +21,127 @@
         
         .container { max-width: 900px; margin: auto; }
         
-        /* ═══ HEADER ═══ */
-        .header {
-            text-align: center;
-            padding: 30px 20px;
-            margin-bottom: 25px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+        /* ═══════════════════════════════════════ */
+        /* ═══ ANIMATED HEADER - START ═══ */
+        /* ═══════════════════════════════════════ */
         
-        .header h1 {
-            font-size: 32px;
-            background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-        
-        .header p { color: #a0a0a0; font-size: 14px; }
-        
-        .live-badge {
-            display: inline-block;
-            background: #ff4757;
-            color: white;
-            padding: 4px 12px;
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, #16162a, #1e1e3a);
+            padding: 20px 25px;
             border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-top: 10px;
-            animation: pulse 2s infinite;
+            box-shadow: 0 0 30px rgba(255, 0, 128, 0.2),
+                        0 0 60px rgba(0, 200, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
         
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
+        .icon-glow-wrap {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
         }
+        
+        /* ચમકતું રંગબેરંગી ગોળ બોર્ડર */
+        .icon-glow-wrap::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            padding: 4px;
+            background: conic-gradient(
+                #ff0080, #ff8c00, #ffd700, #00ff88,
+                #00c6ff, #8a2be2, #ff0080
+            );
+            -webkit-mask:
+                linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0);
+            -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+            animation: spin 4s linear infinite;
+            filter: drop-shadow(0 0 12px #ff0080)
+                    drop-shadow(0 0 22px #00c6ff);
+        }
+        
+        /* વચ્ચેનું icon - તમારો ફોટો */
+        .center-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            z-index: 3;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 0 20px #ffd700, 0 0 40px #ff0080;
+            object-fit: cover;
+            border: 2px solid #ffd700;
+        }
+        
+        /* ફરતું સુવાક્ય */
+        .rotating-text {
+            position: absolute;
+            inset: 0;
+            animation: spin 14s linear infinite;
+        }
+        .rotating-text svg { width: 100%; height: 100%; }
+        .rotating-text text {
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            fill: #ffd700;
+            filter: drop-shadow(0 0 5px #ffd700);
+            transition: fill 0.5s ease, filter 0.5s ease;
+        }
+        .rotating-text.right text {
+            fill: #00e0ff;
+            filter: drop-shadow(0 0 5px #00e0ff);
+        }
+        
+        /* વચ્ચેનું Title */
+        .center-title {
+            text-align: center;
+            flex: 1;
+            padding: 0 15px;
+        }
+        .center-title h1 {
+            font-size: 34px;
+            font-weight: 900;
+            margin: 0;
+            background: linear-gradient(90deg, #ffd700, #ff0080, #00c6ff, #ffd700);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shine 4s linear infinite;
+            letter-spacing: 2px;
+        }
+        .center-title p {
+            margin: 6px 0 0;
+            font-size: 13px;
+            color: #b0b0d0;
+            letter-spacing: 1px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50%      { transform: scale(1.12); }
+        }
+        @keyframes shine {
+            to { background-position: 300% 0; }
+        }
+        
+        /* ═══════════════════════════════════════ */
+        /* ═══ ANIMATED HEADER - END ═══ */
+        /* ═══════════════════════════════════════ */
         
         /* ═══ SEARCH & CATEGORY ═══ */
         .controls {
@@ -270,7 +353,11 @@
         }
         
         @media (max-width: 600px) {
-            .header h1 { font-size: 24px; }
+            .header-section { flex-direction: column; gap: 15px; padding: 20px 15px; }
+            .icon-glow-wrap { width: 100px; height: 100px; }
+            .center-icon { width: 50px; height: 50px; }
+            .center-title h1 { font-size: 26px; }
+            .center-title p { font-size: 12px; }
             .news-title { font-size: 16px; }
             .news-summary { font-size: 14px; }
             .news-meta { flex-direction: column; align-items: flex-start; }
@@ -280,13 +367,56 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>📈 भारत न्यूज़</h1>
-            <p>शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
-            <span class="live-badge">🔴 LIVE</span>
+        <!-- ═══════════════════════════════════════ -->
+        <!-- ═══ ANIMATED HEADER - START ═══ -->
+        <!-- ═══════════════════════════════════════ -->
+        <div class="header-section">
+
+            <!-- ડાબી બાજુ - ફરતું સુવાક્ય -->
+            <div class="icon-glow-wrap">
+                <div class="rotating-text">
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                            <path id="pathLeft"
+                                d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                        </defs>
+                        <text id="textLeft">
+                            <textPath href="#pathLeft" startOffset="0%" id="textPathLeft">
+                                ★ વિશ્વાસનું નામ, ભારત ન્યૂઝ ★
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <img src="icon.png" alt="icon" class="center-icon">
+            </div>
+
+            <!-- વચ્ચે - Title -->
+            <div class="center-title">
+                <h1>ભારત ન્યૂઝ</h1>
+                <p>શેર બજાર અને બિઝનેસની તાજી હિન્દી અપડેટ્સ</p>
+            </div>
+
+            <!-- જમણી બાજુ - ફરતું સુવાક્ય -->
+            <div class="icon-glow-wrap">
+                <div class="rotating-text right">
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                            <path id="pathRight"
+                                d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                        </defs>
+                        <text id="textRight">
+                            <textPath href="#pathRight" startOffset="0%" id="textPathRight">
+                                ● દેશની ધડકન, ભારત ન્યૂઝ ●
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <img src="icon.png" alt="icon" class="center-icon">
+            </div>
+
         </div>
-        
+        <!-- ═══ ANIMATED HEADER - END ═══ -->
+
         <!-- Search & Category -->
         <div class="controls">
             <input type="text" id="searchBox" class="search-box" placeholder="🔍 न्यूज़ खोजें...">
@@ -294,13 +424,15 @@
             <button class="category-btn" onclick="filterNews('Moneycontrol', this)">Moneycontrol</button>
             <button class="category-btn" onclick="filterNews('Economic Times', this)">ET</button>
             <button class="category-btn" onclick="filterNews('Livemint', this)">Livemint</button>
+            <button class="category-btn" onclick="filterNews('Hindu Business Line', this)">Hindu BL</button>
+            <button class="category-btn" onclick="filterNews('Zee Business', this)">Zee</button>
         </div>
-        
+
         <!-- News Container -->
         <div id="news-container">
             <div class="loading">⏳ न्यूज़ लोड हो रहे हैं...</div>
         </div>
-        
+
         <!-- Load More -->
         <button class="load-more" id="loadMore" onclick="loadMore()" style="display:none;">और न्यूज़ देखें ⬇️</button>
 
@@ -314,19 +446,9 @@
             max-width: 600px;
             box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
         ">
-            <h2 style="
-                color: white;
-                font-size: 22px;
-                margin-bottom: 12px;
-            ">📱 WhatsApp Channel</h2>
-            
-            <p style="
-                color: rgba(255,255,255,0.9);
-                font-size: 14px;
-                margin-bottom: 20px;
-            ">દર 3 કલાકે નવા ન્યૂઝ સીધા WhatsApp પર!</p>
-            
-            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" 
+            <h2 style="color: white; font-size: 22px; margin-bottom: 12px;">📱 WhatsApp Channel</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin-bottom: 20px;">हर 2 घंटे में नए न्यूज़ सीधे WhatsApp पर!</p>
+            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V"
                target="_blank"
                style="
                    display: inline-block;
@@ -338,8 +460,7 @@
                    font-size: 16px;
                    font-weight: bold;
                    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-               "
-            >
+               ">
                 📱 Join WhatsApp Channel
             </a>
         </div>
@@ -354,19 +475,9 @@
             max-width: 600px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         ">
-            <h2 style="
-                color: #feca57;
-                font-size: 22px;
-                margin-bottom: 12px;
-            ">📚 Dravy's English Learning App</h2>
-            
-            <p style="
-                color: #a0a0a0;
-                font-size: 14px;
-                margin-bottom: 20px;
-            ">Std 7 English Learning App • 100% Free • No Ads</p>
-            
-            <a href="https://github.com/mybharatnews/kids-activity-app/releases/latest" 
+            <h2 style="color: #feca57; font-size: 22px; margin-bottom: 12px;">📚 Dravy's English Learning App</h2>
+            <p style="color: #a0a0a0; font-size: 14px; margin-bottom: 20px;">Std 7 English Learning App • 100% Free • No Ads</p>
+            <a href="https://github.com/mybharatnews/kids-activity-app/releases/latest"
                target="_blank"
                style="
                    display: inline-block;
@@ -378,21 +489,15 @@
                    font-size: 16px;
                    font-weight: bold;
                    box-shadow: 0 8px 25px rgba(0,119,182,0.5);
-               "
-            >
+               ">
                 📥 Download for Windows
             </a>
-            
-            <p style="
-                color: #666;
-                font-size: 12px;
-                margin-top: 15px;
-            ">Windows 10/11 • 109 MB • Free Forever</p>
+            <p style="color: #666; font-size: 12px; margin-top: 15px;">Windows 10/11 • 73 MB • Free Forever</p>
         </div>
-        
+
         <!-- Footer -->
         <div class="footer">
-            © 2026 भारत न्यूज़ | स्रोत: Moneycontrol, Economic Times, Livemint<br>
+            © 2026 भारत न्यूज़ | स्रोत: Moneycontrol, Economic Times, Livemint, Hindu Business Line, Zee Business<br>
             <a href="about.html">અમારા વિશે</a> | 
             <a href="privacy.html">ગોપનીયતા નીતિ</a> | 
             <a href="contact.html">સંપર્ક કરો</a>
@@ -401,11 +506,53 @@
         </div>
     </div>
 
+    <!-- ═══════════════════════════════════════ -->
+    <!-- ═══ ફરતું સુવાક્ય - JavaScript ═══ -->
+    <!-- ═══════════════════════════════════════ -->
+    <script>
+        // સુવાક્યો + રંગ
+        const taglines = [
+            { text: "★ વિશ્વાસનું નામ, ભારત ન્યૂઝ ★", color: "#ffd700" },
+            { text: "● દેશની ધડકન, ભારત ન્યૂઝ ●", color: "#00e0ff" },
+            { text: "◆ ખબર નહીં, વિશ્વાસ ◆", color: "#ff0080" },
+            { text: "✦ સાચા સમાચાર, સાચી દિશા ✦", color: "#00ff88" },
+            { text: "🔥 દેશની આવાજ, ભારત ન્યૂઝ 🔥", color: "#ff8c00" }
+        ];
+
+        let currentTagline = 0;
+        const textLeft = document.getElementById("textLeft");
+        const textRight = document.getElementById("textRight");
+
+        setInterval(() => {
+            currentTagline = (currentTagline + 1) % taglines.length;
+            const tagline = taglines[currentTagline];
+            const nextTagline = taglines[(currentTagline + 1) % taglines.length];
+
+            // ડાબી બાજુ
+            if (textLeft) {
+                const textPathL = document.getElementById("textPathLeft");
+                if (textPathL) textPathL.textContent = tagline.text;
+                textLeft.style.fill = tagline.color;
+                textLeft.style.filter = `drop-shadow(0 0 5px ${tagline.color})`;
+            }
+
+            // જમણી બાજુ (અલગ સુવાક્ય + રંગ)
+            if (textRight) {
+                const textPathR = document.getElementById("textPathRight");
+                if (textPathR) textPathR.textContent = nextTagline.text;
+                textRight.style.fill = nextTagline.color;
+                textRight.style.filter = `drop-shadow(0 0 5px ${nextTagline.color})`;
+            }
+        }, 3000);  // 3 સેકન્ડે બદલાય
+    </script>
+
+    <!-- ═══ News Script ═══ -->
     <script>
         let allNews = [];
         let filteredNews = [];
         let displayCount = 10;
-        
+
+        // News Load
         fetch('news_data.json?v=' + new Date().getTime())
             .then(response => response.json())
             .then(data => {
@@ -418,28 +565,29 @@
                     '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.</div>';
                 console.error('Error:', error);
             });
-        
+
+        // News Display
         function displayNews() {
             const container = document.getElementById('news-container');
             container.innerHTML = '';
-            
+
             if (filteredNews.length === 0) {
                 container.innerHTML = '<div class="loading">હાલમાં કોઈ ન્યૂઝ ઉપલબ્ધ નથી.</div>';
                 return;
             }
-            
+
             const newsToShow = filteredNews.slice(0, displayCount);
-            
+
             newsToShow.forEach(news => {
                 const card = document.createElement('div');
                 card.className = 'news-card';
-                
+
                 const shareTitle = encodeURIComponent(news.title);
                 const shareUrl = encodeURIComponent(news.link);
-                
+
                 const summaryHTML = news.summary ? 
                     `<p class="news-summary">${news.summary}...</p>` : '';
-                
+
                 card.innerHTML = `
                     <div class="news-title">${news.title}</div>
                     ${summaryHTML}
@@ -457,7 +605,7 @@
                 `;
                 container.appendChild(card);
             });
-            
+
             const loadMoreBtn = document.getElementById('loadMore');
             if (displayCount < filteredNews.length) {
                 loadMoreBtn.style.display = 'block';
@@ -465,12 +613,12 @@
                 loadMoreBtn.style.display = 'none';
             }
         }
-        
+
         function loadMore() {
             displayCount += 10;
             displayNews();
         }
-        
+
         document.getElementById('searchBox').addEventListener('input', function(e) {
             const query = e.target.value.toLowerCase();
             if (query === '') {
@@ -484,11 +632,11 @@
             displayCount = 10;
             displayNews();
         });
-        
+
         function filterNews(source, btn) {
             document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
+
             if (source === 'all') {
                 filteredNews = allNews;
             } else {
