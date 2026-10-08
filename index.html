@@ -84,10 +84,14 @@
         }
         
         /* ફરતું સુવાક્ય */
-        .rotating-text {
-            position: absolute;
-            inset: 0;
-            animation: spin 14s linear infinite;
+        .rotating-text text {
+            font-size: 16px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            fill: #ffd700;
+            filter: drop-shadow(0 0 8px #ffd700) 
+                    drop-shadow(0 0 15px #ffd700);
+            transition: fill 0.5s ease, filter 0.5s ease;
         }
         .rotating-text svg { width: 100%; height: 100%; }
         .rotating-text text {
