@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import email.utils
 from datetime import datetime
 
 # ફોલ્ડર બનાવો
@@ -22,6 +23,15 @@ def clean_filename(text, index=0):
         text = f"market-news-{text}"
     
     return text[:60].lower()
+
+def escape_xml(text):
+    """XML માટે special characters escape કરો"""
+    return (str(text)
+            .replace('&', '&amp;')
+            .replace('<', '&lt;')
+            .replace('>', '&gt;')
+            .replace('"', '&quot;')
+            .replace("'", '&apos;'))
 
 def generate_article_page(news_item, index):
     """દરેક ન્યૂઝ માટે અલગ પેજ બનાવો"""
@@ -183,7 +193,6 @@ def main():
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
     for url in sitemap_urls:
-        # Priority નક્કી કરો
         if url.endswith('/bharatnews/'):
             priority = '1.0'
             changefreq = 'hourly'
@@ -210,7 +219,52 @@ def main():
         f.write(sitemap)
     
     print(f"\n📄 sitemap.xml બન્યું ({len(sitemap_urls)} URLs)")
-    print(f"✅ દરેક URL માં lastmod, changefreq, priority ઉમેર્યા")
+    
+    # ═══════════════════════════════════════
+    # rss.xml બનાવો (ઓટોમેટિક)
+    # ═══════════════════════════════════════
+    now = email.utils.formatdate(localtime=True)
+    
+    rss_items = ""
+    for i, news in enumerate(news_list[:30]):
+        title = escape_xml(news.get('title', ''))
+        summary = escape_xml(news.get('summary', ''))
+        source = escape_xml(news.get('source', ''))
+        link_original = news.get('link', '')
+        
+        filename = generated[i] if i < len(generated) else ''
+        page_url = f"https://mybharatnews.github.io/bharatnews/news/{filename}"
+        
+        rss_items += f"""    <item>
+      <title>{title}</title>
+      <link>{page_url}</link>
+      <description>{summary[:300]}</description>
+      <pubDate>{now}</pubDate>
+      <guid>{page_url}</guid>
+      <source url="{escape_xml(link_original)}">{source}</source>
+    </item>
+"""
+    
+    rss = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    rss += '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+    rss += '  <channel>\n'
+    rss += '    <title>ભારત ન્યૂઝ - શેર બજારની તાજી હિન્દી અપડેટ્સ</title>\n'
+    rss += '    <link>https://mybharatnews.github.io/bharatnews/</link>\n'
+    rss += '    <description>શેર બજાર, બિઝનેસ અને અર્થતંત્રની તાજી હિન્દી અપડેટ્સ</description>\n'
+    rss += '    <language>hi-in</language>\n'
+    rss += '    <copyright>© 2026 ભારત ન્યૂઝ</copyright>\n'
+    rss += f'    <lastBuildDate>{now}</lastBuildDate>\n'
+    rss += f'    <pubDate>{now}</pubDate>\n'
+    rss += '    <ttl>60</ttl>\n'
+    rss += '    <atom:link href="https://mybharatnews.github.io/bharatnews/rss.xml" rel="self" type="application/rss+xml"/>\n'
+    rss += rss_items
+    rss += '  </channel>\n'
+    rss += '</rss>'
+    
+    with open('rss.xml', 'w', encoding='utf-8') as f:
+        f.write(rss)
+    
+    print(f"\n📡 rss.xml બન્યું ({len(generated)} items)")
 
 if __name__ == "__main__":
     main()
