@@ -2,20 +2,17 @@ name: Auto Market News Update
 
 on:
   schedule:
-    # દર 2 કલાકે (IST)
+    # દર 3 કલાકે (IST)
     # IST = UTC + 5:30
-    - cron: '0 19 * * *'   # 00:30 IST
-    - cron: '0 21 * * *'   # 02:30 IST
-    - cron: '0 23 * * *'   # 04:30 IST
-    - cron: '0 1 * * *'    # 06:30 IST
-    - cron: '0 3 * * *'    # 08:30 IST
-    - cron: '0 5 * * *'    # 10:30 IST
-    - cron: '0 7 * * *'    # 12:30 IST
-    - cron: '0 9 * * *'    # 14:30 IST
-    - cron: '0 11 * * *'   # 16:30 IST
-    - cron: '0 13 * * *'   # 18:30 IST
-    - cron: '0 15 * * *'   # 20:30 IST
-    - cron: '0 17 * * *'   # 22:30 IST
+    # એટલે UTC માંથી 5:30 કલાક બાદ કરો
+    - cron: '30 18 * * *'   # 00:00 IST
+    - cron: '30 21 * * *'   # 03:00 IST
+    - cron: '30 0 * * *'    # 06:00 IST
+    - cron: '30 3 * * *'    # 09:00 IST
+    - cron: '30 6 * * *'    # 12:00 IST
+    - cron: '30 9 * * *'    # 15:00 IST
+    - cron: '30 12 * * *'   # 18:00 IST
+    - cron: '30 15 * * *'   # 21:00 IST
   workflow_dispatch:
 
 jobs:
@@ -49,6 +46,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add news_data.json sent_news.json
-          git add news/ news_index.json sitemap.xml 2>/dev/null || true
-          git commit -m "Auto-update news and pages" || exit 0
+          git add news/ news_index.json sitemap.xml rss.xml 2>/dev/null || true
+          git commit -m "Auto-update news, pages, sitemap and RSS" || exit 0
           git push
