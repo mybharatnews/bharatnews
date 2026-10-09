@@ -8,19 +8,14 @@ os.makedirs('news', exist_ok=True)
 
 def clean_filename(text, index=0):
     """SEO ફ્રેન્ડલી ફાઈલ નામ બનાવો"""
-    # હિન્દી અક્ષરો દૂર કરો
     text = re.sub(r'[^\x00-\x7F]+', '', text)
-    # ખાસ અક્ષરો દૂર કરો
     text = re.sub(r'[^\w\s-]', '', text)
-    # સ્પેસને ડેશમાં બદલો
     text = re.sub(r'\s+', '-', text)
     text = re.sub(r'-+', '-', text)
     text = text.strip('-')
     
-    # આજની તારીખ
     today = datetime.now().strftime('%Y%m%d')
     
-    # જો નામ ટૂંકું હોય, તો index + date વાપરો
     if not text or len(text) < 10:
         text = f"market-news-{index}-{today}"
     else:
@@ -36,6 +31,10 @@ def generate_article_page(news_item, index):
     link = news_item.get('link', '')
     source = news_item.get('source', '')
     date = news_item.get('date', '')
+    
+    # પહેલા filename બનાવો
+    filename = clean_filename(title, index) + '.html'
+    page_url = f"https://mybharatnews.github.io/bharatnews/news/{filename}"
     
     full_article = f"""
     <p><strong>{summary}</strong></p>
@@ -58,8 +57,6 @@ def generate_article_page(news_item, index):
     <p>અમારી વેબસાઇટ ભારતીય શેર બજાર, બિઝનેસ અને અર્થતંત્ર સંબંધિત તાજા સમાચાર પ્રદાન કરે છે. અમે Moneycontrol, Economic Times, Livemint જેવા વિશ્વસનીય સ્રોતોમાંથી સમાચાર લાવીએ છીએ અને તેને સરળ હિન્દીમાં રજૂ કરીએ છીએ.</p>
     """
     
-    filename = clean_filename(title, index) + '.html'
-    
     html_content = f"""<!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -67,6 +64,22 @@ def generate_article_page(news_item, index):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - भारत न्यूज़</title>
     <meta name="description" content="{summary[:150]}">
+    <meta name="keywords" content="share market, stock market, hindi news, business, sensex, nifty">
+    <meta name="author" content="भारत न्यूज़">
+    <link rel="canonical" href="{page_url}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{title}">
+    <meta property="og:description" content="{summary[:150]}">
+    <meta property="og:url" content="{page_url}">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="भारत न्यूज़">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:description" content="{summary[:150]}">
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
@@ -113,7 +126,7 @@ def generate_article_page(news_item, index):
         {full_article}
         
         <div class="source-box">
-            <strong>मूल स्रोत:</strong> <a href="{link}" target="_blank">पूरी न्यूज़ यहाँ पढ़ें →</a>
+            <strong>मूल स्रोत:</strong> <a href="{link}" target="_blank" rel="noopener">पूरी न्यूज़ यहाँ पढ़ें →</a>
         </div>
         
         <a href="../index.html" class="back-btn">← होम पेज पर जाएं</a>
@@ -164,14 +177,31 @@ def main():
     for filename in generated:
         sitemap_urls.append(f"https://mybharatnews.github.io/bharatnews/news/{filename}")
     
+    today = datetime.now().strftime('%Y-%m-%d')
+    
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
     for url in sitemap_urls:
+        # Priority નક્કી કરો
+        if url.endswith('/bharatnews/'):
+            priority = '1.0'
+            changefreq = 'hourly'
+        elif 'about' in url or 'contact' in url:
+            priority = '0.7'
+            changefreq = 'weekly'
+        elif 'privacy' in url:
+            priority = '0.5'
+            changefreq = 'monthly'
+        else:
+            priority = '0.8'
+            changefreq = 'daily'
+        
         sitemap += f'    <url>\n'
         sitemap += f'        <loc>{url}</loc>\n'
-        sitemap += f'        <changefreq>daily</changefreq>\n'
-        sitemap += f'        <priority>0.8</priority>\n'
+        sitemap += f'        <lastmod>{today}</lastmod>\n'
+        sitemap += f'        <changefreq>{changefreq}</changefreq>\n'
+        sitemap += f'        <priority>{priority}</priority>\n'
         sitemap += f'    </url>\n'
     
     sitemap += '</urlset>'
@@ -180,6 +210,7 @@ def main():
         f.write(sitemap)
     
     print(f"\n📄 sitemap.xml બન્યું ({len(sitemap_urls)} URLs)")
+    print(f"✅ દરેક URL માં lastmod, changefreq, priority ઉમેર્યા")
 
 if __name__ == "__main__":
     main()
