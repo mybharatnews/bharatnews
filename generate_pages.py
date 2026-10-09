@@ -42,7 +42,6 @@ def generate_article_page(news_item, index):
     source = news_item.get('source', '')
     date = news_item.get('date', '')
     
-    # પહેલા filename બનાવો
     filename = clean_filename(title, index) + '.html'
     page_url = f"https://mybharatnews.github.io/bharatnews/news/{filename}"
     
@@ -77,68 +76,34 @@ def generate_article_page(news_item, index):
     <meta name="keywords" content="share market, stock market, hindi news, business, sensex, nifty">
     <meta name="author" content="भारत न्यूज़">
     <link rel="canonical" href="{page_url}">
-
-    <!-- Open Graph -->
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{summary[:150]}">
     <meta property="og:url" content="{page_url}">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="भारत न्यूज़">
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{summary[:150]}">
-
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ 
-            font-family: 'Noto Sans Devanagari', Arial, sans-serif; 
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #e0e0e0;
-            padding: 30px 20px;
-            line-height: 1.8;
-        }}
+        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 30px 20px; line-height: 1.8; }}
         .container {{ max-width: 800px; margin: auto; background: rgba(255,255,255,0.07); padding: 30px; border-radius: 15px; }}
         h1 {{ color: #feca57; font-size: 26px; margin-bottom: 20px; line-height: 1.5; }}
         h2 {{ color: #ff6b6b; margin-top: 25px; margin-bottom: 15px; font-size: 20px; }}
         p {{ color: #b0b0b0; margin-bottom: 15px; font-size: 16px; }}
         a {{ color: #48dbfb; }}
-        .source-box {{
-            background: rgba(255,255,255,0.05);
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border-left: 4px solid #feca57;
-        }}
-        .back-btn {{
-            display: inline-block;
-            background: linear-gradient(90deg, #ff6b6b, #ee5a6f);
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 20px;
-            font-weight: 600;
-        }}
+        .source-box {{ background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #feca57; }}
+        .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
         .back-btn:hover {{ background: linear-gradient(90deg, #feca57, #ff9f43); }}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>{title}</h1>
-        
-        <div class="source-box">
-            📰 स्रोत: {source} | 🕐 {date}
-        </div>
-        
+        <div class="source-box">📰 स्रोत: {source} | 🕐 {date}</div>
         {full_article}
-        
-        <div class="source-box">
-            <strong>मूल स्रोत:</strong> <a href="{link}" target="_blank" rel="noopener">पूरी न्यूज़ यहाँ पढ़ें →</a>
-        </div>
-        
+        <div class="source-box"><strong>मूल स्रोत:</strong> <a href="{link}" target="_blank" rel="noopener">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
         <a href="../index.html" class="back-btn">← होम पेज पर जाएं</a>
     </div>
 </body>
@@ -170,20 +135,16 @@ def main():
     
     print(f"\n🎉 કુલ {len(generated)} પેજ બન્યા!")
     
-    # news_index.json બનાવો
     with open('news_index.json', 'w', encoding='utf-8') as f:
         json.dump(generated, f, ensure_ascii=False, indent=4)
     
-    # ═══════════════════════════════════════
-    # sitemap.xml બનાવો (ઓટોમેટિક)
-    # ═══════════════════════════════════════
+    # ═══ sitemap.xml ═══
     sitemap_urls = [
         "https://mybharatnews.github.io/bharatnews/",
         "https://mybharatnews.github.io/bharatnews/about.html",
         "https://mybharatnews.github.io/bharatnews/contact.html",
         "https://mybharatnews.github.io/bharatnews/privacy.html",
     ]
-    
     for filename in generated:
         sitemap_urls.append(f"https://mybharatnews.github.io/bharatnews/news/{filename}")
     
@@ -194,17 +155,13 @@ def main():
     
     for url in sitemap_urls:
         if url.endswith('/bharatnews/'):
-            priority = '1.0'
-            changefreq = 'hourly'
+            priority, changefreq = '1.0', 'hourly'
         elif 'about' in url or 'contact' in url:
-            priority = '0.7'
-            changefreq = 'weekly'
+            priority, changefreq = '0.7', 'weekly'
         elif 'privacy' in url:
-            priority = '0.5'
-            changefreq = 'monthly'
+            priority, changefreq = '0.5', 'monthly'
         else:
-            priority = '0.8'
-            changefreq = 'daily'
+            priority, changefreq = '0.8', 'daily'
         
         sitemap += f'    <url>\n'
         sitemap += f'        <loc>{url}</loc>\n'
@@ -220,9 +177,7 @@ def main():
     
     print(f"\n📄 sitemap.xml બન્યું ({len(sitemap_urls)} URLs)")
     
-    # ═══════════════════════════════════════
-    # rss.xml બનાવો (ઓટોમેટિક)
-    # ═══════════════════════════════════════
+    # ═══ rss.xml ═══
     now = email.utils.formatdate(localtime=True)
     
     rss_items = ""
