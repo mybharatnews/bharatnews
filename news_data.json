@@ -1,5 +1,26 @@
 [
     {
+        "title": "‘हम एक स्वाभिमानी देश हैं ': रूसी तेल और अमेरिकी टैरिफ खतरे पर पीयूष गोयल | ETSA 2026",
+        "summary": "",
+        "link": "https://economictimes.indiatimes.com/tech/startups/we-are-a-self-respecting-country-piyush-goyal-on-russian-oil-and-us-tariff-threat-etsa-2026/videoshow/134847267.cms",
+        "source": "Economic Times",
+        "date": "10-10-2026 10:05"
+    },
+    {
+        "title": "हर एच -1बी वीजा भारत के लिए एक बड़ी जीत है: पीयूष गोयल | ईटी स्टार्टअप अवार्ड्स 2026",
+        "summary": "",
+        "link": "https://economictimes.indiatimes.com/tech/startups/every-h-1b-visa-not-granted-is-a-big-win-for-india-piyush-goyal-et-startup-awards-2026/videoshow/134838281.cms",
+        "source": "Economic Times",
+        "date": "10-10-2026 10:05"
+    },
+    {
+        "title": "सीतारमण की 'पठारी‘ टिप्पणी पर पीयूष गोयल | ETSA 2026",
+        "summary": "",
+        "link": "https://economictimes.indiatimes.com/tech/startups/us-trade-deal-on-a-steady-keel-piyush-goyal-on-sitharamans-plateaued-remark-etsa-2026/videoshow/134838901.cms",
+        "source": "Economic Times",
+        "date": "10-10-2026 10:05"
+    },
+    {
         "title": "'प्रधान मंत्री' के तंज के बाद, एलोन मस्क अंबानी के खिलाफ हमले पर दोगुना हो गए - एक्स पर उनकी नवीनतम पोस्ट ने क्या कहा",
         "summary": "एलोन मस्क ने स्टारलिंक के भारत लॉन्च में देरी को लेकर अंबानी की अपनी आलोचना को दोहराया, राजनीतिक संबंधों का आरोप लगाते हुए पुरानी रिपोर्ट साझा की। ज्योतिरादित्य सिंधिया ने एकाधिकार के दावों को खारिज करते हुए कहा कि लाइसेंस प्राप्त ऑपरेटर स्पेक्ट्रम असाइन होने और सुरक्षा शर्तों को पूरा करने के बाद सेवाएं शुरू कर सकते हैं।",
         "link": "https://www.livemint.com/companies/people/after-prime-minister-jibe-elon-musk-doubles-down-on-attack-against-ambani-what-his-latest-post-on-x-said-11791606648793.html",
@@ -187,26 +208,5 @@
         "link": "https://www.livemint.com/industry/banking/rbi-tightens-daily-cash-reserve-rules-as-banking-system-liquidity-stays-elevated-11791553952830.html",
         "source": "Livemint",
         "date": "09-10-2026 16:03"
-    },
-    {
-        "title": "मुंबई एयरलाइंस 13 अक्टूबर के एजेंडे पर टी 1 सुरक्षा रिपोर्ट और टी 2 विस्तार स्पष्टता चाहती है",
-        "summary": "एयरलाइन ऑपरेटरों की समिति ने MIAL को T1 के संरचनात्मक जोखिमों और नवी मुंबई में 265 साप्ताहिक अंतरराष्ट्रीय उड़ानों को स्थानांतरित करने के प्रस्ताव से पहले विचार किए गए विकल्पों के पीछे तकनीकी साक्ष्य साझा करने के लिए कहा है।",
-        "link": "https://www.livemint.com/industry/mumbai-airlines-want-t1-safety-reports-and-t2-expansion-clarity-on-13-october-agenda-11791554835612.html",
-        "source": "Livemint",
-        "date": "09-10-2026 16:03"
-    },
-    {
-        "title": "अनुष्का शर्मा का  ₹ 44.1 करोड़ का मुंबई प्रॉपर्टी डील: एक ही मंजिल पर 3 अपार्टमेंट",
-        "summary": "अभिनेत्री अनुष्का शर्मा और उनके परिवार ने मुंबई के वर्सोवा में गोदरेज स्काईशोर में संयुक्त रूप से ₹ 44.1 करोड़ के तीन अपार्टमेंट खरीदे हैं। लेनदेन में अनुष्का और उसके माता - पिता द्वारा व्यक्तिगत खरीदारी, साथ ही अनुष्का और क्रिकेटर विराट कोहली द्वारा संयुक्त अपार्टमेंट खरीदना शामिल है।",
-        "link": "https://www.livemint.com/industry/real-estate/anushka-sharmas-44-1-crore-mumbai-property-deal-3-apartments-on-the-same-floor-11791532626003.html",
-        "source": "Livemint",
-        "date": "09-10-2026 16:04"
-    },
-    {
-        "title": "वित्त मंत्रालय ने धीमी बैंक ऋण प्रसंस्करण, ₹ 75,000 करोड़ की रूफटॉप सौर योजना में कम निजी ऋणदाता भागीदारी को हरी झंडी दिखाई",
-        "summary": "सरकार इस योजना के लिए वित्तपोषण में तेजी लाना चाहती है ताकि घरों को बिजली के पारंपरिक स्रोतों पर कम निर्भर बनाया जा सके।",
-        "link": "https://www.livemint.com/industry/energy/finance-ministry-banks-loan-processing-rooftop-solar-11791516026104.html",
-        "source": "Livemint",
-        "date": "09-10-2026 16:04"
     }
 ]
