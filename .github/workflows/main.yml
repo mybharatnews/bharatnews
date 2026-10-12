@@ -53,19 +53,20 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add news_data.json sent_news.json 2>/dev/null || true
-          git add news/ news_index.json sitemap.xml rss.xml 2>/dev/null || true
+          # ✅ git add -A = new + modified + DELETED files
+          git add -A news_data.json sent_news.json 2>/dev/null || true
+          git add -A news/ news_index.json sitemap.xml rss.xml 2>/dev/null || true
           git commit -m "Auto-update news, pages, sitemap and RSS" || exit 0
           git pull --rebase origin main || true
           git push
           echo "pushed=true" >> $GITHUB_OUTPUT
 
-      # 👇 નવું: GitHub Pages deploy થવા માટે wait કરો
+      # GitHub Pages deploy થવા માટે wait કરો
       - name: Wait for GitHub Pages deployment
         if: steps.commit.outputs.pushed == 'true'
         run: sleep 60
 
-      # 👇 નવું: IndexNow ને બધા URLs ping કરો (Bing, Yandex, Seznam)
+      # IndexNow ને બધા URLs ping કરો (Bing, Yandex, Seznam)
       - name: Submit URLs to IndexNow
         if: steps.commit.outputs.pushed == 'true'
         env:
