@@ -13,21 +13,12 @@ SITE_URL = "https://mybharatnews.github.io/bharatnews"
 SITE_LANG = "hi"
 
 def clean_filename(text, index=0):
-    """SEO ફ્રેન્ડલી ફાઈલ નામ બનાવો"""
-    text = re.sub(r'[^\x00-\x7F]+', '', text)
-    text = re.sub(r'[^\w\s-]', '', text)
-    text = re.sub(r'\s+', '-', text)
-    text = re.sub(r'-+', '-', text)
-    text = text.strip('-')
-    
+    """
+    ✅ હંમેશા NUMBERED filename બનાવો
+    Duplicate URLs ટાળવા માટે — title-based નહીં
+    """
     today = datetime.now().strftime('%Y%m%d')
-    
-    if not text or len(text) < 10:
-        text = f"market-news-{index}-{today}"
-    else:
-        text = f"market-news-{text}"
-    
-    return text[:60].lower()
+    return f"market-news-{index}-{today}"
 
 def escape_xml(text):
     """XML માટે special characters escape કરો"""
@@ -49,7 +40,6 @@ def escape_html(text):
 def parse_date_to_iso(date_str):
     """Date string ને ISO format માં બદલો (schema.org માટે)"""
     try:
-        # Try different formats
         for fmt in ['%d-%m-%Y %H:%M', '%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M']:
             try:
                 dt = datetime.strptime(date_str.strip(), fmt)
@@ -62,7 +52,6 @@ def parse_date_to_iso(date_str):
 
 def generate_structured_data(title, summary, page_url, date_iso, source):
     """NewsArticle Structured Data (JSON-LD) બનાવો"""
-    # JSON escape
     title_esc = title.replace('"', '\\"').replace('\\', '\\\\')
     summary_esc = summary[:160].replace('"', '\\"').replace('\\', '\\\\')
     source_esc = source.replace('"', '\\"').replace('\\', '\\\\')
@@ -81,11 +70,7 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
   }},
   "publisher": {{
     "@type": "Organization",
-    "name": "{SITE_NAME}",
-    "logo": {{
-      "@type": "ImageObject",
-      "url": "{SITE_URL}/icon.png"
-    }}
+    "name": "{SITE_NAME}"
   }},
   "mainEntityOfPage": {{
     "@type": "WebPage",
@@ -106,7 +91,6 @@ def generate_related_news(current_index, all_news, current_filename):
     related = []
     total = len(all_news)
     
-    # Next 3 + Previous 2 (circular)
     offsets = [1, 2, 3, -1, -2]
     
     for offset in offsets:
@@ -143,20 +127,16 @@ def generate_article_page(news_item, index, all_news):
     source = news_item.get('source', '')
     date = news_item.get('date', '')
     
+    # ✅ હંમેશા numbered filename
     filename = clean_filename(title, index) + '.html'
     page_url = f"{SITE_URL}/news/{filename}"
     
-    # ISO date for schema
     date_iso = parse_date_to_iso(date)
     
-    # Escape HTML
     title_esc = escape_html(title)
     summary_esc = escape_html(summary[:150])
     
-    # Structured Data
     structured_data = generate_structured_data(title, summary, page_url, date_iso, source)
-    
-    # Related News (Internal Linking)
     related_news = generate_related_news(index, all_news, filename)
     
     full_article = f"""
@@ -192,7 +172,6 @@ def generate_article_page(news_item, index, all_news):
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="{page_url}">
     
-    <!-- Open Graph -->
     <meta property="og:title" content="{title_esc}">
     <meta property="og:description" content="{summary_esc}">
     <meta property="og:url" content="{page_url}">
@@ -200,12 +179,10 @@ def generate_article_page(news_item, index, all_news):
     <meta property="og:site_name" content="{SITE_NAME}">
     <meta property="og:locale" content="hi_IN">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{title_esc}">
     <meta name="twitter:description" content="{summary_esc}">
     
-    <!-- Structured Data (Google News Rich Results) -->
     {structured_data}
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
@@ -222,7 +199,6 @@ def generate_article_page(news_item, index, all_news):
         .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
         .back-btn:hover {{ background: linear-gradient(90deg, #feca57, #ff9f43); }}
         
-        /* Related News Styles */
         .related-news {{ margin-top: 30px; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
         .related-news h3 {{ margin-top: 0; }}
         .related-news ul {{ list-style: none; padding-left: 0; }}
@@ -260,6 +236,14 @@ def main():
         news_list = json.load(f)
     
     print(f"📰 કુલ {len(news_list)} ન્યૂઝ મળ્યા")
+    
+    # ✅ જૂની બધી HTML files સાફ કરો (duplicate ટાળવા)
+    if os.path.exists('news'):
+        import glob
+        old_files = glob.glob('news/*.html')
+        for f in old_files:
+            os.remove(f)
+        print(f"🧹 {len(old_files)} જૂની files સાફ કરી")
     
     generated = []
     for i, news in enumerate(news_list[:30]):
