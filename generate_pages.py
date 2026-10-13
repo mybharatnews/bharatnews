@@ -12,6 +12,11 @@ SITE_NAME = "भारत न्यूज़"
 SITE_URL = "https://mybharatnews.github.io/bharatnews"
 SITE_LANG = "hi"
 
+# ═══ Social Links ═══
+WHATSAPP_CHANNEL = "https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V"
+TELEGRAM_CHANNEL = "https://t.me/indianews_official"
+FACEBOOK_PAGE = "https://www.facebook.com/profile.php?id=61595205934642"
+
 def clean_filename(text, index=0):
     """
     ✅ હંમેશા NUMBERED filename બનાવો
@@ -86,6 +91,73 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
 }}
 </script>'''
 
+def generate_share_buttons(page_url, title):
+    """Social Share Buttons બનાવો"""
+    # URL encode for sharing
+    import urllib.parse
+    encoded_url = urllib.parse.quote(page_url)
+    encoded_title = urllib.parse.quote(title[:100])
+    
+    return f'''
+    <div class="share-section">
+        <h3>📤 Share this news</h3>
+        <div class="share-buttons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={encoded_url}" 
+               target="_blank" 
+               rel="noopener"
+               class="share-btn facebook">
+                📘 Facebook
+            </a>
+            <a href="https://api.whatsapp.com/send?text={encoded_title}%20{encoded_url}" 
+               target="_blank" 
+               rel="noopener"
+               class="share-btn whatsapp">
+                💬 WhatsApp
+            </a>
+            <a href="https://t.me/share/url?url={encoded_url}&text={encoded_title}" 
+               target="_blank" 
+               rel="noopener"
+               class="share-btn telegram">
+                📢 Telegram
+            </a>
+            <a href="https://twitter.com/intent/tweet?url={encoded_url}&text={encoded_title}" 
+               target="_blank" 
+               rel="noopener"
+               class="share-btn twitter">
+                🐦 Twitter
+            </a>
+        </div>
+    </div>
+    '''
+
+def generate_social_follow():
+    """Social Follow Buttons બનાવો"""
+    return f'''
+    <div class="social-follow">
+        <h3>📱 Follow us for daily updates</h3>
+        <div class="follow-buttons">
+            <a href="{WHATSAPP_CHANNEL}" 
+               target="_blank" 
+               rel="noopener"
+               class="follow-btn whatsapp-follow">
+                💬 WhatsApp Channel
+            </a>
+            <a href="{TELEGRAM_CHANNEL}" 
+               target="_blank" 
+               rel="noopener"
+               class="follow-btn telegram-follow">
+                📢 Telegram Channel
+            </a>
+            <a href="{FACEBOOK_PAGE}" 
+               target="_blank" 
+               rel="noopener"
+               class="follow-btn facebook-follow">
+                📘 Facebook Page
+            </a>
+        </div>
+    </div>
+    '''
+
 def generate_related_news(current_index, all_news, current_filename):
     """સંબંધિત 5 ન્યૂઝની લિંક બનાવો (Internal Linking)"""
     related = []
@@ -127,7 +199,6 @@ def generate_article_page(news_item, index, all_news):
     source = news_item.get('source', '')
     date = news_item.get('date', '')
     
-    # ✅ હંમેશા numbered filename
     filename = clean_filename(title, index) + '.html'
     page_url = f"{SITE_URL}/news/{filename}"
     
@@ -138,6 +209,8 @@ def generate_article_page(news_item, index, all_news):
     
     structured_data = generate_structured_data(title, summary, page_url, date_iso, source)
     related_news = generate_related_news(index, all_news, filename)
+    share_buttons = generate_share_buttons(page_url, title)
+    social_follow = generate_social_follow()
     
     full_article = f"""
     <p><strong>{summary}</strong></p>
@@ -199,6 +272,28 @@ def generate_article_page(news_item, index, all_news):
         .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
         .back-btn:hover {{ background: linear-gradient(90deg, #feca57, #ff9f43); }}
         
+        /* Share Section */
+        .share-section {{ margin: 30px 0; padding: 20px; background: rgba(254, 202, 87, 0.08); border-radius: 12px; border-left: 4px solid #feca57; }}
+        .share-section h3 {{ margin-top: 0; color: #feca57; }}
+        .share-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
+        .share-btn {{ display: inline-block; padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; transition: transform 0.2s, box-shadow 0.2s; }}
+        .share-btn:hover {{ transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }}
+        .share-btn.facebook {{ background: #1877f2; }}
+        .share-btn.whatsapp {{ background: #25d366; }}
+        .share-btn.telegram {{ background: #0088cc; }}
+        .share-btn.twitter {{ background: #1da1f2; }}
+        
+        /* Social Follow */
+        .social-follow {{ margin: 30px 0; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
+        .social-follow h3 {{ margin-top: 0; color: #48dbfb; }}
+        .follow-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
+        .follow-btn {{ display: inline-block; padding: 12px 20px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; transition: transform 0.2s, box-shadow 0.2s; }}
+        .follow-btn:hover {{ transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }}
+        .follow-btn.whatsapp-follow {{ background: #25d366; }}
+        .follow-btn.telegram-follow {{ background: #0088cc; }}
+        .follow-btn.facebook-follow {{ background: #1877f2; }}
+        
+        /* Related News */
         .related-news {{ margin-top: 30px; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
         .related-news h3 {{ margin-top: 0; }}
         .related-news ul {{ list-style: none; padding-left: 0; }}
@@ -206,14 +301,28 @@ def generate_article_page(news_item, index, all_news):
         .related-news li::before {{ content: "▸"; position: absolute; left: 0; color: #48dbfb; }}
         .related-news a {{ color: #e0e0e0; text-decoration: none; transition: color 0.3s; }}
         .related-news a:hover {{ color: #feca57; }}
+        
+        /* Mobile Responsive */
+        @media (max-width: 600px) {{
+            .share-buttons, .follow-buttons {{ flex-direction: column; }}
+            .share-btn, .follow-btn {{ width: 100%; text-align: center; }}
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>{title_esc}</h1>
         <div class="source-box">📰 स्रोत: {source} | 🕐 {date}</div>
+        
         {full_article}
+        
         <div class="source-box"><strong>मूल स्रोत:</strong> <a href="{link}" target="_blank" rel="noopener nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
+        
+        <!-- 🎯 Share Buttons -->
+        {share_buttons}
+        
+        <!-- 📱 Social Follow -->
+        {social_follow}
         
         {related_news}
         
@@ -226,6 +335,99 @@ def generate_article_page(news_item, index, all_news):
         f.write(html_content)
     
     return filename
+
+def generate_index_page(news_list, generated_files):
+    """Home page બનાવો (index.html)"""
+    
+    news_cards = ""
+    for i, (news, filename) in enumerate(zip(news_list[:30], generated_files)):
+        title = escape_html(news.get('title', ''))
+        summary = escape_html(news.get('summary', '')[:150])
+        source = escape_html(news.get('source', ''))
+        date = escape_html(news.get('date', ''))
+        
+        news_cards += f'''
+        <article class="news-card">
+            <h2><a href="news/{filename}">{title}</a></h2>
+            <div class="news-meta">📰 {source} | 🕐 {date}</div>
+            <p>{summary}...</p>
+            <a href="news/{filename}" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        '''
+    
+    html_content = f"""<!DOCTYPE html>
+<html lang="{SITE_LANG}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{SITE_NAME} - भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
+    <meta name="description" content="भारतीय शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी अपडेट्स. Nifty 50, Sensex, IPO, Stock Market News.">
+    <meta name="keywords" content="share market, stock market, hindi news, business, sensex, nifty, भारत न्यूज़">
+    <link rel="canonical" href="{SITE_URL}/">
+    
+    <meta property="og:title" content="{SITE_NAME}">
+    <meta property="og:description" content="भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स">
+    <meta property="og:url" content="{SITE_URL}/">
+    <meta property="og:type" content="website">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{SITE_URL}/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; }}
+        .container {{ max-width: 900px; margin: auto; }}
+        header {{ text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; }}
+        header h1 {{ color: #feca57; font-size: 32px; margin-bottom: 10px; }}
+        header p {{ color: #b0b0b0; font-size: 16px; }}
+        
+        .social-links {{ display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }}
+        .social-links a {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; transition: transform 0.2s; }}
+        .social-links a:hover {{ transform: translateY(-2px); }}
+        .social-links .wa {{ background: #25d366; }}
+        .social-links .tg {{ background: #0088cc; }}
+        .social-links .fb {{ background: #1877f2; }}
+        
+        .news-card {{ background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: transform 0.2s; }}
+        .news-card:hover {{ transform: translateY(-3px); }}
+        .news-card h2 {{ font-size: 20px; margin-bottom: 10px; line-height: 1.4; }}
+        .news-card h2 a {{ color: #feca57; text-decoration: none; }}
+        .news-card h2 a:hover {{ color: #ff9f43; }}
+        .news-meta {{ color: #48dbfb; font-size: 13px; margin-bottom: 12px; }}
+        .news-card p {{ color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }}
+        .read-more {{ display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }}
+        .read-more:hover {{ color: #feca57; }}
+        
+        footer {{ text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }}
+        footer a {{ color: #48dbfb; text-decoration: none; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 {SITE_NAME}</h1>
+            <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
+            
+            <div class="social-links">
+                <a href="{WHATSAPP_CHANNEL}" target="_blank" rel="noopener" class="wa">💬 WhatsApp</a>
+                <a href="{TELEGRAM_CHANNEL}" target="_blank" rel="noopener" class="tg">📢 Telegram</a>
+                <a href="{FACEBOOK_PAGE}" target="_blank" rel="noopener" class="fb">📘 Facebook</a>
+            </div>
+        </header>
+        
+        {news_cards}
+        
+        <footer>
+            <p>© 2026 {SITE_NAME} | <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy</a></p>
+            <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
+        </footer>
+    </div>
+</body>
+</html>"""
+    
+    with open('index.html', 'w', encoding='utf-8') as f:
+        f.write(html_content)
+    
+    print("🏠 index.html બન્યું")
 
 def main():
     if not os.path.exists('news_data.json'):
@@ -258,6 +460,9 @@ def main():
     
     with open('news_index.json', 'w', encoding='utf-8') as f:
         json.dump(generated, f, ensure_ascii=False, indent=4)
+    
+    # ═══ Home Page ═══
+    generate_index_page(news_list, generated)
     
     # ═══ sitemap.xml ═══
     sitemap_urls = [
