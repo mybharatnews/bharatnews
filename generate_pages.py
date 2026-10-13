@@ -92,7 +92,7 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
 </script>'''
 
 def generate_share_buttons(page_url, title):
-    """Social Share Buttons બનાવો — Facebook Page link સાથે"""
+    """Social Share Buttons — Facebook Page link (share નહીં)"""
     import urllib.parse
     encoded_url = urllib.parse.quote(page_url)
     encoded_title = urllib.parse.quote(title[:100])
@@ -130,7 +130,7 @@ def generate_share_buttons(page_url, title):
     '''
 
 def generate_social_follow():
-    """Social Follow Buttons બનાવો"""
+    """Social Follow Buttons"""
     return f'''
     <div class="social-follow">
         <h3>📱 Follow us for daily updates</h3>
@@ -158,7 +158,7 @@ def generate_social_follow():
     '''
 
 def generate_related_news(current_index, all_news, current_filename):
-    """સંબંધિત 5 ન્યૂઝની લિંક બનાવો (Internal Linking)"""
+    """સંબંધિત 5 ન્યૂઝની લિંક (Internal Linking)"""
     related = []
     total = len(all_news)
     
