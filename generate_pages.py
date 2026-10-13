@@ -92,8 +92,7 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
 </script>'''
 
 def generate_share_buttons(page_url, title):
-    """Social Share Buttons બનાવો"""
-    # URL encode for sharing
+    """Social Share Buttons બનાવો — Facebook Page link સાથે"""
     import urllib.parse
     encoded_url = urllib.parse.quote(page_url)
     encoded_title = urllib.parse.quote(title[:100])
@@ -102,12 +101,6 @@ def generate_share_buttons(page_url, title):
     <div class="share-section">
         <h3>📤 Share this news</h3>
         <div class="share-buttons">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={encoded_url}" 
-               target="_blank" 
-               rel="noopener"
-               class="share-btn facebook">
-                📘 Facebook
-            </a>
             <a href="https://api.whatsapp.com/send?text={encoded_title}%20{encoded_url}" 
                target="_blank" 
                rel="noopener"
@@ -125,6 +118,12 @@ def generate_share_buttons(page_url, title):
                rel="noopener"
                class="share-btn twitter">
                 🐦 Twitter
+            </a>
+            <a href="{FACEBOOK_PAGE}" 
+               target="_blank" 
+               rel="noopener"
+               class="share-btn facebook">
+                📘 Facebook Page
             </a>
         </div>
     </div>
@@ -272,18 +271,16 @@ def generate_article_page(news_item, index, all_news):
         .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
         .back-btn:hover {{ background: linear-gradient(90deg, #feca57, #ff9f43); }}
         
-        /* Share Section */
         .share-section {{ margin: 30px 0; padding: 20px; background: rgba(254, 202, 87, 0.08); border-radius: 12px; border-left: 4px solid #feca57; }}
         .share-section h3 {{ margin-top: 0; color: #feca57; }}
         .share-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
         .share-btn {{ display: inline-block; padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; transition: transform 0.2s, box-shadow 0.2s; }}
         .share-btn:hover {{ transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }}
-        .share-btn.facebook {{ background: #1877f2; }}
         .share-btn.whatsapp {{ background: #25d366; }}
         .share-btn.telegram {{ background: #0088cc; }}
         .share-btn.twitter {{ background: #1da1f2; }}
+        .share-btn.facebook {{ background: #1877f2; }}
         
-        /* Social Follow */
         .social-follow {{ margin: 30px 0; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
         .social-follow h3 {{ margin-top: 0; color: #48dbfb; }}
         .follow-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
@@ -293,7 +290,6 @@ def generate_article_page(news_item, index, all_news):
         .follow-btn.telegram-follow {{ background: #0088cc; }}
         .follow-btn.facebook-follow {{ background: #1877f2; }}
         
-        /* Related News */
         .related-news {{ margin-top: 30px; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
         .related-news h3 {{ margin-top: 0; }}
         .related-news ul {{ list-style: none; padding-left: 0; }}
@@ -302,7 +298,6 @@ def generate_article_page(news_item, index, all_news):
         .related-news a {{ color: #e0e0e0; text-decoration: none; transition: color 0.3s; }}
         .related-news a:hover {{ color: #feca57; }}
         
-        /* Mobile Responsive */
         @media (max-width: 600px) {{
             .share-buttons, .follow-buttons {{ flex-direction: column; }}
             .share-btn, .follow-btn {{ width: 100%; text-align: center; }}
@@ -318,10 +313,8 @@ def generate_article_page(news_item, index, all_news):
         
         <div class="source-box"><strong>मूल स्रोत:</strong> <a href="{link}" target="_blank" rel="noopener nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
         
-        <!-- 🎯 Share Buttons -->
         {share_buttons}
         
-        <!-- 📱 Social Follow -->
         {social_follow}
         
         {related_news}
