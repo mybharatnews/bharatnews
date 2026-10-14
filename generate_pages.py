@@ -42,6 +42,15 @@ def escape_html(text):
             .replace('>', '&gt;')
             .replace('"', '&quot;'))
 
+def escape_js(text):
+    """JavaScript string માટે escape કરો"""
+    return (str(text)
+            .replace('\\', '\\\\')
+            .replace("'", "\\'")
+            .replace('"', '\\"')
+            .replace('\n', '\\n')
+            .replace('\r', ''))
+
 def parse_date_to_iso(date_str):
     """Date string ને ISO format માં બદલો (schema.org માટે)"""
     try:
@@ -91,8 +100,69 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
 }}
 </script>'''
 
+def generate_copy_go_button(title, page_url):
+    """Copy & Go to Facebook button + JavaScript"""
+    # JavaScript string માટે escape
+    js_title = escape_js(title)
+    js_url = escape_js(page_url)
+    
+    return f'''
+    <!-- 🎯 Copy & Go Button -->
+    <div class="copy-go-section">
+        <h3>📤 Post to Facebook Page</h3>
+        <p style="color: #b0b0b0; font-size: 14px; margin-bottom: 15px;">
+            1 click → Caption copy + Facebook page open
+        </p>
+        <button onclick="copyAndGoToFacebook()" class="copy-go-btn">
+            📘 Facebook પર પોસ્ટ કરો (Copy & Go)
+        </button>
+        <div id="copy-status" style="margin-top: 10px; font-size: 14px;"></div>
+    </div>
+
+    <script>
+    function copyAndGoToFacebook() {{
+        const title = "{js_title}";
+        const url = "{js_url}";
+        
+        const caption = "📰 " + title + "\\n\\n" +
+            "🔗 पूरी खबर: " + url + "\\n\\n" +
+            "📊 Bharat News Hindi\\n" +
+            "🌐 https://mybharatnews.github.io/bharatnews/\\n" +
+            "💬 WhatsApp: https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V\\n" +
+            "📢 Telegram: https://t.me/indianews_official\\n\\n" +
+            "#ShareMarket #Nifty #Sensex #Business #India";
+        
+        // Copy to clipboard
+        navigator.clipboard.writeText(caption).then(function() {{
+            document.getElementById('copy-status').innerHTML = 
+                '<span style="color: #25d366;">✅ Caption copy થઈ ગયું! Facebook પર paste કરો.</span>';
+            
+            // Open Facebook page
+            setTimeout(function() {{
+                window.open('{FACEBOOK_PAGE}', '_blank');
+            }}, 500);
+        }}).catch(function(err) {{
+            // Fallback for older browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = caption;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            
+            document.getElementById('copy-status').innerHTML = 
+                '<span style="color: #25d366;">✅ Caption copy થઈ ગયું! Facebook પર paste કરો.</span>';
+            
+            setTimeout(function() {{
+                window.open('{FACEBOOK_PAGE}', '_blank');
+            }}, 500);
+        }});
+    }}
+    </script>
+    '''
+
 def generate_share_buttons(page_url, title):
-    """Social Share Buttons — Facebook Page link (share નહીં)"""
+    """Social Share Buttons — Facebook Page link સાથે"""
     import urllib.parse
     encoded_url = urllib.parse.quote(page_url)
     encoded_title = urllib.parse.quote(title[:100])
@@ -210,6 +280,7 @@ def generate_article_page(news_item, index, all_news):
     related_news = generate_related_news(index, all_news, filename)
     share_buttons = generate_share_buttons(page_url, title)
     social_follow = generate_social_follow()
+    copy_go_button = generate_copy_go_button(title, page_url)
     
     full_article = f"""
     <p><strong>{summary}</strong></p>
@@ -271,6 +342,13 @@ def generate_article_page(news_item, index, all_news):
         .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
         .back-btn:hover {{ background: linear-gradient(90deg, #feca57, #ff9f43); }}
         
+        /* Copy & Go Section */
+        .copy-go-section {{ margin: 30px 0; padding: 25px; background: linear-gradient(135deg, rgba(24, 119, 242, 0.15), rgba(24, 119, 242, 0.05)); border-radius: 12px; border-left: 4px solid #1877f2; text-align: center; }}
+        .copy-go-section h3 {{ margin-top: 0; color: #1877f2; }}
+        .copy-go-btn {{ background: #1877f2; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-weight: 700; font-size: 16px; cursor: pointer; transition: all 0.3s; font-family: inherit; }}
+        .copy-go-btn:hover {{ background: #0d5bbf; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(24, 119, 242, 0.4); }}
+        .copy-go-btn:active {{ transform: translateY(0); }}
+        
         .share-section {{ margin: 30px 0; padding: 20px; background: rgba(254, 202, 87, 0.08); border-radius: 12px; border-left: 4px solid #feca57; }}
         .share-section h3 {{ margin-top: 0; color: #feca57; }}
         .share-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
@@ -301,6 +379,7 @@ def generate_article_page(news_item, index, all_news):
         @media (max-width: 600px) {{
             .share-buttons, .follow-buttons {{ flex-direction: column; }}
             .share-btn, .follow-btn {{ width: 100%; text-align: center; }}
+            .copy-go-btn {{ width: 100%; padding: 15px 20px; font-size: 15px; }}
         }}
     </style>
 </head>
@@ -312,6 +391,8 @@ def generate_article_page(news_item, index, all_news):
         {full_article}
         
         <div class="source-box"><strong>मूल स्रोत:</strong> <a href="{link}" target="_blank" rel="noopener nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
+        
+        {copy_go_button}
         
         {share_buttons}
         
