@@ -1,5 +1,61 @@
 [
     {
+        "title": "Why CoreWeaves troubles are rattling the AI boom",
+        "summary": "COREWEAVE-STOCKS/ (EXPLAINER, PIX):EXPLAINER-Why CoreWeave's troubles are rattling the AI boom",
+        "link": "https://www.livemint.com/technology/why-coreweaves-troubles-are-rattling-the-ai-boom-11792091910736.html",
+        "source": "Livemint",
+        "date": "15-10-2026 21:33"
+    },
+    {
+        "title": "OnePlus Ace 7 may launch in India as OnePlus 16R with built-in cooling fan, 9,000mAh battery",
+        "summary": "OnePlus Ace 7 is tipped to feature a built-in cooling fan, a 185Hz OLED display and a 9,000mAh battery aimed at gaming enthusiasts. The smartphone could run on the Snapdragon 8 Elite Gen 5 chipset and feature a 200MP primary camera, with up to 16GB of RAM.",
+        "link": "https://www.livemint.com/technology/gadgets/oneplus-ace-7-may-launch-in-india-as-oneplus-16r-with-built-in-cooling-fan-9-000mah-battery-11792061056011.html",
+        "source": "Livemint",
+        "date": "15-10-2026 21:33"
+    },
+    {
+        "title": "WhatsApp Guest Calling launched: How to join voice and video calls without an account",
+        "summary": "WhatsApp has introduced Guest Calling, allowing people without an account to join voice and video calls through a shared link without downloading the app. Calls are free, end-to-end encrypted and support up to 32 participants.&amp;nbsp;",
+        "link": "https://www.livemint.com/technology/apps/whatsapp-guest-calling-launched-how-to-join-voice-and-video-calls-without-an-account-11792048248736.html",
+        "source": "Livemint",
+        "date": "15-10-2026 21:33"
+    },
+    {
+        "title": "Incoming calls to show caller names from November 1: What mobile users need to know",
+        "summary": "India will roll out mandatory Calling Name Presentation (CNAP) from November 1, 2026, displaying callers' names alongside phone numbers on 4G and 5G networks. Here's how the new caller ID system will work, its privacy safeguards and rules for businesses using registered names.",
+        "link": "https://www.livemint.com/technology/incoming-calls-to-show-caller-names-from-november-1-what-mobile-users-need-to-know-11792045920940.html",
+        "source": "Livemint",
+        "date": "15-10-2026 21:34"
+    },
+    {
+        "title": "Nvidia, Apple each gave $25 million for Trump's ballroom: Washington Post",
+        "summary": "The Adelson family, longtime financial supporters of Trump and his Republican Party, committed $25 million as well, as did billionaire Charles Ergen, co-founder and chairman of telecommunications company Dish Network, the report added.",
+        "link": "https://economictimes.indiatimes.com/tech/technology/nvidia-apple-each-gave-25-million-for-trumps-ballroom-washington-post/articleshow/134974635.cms",
+        "source": "Economic Times",
+        "date": "15-10-2026 21:34"
+    },
+    {
+        "title": "Amazon launches two new portable AI listening devices",
+        "summary": "Frontier is a bracelet and Eclipse is a brick that resembles a portable magnetic charger. Users attach the devices to their smartphones. They aggregate information from calendars, apps like email and other points throughout the day that are accessed through an app or a website, Amazon said.",
+        "link": "https://economictimes.indiatimes.com/tech/technology/amazon-launches-two-new-portable-ai-listening-devices/articleshow/134973760.cms",
+        "source": "Economic Times",
+        "date": "15-10-2026 21:34"
+    },
+    {
+        "title": "CNN signs multi-year AI partnership with Google",
+        "summary": "The deal marks the first partnership announced since Skydance's merger with Paramount, under CEO David Ellison, who has sought to position the media group as a technology-driven business.",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/cnn-signs-multi-year-ai-partnership-with-google/articleshow/134973561.cms",
+        "source": "Economic Times",
+        "date": "15-10-2026 21:34"
+    },
+    {
+        "title": "CoreWeave's slump puts spotlight on debt behind AI boom",
+        "summary": "The loss-making AI cloud company, burdened with about $50 billion in debt, has become the poster child for mounting concerns that the data center boom is being fueled by credit, straining newer players and pressuring cash flows even at giants such as Alphabet and Meta Platforms.",
+        "link": "https://economictimes.indiatimes.com/tech/technology/coreweaves-slump-puts-spotlight-on-debt-behind-ai-boom/articleshow/134973449.cms",
+        "source": "Economic Times",
+        "date": "15-10-2026 21:34"
+    },
+    {
         "title": "कनाडा के जोली ने क्लीवलैंड - क्लिफ परिसंपत्ति बिक्री को मजबूर करने की धमकी दी",
         "summary": "कनाडा के उद्योग मंत्री ने कहा कि सरकार के पास क्लीवलैंड - क्लिफ्स इंक को देश में अपनी संपत्ति बेचने के लिए मजबूर करने की कोशिश करने की शक्ति है, जिससे ओंटारियो में कंपनी के इस्पात परिचालन में नौकरी में कटौती पर विवाद बढ़ गया है।",
         "link": "https://www.livemint.com/companies/canadas-joly-threatens-to-force-cleveland-cliffs-asset-sale-11792091910331.html",
@@ -152,61 +208,5 @@
         "link": "https://www.livemint.com/news/india/any-terror-act-from-pakistan-will-invite-stronger-response-rajnath-singh-11792061469489.html",
         "source": "Livemint",
         "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "एलेक्जेंड्रोस पापोरकिस कौन है? इलिनोइस में हिंदू मंदिर पर हमले की कथित साजिश को अमेरिकी अधिकारियों द्वारा नाकाम किए जाने पर विदेश मंत्रालय की प्रतिक्रिया",
-        "summary": "इलिनोइस के एक 19 वर्षीय व्यक्ति पर कथित तौर पर लक्ष्य पर शोध करने और आठ पन्नों का घोषणापत्र लिखने के बाद अमेरिका में एक हिंदू मंदिर में सामूहिक गोलीबारी की साजिश रचने का आरोप लगाया गया है।&amp;nbsp;",
-        "link": "https://www.livemint.com/news/us-news/who-is-alexandros-paporakis-mea-reacts-as-us-authorities-foil-alleged-plot-to-attack-hindu-temple-in-illinois-11792059466439.html",
-        "source": "Livemint",
-        "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "स्टारशील्ड, स्टारलिंक का ‘सैन्य - ग्रेड‘ संस्करण क्या है? यूक्रेन रूस के खिलाफ दो स्पेसएक्स सिस्टम का उपयोग कैसे करता है | समझाया गया",
-        "summary": "स्पेसएक्स के स्टारलिंक का उपयोग उपग्रह - आधारित संचार, जमीनी बलों, रसद और रक्षात्मक ड्रोन के लिए किया जाता है — जो आने वाले ड्रोन को शूट करते हैं। इस बीच, स्टार्शिल्ड का इस्तेमाल आक्रामक सैन्य उद्देश्यों के लिए किया जाता है।",
-        "link": "https://www.livemint.com/news/us-news/what-is-starshield-starlinks-military-grade-version-how-ukraine-uses-two-spacex-systems-against-russia-explained-11792057356618.html",
-        "source": "Livemint",
-        "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "रिलायंस जियो आईपीओ: टेक मसल के साथ, आकाश अंबानी ने निवेशकों को $ 1.4 ट्रिलियन की डिजिटल इकोनॉमी दी",
-        "summary": "आकाश अंबानी वित्त वर्ष 31 तक भारत की अनुमानित $ 1.4 ट्रिलियन डिजिटल इकोनॉमी का एक महत्वपूर्ण हिस्सा हासिल करने के लिए जियो प्लेटफॉर्म की स्थिति बना रहे हैं। अपने 30,213 करोड़ रुपये के आईपीओ से पहले, उन्होंने 7,200 पेटेंट, 5G लीडरशिप और टेक्नोलॉजी पार्टनरशिप पर प्रकाश डाला।",
-        "link": "https://economictimes.indiatimes.com/markets/ipos/fpos/reliance-jio-ipo-with-tech-muscle-akash-ambani-makes-1-4-trillion-digital-economy-pitch-to-investors/articleshow/134966429.cms",
-        "source": "Economic Times",
-        "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "रिलायंस आईपीओ के लिए मरीन ड्राइव को रोशन किया गया: उदय कोटक ने जियो आईपीओ के बीच धीरूभाई अंबानी की बाजार विरासत को याद किया",
-        "summary": "जियो का आगामी आईपीओ पिछले रिकॉर्ड को पीछे छोड़ देगा, जो रिलायंस इंडस्ट्रीज के इतिहास में उल्लेखनीय विकास का संकेत देगा। उदय कोटक दशकों पहले धीरूभाई अंबानी की सार्वजनिक पेशकश के पिछले प्रभाव को दर्शाता है। यह पेशकश भारत के डिजिटल परिवर्तन में एक महत्वपूर्ण प्रगति का प्रतिनिधित्व करेगी",
-        "link": "https://economictimes.indiatimes.com/markets/ipos/fpos/marine-drive-was-lit-up-for-reliance-ipo-uday-kotak-recalls-dhirubhai-ambanis-market-legacy-amid-jio-ipo/articleshow/134963814.cms",
-        "source": "Economic Times",
-        "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "रुपया डॉलर, तेल की सुगमता और शेयरों की तेजी के रूप में जीत की लकीर बढ़ाता है",
-        "summary": "उल्लेखनीय वित्तीय परिदृश्य में, डॉलर के मुकाबले भारतीय रुपये में 0.1% की बढ़त दर्ज की गई, जिससे लगातार चौथे दिन लाभ हुआ। इस उछाल के लिए भारतीय स्टॉक प्रदर्शन में वृद्धि के साथ - साथ तेल की कीमतों में कमी को जिम्मेदार ठहराया गया था, जो क्षेत्रीय बाजार ज्वार के खिलाफ गया था। समवर्ती रूप से, एक डिक्लेरेशन",
-        "link": "https://economictimes.indiatimes.com/markets/forex/rupee-extends-winning-streak-as-dollar-oil-ease-and-stocks-rally/articleshow/134965552.cms",
-        "source": "Economic Times",
-        "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "विप्रो Q2 परिणाम: शुद्ध लाभ मामूली रूप से घटकर 3,201 करोड़ रुपये हो गया, लेकिन राजस्व वर्ष - दर - वर्ष 9% बढ़ा",
-        "summary": "विप्रो Q2 परिणाम: विप्रो ने वित्त वर्ष 27 की दूसरी तिमाही में सालाना आधार पर 1.4% की गिरावट दर्ज करते हुए 3,201 करोड़ रुपये का शुद्ध लाभ अर्जित किया, जबकि राजस्व 9.1% बढ़कर 24,752.7 करोड़ रुपये हो गया। आईटी सेवाओं का राजस्व 0.3% बढ़कर $ 2,611.5 मिलियन हो गया, जबकि ऑपरेटिंग मार्जिन क्रमिक रूप से 0.5 प्रतिशत अंक बढ़कर 16.5% हो गया। कंपनी को उम्मीद है",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/earnings/wipro-q2-results-net-profit-declines-2-yoy-to-rs-3201-crore-but-revenue-rises-9/articleshow/134964633.cms",
-        "source": "Economic Times",
-        "date": "15-10-2026 11:52"
-    },
-    {
-        "title": "तेजस नेटवर्क की समेकित मार्च 2024 की शुद्ध बिक्री 1,326.88 करोड़ रुपये रही, जो सालाना आधार पर 343.3% अधिक है",
-        "summary": "Comment",
-        "link": "https://www.moneycontrol.com/news/results/tejas-networks-consolidated-march-2024-net-sales-at-rs-132688-crore3433-y-o-y_17531131.html",
-        "source": "Moneycontrol",
-        "date": "15-10-2026 08:33"
-    },
-    {
-        "title": "भारत परनोड रिकार्ड को उच्च उत्साह में रखता है, यहां तक कि इसके शीर्ष बाजारों ने चीयर्स को कम कर दिया है",
-        "summary": "पर्नोड रिकार्ड ने भारत में बिक्री में 19% की वृद्धि दर्ज की है, जिससे अमेरिका और चीन जैसे बड़े बाजारों में गिरावट के खिलाफ कुछ राहत मिली है। कुल मिलाकर, कंपनी ने पहली वित्तीय तिमाही के लिए साल - दर - साल 0.9% की मामूली गिरावट देखी, जिसमें अमेरिकी बिक्री में 10% और चीनी बिक्री में 25% की गिरावट आई।",
-        "link": "https://economictimes.indiatimes.com/industry/cons-products/liquor/india-keeps-pernod-ricard-in-high-spirits-even-as-its-top-markets-cut-down-on-the-cheers/articleshow/134961612.cms",
-        "source": "Economic Times",
-        "date": "15-10-2026 08:33"
     }
 ]
