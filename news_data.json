@@ -1,5 +1,47 @@
 [
     {
+        "title": "माइक्रोसॉफ्ट विजुअल स्टूडियो अपडेट स्मार्ट कॉपिलॉट एआई, थोक संघर्ष समाधान और हॉट एग्जिट लाता है: विवरण यहाँ",
+        "summary": "Microsoft ने विजुअल स्टूडियो को बेहतर Git टूल के साथ अपडेट किया है, जिसमें COMMIT तुलना और बल्क मर्ज - संघर्ष रिज़ॉल्यूशन शामिल हैं। रिलीज में एक नया GitHub Copilot चैट अनुभव, सहेजे गए काम को बहाल करने के लिए हॉट एग्जिट और अन्य नई सुविधाएँ भी शामिल हैं।",
+        "link": "https://www.livemint.com/technology/microsoft-visual-studio-update-brings-smarter-copilot-ai-bulk-conflict-resolution-and-hot-exit-details-here-11793191723325.html",
+        "source": "Livemint",
+        "date": "28-10-2026 22:43"
+    },
+    {
+        "title": "दिल्ली लिकर बुकिंग ऐप लॉन्च किया गया: ऑनलाइन ऑर्डर करने का तरीका और 48 घंटे का कलेक्शन नियम बताया गया",
+        "summary": "दिल्ली ने दिवाली से पहले दिल्ली शराब बुकिंग ऐप लॉन्च किया है, जो पात्र ग्राहकों को शहर भर में 208 DSIIDC संचालित आउटलेट्स से ऑनलाइन शराब बुक करने की अनुमति देता है।",
+        "link": "https://www.livemint.com/technology/apps/delhi-liquor-booking-app-launched-how-to-order-online-and-48-hour-collection-rule-explained-11793183028757.html",
+        "source": "Livemint",
+        "date": "28-10-2026 22:43"
+    },
+    {
+        "title": "एंथ्रोपिक ने कैलिफ़ोर्निया के गवर्नर को बताया कि अदालतों को जोखिम भरे AI मॉडलों को ब्लॉक करने में सक्षम होना",
+        "summary": "एंथ्रोपिक को खुद अपने AI सिस्टम पर सरकारी प्रतिबंधों का सामना करना पड़ा है। ट्रम्प प्रशासन ने जून में एंथ्रोपिक को राष्ट्रीय सुरक्षा चिंताओं का हवाला देते हुए अपने साइबर - सक्षम मिथोस 5 और फेबल 5 मॉडल तक विदेशी पहुंच को तुरंत प्रतिबंधित करने का आदेश दिया था। अमेरिकी वाणिज्य विभाग ने बाद में आदेश वापस ले लिया।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-tells-california-governor-courts-should-be-able-to-block-risky-ai-models/articleshow/135278359.cms",
+        "source": "Economic Times",
+        "date": "28-10-2026 22:43"
+    },
+    {
+        "title": "जर्मन स्टार्टअप एनविजन नेचर पेपर में क्वांटम कंप्यूटिंग चिप्स का नया रास्ता दिखाता है",
+        "summary": "माइक्रोसॉफ्ट और आईबीएम जैसे स्टार्टअप और तकनीकी दिग्गज समान रूप से क्वांटम कंप्यूटर बनाने के लिए दौड़ रहे हैं जो उन समस्याओं को हल करने का वादा करते हैं जो पारंपरिक मशीनों को हजारों साल लेती हैं। लेकिन एनविजन, जिसने एबॉट लैबोरेटरीज जैसी फर्मों से $ 155 मिलियन से अधिक की धनराशि जुटाई है,",
+        "link": "https://economictimes.indiatimes.com/tech/technology/german-startup-nvision-shows-new-path-to-quantum-computing-chips-in-nature-paper/articleshow/135273277.cms",
+        "source": "Economic Times",
+        "date": "28-10-2026 22:44"
+    },
+    {
+        "title": "मीशो का नुकसान कम हुआ; इन्फो एज के सीईओ के रूप में संजीव बिखचंदानी की वापसी",
+        "summary": "मीशो ने जुलाई - सितंबर तिमाही में अपने घाटे में कटौती की, जबकि विकास जारी रहा। यह और भी बहुत कुछ आज के ETtech Top 5 में।",
+        "link": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/meesho-loss-narrows-sanjeev-bikhchandani-back-as-info-edge-ceo/articleshow/135267059.cms",
+        "source": "Economic Times",
+        "date": "28-10-2026 22:44"
+    },
+    {
+        "title": "Cognite ने वेरीफ़ाइड AI वैल्यू में $ 1 बिलियन की रिपोर्ट की है, जो इंडस्ट्रियल AI सल्यूशंस के असर की पुष्टि करती है",
+        "summary": "आज तक सत्यापित मूल्य का लगभग 36% ड्राइविंग करते हुए, ग्राहक जटिल औद्योगिक संचालन में महंगे परिसंपत्ति शटडाउन को रोकने के लिए एआई और स्वचालित वर्कफ़्लो का लाभ उठा रहे हैं, अप्रत्याशित होने पर उन्हें वापस चलने में मदद करते हैं, और अपने संचालन को चलाने की लागत को कम करते हैं।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/cognite-reports-1-billion-in-verified-ai-value-confirming-impact-of-industrial-ai-solutions/articleshow/135266756.cms",
+        "source": "Economic Times",
+        "date": "28-10-2026 22:44"
+    },
+    {
         "title": "मुंबई हवाई अड्डे की शिफ्ट को लेकर विदेशी एयरलाइंस, अडाणी हवाई अड्डे पर गतिरोध",
         "summary": "मुंबई और नवी मुंबई हवाई अड्डों और विदेशी कैरियर दोनों को नियंत्रित करने वाले अडाणी हवाई अड्डों के बीच बुधवार को एक बैठक लगभग 90 मिनट की चर्चा के बाद बिना किसी समझौते के समाप्त हो गई। मुंबई की एयरलाइन ऑपरेटरों की समिति में लगभग सभी 45 एयरलाइनों का प्रतिनिधित्व करने वाले लगभग 50 अधिकारियों ने इस बैठक में भाग लिया",
         "link": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/foreign-airlines-adani-airports-deadlocked-over-mumbai-airport-shift/articleshow/135279391.cms",
@@ -166,47 +208,5 @@
         "link": "https://www.livemint.com/news/india/cdsco-substandard-medicines-himachal-pradesh-drug-alert-11793182714705.html",
         "source": "Livemint",
         "date": "28-10-2026 13:20"
-    },
-    {
-        "title": "शॉर्ट कवरिंग के खिलाफ तेल संकट आने के साथ ही भारतीय बॉन्ड सपाट हो गए",
-        "summary": "भारतीय सरकारी बॉन्डों को अस्थिरता का सामना करना पड़ा क्योंकि तेल की कीमतों में वृद्धि ने मुद्रास्फीति की चिंताओं को बढ़ाया और बाजार की धारणा को प्रभावित किया। 6.94% 2036 बॉन्ड यील्ड में उतार - चढ़ाव आया लेकिन यह थोड़ा अपरिवर्तित रहा क्योंकि व्यापारियों ने बाजार की स्थितियों पर प्रतिक्रिया व्यक्त की। कच्चे तेल की ऊंची कीमतों ने मुद्रास्फीति के बारे में चिंताओं को बढ़ा दिया है, एक व्यापक राजकोषीय",
-        "link": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-end-flat-as-oil-woes-come-up-against-short-covering/articleshow/135265739.cms",
-        "source": "Economic Times",
-        "date": "28-10-2026 13:20"
-    },
-    {
-        "title": "बंधन बैंक का Q2 मुनाफा 5.6 गुना बढ़ गया क्योंकि परिसंपत्ति की गुणवत्ता में सुधार हुआ है",
-        "summary": "बंधन बैंक का मुनाफा दूसरी तिमाही में पांच गुना बढ़कर 622 करोड़ रुपये हो गया, जो कम प्रावधानों और परिसंपत्ति की गुणवत्ता में सुधार से समर्थित है। शुद्ध ब्याज आय में 14% की वृद्धि हुई, मार्जिन मजबूत हुआ, सकल अग्रिम में 13% की वृद्धि हुई, और जमा में सालाना 9% की वृद्धि हुई।",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/earnings/bandhan-bank-q2-profit-jumps-5-6-times-as-asset-quality-improves/articleshow/135265654.cms",
-        "source": "Economic Times",
-        "date": "28-10-2026 13:20"
-    },
-    {
-        "title": "मीशो Q2 परिणाम: घाटा सालाना 132 करोड़ रुपये तक सीमित, राजस्व 34% बढ़ा",
-        "summary": "मीशो का शुद्ध घाटा वित्त वर्ष 27 की दूसरी तिमाही में 67.8% घटकर 132.45 करोड़ रुपये हो गया, जबकि राजस्व 34.4% बढ़कर 4,131.58 करोड़ रुपये हो गया। बढ़ते उपयोगकर्ता जुड़ाव, मजबूत मर्चेंडाइज वैल्यू, बेहतर योगदान मार्जिन और त्योहारी सीजन की मांग ने ऊंचे खर्च के बीच वृद्धि का समर्थन किया।",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/earnings/meesho-q2-results-loss-narrows-to-rs-132-crore-yoy-revenue-rises-34/articleshow/135265538.cms",
-        "source": "Economic Times",
-        "date": "28-10-2026 13:20"
-    },
-    {
-        "title": "ट्यूबोर्ग निर्माता कार्ल्सबर्ग इंडिया आईपीओ के करीब पहुंचा, पूर्ण ओएफएस इश्यू के लिए अपडेटेड डीआरएचपी फाइल की",
-        "summary": "कार्ल्सबर्ग इंडिया ने 8.64 करोड़ शेयरों वाले आईपीओ के लिए सेबी के साथ एक अद्यतन मसौदा प्रॉस्पेक्टस दायर किया है, जो पूरी तरह से मौजूदा शेयरधारकों द्वारा बिक्री के लिए एक प्रस्ताव के माध्यम से है। पहले की रिपोर्टों के अनुसार, Tuborg निर्माता $ 700 मिलियन तक जुटा सकता है, क्योंकि बहुराष्ट्रीय कंपनियां तेजी से भारत की बराबरी कर रही हैं",
-        "link": "https://economictimes.indiatimes.com/markets/ipos/fpos/tuborg-maker-carlsberg-india-moves-closer-to-ipo-files-updated-drhp-for-complete-ofs-issue/articleshow/135265478.cms",
-        "source": "Economic Times",
-        "date": "28-10-2026 13:20"
-    },
-    {
-        "title": "आईओएस 27.2 में नया क्या है: नई सिरी एआई भाषाएँ, 160+ सुरक्षा सुधार और कारप्ले अपग्रेड",
-        "summary": "ऐप्पल के आईओएस 27.2 में सिरी एआई मेमोरी, पांच नई बीटा भाषाएं, कारप्ले और फेसटाइम में बदलाव और 160+ सुरक्षा सुधार शामिल हैं। देखें कि नया क्या है और क्यों अपडेट करना है।",
-        "link": "https://www.livemint.com/technology/tech-news/whats-new-in-ios-27-2-new-siri-ai-languages-160-security-fixes-and-carplay-upgrades-11793176532277.html",
-        "source": "Livemint",
-        "date": "28-10-2026 09:58"
-    },
-    {
-        "title": "साइबर क्रिमिनल गैंग मिस्टर रोबोट भारतीय बैंकिंग ग्राहकों को लक्षित करने के लिए तकनीकी उपकरण किराए पर दे रहे हैं: क्लाउडएसईके",
-        "summary": "साइबर क्रिमिनल गैंग मिस्टर रोबोट भारतीय बैंकिंग ग्राहकों को लक्षित करने के लिए तकनीकी उपकरण किराए पर दे रहे हैं: क्लाउडएसईके",
-        "link": "https://www.livemint.com/technology/cyber-criminal-gang-mr-robot-renting-out-tech-tools-to-target-indian-banking-customers-cloudsek-11793168256533.html",
-        "source": "Livemint",
-        "date": "28-10-2026 09:58"
     }
 ]
