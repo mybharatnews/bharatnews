@@ -18,196 +18,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body { 
-            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; 
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #e0e0e0;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
+        body { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; min-height: 100vh; padding: 20px; }
         .container { max-width: 900px; margin: auto; }
         
-        /* ═══════════════════════════════════════ */
-        /* ═══ ANIMATED HEADER - START ═══ */
-        /* ═══════════════════════════════════════ */
-        
-        .header-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto 25px;
-            background: linear-gradient(135deg, #16162a, #1e1e3a);
-            padding: 25px 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 30px rgba(255, 0, 128, 0.2),
-                        0 0 60px rgba(0, 200, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            gap: 10px;
-        }
-        
-        .icon-glow-wrap {
-            position: relative;
-            width: 190px;
-            height: 190px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .icon-glow-wrap::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-            padding: 5px;
-            background: conic-gradient(
-                #ff0080, #ff8c00, #ffd700, #00ff88,
-                #00c6ff, #8a2be2, #ff0080
-            );
-            -webkit-mask:
-                linear-gradient(#000 0 0) content-box,
-                linear-gradient(#000 0 0);
-            -webkit-mask-composite: xor;
-                    mask-composite: exclude;
-            animation: spin 4s linear infinite;
-            filter: drop-shadow(0 0 15px #ff0080)
-                    drop-shadow(0 0 25px #00c6ff);
-        }
-        
-        .center-icon {
-            width: 105px;
-            height: 105px;
-            border-radius: 50%;
-            z-index: 3;
-            animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 0 25px #ffd700, 0 0 50px #ff0080;
-            object-fit: cover;
-            border: 3px solid #ffd700;
-        }
-        
-        .rotating-text {
-            position: absolute;
-            inset: 0;
-            animation: spin 18s linear infinite;
-        }
+        /* Header */
+        .header-section { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 0 auto 25px; background: linear-gradient(135deg, #16162a, #1e1e3a); padding: 25px 20px; border-radius: 20px; box-shadow: 0 0 30px rgba(255, 0, 128, 0.2), 0 0 60px rgba(0, 200, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.08); gap: 10px; }
+        .icon-glow-wrap { position: relative; width: 190px; height: 190px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .icon-glow-wrap::before { content: ""; position: absolute; inset: 0; border-radius: 50%; padding: 5px; background: conic-gradient(#ff0080, #ff8c00, #ffd700, #00ff88, #00c6ff, #8a2be2, #ff0080); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: spin 4s linear infinite; filter: drop-shadow(0 0 15px #ff0080) drop-shadow(0 0 25px #00c6ff); }
+        .center-icon { width: 105px; height: 105px; border-radius: 50%; z-index: 3; animation: pulse 2s ease-in-out infinite; box-shadow: 0 0 25px #ffd700, 0 0 50px #ff0080; object-fit: cover; border: 3px solid #ffd700; }
+        .rotating-text { position: absolute; inset: 0; animation: spin 18s linear infinite; }
         .rotating-text svg { width: 100%; height: 100%; }
+        .rotating-text text { font-size: 24px; font-weight: 900; letter-spacing: 3px; fill: #ffd700; animation: glowLeft 2s ease-in-out infinite; }
         
-        .rotating-text text {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: 3px;
-            fill: #ffd700;
-            animation: glowLeft 2s ease-in-out infinite;
-        }
-        
-        @keyframes glowLeft {
-            0% { fill: #ffd700; filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 30px #ff0080); }
-            25% { fill: #ff0080; filter: drop-shadow(0 0 10px #ff0080) drop-shadow(0 0 20px #ff0080) drop-shadow(0 0 30px #ffd700); }
-            50% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #ff0080); }
-            75% { fill: #00ff88; filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #00e0ff); }
-            100% { fill: #ffd700; filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 30px #ff0080); }
-        }
-        
-        .rotating-text.right text {
-            fill: #00e0ff;
-            animation: glowRight 2.5s ease-in-out infinite;
-        }
-        
-        @keyframes glowRight {
-            0% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #00ff88); }
-            33% { fill: #00ff88; filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #ffd700); }
-            66% { fill: #8a2be2; filter: drop-shadow(0 0 10px #8a2be2) drop-shadow(0 0 20px #8a2be2) drop-shadow(0 0 30px #ff0080); }
-            100% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #00ff88); }
-        }
+        @keyframes glowLeft { 0% { fill: #ffd700; filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 30px #ff0080); } 25% { fill: #ff0080; filter: drop-shadow(0 0 10px #ff0080) drop-shadow(0 0 20px #ff0080) drop-shadow(0 0 30px #ffd700); } 50% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #ff0080); } 75% { fill: #00ff88; filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #00e0ff); } 100% { fill: #ffd700; filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 30px #ff0080); } }
+        .rotating-text.right text { fill: #00e0ff; animation: glowRight 2.5s ease-in-out infinite; }
+        @keyframes glowRight { 0% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #00ff88); } 33% { fill: #00ff88; filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #ffd700); } 66% { fill: #8a2be2; filter: drop-shadow(0 0 10px #8a2be2) drop-shadow(0 0 20px #8a2be2) drop-shadow(0 0 30px #ff0080); } 100% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #00ff88); } }
         
         .center-title { text-align: center; flex: 1; padding: 0 10px; }
-        .center-title h1 {
-            font-size: 36px;
-            font-weight: 900;
-            margin: 0;
-            background: linear-gradient(90deg, #ffd700, #ff0080, #00c6ff, #ffd700);
-            background-size: 300% 100%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            animation: shine 4s linear infinite;
-            letter-spacing: 2px;
-        }
+        .center-title h1 { font-size: 36px; font-weight: 900; margin: 0; background: linear-gradient(90deg, #ffd700, #ff0080, #00c6ff, #ffd700); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 4s linear infinite; letter-spacing: 2px; }
         .center-title p { margin: 8px 0 0; font-size: 14px; color: #b0b0d0; letter-spacing: 1px; }
         
         @keyframes spin { to { transform: rotate(360deg); } }
         @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
         @keyframes shine { to { background-position: 300% 0; } }
-        
-        /* ═══════════════════════════════════════ */
-        /* ═══ ANIMATED HEADER - END ═══ */
-        /* ═══════════════════════════════════════ */
-        
+
+        /* Controls */
         .controls { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
-        .search-box {
-            flex: 1; min-width: 200px; padding: 12px 18px; border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05);
-            color: #fff; font-size: 14px; font-family: inherit;
-        }
+        .search-box { flex: 1; min-width: 200px; padding: 12px 18px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: #fff; font-size: 14px; font-family: inherit; }
         .search-box::placeholder { color: #888; }
         .search-box:focus { outline: none; border-color: #feca57; background: rgba(255, 255, 255, 0.1); }
-        
-        .category-btn {
-            padding: 12px 20px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(255, 255, 255, 0.05); color: #fff; font-size: 14px;
-            font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: inherit;
-        }
+        .category-btn { padding: 12px 20px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: inherit; }
         .category-btn:hover, .category-btn.active { background: linear-gradient(90deg, #ff6b6b, #ee5a6f); border-color: transparent; }
-        
-        .news-card {
-            background: rgba(255, 255, 255, 0.07); border-left: 4px solid #ff6b6b;
-            padding: 20px 22px; margin-bottom: 18px; border-radius: 12px;
-            transition: all 0.3s ease; backdrop-filter: blur(8px);
-            border-top: 1px solid rgba(255, 255, 255, 0.05); border-right: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
+
+        /* News Card */
+        .news-card { background: rgba(255, 255, 255, 0.07); border-left: 4px solid #ff6b6b; padding: 20px 22px; margin-bottom: 18px; border-radius: 12px; transition: all 0.3s ease; backdrop-filter: blur(8px); border-top: 1px solid rgba(255, 255, 255, 0.05); border-right: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
         .news-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2); border-left-color: #feca57; background: rgba(255, 255, 255, 0.1); }
-        
         .news-title { font-size: 19px; font-weight: 600; color: #ffffff; line-height: 1.6; margin-bottom: 14px; }
         .news-summary { font-size: 15px; color: #b0b0b0; line-height: 1.7; margin-bottom: 15px; padding-left: 10px; border-left: 2px solid #444; }
         .news-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        
-        .news-link {
-            display: inline-flex; align-items: center; gap: 6px;
-            background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white;
-            padding: 9px 18px; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.3s ease;
-        }
+        .news-link { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 9px 18px; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.3s ease; }
         .news-link:hover { background: linear-gradient(90deg, #feca57, #ff9f43); transform: scale(1.05); }
-        
         .source { font-size: 12px; color: #888; display: flex; align-items: center; gap: 5px; }
-        
+
+        /* Share Buttons */
         .share-buttons { display: flex; gap: 8px; margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.08); align-items: center; }
         .share-btn { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; text-decoration: none; font-size: 18px; transition: all 0.3s ease; color: white; }
         .share-btn:hover { transform: translateY(-3px) scale(1.1); }
-        
         .share-whatsapp { background: #25D366; }
         .share-telegram { background: #0088cc; }
         .share-facebook { background: #1877F2; }
         .share-twitter { background: #000; }
         .share-label { font-size: 12px; color: #888; margin-right: 5px; }
-        
-        .load-more {
-            display: block; width: 100%; padding: 15px; margin-top: 20px;
-            background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px; color: #feca57; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: inherit;
-        }
+
+        /* Load More & Footer */
+        .load-more { display: block; width: 100%; padding: 15px; margin-top: 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; color: #feca57; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: inherit; }
         .load-more:hover { background: rgba(255, 255, 255, 0.1); border-color: #feca57; }
-        
         .footer { text-align: center; padding: 25px; color: #888; font-size: 13px; margin-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); line-height: 2; }
         .footer a { color: #48dbfb; text-decoration: none; margin: 0 8px; transition: color 0.3s; }
         .footer a:hover { color: #feca57; text-decoration: underline; }
-        
         .loading { text-align: center; padding: 40px; color: #888; font-size: 16px; }
-        
+
         @media (max-width: 600px) {
             .header-section { flex-direction: column; gap: 20px; padding: 20px 15px; }
             .icon-glow-wrap { width: 150px; height: 150px; }
@@ -224,17 +94,13 @@
 </head>
 <body>
     <div class="container">
-        <!-- ═══ ANIMATED HEADER - START ═══ -->
+        <!-- Header -->
         <div class="header-section">
             <div class="icon-glow-wrap">
                 <div class="rotating-text">
                     <svg viewBox="0 0 200 200">
-                        <defs>
-                            <path id="pathLeft" d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"/>
-                        </defs>
-                        <text id="textLeft">
-                            <textPath href="#pathLeft" startOffset="0%" id="textPathLeft">★ વિશ્વાસનું નામ, ભારત ન્યૂઝ ★</textPath>
-                        </text>
+                        <defs><path id="pathLeft" d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"/></defs>
+                        <text id="textLeft"><textPath href="#pathLeft" startOffset="0%" id="textPathLeft">★ વિશ્વાસનું નામ, ભારત ન્યૂઝ ★</textPath></text>
                     </svg>
                 </div>
                 <img src="icon.png" alt="icon" class="center-icon">
@@ -248,18 +114,13 @@
             <div class="icon-glow-wrap">
                 <div class="rotating-text right">
                     <svg viewBox="0 0 200 200">
-                        <defs>
-                            <path id="pathRight" d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"/>
-                        </defs>
-                        <text id="textRight">
-                            <textPath href="#pathRight" startOffset="0%" id="textPathRight">● દેશની ધડકન, ભારત ન્યૂઝ ●</textPath>
-                        </text>
+                        <defs><path id="pathRight" d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"/></defs>
+                        <text id="textRight"><textPath href="#pathRight" startOffset="0%" id="textPathRight">● દેશની ધડકન, ભારત ન્યૂઝ ●</textPath></text>
                     </svg>
                 </div>
                 <img src="icon.png" alt="icon" class="center-icon">
             </div>
         </div>
-        <!-- ═══ ANIMATED HEADER - END ═══ -->
 
         <!-- Search & Category -->
         <div class="controls">
@@ -280,55 +141,49 @@
         <!-- Load More -->
         <button class="load-more" id="loadMore" onclick="loadMore()" style="display:none;">વધુ ન્યૂઝ જુઓ ⬇️</button>
 
-        <!-- ═══ WHATSAPP CHANNEL ═══ -->
+        <!-- WhatsApp Channel -->
         <div style="text-align: center; margin: 30px auto; padding: 25px 20px; background: linear-gradient(135deg, #25D366, #128C7E); border-radius: 15px; max-width: 600px; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);">
             <h2 style="color: white; font-size: 22px; margin-bottom: 12px;">📱 WhatsApp Channel</h2>
             <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin-bottom: 20px;">હર 2 કલાકે નવા ન્યૂઝ સીધા WhatsApp પર!</p>
-            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" style="display: inline-block; background: white; color: #25D366; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-size: 16px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-                📱 Join WhatsApp Channel
-            </a>
+            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" style="display: inline-block; background: white; color: #25D366; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-size: 16px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">📱 Join WhatsApp Channel</a>
         </div>
 
-        <!-- ═══ DRAVY'S APP DOWNLOAD (UPDATED) ═══ -->
+        <!-- App Download -->
         <div style="text-align: center; margin: 40px auto 30px; padding: 30px 20px; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); border-radius: 15px; max-width: 600px; border: 1px solid rgba(255, 255, 255, 0.1);">
             <h2 style="color: #feca57; font-size: 22px; margin-bottom: 12px;">📚 Dravy's English Learning App</h2>
             <p style="color: #a0a0a0; font-size: 14px; margin-bottom: 20px;">Std 7 English Learning App • 100% Free • No Ads</p>
             
             <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 15px;">
-                <!-- ઓફલાઇન એપ ડાઉનલોડ બટન -->
                 <a href="https://github.com/mybharatnews/kids-activity-app/releases/latest" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #0077b6, #00b4d8); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-size: 15px; font-weight: bold; box-shadow: 0 8px 25px rgba(0,119,182,0.5);">
                     ⬇️ ડાઉનલોડ ઓફલાઇન એપ (Windows)
                 </a>
-
-                <!-- ઓનલાઇન વેબ વર્ઝન બટન -->
                 <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-size: 15px; font-weight: bold; box-shadow: 0 8px 25px rgba(40,167,69,0.5);">
                     🌐 ઓનલાઇન વેબ વર્ઝન વાપરો
                 </a>
             </div>
-            
             <p style="color: #666; font-size: 12px; margin-top: 15px;">ઓફલાઇન એપ: Windows 10/11 • 73 MB | ઓનલાઇન: કોઈપણ ડિવાઇસ પર ચાલશે</p>
         </div>
 
         <!-- Footer -->
         <div class="footer">
             © 2026 भारत न्यूज़ | स्रोत: Moneycontrol, Economic Times, Livemint, Hindu Business Line, Zee Business<br>
-            <a href="about.html">અમારા વિશે</a> | 
-            <a href="privacy.html">ગોપનીયતા નીતિ</a> | 
-            <a href="contact.html">સંપર્ક કરો</a>
-            <br>
+            <a href="about.html">અમારા વિશે</a> | <a href="privacy.html">ગોપનીયતા નીતિ</a> | <a href="contact.html">સંપર્ક કરો</a><br>
             આ વેબસાઈટ AI દ્વારા ઓટોમેટિક અપડેટ થાય છે.
         </div>
     </div>
 
-    <!-- ═══ News Script ═══ -->
+    <!-- Script -->
     <script>
         let allNews = [];
         let filteredNews = [];
         let displayCount = 10;
 
-        // News Load
+        // News Load (કેશ ટાળવા માટે થોડો સમય ઉમેર્યો છે)
         fetch('news_data.json?v=' + new Date().getTime())
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) { throw new Error('Network response was not ok'); }
+                return response.json();
+            })
             .then(data => {
                 allNews = data;
                 filteredNews = data;
@@ -336,7 +191,7 @@
             })
             .catch(error => {
                 document.getElementById('news-container').innerHTML = 
-                    '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી.</div>';
+                    '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી. કૃપા કરીને પેજ રિફ્રેશ કરો.</div>';
                 console.error('Error:', error);
             });
 
@@ -377,4 +232,48 @@
                         <a href="https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}" target="_blank" class="share-btn share-twitter">𝕏</a>
                     </div>
                 `;
-                cont
+                container.appendChild(card);
+            });
+
+            const loadMoreBtn = document.getElementById('loadMore');
+            if (displayCount < filteredNews.length) {
+                loadMoreBtn.style.display = 'block';
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        function loadMore() {
+            displayCount += 10;
+            displayNews();
+        }
+
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            if (query === '') {
+                filteredNews = allNews;
+            } else {
+                filteredNews = allNews.filter(news => 
+                    news.title.toLowerCase().includes(query) || 
+                    (news.summary && news.summary.toLowerCase().includes(query))
+                );
+            }
+            displayCount = 10;
+            displayNews();
+        });
+
+        function filterNews(source, btn) {
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            if (source === 'all') {
+                filteredNews = allNews;
+            } else {
+                filteredNews = allNews.filter(news => news.source === source);
+            }
+            displayCount = 10;
+            displayNews();
+        }
+    </script>
+</body>
+</html>
