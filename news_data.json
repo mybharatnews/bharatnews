@@ -1,5 +1,40 @@
 [
     {
+        "title": "Apple स्टोरेज अपग्रेड के लिए iPhone 18 Pro उपयोगकर्ताओं से 3 गुना तक का शुल्क लेता है: खरीदार कितना भुगतान करते हैं",
+        "summary": "वॉल स्ट्रीट जर्नल के एक विश्लेषण में पाया गया है कि Apple iPhone 18 Pro खरीदारों से स्टोरेज अपग्रेड करने के लिए अनुमानित लागत का तीन गुना तक शुल्क लेता है। कंपनी कथित तौर पर 1TB अपग्रेड पर अनुमानित $ 408 और 2TB संस्करण पर $ 750 कमाती है, जो उच्च - क्षमता वाले मॉडल से कमाए गए भारी मार्जिन को उजागर करती है।",
+        "link": "https://www.livemint.com/technology/apple-charges-iphone-18-pro-users-up-to-3-times-its-cost-for-storage-upgrades-what-buyers-pay-11794056358617.html",
+        "source": "Livemint",
+        "date": "07-11-2026 22:05"
+    },
+    {
+        "title": "अगले महीने अपने पहले एआई - नेटिव हार्डवेयर उत्पाद को लॉन्च करने के लिए कुछ भी नहीं: सीईओ ने ‘कोई नई स्क्रीन नहीं‘ का खुलासा किया",
+        "summary": "कुछ भी नहीं सीईओ कार्ल पेई ने कंपनी के पहले एआई - नेटिव उत्पाद को चिढ़ाया है, जो एक स्क्रीन - फ्री उत्पादकता डिवाइस है जिसका विवरण लपेटे में रहता है। पेई का कहना है कि एआई को अगले बड़े उपभोक्ता को खोजने पर ध्यान केंद्रित करने के बजाय, लोगों को रोजमर्रा की बातचीत से उपयोगी जानकारी प्राप्त करने में मदद करनी चाहिए &amp;amp; व्यावहारिक कार्यों को संभालना चाहिए",
+        "link": "https://www.livemint.com/technology/nothing-to-launch-its-first-ai-native-hardware-product-next-month-here-s-what-to-expect-as-ceo-reveals-no-new-screen-11794052846223.html",
+        "source": "Livemint",
+        "date": "07-11-2026 22:05"
+    },
+    {
+        "title": "इटली की मेलोनी ने डार्क वेब पर विदेश मंत्री का डेटा लीक करने के लिए रूस समर्थक हैकर्स को जिम्मेदार ठहराया",
+        "summary": "इटली के मेलोनी ने डार्क वेब पर विदेश मंत्री का डेटा लीक करने के लिए रूस समर्थक हैकर्स को जिम्मेदार ठहराया",
+        "link": "https://www.livemint.com/technology/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web-11794048214860.html",
+        "source": "Livemint",
+        "date": "07-11-2026 22:06"
+    },
+    {
+        "title": "नियामक का कहना है कि स्नैपचैट ने यूके के बच्चों के लिए फ्रेंड - फाइंडर सुविधा को अक्षम करना शुरू कर दिया है",
+        "summary": "ऑफकॉम ने कहा कि इस बदलाव से अजनबियों के लिए इमेज - शेयरिंग सोशल मीडिया प्लेटफॉर्म पर बच्चों से संपर्क करना मुश्किल हो जाएगा, जिसे वह ब्रिटेन में बच्चों द्वारा उपयोग की जाने वाली सबसे बड़ी और सबसे लोकप्रिय ऑनलाइन सेवाओं में से एक मानता है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/snapchat-starts-disabling-friend-finder-feature-for-uk-children-regulator-says/articleshow/135625691.cms",
+        "source": "Economic Times",
+        "date": "07-11-2026 22:06"
+    },
+    {
+        "title": "Google ने AI इंफ्रास्ट्रक्चर फर्म Crusoe से व्योमिंग डेटा सेंटर साइट का अधिग्रहण किया",
+        "summary": "एआई इंफ्रास्ट्रक्चर डेवलपर ने शुक्रवार को कहा कि Google ने दक्षिण - पूर्व व्योमिंग में क्रूसो की डेटा सेंटर साइट का अधिग्रहण किया है, अल्फाबेट इकाई द्वारा परियोजना में $ 17 बिलियन के निवेश की घोषणा के एक दिन बाद।",
+        "link": "https://economictimes.indiatimes.com/tech/startups/google-acquires-wyoming-data-center-site-from-ai-infrastructure-firm-crusoe/articleshow/135625592.cms",
+        "source": "Economic Times",
+        "date": "07-11-2026 22:06"
+    },
+    {
         "title": "उच्च किराया, लंबी यात्राएं, देरी विशेष ट्रेनों को यात्रियों के लिए कम आकर्षक बनाती हैं: अधिकारी",
         "summary": "रेल मंत्रालय त्योहारी भीड़ के दौरान विशेष ट्रेनों का संचालन करने का दावा करता है, फिर भी नियमित ट्रेन की मांग उनकी क्षमता से अधिक है। विशेष ट्रेनों में अक्सर नियमित ट्रेनों की तुलना में अधिक किराया और लंबी यात्रा की अवधि होती है, जिससे यात्रियों में निराशा होती है। कई यात्री बू करने के लिए तैयार हैं",
         "link": "https://economictimes.indiatimes.com/industry/transportation/railways/high-fares-longer-journeys-delays-make-special-trains-less-attractive-to-passengers-officials/articleshow/135637128.cms",
@@ -173,40 +208,5 @@
         "link": "https://economictimes.indiatimes.com/markets/stocks/news/patakha-stock-picks-icici-bank-bel-6-other-stocks-with-62-to-buy-this-samvat-2023-see-full-list/slideshow/135627923.cms",
         "source": "Economic Times",
         "date": "07-11-2026 13:24"
-    },
-    {
-        "title": "भारत एआई में सही रास्ते पर है; कंपनियां पायलटों से उत्पादन की ओर बढ़ रही हैं: ओरेकल कुमार",
-        "summary": "एआई में भारत सही रास्ते पर; कंपनियां पायलटों से उत्पादन की ओर बढ़ रही हैं: ओरेकल के कुमार",
-        "link": "https://www.livemint.com/technology/india-on-right-track-in-ai-firms-moving-from-pilots-to-production-oracles-kumar-11794038633340.html",
-        "source": "Livemint",
-        "date": "07-11-2026 10:38"
-    },
-    {
-        "title": "डेटा सेंटर भारत के एआई और क्लाउड एक्सपेंशन को हैंडसम पे पैकेज के साथ कैश इन करता है",
-        "summary": "उच्च राजस्व और बड़े पैमाने पर क्षमता रैंप - अप ने कार्यकारी मुआवजे को करोड़ों के आंकड़े को पार कर दिया।",
-        "link": "https://www.livemint.com/technology/tech-news/data-centre-executives-pay-surge-ai-cloud-expansion-11793940107304.html",
-        "source": "Livemint",
-        "date": "07-11-2026 10:38"
-    },
-    {
-        "title": "अमेज़ॅन ने एलेक्सा के माध्यम से टेक्स्ट - आधारित खरीदारी शुरू की",
-        "summary": "अमेज़ॅन ने कहा कि नई टेक्स्ट सुविधा उपयोगकर्ताओं को उत्पादों पर शोध और तुलना करने, सौदों और मूल्य में गिरावट को ट्रैक करने और उनकी ओर से खरीदारी के लिए एलेक्सा को पूर्ण खरीदारी करने की सुविधा देती है।",
-        "link": "https://economictimes.indiatimes.com/tech/technology/amazon-rolls-out-text-based-shopping-through-alexa/articleshow/135626091.cms",
-        "source": "Economic Times",
-        "date": "07-11-2026 10:38"
-    },
-    {
-        "title": "त्रुटियों के बाद फसल उत्पादन डेटा की जांच करने के लिए यूएसडीए एआई टूल लॉन्च करेगा",
-        "summary": "यूएसडीए के अवर सचिव स्कॉट हचिन्स ने एक साक्षात्कार में कहा कि सितंबर से अपने मकई डेटा में त्रुटियों की खोज के बाद, अधिकारियों ने निर्धारित किया कि एआई टूल ने समस्या को चिह्नित किया होगा और 10 नवंबर को होने वाली फसल उत्पादन रिपोर्ट पर इसका उपयोग करने का फैसला किया होगा।",
-        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/usda-to-launch-ai-tool-to-check-crop-production-data-after-errors/articleshow/135626006.cms",
-        "source": "Economic Times",
-        "date": "07-11-2026 10:38"
-    },
-    {
-        "title": "नियामक का कहना है कि स्नैपचैट ने यूके के बच्चों के लिए फ्रेंड - फाइंडर सुविधा को अक्षम करना शुरू कर दिया है",
-        "summary": "ऑफकॉम ने कहा कि इस बदलाव से अजनबियों के लिए इमेज - शेयरिंग सोशल मीडिया प्लेटफॉर्म पर बच्चों से संपर्क करना मुश्किल हो जाएगा, जिसे वह ब्रिटेन में बच्चों द्वारा उपयोग की जाने वाली सबसे बड़ी और सबसे लोकप्रिय ऑनलाइन सेवाओं में से एक मानता है।",
-        "link": "https://economictimes.indiatimes.com/tech/technology/snapchat-starts-disabling-friend-finder-feature-for-uk-children-regulator-says/articleshow/135625691.cms",
-        "source": "Economic Times",
-        "date": "07-11-2026 10:38"
     }
 ]
