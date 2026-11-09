@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /news_index.json
+Disallow: /news_data.json
+
+User-agent: Googlebot-News
+Allow: /
 
 Sitemap: https://mybharatnews.github.io/bharatnews/sitemap.xml
+Sitemap: https://mybharatnews.github.io/bharatnews/news-sitemap.xml

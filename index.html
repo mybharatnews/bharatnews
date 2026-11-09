@@ -2,278 +2,271 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="KrbT-SoFa0ArKD_ZVTAZoJ5a56Qgx6u8xwtlDPLSaTE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>भारत न्यूज़ - शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
-    <meta name="description" content="भारत न्यूज़ - शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी में अपडेट्स। हर 2 घंटे में नई खबरें।">
-    <link rel="alternate" type="application/rss+xml" title="ભારત ન્યૂઝ RSS Feed" href="https://mybharatnews.github.io/bharatnews/rss.xml">
-    <meta name="keywords" content="शेयर बाजार, हिंदी न्यूज़, Nifty, Sensex, Business News, Market News">
-    <meta property="og:title" content="ભારત ન્યૂઝ - શેર બજારની તાજી હિન્દી અપડેટ્સ" />
-    <meta property="og:description" content="દર 2 કલાકે નવા ન્યૂઝ - Moneycontrol, Economic Times, Livemint થી" />
-    <meta property="og:image" content="https://mybharatnews.github.io/bharatnews/icon.png" />
-    <meta property="og:url" content="https://mybharatnews.github.io/bharatnews/" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://mybharatnews.github.io/bharatnews/icon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700;900&family=Poppins:wght@500;600;700;900&display=swap" rel="stylesheet">
+    <title>भारत न्यूज़ - भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
+    <meta name="description" content="भारतीय शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी अपडेट्स. Nifty 50, Sensex, IPO, Stock Market News.">
+    <meta name="keywords" content="share market, stock market, hindi news, business, sensex, nifty, भारत न्यूज़">
+    <link rel="canonical" href="https://mybharatnews.github.io/bharatnews/">
+    <meta property="og:title" content="भारत न्यूज़">
+    <meta property="og:description" content="भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स">
+    <meta property="og:url" content="https://mybharatnews.github.io/bharatnews/">
+    <meta property="og:type" content="website">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://mybharatnews.github.io/bharatnews/rss.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; min-height: 100vh; padding: 20px; }
+        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; }
         .container { max-width: 900px; margin: auto; }
-        
-        /* Header */
-        .header-section { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 0 auto 25px; background: linear-gradient(135deg, #16162a, #1e1e3a); padding: 25px 20px; border-radius: 20px; box-shadow: 0 0 30px rgba(255, 0, 128, 0.2), 0 0 60px rgba(0, 200, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.08); gap: 10px; }
-        .icon-glow-wrap { position: relative; width: 190px; height: 190px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .icon-glow-wrap::before { content: ""; position: absolute; inset: 0; border-radius: 50%; padding: 5px; background: conic-gradient(#ff0080, #ff8c00, #ffd700, #00ff88, #00c6ff, #8a2be2, #ff0080); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: spin 4s linear infinite; filter: drop-shadow(0 0 15px #ff0080) drop-shadow(0 0 25px #00c6ff); }
-        .center-icon { width: 105px; height: 105px; border-radius: 50%; z-index: 3; animation: pulse 2s ease-in-out infinite; box-shadow: 0 0 25px #ffd700, 0 0 50px #ff0080; object-fit: cover; border: 3px solid #ffd700; }
-        .rotating-text { position: absolute; inset: 0; animation: spin 18s linear infinite; }
-        .rotating-text svg { width: 100%; height: 100%; }
-        .rotating-text text { font-size: 24px; font-weight: 900; letter-spacing: 3px; fill: #ffd700; animation: glowLeft 2s ease-in-out infinite; }
-        
-        @keyframes glowLeft { 0% { fill: #ffd700; filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 30px #ff0080); } 25% { fill: #ff0080; filter: drop-shadow(0 0 10px #ff0080) drop-shadow(0 0 20px #ff0080) drop-shadow(0 0 30px #ffd700); } 50% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #ff0080); } 75% { fill: #00ff88; filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #00e0ff); } 100% { fill: #ffd700; filter: drop-shadow(0 0 10px #ffd700) drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 30px #ff0080); } }
-        .rotating-text.right text { fill: #00e0ff; animation: glowRight 2.5s ease-in-out infinite; }
-        @keyframes glowRight { 0% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #00ff88); } 33% { fill: #00ff88; filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #ffd700); } 66% { fill: #8a2be2; filter: drop-shadow(0 0 10px #8a2be2) drop-shadow(0 0 20px #8a2be2) drop-shadow(0 0 30px #ff0080); } 100% { fill: #00e0ff; filter: drop-shadow(0 0 10px #00e0ff) drop-shadow(0 0 20px #00e0ff) drop-shadow(0 0 30px #00ff88); } }
-        
-        .center-title { text-align: center; flex: 1; padding: 0 10px; }
-        .center-title h1 { font-size: 36px; font-weight: 900; margin: 0; background: linear-gradient(90deg, #ffd700, #ff0080, #00c6ff, #ffd700); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 4s linear infinite; letter-spacing: 2px; }
-        .center-title p { margin: 8px 0 0; font-size: 14px; color: #b0b0d0; letter-spacing: 1px; }
-        
-        @keyframes spin { to { transform: rotate(360deg); } }
-        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
-        @keyframes shine { to { background-position: 300% 0; } }
-
-        /* Controls */
-        .controls { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
-        .search-box { flex: 1; min-width: 200px; padding: 12px 18px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: #fff; font-size: 14px; font-family: inherit; }
-        .search-box::placeholder { color: #888; }
-        .search-box:focus { outline: none; border-color: #feca57; background: rgba(255, 255, 255, 0.1); }
-        .category-btn { padding: 12px 20px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: inherit; }
-        .category-btn:hover, .category-btn.active { background: linear-gradient(90deg, #ff6b6b, #ee5a6f); border-color: transparent; }
-
-        /* News Card */
-        .news-card { background: rgba(255, 255, 255, 0.07); border-left: 4px solid #ff6b6b; padding: 20px 22px; margin-bottom: 18px; border-radius: 12px; transition: all 0.3s ease; backdrop-filter: blur(8px); border-top: 1px solid rgba(255, 255, 255, 0.05); border-right: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
-        .news-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2); border-left-color: #feca57; background: rgba(255, 255, 255, 0.1); }
-        .news-title { font-size: 19px; font-weight: 600; color: #ffffff; line-height: 1.6; margin-bottom: 14px; }
-        .news-summary { font-size: 15px; color: #b0b0b0; line-height: 1.7; margin-bottom: 15px; padding-left: 10px; border-left: 2px solid #444; }
-        .news-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .news-link { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 9px 18px; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600; transition: all 0.3s ease; }
-        .news-link:hover { background: linear-gradient(90deg, #feca57, #ff9f43); transform: scale(1.05); }
-        .source { font-size: 12px; color: #888; display: flex; align-items: center; gap: 5px; }
-
-        /* Share Buttons */
-        .share-buttons { display: flex; gap: 8px; margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.08); align-items: center; }
-        .share-btn { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; text-decoration: none; font-size: 18px; transition: all 0.3s ease; color: white; }
-        .share-btn:hover { transform: translateY(-3px) scale(1.1); }
-        .share-whatsapp { background: #25D366; }
-        .share-telegram { background: #0088cc; }
-        .share-facebook { background: #1877F2; }
-        .share-twitter { background: #000; }
-        .share-label { font-size: 12px; color: #888; margin-right: 5px; }
-
-        /* Load More & Footer */
-        .load-more { display: block; width: 100%; padding: 15px; margin-top: 20px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; color: #feca57; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: inherit; }
-        .load-more:hover { background: rgba(255, 255, 255, 0.1); border-color: #feca57; }
-        .footer { text-align: center; padding: 25px; color: #888; font-size: 13px; margin-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); line-height: 2; }
-        .footer a { color: #48dbfb; text-decoration: none; margin: 0 8px; transition: color 0.3s; }
-        .footer a:hover { color: #feca57; text-decoration: underline; }
-        .loading { text-align: center; padding: 40px; color: #888; font-size: 16px; }
-
-        @media (max-width: 600px) {
-            .header-section { flex-direction: column; gap: 20px; padding: 20px 15px; }
-            .icon-glow-wrap { width: 150px; height: 150px; }
-            .center-icon { width: 85px; height: 85px; }
-            .rotating-text text { font-size: 18px; letter-spacing: 2px; }
-            .center-title h1 { font-size: 28px; }
-            .center-title p { font-size: 12px; }
-            .news-title { font-size: 16px; }
-            .news-summary { font-size: 14px; }
-            .news-meta { flex-direction: column; align-items: flex-start; }
-            .footer a { display: block; margin: 5px 0; }
-        }
+        header { text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; }
+        header h1 { color: #feca57; font-size: 32px; margin-bottom: 10px; }
+        header p { color: #b0b0b0; font-size: 16px; }
+        .social-links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+        .social-links a { padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; transition: transform 0.2s; }
+        .social-links a:hover { transform: translateY(-2px); }
+        .social-links .wa { background: #25d366; }
+        .social-links .tg { background: #0088cc; }
+        .social-links .fb { background: #1877f2; }
+        .news-card { background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: transform 0.2s; }
+        .news-card:hover { transform: translateY(-3px); }
+        .news-card h2 { font-size: 20px; margin-bottom: 10px; line-height: 1.4; }
+        .news-card h2 a { color: #feca57; text-decoration: none; }
+        .news-card h2 a:hover { color: #ff9f43; }
+        .news-meta { color: #48dbfb; font-size: 13px; margin-bottom: 12px; }
+        .news-card p { color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }
+        .read-more { display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }
+        .read-more:hover { color: #feca57; }
+        footer { text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }
+        footer a { color: #48dbfb; text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
-        <div class="header-section">
-            <div class="icon-glow-wrap">
-                <div class="rotating-text">
-                    <svg viewBox="0 0 200 200">
-                        <defs><path id="pathLeft" d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"/></defs>
-                        <text id="textLeft"><textPath href="#pathLeft" startOffset="0%" id="textPathLeft">★ વિશ્વાસનું નામ, ભારત ન્યૂઝ ★</textPath></text>
-                    </svg>
-                </div>
-                <img src="icon.png" alt="icon" class="center-icon">
+        <header>
+            <h1>📊 भारत न्यूज़</h1>
+            <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
+            <div class="social-links">
+                <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" rel="noopener" class="wa">💬 WhatsApp</a>
+                <a href="https://t.me/indianews_official" target="_blank" rel="noopener" class="tg">📢 Telegram</a>
+                <a href="https://www.facebook.com/profile.php?id=61595205934642" target="_blank" rel="noopener" class="fb">📘 Facebook</a>
             </div>
+        </header>
 
-            <div class="center-title">
-                <h1>ભારત ન્યૂઝ</h1>
-                <p>શેર બજાર અને બિઝનેસની તાજી હિન્દી અપડેટ્સ</p>
-            </div>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-755cd408086d.html">Pebble Qore Ultra समीक्षा: ₹ 5,999 पर स्वास्थ्य ट्रैकिंग की तरह, लेकिन ट्रेड - ऑफ क्या हैं?</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 11:30</div>
+            <p>पेबल कोर अल्ट्रा एक स्क्रीनलेस फ़िटनेस बैंड है जिसकी कीमत ₹ 5,999 है, जो AI - संचालित स्वास्थ्य अंतर्दृष्टि, HRV मॉनिटरिंग, बॉडी एज ट्रैकिंग और 100 से...</p>
+            <a href="news/market-news-755cd408086d.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-15c5fae66e65.html">ASUS Zenbook 14 को भारत में सेरालुमिनियम बॉडी, OLED डिस्प्ले और 33 घंटे तक की बैटरी के साथ लॉन्च किया गया है</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 11:31</div>
+            <p>ASUS Zenbook 14 भारत में इंटेल, एएमडी और स्नैपड्रैगन विकल्पों के साथ ₹ 1,36,990 से शुरू होता है। वैरिएंट की कीमतें, डिस्प्ले, बैटरी क्लेम और EMI ऑफ़र ...</p>
+            <a href="news/market-news-15c5fae66e65.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-0a49328000f6.html">सैमसंग गैलेक्सी S27 लॉन्च 2027 की शुरुआत के लिए इत्तला दे दी गई: 4 मॉडल, नया प्रो वेरिएंट और अपेक्षित स्पेसिफिकेशन</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 11:31</div>
+            <p>सैमसंग गैलेक्सी S27 लीक: चार मॉडल, प्रो और अल्ट्रा पर 200MP कैमरे, एक प्राइवेसी डिस्प्ले, मैग्नेटिक चार्जिंग और संभावित जनवरी - फरवरी 2027 लॉन्च। यहाँ...</p>
+            <a href="news/market-news-0a49328000f6.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-09d012d4bf27.html">मैकिन्से ने चेतावनी दी है कि एआई - संचालित विश्लेषण निर्णय लेने की गति को धीमा कर सकता है, भविष्य की नेतृत्व पाइपलाइन को कमजोर कर सकता है</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 11:31</div>
+            <p>जबकि आर्टिफिशियल इंटेलिजेंस (AI) व्यापार विश्लेषण को काफी तेज़ी से कर रहा है, मानव निर्णय लेने की गति को बनाए रखने के लिए संघर्ष कर रहा है। मैकिन्से क...</p>
+            <a href="news/market-news-09d012d4bf27.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-f7dfba2c5ded.html">बैंकों, निवेशकों को एआई ऋण से सावधान रहना पड़ता है, जो बाजार में बिकवाली से प्रभावित है</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 11:31</div>
+            <p>कुछ बैंक, जो कुछ हफ्ते पहले एआई सौदों को वित्त पोषित करने के लिए तैयार थे, अब बाजार के प्रतिभागियों को बता रहे हैं कि वे क्षेत्र की मार्की प्रौद्योगिक...</p>
+            <a href="news/market-news-f7dfba2c5ded.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-4dfef2c4588a.html">सर्वम ने Google क्लाउड इंडिया के प्रमुख शशिकुमार श्रीधरन को अध्यक्ष और मुख्य व्यवसाय अधिकारी के रूप में नामित किया</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 11:31</div>
+            <p>शशिकुमार इसके अलावा सर्वम के निदेशक मंडल में शामिल होंगे। वह डिजिटल - मूल कंपनियों, डेवलपर्स और भागीदारों के साथ अपनी सगाई का विस्तार करते हुए उद्यमों...</p>
+            <a href="news/market-news-4dfef2c4588a.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-75f1910e27ff.html">चीन ने एनवीडिया के सीईओ जेन्सेन हुआंग से जुड़े जासूसी साजिश के दावे को धब्बा अभियान के रूप में खारिज कर दिया</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 11:31</div>
+            <p>द न्यूयॉर्क टाइम्स के अनुसार, हुआंग ने एनवीडिया बोर्ड को स्वीकार किया है कि वह एक व्यावसायिक कार्यकारी के साथ घनिष्ठ था, जिसे अमेरिकी खुफिया विभाग ने ...</p>
+            <a href="news/market-news-75f1910e27ff.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-7dccc89c1725.html">Nvidia की Jensen Huang, लेदर जैकेट में स्कैंडल - हिट AI विज़नरी</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 11:31</div>
+            <p>अमेरिकी चिप टाइटन एनवीडिया द्वारा बनाई गई चिप्स आर्टिफिशियल इंटेलिजेंस की सीमाओं को आगे बढ़ाती हैं, लेकिन इसके नेता जेन्सेन हुआंग एक कथित चीनी जासूस क...</p>
+            <a href="news/market-news-7dccc89c1725.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-d206912ae712.html">जेन्सेन हुआंग की पत्नी कौन है? लोरी हुआंग से मिलें - उनका नेट वर्थ, शिक्षा और दंपति की मुलाकात कैसे हुई?</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:01</div>
+            <p>जेन्सेन हुआंग की बेवफाई ने उनकी पत्नी लोरी को सुर्खियों में ला दिया है। 1985 से विवाहित, उन्होंने बड़े पैमाने पर सार्वजनिक ध्यान से परहेज किया है और प...</p>
+            <a href="news/market-news-d206912ae712.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-741e9b86a5f1.html">ओडिशा माइनिंग कॉर्प के साथ मूल्य निर्धारण विवाद के बीच वेदांता ने कैप्टिव बॉक्साइट पर दांव लगाया</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:01</div>
+            <p>कंपनी को सितंबर में ओडिशा में अपनी सिजीमाली बॉक्साइट खदान के संचालन के लिए लंबे समय से लंबित सहमति मिली थी और अब इस वित्तीय वर्ष में ही उत्पादन शुरू क...</p>
+            <a href="news/market-news-741e9b86a5f1.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-04287740496c.html">ब्लैकस्टोन समर्थित आधार हाउसिंग फाइनेंस एल नीनो जोखिम को लोन बुक तक सीमित देखता है</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:02</div>
+            <p>ऋणदाता के एयूएम का केवल 6% उन जिलों में है जिनकी पहचान एल नीनो के लिए अत्यधिक असुरक्षित के रूप में की गई है, जबकि स्थिर संग्रह और हामीदारी सुरक्षा उपा...</p>
+            <a href="news/market-news-04287740496c.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-0f266e5a45d0.html">मेडुसा बीयर से परे विविधता लाने के लिए आत्माओं पर दांव लगाती है, अजनबी और संस निर्माता के साथ संबंध बनाती है</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:02</div>
+            <p>बीयर निर्माता ने स्पिरिट्स मार्केट में प्रवेश करने के लिए थर्ड आई डिस्टिलरी के साथ साझेदारी की है और वित्त वर्ष 27 में सकल राजस्व में ₹ 210 करोड़ का ल...</p>
+            <a href="news/market-news-0f266e5a45d0.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-a2211ef024bd.html">भारत की क्यूएसआर श्रृंखलाओं में मांग में सुधार देखा गया है क्योंकि मूल्य प्रस्ताव ग्राहकों को वापस आकर्षित करते हैं</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:07</div>
+            <p>फ़ास्ट - फ़ूड चेन में सितंबर की तिमाही में ₹ 99 - प्रकार के मूल्य वाले सौदों ने बर्गर किंग और मैकडॉनल्ड्स की फ़्रैंचाइज़ी वेस्टलाइफ़ के नेतृत्व में डि...</p>
+            <a href="news/market-news-a2211ef024bd.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-655e497c38bd.html">बालकृष्ण को पिरेली साझेदारी से तीन गुना लाभ</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:07</div>
+            <p>बालकृष्ण इंडस्ट्रीज ने यूरोपीय परीक्षण सुविधाओं तक पहुंच प्राप्त करते हुए 2030 तक सालाना 800,000 यात्री कार टायर बनाने के लिए पिरेली के साथ साझेदारी क...</p>
+            <a href="news/market-news-655e497c38bd.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-60798fc901b5.html">हैक किए गए रिकॉर्ड दिखाते हैं कि यूक्रेन के खिलाफ युद्ध में 400,000 रूसी मारे गए</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:08</div>
+            <p>देश की सांख्यिकी एजेंसी, रोसस्टैट द्वारा रखे गए गोपनीय आंकड़ों के अनुसार, रूस ने लगभग पांच साल पहले पूर्ण पैमाने पर आक्रमण के बाद से यूक्रेन में लड़ र...</p>
+            <a href="news/market-news-60798fc901b5.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-0713d553d4e2.html">ईरान ने कतर के माध्यम से परमाणु प्रस्ताव भेजा: दोहा खुद को दूर करने के बाद अमेरिका, ईरान के बीच एक प्रमुख मध्यस्थ के रूप में कैसे उभरा</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:08</div>
+            <p>ईरानी हमलों के बाद शुरू में खुद को सीधे मध्यस्थता से दूर करने के बाद, कतर अमेरिका और ईरान को एक समझौते के करीब लाने के लिए अपने राजनयिक प्रयासों को आग...</p>
+            <a href="news/market-news-0713d553d4e2.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-6aa34ce3d67e.html">नए संवत में बाजार की वृद्धि को गति देने के लिए कच्चे तेल में कमी, वैश्विक स्थिरता: एएनएमआई के अध्यक्ष कमलेश श्रॉफ</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
+            <p>भारत का वृहद आर्थिक वातावरण मजबूत विकास के लिए तैयार है, जो सात प्रतिशत से अधिक होने का अनुमान है, जो इक्विटी बाजारों को मजबूत करता है। कच्चे तेल की क...</p>
+            <a href="news/market-news-6aa34ce3d67e.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-67c9fdd74f5f.html">भारतीय अर्थव्यवस्था तेजी से बढ़ेगी, विदेशी पूंजी बाजारों में लौटेगी: एनएसई के सीईओ आशीष कुमार चौहान</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
+            <p>मजबूत मैक्रोइकॉनॉमिक फंडामेंटल्स और बढ़े हुए विदेशी हित के कारण भारत की अर्थव्यवस्था के तेजी से विकास का अनुभव करने का अनुमान है। नेशनल स्टॉक एक्सचेंज...</p>
+            <a href="news/market-news-67c9fdd74f5f.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-2aa60be5eeb0.html">मुहूर्त कारोबार: सेंसेक्स 320 अंक चढ़ा, निफ्टी 25,100 के पार; टाटा स्टील, सन फार्मा टॉप गेनर्स में शामिल</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
+            <p>...</p>
+            <a href="news/market-news-2aa60be5eeb0.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-094556e0223a.html">इन 8 शेयरों के लिए दिवाली भाग्यशाली रही! निवेशकों की संपत्ति दोगुनी से अधिक हुई, रिटर्न 191% तक बढ़ा</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
+            <p>दिवाली 2025 के बाद से निफ्टी 50 में लगभग 3% की गिरावट के बावजूद, बीएसई 500 के आठ शेयरों ने निवेशकों की संपत्ति को दोगुना कर दिया। ऐस इक्विटीज के आंकड़...</p>
+            <a href="news/market-news-094556e0223a.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-39ccbf52f1ce.html">OnePlus ColorOS 17 अपडेट शेड्यूल: OnePlus 12, OnePlus Open, OnePlus Nord 6 और अन्य को नया सॉफ़्टवेयर कब मिलेगा?</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 22:18</div>
+            <p>OnePlus ने ColorOS 17 को रोलआउट करने के लिए नवंबर के शेड्यूल की पुष्टि की। OnePlus 13R नवीनतम सॉफ़्टवेयर प्राप्त करने वाला पहला पुराना मॉडल था।&amp;amp;nb...</p>
+            <a href="news/market-news-39ccbf52f1ce.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-8f7476a3acee.html">JioHome दिवाली ऑफ़र: 10 महीने के ₹ 6,660 के रिचार्ज के साथ 5 महीने का मुफ्त वाई - फाई प्राप्त करें; विवरण देखें</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 22:18</div>
+            <p>रिलायंस जियो ने क्रमशः नए और बाहर जाने वाले ग्राहकों के लिए विशेष दिवाली ऑफर की घोषणा की है। लाभ, कीमत और ऑफ़र का लाभ उठाने का तरीका देखें।...</p>
+            <a href="news/market-news-8f7476a3acee.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-b81b1d3379ab.html">नियामक का कहना है कि स्नैपचैट ने यूके के बच्चों के लिए फ्रेंड - फाइंडर सुविधा को अक्षम करना शुरू कर दिया है</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 08-11-2026 22:18</div>
+            <p>ऑफकॉम ने कहा कि इस बदलाव से अजनबियों के लिए इमेज - शेयरिंग सोशल मीडिया प्लेटफॉर्म पर बच्चों से संपर्क करना मुश्किल हो जाएगा, जिसे वह ब्रिटेन में बच्चो...</p>
+            <a href="news/market-news-b81b1d3379ab.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-4a72432e00cc.html">कर्नाटक, Uber यात्री सुरक्षा, नियामक मुद्दों और शहरी परिवहन पर चर्चा करते हैं</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 08-11-2026 19:53</div>
+            <p>कर्नाटक के मंत्री प्रियांक खड़गे ने हाल ही में शहरी गतिशीलता पर चर्चा करने के लिए उबर इंडिया पब्लिक पॉलिसी टीम से मुलाकात की। चर्चाओं में यात्री सुरक्...</p>
+            <a href="news/market-news-4a72432e00cc.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-e3dda1dc1558.html">एफएसएसएआई ने 81.8 करोड़ रुपये के खाद्य उत्पादों को जब्त किया, राष्ट्रव्यापी अभियान में 1,100 से अधिक लाइसेंस निलंबित किए</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 08-11-2026 19:53</div>
+            <p>एफएसएसएआई ने 1 सितंबर से 5 नवंबर के बीच 56,431 प्रतिष्ठानों को कवर करते हुए एक राष्ट्रव्यापी निरीक्षण अभियान के दौरान अनुमानित 81.80 करोड़ रुपये के 3,...</p>
+            <a href="news/market-news-e3dda1dc1558.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-3c874858383a.html">आईओसी क्रूड, एलपीजी जहाजों को खरीदेगा क्योंकि पश्चिम एशिया संकट शिपिंग जोखिमों को उजागर करता है</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 08-11-2026 19:53</div>
+            <p>इंडियन ऑयल कॉर्पोरेशन का उद्देश्य कच्चे तेल वाहक और एलपीजी जहाजों का अधिग्रहण करके अपनी ऊर्जा आपूर्ति श्रृंखला पर नियंत्रण बढ़ाना है। कंपनी मेक इन इंड...</p>
+            <a href="news/market-news-3c874858383a.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-9555bbfb19e4.html">इस दिवाली मीठी मुसीबत: 82 करोड़ रुपये का भोजन, 1,185 लाइसेंस FSSAI की जांच के दायरे में</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 08-11-2026 19:53</div>
+            <p>खाद्य अपमिश्रण की जांच के लिए एफएसएसएआई ने 1 सितंबर से 5 नवंबर तक एक राष्ट्रव्यापी निरीक्षण अभियान चलाया। इस अवधि के दौरान, पूरे भारत में 3,000 टन से ...</p>
+            <a href="news/market-news-9555bbfb19e4.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-8da01a41dfb5.html">30 साल की उम्र में कोई क्रेडिट इतिहास नहीं: पहली बार उधार लेने वाले कैसे एक स्वस्थ क्रेडिट प्रोफ़ाइल बना सकते हैं और भविष्य में ऋण पात्रता में सुधार कर सकते हैं</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 19:53</div>
+            <p>क्रेडिट हिस्ट्री के बिना 30 साल के हो रहे हैं? पहली बार उधार लेने वाले प्रबंधनीय क्रेडिट से शुरुआत करके, समय पर ईएमआई का भुगतान करके, कम क्रेडिट उपयोग...</p>
+            <a href="news/market-news-8da01a41dfb5.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-00dff854df8a.html">भाई दूज 2026: एक भाई के रूप में आपको 6 वित्तीय उपहार दिवाली पर अपनी बहन को उपहार में दे सकते हैं ताकि उसे आर्थिक रूप से मजबूत बनाया जा सके</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 19:54</div>
+            <p>दिवाली 2026: भाई दूज के लिए, भाई म्युचुअल फंड एसआईपी, सोने के निवेश और अन्य तरीकों जैसे उपहारों के साथ अपनी बहनों की वित्तीय स्वतंत्रता का समर्थन कर स...</p>
+            <a href="news/market-news-00dff854df8a.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-330cbfc9a103.html">प्रति वर्ष ₹ 3 लाख? क्या माता - पिता अपने बच्चे के पीपीएफ खाते में ₹ 1.5 लाख का निवेश कर सकते हैं? आयकर के नियम, सीमाएँ बताई गईं</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 19:54</div>
+            <p>निवेशक कभी - कभी अपने बच्चे के सार्वजनिक भविष्य निधि खाते में जमा करते समय सीमाओं को गलत समझते हैं। यहाँ बताया गया है कि प्रत्येक माता - पिता वार्षिक ...</p>
+            <a href="news/market-news-330cbfc9a103.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
 
-            <div class="icon-glow-wrap">
-                <div class="rotating-text right">
-                    <svg viewBox="0 0 200 200">
-                        <defs><path id="pathRight" d="M 100,100 m -90,0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"/></defs>
-                        <text id="textRight"><textPath href="#pathRight" startOffset="0%" id="textPathRight">● દેશની ધડકન, ભારત ન્યૂઝ ●</textPath></text>
-                    </svg>
-                </div>
-                <img src="icon.png" alt="icon" class="center-icon">
-            </div>
-        </div>
-
-        <!-- Search & Category -->
-        <div class="controls">
-            <input type="text" id="searchBox" class="search-box" placeholder="🔍 ન્યૂઝ શોધો...">
-            <button class="category-btn active" onclick="filterNews('all', this)">सभी</button>
-            <button class="category-btn" onclick="filterNews('Moneycontrol', this)">Moneycontrol</button>
-            <button class="category-btn" onclick="filterNews('Economic Times', this)">ET</button>
-            <button class="category-btn" onclick="filterNews('Livemint', this)">Livemint</button>
-            <button class="category-btn" onclick="filterNews('Hindu Business Line', this)">Hindu BL</button>
-            <button class="category-btn" onclick="filterNews('Zee Business', this)">Zee</button>
-        </div>
-
-        <!-- News Container -->
-        <div id="news-container">
-            <div class="loading">⏳ ન્યૂઝ લોડ થઈ રહ્યા છે...</div>
-        </div>
-
-        <!-- Load More -->
-        <button class="load-more" id="loadMore" onclick="loadMore()" style="display:none;">વધુ ન્યૂઝ જુઓ ⬇️</button>
-
-        <!-- WhatsApp Channel -->
-        <div style="text-align: center; margin: 30px auto; padding: 25px 20px; background: linear-gradient(135deg, #25D366, #128C7E); border-radius: 15px; max-width: 600px; box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);">
-            <h2 style="color: white; font-size: 22px; margin-bottom: 12px;">📱 WhatsApp Channel</h2>
-            <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin-bottom: 20px;">હર 2 કલાકે નવા ન્યૂઝ સીધા WhatsApp પર!</p>
-            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" style="display: inline-block; background: white; color: #25D366; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-size: 16px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">📱 Join WhatsApp Channel</a>
-        </div>
-
-        <!-- App Download -->
-        <div style="text-align: center; margin: 40px auto 30px; padding: 30px 20px; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); border-radius: 15px; max-width: 600px; border: 1px solid rgba(255, 255, 255, 0.1);">
-            <h2 style="color: #feca57; font-size: 22px; margin-bottom: 12px;">📚 Dravy's English Learning App</h2>
-            <p style="color: #a0a0a0; font-size: 14px; margin-bottom: 20px;">Std 7 English Learning App • 100% Free • No Ads</p>
-            
-            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 15px;">
-                <a href="https://github.com/mybharatnews/kids-activity-app/releases/latest" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #0077b6, #00b4d8); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-size: 15px; font-weight: bold; box-shadow: 0 8px 25px rgba(0,119,182,0.5);">
-                    ⬇️ ડાઉનલોડ ઓફલાઇન એપ (Windows)
-                </a>
-                <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-size: 15px; font-weight: bold; box-shadow: 0 8px 25px rgba(40,167,69,0.5);">
-                    🌐 ઓનલાઇન વેબ વર્ઝન વાપરો
-                </a>
-            </div>
-            <p style="color: #666; font-size: 12px; margin-top: 15px;">ઓફલાઇન એપ: Windows 10/11 • 73 MB | ઓનલાઇન: કોઈપણ ડિવાઇસ પર ચાલશે</p>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            © 2026 भारत न्यूज़ | स्रोत: Moneycontrol, Economic Times, Livemint, Hindu Business Line, Zee Business<br>
-            <a href="about.html">અમારા વિશે</a> | <a href="privacy.html">ગોપનીયતા નીતિ</a> | <a href="contact.html">સંપર્ક કરો</a><br>
-            આ વેબસાઈટ AI દ્વારા ઓટોમેટિક અપડેટ થાય છે.
-        </div>
+        <footer>
+            <p>© 2026 भारत न्यूज़</p>
+            <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
+        </footer>
     </div>
-
-    <!-- Script -->
-    <script>
-        let allNews = [];
-        let filteredNews = [];
-        let displayCount = 10;
-
-        // News Load (કેશ ટાળવા માટે થોડો સમય ઉમેર્યો છે)
-        fetch('news_data.json?v=' + new Date().getTime())
-            .then(response => {
-                if (!response.ok) { throw new Error('Network response was not ok'); }
-                return response.json();
-            })
-            .then(data => {
-                allNews = data;
-                filteredNews = data;
-                displayNews();
-            })
-            .catch(error => {
-                document.getElementById('news-container').innerHTML = 
-                    '<div class="loading">❌ ન્યૂઝ લોડ કરવામાં સમસ્યા આવી. કૃપા કરીને પેજ રિફ્રેશ કરો.</div>';
-                console.error('Error:', error);
-            });
-
-        // News Display
-        function displayNews() {
-            const container = document.getElementById('news-container');
-            container.innerHTML = '';
-
-            if (filteredNews.length === 0) {
-                container.innerHTML = '<div class="loading">હાલમાં કોઈ ન્યૂઝ ઉપલબ્ધ નથી.</div>';
-                return;
-            }
-
-            const newsToShow = filteredNews.slice(0, displayCount);
-
-            newsToShow.forEach(news => {
-                const card = document.createElement('div');
-                card.className = 'news-card';
-
-                const shareTitle = encodeURIComponent(news.title);
-                const shareUrl = encodeURIComponent(news.link);
-
-                const summaryHTML = news.summary ? 
-                    `<p class="news-summary">${news.summary}...</p>` : '';
-
-                card.innerHTML = `
-                    <div class="news-title">${news.title}</div>
-                    ${summaryHTML}
-                    <div class="news-meta">
-                        <a href="${news.link}" target="_blank" class="news-link">પૂરી ન્યૂઝ વાંચો →</a>
-                        <span class="source">📰 ${news.source} | 🕐 ${news.date}</span>
-                    </div>
-                    <div class="share-buttons">
-                        <span class="share-label">શેર કરો:</span>
-                        <a href="https://wa.me/?text=${shareTitle}%20-%20${shareUrl}" target="_blank" class="share-btn share-whatsapp">📱</a>
-                        <a href="https://t.me/share/url?url=${shareUrl}&text=${shareTitle}" target="_blank" class="share-btn share-telegram">✈️</a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" class="share-btn share-facebook">📘</a>
-                        <a href="https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}" target="_blank" class="share-btn share-twitter">𝕏</a>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
-
-            const loadMoreBtn = document.getElementById('loadMore');
-            if (displayCount < filteredNews.length) {
-                loadMoreBtn.style.display = 'block';
-            } else {
-                loadMoreBtn.style.display = 'none';
-            }
-        }
-
-        function loadMore() {
-            displayCount += 10;
-            displayNews();
-        }
-
-        document.getElementById('searchBox').addEventListener('input', function(e) {
-            const query = e.target.value.toLowerCase();
-            if (query === '') {
-                filteredNews = allNews;
-            } else {
-                filteredNews = allNews.filter(news => 
-                    news.title.toLowerCase().includes(query) || 
-                    (news.summary && news.summary.toLowerCase().includes(query))
-                );
-            }
-            displayCount = 10;
-            displayNews();
-        });
-
-        function filterNews(source, btn) {
-            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            if (source === 'all') {
-                filteredNews = allNews;
-            } else {
-                filteredNews = allNews.filter(news => news.source === source);
-            }
-            displayCount = 10;
-            displayNews();
-        }
-    </script>
 </body>
 </html>
