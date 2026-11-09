@@ -9,15 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; }
+        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; transition: background 0.3s, color 0.3s; }
         .container { max-width: 900px; margin: auto; }
-        header { text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; }
+        
+        header { text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; position: relative; }
         header h1 { color: #feca57; font-size: 32px; margin-bottom: 10px; }
         header p { color: #b0b0b0; font-size: 16px; }
+        
         .social-links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
         .social-links a { padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }
         .social-links .wa { background: #25d366; } .social-links .tg { background: #0088cc; } .social-links .fb { background: #1877f2; }
         
+        /* ટોગલ બટન */
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #feca57;
+        }
+
         /* 👇 એપ ડાઉનલોડ બેનર નો CSS 👇 */
         .app-download-banner {
             background: linear-gradient(135deg, #1e130c, #9a8478);
@@ -39,22 +53,56 @@
         .btn-online:hover { background: #00e676; transform: translateY(-3px); }
         .btn-download { background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }
         .btn-download:hover { background: #0d5bbf; transform: translateY(-3px); }
-        /* 👆 એપ બેનર CSS પૂરો 👆 */
 
-        .news-card { background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .news-card { background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: background 0.3s; }
         .news-card h2 { font-size: 20px; margin-bottom: 10px; line-height: 1.4; }
         .news-card h2 a { color: #feca57; text-decoration: none; }
         .news-meta { color: #48dbfb; font-size: 13px; margin-bottom: 12px; }
         .news-card p { color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }
         .read-more { display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }
+        
         footer { text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }
         footer a { color: #48dbfb; text-decoration: none; }
+
+        /* 👇 લાઇટ મોડ માટે CSS 👇 */
+        body.light-mode {
+            background: #f4f4f9;
+            color: #333;
+        }
+        body.light-mode header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        body.light-mode header h1 {
+            color: #d32f2f;
+        }
+        body.light-mode .news-card {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        body.light-mode .news-card h2 a {
+            color: #d32f2f;
+        }
+        body.light-mode .news-card p {
+            color: #555;
+        }
+        body.light-mode .theme-toggle {
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 भारत न्यूज़</h1>
+            <!-- થીમ ટોગલ બટન -->
+            <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
+            
+                        <!-- 👇 લોગો અહીં ઉમેરો 👇 -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="icon.png" alt="भारत न्यूज़" style="max-width: 80px; height: auto; border-radius: 10px;">
+            </div>
+            <!-- 👆 લોગો પૂરો 👆 -->
+                        <h1>भारत न्यूज़</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
                 <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" class="wa">💬 WhatsApp</a>
@@ -63,25 +111,74 @@
             </div>
         </header>
 
-        <!-- 👇 અહીં એપ ડાઉનલોડ બેનર શરૂ થાય છે 👇 -->
+        <!-- એપ ડાઉનલોડ બેનર -->
         <div class="app-download-banner">
             <div class="app-text">
                 <h3>📱 Dravy's English Learning App</h3>
                 <p>ધોરણ 7 ના વિદ્યાર્થીઓ માટે અંગ્રેજી શીખવા માટેની શ્રેષ્ઠ એપ.</p>
             </div>
             <div class="app-buttons">
-                <!-- ઓનલાઇન ઓપન બટન -->
-                <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" class="btn-online">
-                    🌐 ઓનલાઇન ખોલો
-                </a>
-                <!-- ડાઉનલોડ બટન -->
-                <a href="https://mybharatnews.github.io/kids-activity-app/" download class="btn-download">
-                    ⬇️ ઓફલાઇન ડાઉનલોડ કરો
-                </a>
+                <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" class="btn-online">🌐 ઓનલાઇન ખોલો</a>
+                <a href="https://mybharatnews.github.io/kids-activity-app/" download class="btn-download">⬇️ ઓફલાઇન ડાઉનલોડ કરો</a>
             </div>
         </div>
-        <!-- 👆 એપ બેનર પૂરો થયો 👆 -->
 
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-50ff1aaf4127.html">एचएसबीसी ने भारत को ओवरवेट में अपग्रेड किया, एशिया रणनीति बदलाव में चीन को न्यूट्रल में बदल दिया</a></h2>
+            <div class="news-meta">📰 Hindu Business Line | 🕐 09-11-2026 13:36</div>
+            <p>अक्टूबर में क्रेडिट ग्रोथ में साल - दर - साल 21% की वृद्धि हुई, जिसमें कॉर्पोरेट उधार लगभग 24% और एमएसएमई क्रेडिट में 25% की वृद्धि हुई...</p>
+            <a href="news/market-news-50ff1aaf4127.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-0016396c2b16.html">ब्रोकर की कॉल: हेल्थकेयर ग्लोबल एंटरप्राइजेज (खरीदें)</a></h2>
+            <div class="news-meta">📰 Hindu Business Line | 🕐 09-11-2026 13:36</div>
+            <p>एक्सिस सिक्योरिटीज...</p>
+            <a href="news/market-news-0016396c2b16.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-9ccc16be00ba.html">उतार - चढ़ाव भरे सत्र के बाद निफ्टी के पास 25,000 शेयर हैं; पीएसयू बैंकों में 3.7% की उछाल, आईटी में गिरावट</a></h2>
+            <div class="news-meta">📰 Hindu Business Line | 🕐 09-11-2026 13:36</div>
+            <p>सेंसेक्स 107.25 अंकों या 0.13 फीसदी की बढ़त के साथ 81,106.65 पर बंद हुआ, जबकि निफ्टी 58.25 अंकों या 0.23 फीसदी की बढ़त के साथ 25,044.65 पर बंद हुआ।...</p>
+            <a href="news/market-news-9ccc16be00ba.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-933cd3853f66.html">ब्रोकर की कॉल: मिसेज बेक्टर फूड (खरीदें)</a></h2>
+            <div class="news-meta">📰 Hindu Business Line | 🕐 09-11-2026 13:37</div>
+            <p>आनंद राठी रिसर्च...</p>
+            <a href="news/market-news-933cd3853f66.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-530055c430ac.html">केमप्लास्ट सनमार के शेयरों में 10 महीनों में सबसे बड़ी एक दिन की बढ़त के साथ 11% से अधिक की उछाल आई है क्योंकि दूसरी तिमाही में तेजी आई है</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 13:37</div>
+            <p>वित्त वर्ष 27 की दूसरी तिमाही के नतीजों के बाद केमप्लास्ट सनमार के शेयर 11.44% बढ़कर ₹ 237 हो गए। राजस्व वर्ष दर वर्ष 28% बढ़कर  ₹ 1,323 करोड़ हो गया,...</p>
+            <a href="news/market-news-530055c430ac.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-3b910d47c938.html">दूसरी तिमाही के नतीजों से पहले केपीआई ग्रीन एनर्जी के शेयरों में वॉल्यूम में भारी बढ़ोतरी से 9% की उछाल आई है; क्या तेजी ला रहा है?</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 13:37</div>
+            <p>केपीआई ग्रीन एनर्जी के शेयर सोमवार को 9% बढ़कर ₹ 331 हो गए क्योंकि कोई तत्काल मौलिक ट्रिगर नहीं होने के बावजूद ट्रेडिंग वॉल्यूम साप्ताहिक औसत से 64.35...</p>
+            <a href="news/market-news-3b910d47c938.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-8ee8b7e56e0f.html">इस हफ़्ते खरीदने के लिए टॉप 3 स्टॉक: यूनियन बैंक, एथर एनर्जी, लॉरस लैब्स मार्केट एक्सपर्ट द्वारा; स्टॉप - लॉस, टारगेट प्राइस देखें</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 13:37</div>
+            <p>भारतीय बेंचमार्क आठ महीनों में अपने उच्चतम स्तर पर पहुंच गए, जिसमें निफ्टी 0.23% और सेंसेक्स 0.13% बढ़ गया, क्योंकि कच्चे तेल की कीमतों में कमी आई। बा...</p>
+            <a href="news/market-news-8ee8b7e56e0f.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-0684b0f21afc.html">5 वर्षों में 700% रिटर्न: दूसरी तिमाही के परिणाम 2026 से पहले ऊपरी सर्किट पर पहुंचने के लिए केपी एनर्जी के शेयर की कीमत 20% बढ़ी - विवरण देखें</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 13:37</div>
+            <p>केपी एनर्जी के शेयर सोमवार को 19.99% बढ़कर ₹ 204.95 हो गए, जो ऊपरी सर्किट से टकरा गए क्योंकि कंपनी के वित्त वर्ष 27 की दूसरी तिमाही के परिणामों से पहल...</p>
+            <a href="news/market-news-0684b0f21afc.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
         
         <article class="news-card">
             <h2><a href="news/market-news-ba44ef9d981f.html">संयुक्त अरब अमीरात ने सूडान में लड़ रहे कोलंबियाई भाड़े के सैनिकों का समर्थन किया, संयुक्त राष्ट्र ने पाया</a></h2>
@@ -237,62 +334,6 @@
             <a href="news/market-news-d206912ae712.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
-        <article class="news-card">
-            <h2><a href="news/market-news-741e9b86a5f1.html">ओडिशा माइनिंग कॉर्प के साथ मूल्य निर्धारण विवाद के बीच वेदांता ने कैप्टिव बॉक्साइट पर दांव लगाया</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:01</div>
-            <p>कंपनी को सितंबर में ओडिशा में अपनी सिजीमाली बॉक्साइट खदान के संचालन के लिए लंबे समय से लंबित सहमति मिली थी और अब इस वित्तीय वर्ष में ही उत्पादन शुरू क...</p>
-            <a href="news/market-news-741e9b86a5f1.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-04287740496c.html">ब्लैकस्टोन समर्थित आधार हाउसिंग फाइनेंस एल नीनो जोखिम को लोन बुक तक सीमित देखता है</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:02</div>
-            <p>ऋणदाता के एयूएम का केवल 6% उन जिलों में है जिनकी पहचान एल नीनो के लिए अत्यधिक असुरक्षित के रूप में की गई है, जबकि स्थिर संग्रह और हामीदारी सुरक्षा उपा...</p>
-            <a href="news/market-news-04287740496c.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-0f266e5a45d0.html">मेडुसा बीयर से परे विविधता लाने के लिए आत्माओं पर दांव लगाती है, अजनबी और संस निर्माता के साथ संबंध बनाती है</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 07:02</div>
-            <p>बीयर निर्माता ने स्पिरिट्स मार्केट में प्रवेश करने के लिए थर्ड आई डिस्टिलरी के साथ साझेदारी की है और वित्त वर्ष 27 में सकल राजस्व में ₹ 210 करोड़ का ल...</p>
-            <a href="news/market-news-0f266e5a45d0.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-a2211ef024bd.html">भारत की क्यूएसआर श्रृंखलाओं में मांग में सुधार देखा गया है क्योंकि मूल्य प्रस्ताव ग्राहकों को वापस आकर्षित करते हैं</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:07</div>
-            <p>फ़ास्ट - फ़ूड चेन में सितंबर की तिमाही में ₹ 99 - प्रकार के मूल्य वाले सौदों ने बर्गर किंग और मैकडॉनल्ड्स की फ़्रैंचाइज़ी वेस्टलाइफ़ के नेतृत्व में डि...</p>
-            <a href="news/market-news-a2211ef024bd.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-655e497c38bd.html">बालकृष्ण को पिरेली साझेदारी से तीन गुना लाभ</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:07</div>
-            <p>बालकृष्ण इंडस्ट्रीज ने यूरोपीय परीक्षण सुविधाओं तक पहुंच प्राप्त करते हुए 2030 तक सालाना 800,000 यात्री कार टायर बनाने के लिए पिरेली के साथ साझेदारी क...</p>
-            <a href="news/market-news-655e497c38bd.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-60798fc901b5.html">हैक किए गए रिकॉर्ड दिखाते हैं कि यूक्रेन के खिलाफ युद्ध में 400,000 रूसी मारे गए</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:08</div>
-            <p>देश की सांख्यिकी एजेंसी, रोसस्टैट द्वारा रखे गए गोपनीय आंकड़ों के अनुसार, रूस ने लगभग पांच साल पहले पूर्ण पैमाने पर आक्रमण के बाद से यूक्रेन में लड़ र...</p>
-            <a href="news/market-news-60798fc901b5.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-0713d553d4e2.html">ईरान ने कतर के माध्यम से परमाणु प्रस्ताव भेजा: दोहा खुद को दूर करने के बाद अमेरिका, ईरान के बीच एक प्रमुख मध्यस्थ के रूप में कैसे उभरा</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 01:08</div>
-            <p>ईरानी हमलों के बाद शुरू में खुद को सीधे मध्यस्थता से दूर करने के बाद, कतर अमेरिका और ईरान को एक समझौते के करीब लाने के लिए अपने राजनयिक प्रयासों को आग...</p>
-            <a href="news/market-news-0713d553d4e2.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-6aa34ce3d67e.html">नए संवत में बाजार की वृद्धि को गति देने के लिए कच्चे तेल में कमी, वैश्विक स्थिरता: एएनएमआई के अध्यक्ष कमलेश श्रॉफ</a></h2>
-            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
-            <p>भारत का वृहद आर्थिक वातावरण मजबूत विकास के लिए तैयार है, जो सात प्रतिशत से अधिक होने का अनुमान है, जो इक्विटी बाजारों को मजबूत करता है। कच्चे तेल की क...</p>
-            <a href="news/market-news-6aa34ce3d67e.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
 
         <footer>
             <p style="margin-bottom: 10px;">
@@ -305,5 +346,18 @@
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
+
+    <!-- થીમ બદલવા માટેની સ્ક્રિપ્ટ -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const btn = document.getElementById('theme-btn');
+            if(document.body.classList.contains('light-mode')) {
+                btn.innerHTML = '☀️'; // લાઇટ મોડમાં સૂરજ
+            } else {
+                btn.innerHTML = '🌙'; // ડાર્ક મોડમાં ચંદ્ર
+            }
+        }
+    </script>
 </body>
 </html>
