@@ -92,7 +92,8 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
         "datePublished": date_iso,
         "dateModified": date_iso,
         "author": {"@type": "Organization", "name": SITE_NAME},
-        "publisher": {"@type": "Organization", "name": SITE_NAME},
+        "publisher": {"@type": "Organization", "name": SITE_NAME, "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/icon.png"}},
+        "image": f"{SITE_URL}/icon.png",
         "mainEntityOfPage": {"@type": "WebPage", "@id": page_url},
         "articleSection": "Business",
         "inLanguage": "hi-IN",
@@ -233,10 +234,16 @@ def generate_article_page(news_item, index, all_news):
     <title>{t_esc} - {SITE_NAME}</title>
     <meta name="description" content="{s_esc}">
     <link rel="canonical" href="{page_url}">
+    
+    <!-- ✅ ફેસબુક અને ટ્વિટર ઈમેજ માટે -->
     <meta property="og:title" content="{t_esc}">
     <meta property="og:description" content="{s_esc}">
     <meta property="og:url" content="{page_url}">
     <meta property="og:type" content="article">
+    <meta property="og:image" content="{SITE_URL}/icon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{SITE_URL}/icon.png">
+    
     {structured_data}
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -311,6 +318,14 @@ def generate_index_page(news_list, generated_files):
     <title>{SITE_NAME} - भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
     <link rel="canonical" href="{SITE_URL}/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{SITE_URL}/rss.xml">
+    
+    <!-- ✅ ફેસબુક અને ટ્વિટર ઈમેજ માટે -->
+    <meta property="og:title" content="{SITE_NAME}">
+    <meta property="og:description" content="भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स">
+    <meta property="og:image" content="{SITE_URL}/icon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{SITE_URL}/icon.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
@@ -402,12 +417,13 @@ def generate_index_page(news_list, generated_files):
             <!-- થીમ ટોગલ બટન -->
             <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
             
-                        <!-- 👇 લોગો અહીં ઉમેરો 👇 -->
+            <!-- 👇 લોગો અહીં ઉમેરો 👇 -->
             <div style="text-align: center; margin-bottom: 10px;">
                 <img src="icon.png" alt="{SITE_NAME}" style="max-width: 80px; height: auto; border-radius: 10px;">
             </div>
             <!-- 👆 લોગો પૂરો 👆 -->
-                        <h1>{SITE_NAME}</h1>
+            
+            <h1>{SITE_NAME}</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
                 <a href="{WHATSAPP_CHANNEL}" target="_blank" class="wa">💬 WhatsApp</a>
