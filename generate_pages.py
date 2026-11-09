@@ -314,15 +314,29 @@ def generate_index_page(news_list, generated_files):
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; }}
+        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; transition: background 0.3s, color 0.3s; }}
         .container {{ max-width: 900px; margin: auto; }}
-        header {{ text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; }}
+        
+        header {{ text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; position: relative; }}
         header h1 {{ color: #feca57; font-size: 32px; margin-bottom: 10px; }}
         header p {{ color: #b0b0b0; font-size: 16px; }}
+        
         .social-links {{ display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }}
         .social-links a {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }}
         .social-links .wa {{ background: #25d366; }} .social-links .tg {{ background: #0088cc; }} .social-links .fb {{ background: #1877f2; }}
         
+        /* ટોગલ બટન */
+        .theme-toggle {{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #feca57;
+        }}
+
         /* 👇 એપ ડાઉનલોડ બેનર નો CSS 👇 */
         .app-download-banner {{
             background: linear-gradient(135deg, #1e130c, #9a8478);
@@ -344,21 +358,50 @@ def generate_index_page(news_list, generated_files):
         .btn-online:hover {{ background: #00e676; transform: translateY(-3px); }}
         .btn-download {{ background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }}
         .btn-download:hover {{ background: #0d5bbf; transform: translateY(-3px); }}
-        /* 👆 એપ બેનર CSS પૂરો 👆 */
 
-        .news-card {{ background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; }}
+        .news-card {{ background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: background 0.3s; }}
         .news-card h2 {{ font-size: 20px; margin-bottom: 10px; line-height: 1.4; }}
         .news-card h2 a {{ color: #feca57; text-decoration: none; }}
         .news-meta {{ color: #48dbfb; font-size: 13px; margin-bottom: 12px; }}
         .news-card p {{ color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }}
         .read-more {{ display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }}
+        
         footer {{ text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }}
         footer a {{ color: #48dbfb; text-decoration: none; }}
+
+        /* 👇 લાઇટ મોડ માટે CSS 👇 */
+        body.light-mode {{
+            background: #f4f4f9;
+            color: #333;
+        }}
+        body.light-mode header {{
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        body.light-mode header h1 {{
+            color: #d32f2f;
+        }}
+        body.light-mode .news-card {{
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        body.light-mode .news-card h2 a {{
+            color: #d32f2f;
+        }}
+        body.light-mode .news-card p {{
+            color: #555;
+        }}
+        body.light-mode .theme-toggle {{
+            color: #333;
+        }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- થીમ ટોગલ બટન -->
+            <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
+            
             <h1>📊 {SITE_NAME}</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
@@ -368,24 +411,17 @@ def generate_index_page(news_list, generated_files):
             </div>
         </header>
 
-        <!-- 👇 અહીં એપ ડાઉનલોડ બેનર શરૂ થાય છે 👇 -->
+        <!-- એપ ડાઉનલોડ બેનર -->
         <div class="app-download-banner">
             <div class="app-text">
                 <h3>📱 Dravy's English Learning App</h3>
                 <p>ધોરણ 7 ના વિદ્યાર્થીઓ માટે અંગ્રેજી શીખવા માટેની શ્રેષ્ઠ એપ.</p>
             </div>
             <div class="app-buttons">
-                <!-- ઓનલાઇન ઓપન બટન -->
-                <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" class="btn-online">
-                    🌐 ઓનલાઇન ખોલો
-                </a>
-                <!-- ડાઉનલોડ બટન -->
-                <a href="https://mybharatnews.github.io/kids-activity-app/" download class="btn-download">
-                    ⬇️ ઓફલાઇન ડાઉનલોડ કરો
-                </a>
+                <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" class="btn-online">🌐 ઓનલાઇન ખોલો</a>
+                <a href="https://mybharatnews.github.io/kids-activity-app/" download class="btn-download">⬇️ ઓફલાઇન ડાઉનલોડ કરો</a>
             </div>
         </div>
-        <!-- 👆 એપ બેનર પૂરો થયો 👆 -->
 
         {news_cards}
 
@@ -400,6 +436,19 @@ def generate_index_page(news_list, generated_files):
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
+
+    <!-- થીમ બદલવા માટેની સ્ક્રિપ્ટ -->
+    <script>
+        function toggleTheme() {{
+            document.body.classList.toggle('light-mode');
+            const btn = document.getElementById('theme-btn');
+            if(document.body.classList.contains('light-mode')) {{
+                btn.innerHTML = '☀️'; // લાઇટ મોડમાં સૂરજ
+            }} else {{
+                btn.innerHTML = '🌙'; // ડાર્ક મોડમાં ચંદ્ર
+            }}
+        }}
+    </script>
 </body>
 </html>"""
     with open('index.html', 'w', encoding='utf-8') as f:
