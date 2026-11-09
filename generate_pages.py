@@ -402,7 +402,13 @@ def generate_index_page(news_list, generated_files):
             <!-- થીમ ટોગલ બટન -->
             <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
             
-            <h1>📊 {SITE_NAME}</h1>
+                        <!-- 👇 લોગો અહીં ઉમેરો 👇 -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="icon.png" alt="{SITE_NAME}" style="max-width: 80px; height: auto; border-radius: 10px;">
+            </div>
+            <!-- 👆 લોગો પૂરો 👆 -->
+            
+            <h1>{SITE_NAME}</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
                 <a href="{WHATSAPP_CHANNEL}" target="_blank" class="wa">💬 WhatsApp</a>
