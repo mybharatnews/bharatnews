@@ -390,7 +390,13 @@ def generate_index_page(news_list, generated_files):
         {news_cards}
 
         <footer>
-            <p>© 2026 {SITE_NAME}</p>
+            <p style="margin-bottom: 10px;">
+                <a href="about.html">About Us</a> | 
+                <a href="contact.html">Contact Us</a> | 
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="disclaimer.html">Disclaimer</a>
+            </p>
+            <p>© 2026 {SITE_NAME}. All rights reserved.</p>
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
