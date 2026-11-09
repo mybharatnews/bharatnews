@@ -407,8 +407,7 @@ def generate_index_page(news_list, generated_files):
                 <img src="icon.png" alt="{SITE_NAME}" style="max-width: 80px; height: auto; border-radius: 10px;">
             </div>
             <!-- 👆 લોગો પૂરો 👆 -->
-            
-            <h1>{SITE_NAME}</h1>
+                        <h1>{SITE_NAME}</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
                 <a href="{WHATSAPP_CHANNEL}" target="_blank" class="wa">💬 WhatsApp</a>
