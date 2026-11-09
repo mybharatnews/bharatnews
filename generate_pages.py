@@ -102,7 +102,6 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
 
 def generate_copy_go_button(title, page_url):
     """Copy & Go to Facebook button + JavaScript"""
-    # JavaScript string માટે escape
     js_title = escape_js(title)
     js_url = escape_js(page_url)
     
@@ -132,17 +131,14 @@ def generate_copy_go_button(title, page_url):
             "📢 Telegram: https://t.me/indianews_official\\n\\n" +
             "#ShareMarket #Nifty #Sensex #Business #India";
         
-        // Copy to clipboard
         navigator.clipboard.writeText(caption).then(function() {{
             document.getElementById('copy-status').innerHTML = 
                 '<span style="color: #25d366;">✅ Caption copy થઈ ગયું! Facebook પર paste કરો.</span>';
             
-            // Open Facebook page
             setTimeout(function() {{
                 window.open('{FACEBOOK_PAGE}', '_blank');
             }}, 500);
         }}).catch(function(err) {{
-            // Fallback for older browsers
             const textarea = document.createElement('textarea');
             textarea.value = caption;
             document.body.appendChild(textarea);
@@ -342,7 +338,6 @@ def generate_article_page(news_item, index, all_news):
         .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
         .back-btn:hover {{ background: linear-gradient(90deg, #feca57, #ff9f43); }}
         
-        /* Copy & Go Section */
         .copy-go-section {{ margin: 30px 0; padding: 25px; background: linear-gradient(135deg, rgba(24, 119, 242, 0.15), rgba(24, 119, 242, 0.05)); border-radius: 12px; border-left: 4px solid #1877f2; text-align: center; }}
         .copy-go-section h3 {{ margin-top: 0; color: #1877f2; }}
         .copy-go-btn {{ background: #1877f2; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-weight: 700; font-size: 16px; cursor: pointer; transition: all 0.3s; font-family: inherit; }}
@@ -576,6 +571,43 @@ def main():
         f.write(sitemap)
     
     print(f"\n📄 sitemap.xml બન્યું ({len(sitemap_urls)} URLs)")
+
+    # ═══ Google News Sitemap ═══
+    news_sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    news_sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+    news_sitemap += '    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n'
+
+    for i, news in enumerate(news_list[:10]):
+        title = escape_xml(news.get('title', ''))
+        date_str = news.get('date', '')
+        
+        try:
+            dt = datetime.strptime(date_str, '%d-%m-%Y %H:%M')
+            pub_date = dt.strftime('%Y-%m-%dT%H:%M:%S+05:30')
+        except:
+            pub_date = datetime.now().strftime('%Y-%m-%dT%H:%M:%S+05:30')
+
+        filename = generated[i] if i < len(generated) else ''
+        page_url = f"{SITE_URL}/news/{filename}"
+
+        news_sitemap += f'  <url>\n'
+        news_sitemap += f'    <loc>{page_url}</loc>\n'
+        news_sitemap += f'    <news:news>\n'
+        news_sitemap += f'      <news:publication>\n'
+        news_sitemap += f'        <news:name>{SITE_NAME}</news:name>\n'
+        news_sitemap += f'        <news:language>hi</news:language>\n'
+        news_sitemap += f'      </news:publication>\n'
+        news_sitemap += f'      <news:publication_date>{pub_date}</news:publication_date>\n'
+        news_sitemap += f'      <news:title>{title}</news:title>\n'
+        news_sitemap += f'    </news:news>\n'
+        news_sitemap += f'  </url>\n'
+
+    news_sitemap += '</urlset>'
+
+    with open('news-sitemap.xml', 'w', encoding='utf-8') as f:
+        f.write(news_sitemap)
+
+    print(f"\n📰 news-sitemap.xml બન્યું")
     
     # ═══ rss.xml ═══
     now = email.utils.formatdate(localtime=True)
