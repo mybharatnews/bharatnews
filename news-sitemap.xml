@@ -1,124 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-f16f0c017339.html</loc>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-ba44ef9d981f.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
-      <news:title>ज़ोहरान ममदानी की 2028 की गेम प्लान: NYC मेयर ने श्रमिक - गठबंधन वामपंथी राष्ट्रपति पद के उम्मीदवार को आगे बढ़</news:title>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:36:00+05:30</news:publication_date>
+      <news:title>संयुक्त अरब अमीरात ने सूडान में लड़ रहे कोलंबियाई भाड़े के सैनिकों का समर्थन किया, संयुक्त राष्ट्र ने पाया</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-deab49f18483.html</loc>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-b67f506d06fa.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
-      <news:title>सरकार ने आसानी, दक्षता के लिए जिलों में डिजिटल अस्पतालों के मॉडल की योजना बनाई है</news:title>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:36:00+05:30</news:publication_date>
+      <news:title>काव्य मारन कौन है? रजनीकांत, एमके स्टालिन को भारत से बाहर जाते हुए देख रजनीकांत और अनिरुद्ध रविचंदर के साथ SRH</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-f755a1f77e21.html</loc>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-d286c008092f.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
-      <news:title>हफीज ठेकेदार से मिलें: एनएसई के नए मुंबई मुख्यालय को डिजाइन करने वाले पद्म भूषण वास्तुकार</news:title>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:36:00+05:30</news:publication_date>
+      <news:title>मुद्रास्फीति के आंकड़ों से पहले भारतीय बॉन्डों में तेजी जारी</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-13bb497c2aef.html</loc>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-b1afb627012a.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
-      <news:title>मुंबई में बीएमसी की सीमा में 25 नवंबर तक रॉकेट, हवाई पटाखों पर प्रतिबंध</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-fd1adc3efd21.html</loc>
-    <lastmod>2026-11-09</lastmod>
-    <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
-      <news:title>एआई की बिक्री और डेमोक्रेट की जीत से राजनीतिक जोखिम पैदा होने के बावजूद अमेरिकी बाजार अभी भी तकनीकी शेयरों पर </news:title>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:36:00+05:30</news:publication_date>
+      <news:title>ऊनो मिंडा उन 7 शेयरों में शामिल है जो 52 हफ्तों के उच्चतम स्तर को छू रहे हैं; एक महीने में 26% तक की तेजी</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-3c541b3975a0.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:37:00+05:30</news:publication_date>
+      <news:title>एफआईआई ने लगातार 3 तिमाहियों के लिए 10 स्मॉलकैप शेयरों में हिस्सेदारी में कटौती की; सीवाई 26 में शेयर 70% तक ग</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-f16f0c017339.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
+      <news:title>ज़ोहरान ममदानी की 2028 की गेम प्लान: NYC मेयर ने श्रमिक - गठबंधन वामपंथी राष्ट्रपति पद के उम्मीदवार को आगे बढ़</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-deab49f18483.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
+      <news:title>सरकार ने आसानी, दक्षता के लिए जिलों में डिजिटल अस्पतालों के मॉडल की योजना बनाई है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-f755a1f77e21.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
+      <news:title>हफीज ठेकेदार से मिलें: एनएसई के नए मुंबई मुख्यालय को डिजाइन करने वाले पद्म भूषण वास्तुकार</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-13bb497c2aef.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
+      <news:title>मुंबई में बीएमसी की सीमा में 25 नवंबर तक रॉकेट, हवाई पटाखों पर प्रतिबंध</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-fd1adc3efd21.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
+      <news:title>एआई की बिक्री और डेमोक्रेट की जीत से राजनीतिक जोखिम पैदा होने के बावजूद अमेरिकी बाजार अभी भी तकनीकी शेयरों पर </news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-3c541b3975a0.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-09T12:00:00+05:30</news:publication_date>
       <news:title>एफआईआई ने लगातार 3 तिमाहियों के लिए 10 स्मॉलकैप शेयरों में हिस्सेदारी में कटौती की; सीवाई 26 में शेयर 70% तक ग</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-9e4b2923c06a.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-09T12:01:00+05:30</news:publication_date>
       <news:title>भारतीय रुपया सरकारी बैंकों की डॉलर बोलियों पर छह दिन की जीत की लकीर तोड़ता है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-3d5f46b2bf18.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-09T12:01:00+05:30</news:publication_date>
       <news:title>एफपीआई प्रवाह के बावजूद रुपये के लाभ को सीमित करने के लिए आरबीआई की $ 239 बिलियन फॉरवर्ड डॉलर की स्थिति: रिपोर</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-755cd408086d.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-09T11:30:00+05:30</news:publication_date>
       <news:title>Pebble Qore Ultra समीक्षा: ₹ 5,999 पर स्वास्थ्य ट्रैकिंग की तरह, लेकिन ट्रेड - ऑफ क्या हैं?</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
   <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-15c5fae66e65.html</loc>
     <lastmod>2026-11-09</lastmod>
     <news:news>
-      <news:publication>
-        <news:name>भारत न्यूज़</news:name>
-        <news:language>hi</news:language>
-      </news:publication>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
       <news:title>ASUS Zenbook 14 को भारत में सेरालुमिनियम बॉडी, OLED डिस्प्ले और 33 घंटे तक की बैटरी के साथ लॉन्च किया गया है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-0a49328000f6.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
+      <news:title>सैमसंग गैलेक्सी S27 लॉन्च 2027 की शुरुआत के लिए इत्तला दे दी गई: 4 मॉडल, नया प्रो वेरिएंट और अपेक्षित स्पेसिफि</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-09d012d4bf27.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
+      <news:title>मैकिन्से ने चेतावनी दी है कि एआई - संचालित विश्लेषण निर्णय लेने की गति को धीमा कर सकता है, भविष्य की नेतृत्व प</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-f7dfba2c5ded.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
+      <news:title>बैंकों, निवेशकों को एआई ऋण से सावधान रहना पड़ता है, जो बाजार में बिकवाली से प्रभावित है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-4dfef2c4588a.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
+      <news:title>सर्वम ने Google क्लाउड इंडिया के प्रमुख शशिकुमार श्रीधरन को अध्यक्ष और मुख्य व्यवसाय अधिकारी के रूप में नामित </news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-75f1910e27ff.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
+      <news:title>चीन ने एनवीडिया के सीईओ जेन्सेन हुआंग से जुड़े जासूसी साजिश के दावे को धब्बा अभियान के रूप में खारिज कर दिया</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-7dccc89c1725.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T11:31:00+05:30</news:publication_date>
+      <news:title>Nvidia की Jensen Huang, लेदर जैकेट में स्कैंडल - हिट AI विज़नरी</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-d206912ae712.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T07:01:00+05:30</news:publication_date>
+      <news:title>जेन्सेन हुआंग की पत्नी कौन है? लोरी हुआंग से मिलें - उनका नेट वर्थ, शिक्षा और दंपति की मुलाकात कैसे हुई?</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-741e9b86a5f1.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T07:01:00+05:30</news:publication_date>
+      <news:title>ओडिशा माइनिंग कॉर्प के साथ मूल्य निर्धारण विवाद के बीच वेदांता ने कैप्टिव बॉक्साइट पर दांव लगाया</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-04287740496c.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T07:02:00+05:30</news:publication_date>
+      <news:title>ब्लैकस्टोन समर्थित आधार हाउसिंग फाइनेंस एल नीनो जोखिम को लोन बुक तक सीमित देखता है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-0f266e5a45d0.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T07:02:00+05:30</news:publication_date>
+      <news:title>मेडुसा बीयर से परे विविधता लाने के लिए आत्माओं पर दांव लगाती है, अजनबी और संस निर्माता के साथ संबंध बनाती है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-a2211ef024bd.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T01:07:00+05:30</news:publication_date>
+      <news:title>भारत की क्यूएसआर श्रृंखलाओं में मांग में सुधार देखा गया है क्योंकि मूल्य प्रस्ताव ग्राहकों को वापस आकर्षित करत</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-655e497c38bd.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T01:07:00+05:30</news:publication_date>
+      <news:title>बालकृष्ण को पिरेली साझेदारी से तीन गुना लाभ</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-60798fc901b5.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T01:08:00+05:30</news:publication_date>
+      <news:title>हैक किए गए रिकॉर्ड दिखाते हैं कि यूक्रेन के खिलाफ युद्ध में 400,000 रूसी मारे गए</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-0713d553d4e2.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T01:08:00+05:30</news:publication_date>
+      <news:title>ईरान ने कतर के माध्यम से परमाणु प्रस्ताव भेजा: दोहा खुद को दूर करने के बाद अमेरिका, ईरान के बीच एक प्रमुख मध्य</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-6aa34ce3d67e.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-09T01:08:00+05:30</news:publication_date>
+      <news:title>नए संवत में बाजार की वृद्धि को गति देने के लिए कच्चे तेल में कमी, वैश्विक स्थिरता: एएनएमआई के अध्यक्ष कमलेश श्</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
 </urlset>

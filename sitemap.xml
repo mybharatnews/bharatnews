@@ -3,8 +3,38 @@
     <url>
         <loc>https://mybharatnews.github.io/bharatnews/</loc>
         <lastmod>2026-11-09</lastmod>
-        <changefreq>hourly</changefreq>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-ba44ef9d981f.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-b67f506d06fa.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-d286c008092f.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-b1afb627012a.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-3c541b3975a0.html</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mybharatnews.github.io/bharatnews/news/market-news-f16f0c017339.html</loc>
@@ -152,36 +182,6 @@
     </url>
     <url>
         <loc>https://mybharatnews.github.io/bharatnews/news/market-news-6aa34ce3d67e.html</loc>
-        <lastmod>2026-11-09</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-67c9fdd74f5f.html</loc>
-        <lastmod>2026-11-09</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-2aa60be5eeb0.html</loc>
-        <lastmod>2026-11-09</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-094556e0223a.html</loc>
-        <lastmod>2026-11-09</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-39ccbf52f1ce.html</loc>
-        <lastmod>2026-11-09</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://mybharatnews.github.io/bharatnews/news/market-news-8f7476a3acee.html</loc>
         <lastmod>2026-11-09</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>

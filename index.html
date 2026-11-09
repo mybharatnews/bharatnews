@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>भारत न्यूज़ - भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
-    <meta name="description" content="भारतीय शेयर बाजार, बिजनेस और अर्थव्यवस्था की ताज़ा हिंदी अपडेट्स. Nifty 50, Sensex, IPO, Stock Market News.">
-    <meta name="keywords" content="share market, stock market, hindi news, business, sensex, nifty, भारत न्यूज़">
     <link rel="canonical" href="https://mybharatnews.github.io/bharatnews/">
-    <meta property="og:title" content="भारत न्यूज़">
-    <meta property="og:description" content="भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स">
-    <meta property="og:url" content="https://mybharatnews.github.io/bharatnews/">
-    <meta property="og:type" content="website">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://mybharatnews.github.io/bharatnews/rss.xml">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -21,20 +15,38 @@
         header h1 { color: #feca57; font-size: 32px; margin-bottom: 10px; }
         header p { color: #b0b0b0; font-size: 16px; }
         .social-links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
-        .social-links a { padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; transition: transform 0.2s; }
-        .social-links a:hover { transform: translateY(-2px); }
-        .social-links .wa { background: #25d366; }
-        .social-links .tg { background: #0088cc; }
-        .social-links .fb { background: #1877f2; }
-        .news-card { background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: transform 0.2s; }
-        .news-card:hover { transform: translateY(-3px); }
+        .social-links a { padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }
+        .social-links .wa { background: #25d366; } .social-links .tg { background: #0088cc; } .social-links .fb { background: #1877f2; }
+        
+        /* 👇 એપ ડાઉનલોડ બેનર નો CSS 👇 */
+        .app-download-banner {
+            background: linear-gradient(135deg, #1e130c, #9a8478);
+            border-radius: 15px;
+            padding: 25px 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .app-text h3 { color: #feca57; font-size: 22px; margin-bottom: 8px; }
+        .app-text p { color: #e0e0e0; font-size: 15px; margin-bottom: 20px; }
+        .app-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-online, .btn-download {
+            display: inline-block; padding: 12px 25px; text-decoration: none;
+            border-radius: 8px; font-weight: bold; font-size: 16px; color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-online { background: #00c853; box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3); }
+        .btn-online:hover { background: #00e676; transform: translateY(-3px); }
+        .btn-download { background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }
+        .btn-download:hover { background: #0d5bbf; transform: translateY(-3px); }
+        /* 👆 એપ બેનર CSS પૂરો 👆 */
+
+        .news-card { background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; }
         .news-card h2 { font-size: 20px; margin-bottom: 10px; line-height: 1.4; }
         .news-card h2 a { color: #feca57; text-decoration: none; }
-        .news-card h2 a:hover { color: #ff9f43; }
         .news-meta { color: #48dbfb; font-size: 13px; margin-bottom: 12px; }
         .news-card p { color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }
         .read-more { display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }
-        .read-more:hover { color: #feca57; }
         footer { text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }
         footer a { color: #48dbfb; text-decoration: none; }
     </style>
@@ -45,12 +57,66 @@
             <h1>📊 भारत न्यूज़</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
-                <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" rel="noopener" class="wa">💬 WhatsApp</a>
-                <a href="https://t.me/indianews_official" target="_blank" rel="noopener" class="tg">📢 Telegram</a>
-                <a href="https://www.facebook.com/profile.php?id=61595205934642" target="_blank" rel="noopener" class="fb">📘 Facebook</a>
+                <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" class="wa">💬 WhatsApp</a>
+                <a href="https://t.me/indianews_official" target="_blank" class="tg">📢 Telegram</a>
+                <a href="https://www.facebook.com/profile.php?id=61595205934642" target="_blank" class="fb">📘 Facebook</a>
             </div>
         </header>
 
+        <!-- 👇 અહીં એપ ડાઉનલોડ બેનર શરૂ થાય છે 👇 -->
+        <div class="app-download-banner">
+            <div class="app-text">
+                <h3>📱 Dravy's English Learning App</h3>
+                <p>ધોરણ 7 ના વિદ્યાર્થીઓ માટે અંગ્રેજી શીખવા માટેની શ્રેષ્ઠ એપ.</p>
+            </div>
+            <div class="app-buttons">
+                <!-- ઓનલાઇન ઓપન બટન -->
+                <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" class="btn-online">
+                    🌐 ઓનલાઇન ખોલો
+                </a>
+                <!-- ડાઉનલોડ બટન -->
+                <a href="https://mybharatnews.github.io/kids-activity-app/" download class="btn-download">
+                    ⬇️ ઓફલાઇન ડાઉનલોડ કરો
+                </a>
+            </div>
+        </div>
+        <!-- 👆 એપ બેનર પૂરો થયો 👆 -->
+
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-ba44ef9d981f.html">संयुक्त अरब अमीरात ने सूडान में लड़ रहे कोलंबियाई भाड़े के सैनिकों का समर्थन किया, संयुक्त राष्ट्र ने पाया</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 12:36</div>
+            <p>संयुक्त अरब अमीरात ने कोलंबियाई भाड़े के सैनिकों को वित्त पोषित करने और प्रशिक्षित करने में मदद की, जिन्होंने युद्ध अपराधों और नरसंहार के आरोपी सूडानी...</p>
+            <a href="news/market-news-ba44ef9d981f.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-b67f506d06fa.html">काव्य मारन कौन है? रजनीकांत, एमके स्टालिन को भारत से बाहर जाते हुए देख रजनीकांत और अनिरुद्ध रविचंदर के साथ SRH के सीईओ की ग्रीस वेडिंग</a></h2>
+            <div class="news-meta">📰 Livemint | 🕐 09-11-2026 12:36</div>
+            <p>सनराइजर्स हैदराबाद की सीईओ और सन टीवी नेटवर्क की कार्यकारी निदेशक काव्या मारन, संगीतकार अनिरुद्ध रविचंदर के साथ ग्रीस में अपनी कथित शादी से पहले सुर्ख...</p>
+            <a href="news/market-news-b67f506d06fa.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-d286c008092f.html">मुद्रास्फीति के आंकड़ों से पहले भारतीय बॉन्डों में तेजी जारी</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 12:36</div>
+            <p>भारत सरकार के बॉन्ड यील्ड्स ने सोमवार को अपनी रैली को बढ़ाया, बेंचमार्क 10 साल की यील्ड लगभग 4 आधार अंक गिर गई क्योंकि कच्चे तेल की कीमतों में कमी आई ...</p>
+            <a href="news/market-news-d286c008092f.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-b1afb627012a.html">ऊनो मिंडा उन 7 शेयरों में शामिल है जो 52 हफ्तों के उच्चतम स्तर को छू रहे हैं; एक महीने में 26% तक की तेजी</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 12:36</div>
+            <p>...</p>
+            <a href="news/market-news-b1afb627012a.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
+        
+        <article class="news-card">
+            <h2><a href="news/market-news-3c541b3975a0.html">एफआईआई ने लगातार 3 तिमाहियों के लिए 10 स्मॉलकैप शेयरों में हिस्सेदारी में कटौती की; सीवाई 26 में शेयर 70% तक गिर गए</a></h2>
+            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 12:37</div>
+            <p>एफआईआई ने लगातार तीन तिमाहियों के लिए बीएसई की 235 स्मॉलकैप कंपनियों में हिस्सेदारी कम कर दी। CY26 में नौ शेयरों को 50 -70% की गिरावट का सामना करना पड...</p>
+            <a href="news/market-news-3c541b3975a0.html" class="read-more">पूरी खबर पढ़ें →</a>
+        </article>
         
         <article class="news-card">
             <h2><a href="news/market-news-f16f0c017339.html">ज़ोहरान ममदानी की 2028 की गेम प्लान: NYC मेयर ने श्रमिक - गठबंधन वामपंथी राष्ट्रपति पद के उम्मीदवार को आगे बढ़ाया — रिपोर्ट</a></h2>
@@ -227,44 +293,15 @@
             <a href="news/market-news-6aa34ce3d67e.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
-        <article class="news-card">
-            <h2><a href="news/market-news-67c9fdd74f5f.html">भारतीय अर्थव्यवस्था तेजी से बढ़ेगी, विदेशी पूंजी बाजारों में लौटेगी: एनएसई के सीईओ आशीष कुमार चौहान</a></h2>
-            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
-            <p>मजबूत मैक्रोइकॉनॉमिक फंडामेंटल्स और बढ़े हुए विदेशी हित के कारण भारत की अर्थव्यवस्था के तेजी से विकास का अनुभव करने का अनुमान है। नेशनल स्टॉक एक्सचेंज...</p>
-            <a href="news/market-news-67c9fdd74f5f.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-2aa60be5eeb0.html">मुहूर्त कारोबार: सेंसेक्स 320 अंक चढ़ा, निफ्टी 25,100 के पार; टाटा स्टील, सन फार्मा टॉप गेनर्स में शामिल</a></h2>
-            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
-            <p>...</p>
-            <a href="news/market-news-2aa60be5eeb0.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-094556e0223a.html">इन 8 शेयरों के लिए दिवाली भाग्यशाली रही! निवेशकों की संपत्ति दोगुनी से अधिक हुई, रिटर्न 191% तक बढ़ा</a></h2>
-            <div class="news-meta">📰 Economic Times | 🕐 09-11-2026 01:08</div>
-            <p>दिवाली 2025 के बाद से निफ्टी 50 में लगभग 3% की गिरावट के बावजूद, बीएसई 500 के आठ शेयरों ने निवेशकों की संपत्ति को दोगुना कर दिया। ऐस इक्विटीज के आंकड़...</p>
-            <a href="news/market-news-094556e0223a.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-39ccbf52f1ce.html">OnePlus ColorOS 17 अपडेट शेड्यूल: OnePlus 12, OnePlus Open, OnePlus Nord 6 और अन्य को नया सॉफ़्टवेयर कब मिलेगा?</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 22:18</div>
-            <p>OnePlus ने ColorOS 17 को रोलआउट करने के लिए नवंबर के शेड्यूल की पुष्टि की। OnePlus 13R नवीनतम सॉफ़्टवेयर प्राप्त करने वाला पहला पुराना मॉडल था।&amp;amp;nb...</p>
-            <a href="news/market-news-39ccbf52f1ce.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
-        <article class="news-card">
-            <h2><a href="news/market-news-8f7476a3acee.html">JioHome दिवाली ऑफ़र: 10 महीने के ₹ 6,660 के रिचार्ज के साथ 5 महीने का मुफ्त वाई - फाई प्राप्त करें; विवरण देखें</a></h2>
-            <div class="news-meta">📰 Livemint | 🕐 08-11-2026 22:18</div>
-            <p>रिलायंस जियो ने क्रमशः नए और बाहर जाने वाले ग्राहकों के लिए विशेष दिवाली ऑफर की घोषणा की है। लाभ, कीमत और ऑफ़र का लाभ उठाने का तरीका देखें।...</p>
-            <a href="news/market-news-8f7476a3acee.html" class="read-more">पूरी खबर पढ़ें →</a>
-        </article>
-        
 
         <footer>
-            <p>© 2026 भारत न्यूज़</p>
+            <p style="margin-bottom: 10px;">
+                <a href="about.html">About Us</a> | 
+                <a href="contact.html">Contact Us</a> | 
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="disclaimer.html">Disclaimer</a>
+            </p>
+            <p>© 2026 भारत न्यूज़. All rights reserved.</p>
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
