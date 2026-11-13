@@ -1,5 +1,61 @@
 [
     {
+        "title": "Microsoft की सेवाएँ ठप: एयर इंडिया ने अपने ई-मेल का रूट बदला, इंडिगो और अकासा ने यात्रियों को सपोर्ट में देरी की चेतावनी दी",
+        "summary": "माइक्रोसॉफ़्ट की ग्लोबल आउटेज की वजह से एयर इंडिया, इंडिगो और अकासा एयर की ईमेल-आधारित ग्राहक सहायता सेवाएँ बाधित हो गई हैं, जिसके चलते एयरलाइंस को यात्रियों के लिए एडवाइजरी जारी करनी पड़ी।",
+        "link": "https://www.livemint.com/technology/tech-news/microsoft-services-down-air-india-reroutes-emails-indigo-and-akasa-warn-passengers-of-support-delays-11794564648364.html",
+        "source": "Livemint",
+        "date": "13-11-2026 11:27"
+    },
+    {
+        "title": "दक्षिण पूर्व एशियाई नेता, अपने अमेरिकी और चीनी समकक्षों के साथ मिलकर ऑनलाइन ठगी को लेकर फिर से चिंता जताएँगे",
+        "summary": "दक्षिण पूर्व एशियाई नेता, अपने अमेरिकी और चीनी समकक्षों के साथ मिलकर ऑनलाइन स्कैम को लेकर फिर से चिंता जताएँगे",
+        "link": "https://www.livemint.com/technology/southeast-asian-leaders-with-us-and-chinese-counterparts-will-renew-alarm-over-online-scams-11794563510300.html",
+        "source": "Livemint",
+        "date": "13-11-2026 11:27"
+    },
+    {
+        "title": "सबसे लंबे तकनीकी आउटेज में से एक के बाद Microsoft ने Outlook को ठीक करने की मुहिम छेड़ दी है",
+        "summary": "Microsoft Outlook, Teams, Copilot में आउटेज शुरू होने के आधे दिन से भी ज़्यादा समय बाद तक रुकावट बनी रही, जिससे 70 से भी ज़्यादा देशों के यूज़र प्रभावित हुए।",
+        "link": "https://www.livemint.com/technology/tech-news/microsoft-races-to-fix-outlook-after-one-of-longest-tech-outages-11794560700258.html",
+        "source": "Livemint",
+        "date": "13-11-2026 11:27"
+    },
+    {
+        "title": "Microsoft की आउटेज की वजह से एयरलाइन की कम्युनिकेशन सर्विसेज़ बाधित हुईं; भारतीय एयरलाइंस ने यात्रियों के लिए एडवाइज़री जारी की",
+        "summary": "Microsoft की सेवा में हुई वैश्विक रुकावट की वजह से दुनिया भर में एयरलाइंस के कामकाज में बाधा पैदा हुई है, जिसके चलते भारत की प्रमुख एयरलाइंस को यात्रियों के लिए एडवाइजरी जारी करनी पड़ी है।",
+        "link": "https://www.livemint.com/technology/microsoft-outage-disrupts-airline-communication-services-indian-carriers-issue-passenger-advisories-11794558774841.html",
+        "source": "Livemint",
+        "date": "13-11-2026 11:27"
+    },
+    {
+        "title": "दुनिया के प्रोडक्ट डेटा पर मालिकाना हक हासिल करने और AI शॉपिंग एजेंटों से मुकाबला करने की Amazon की योजना",
+        "summary": "रॉयटर्स द्वारा देखी गई एक आंतरिक डॉक्युमेंट और इस मामले से वाकिफ़ लोगों के अनुसार, World Product Graph नाम की यह पहल धरती पर बिक्री के लिए उपलब्ध लगभग हर आइटम के बारे में डेटा इकट्ठा करने की कोशिश करती है, चाहे वह आइटम Amazon के पास स्टॉक में हो या न हो।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/amazons-plan-to-own-the-worlds-product-data-and-fight-ai-shopping-agents/articleshow/135800426.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 11:27"
+    },
+    {
+        "title": "Simplify Alpha™ ने हैदराबाद में AI इंजीनियरिंग और इनोवेशन सेंटर खोला, जिसमें Simplify Healthcare® और SimplifyX™ भी शामिल हुए",
+        "summary": "Simplify Group™ की कंपनियों के लिए हैदराबाद, पुणे और मुंबई के बाद भारत का तीसरा लोकेशन बन गया है, जिससे ग्राहकों को डिलीवरी करने और विकास करने की क्षमता बढ़ गई है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/simplify-alpha-opens-ai-engineering-and-innovation-center-in-hyderabad-joined-by-simplify-healthcare-and-simplifyx/articleshow/135798924.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 11:28"
+    },
+    {
+        "title": "यूरोपीय संघ के नेता पहली बार आयोजित किए जा रहे AI शिखर सम्मेलन में चुनौतियों से निपटने की कोशिश करेंगे",
+        "summary": "यूरोपीय संघ के नेता शुक्रवार को डबलिन में आर्टिफिशियल इंटेलिजेंस पर अपने पहले शिखर सम्मेलन के लिए इकट्ठा होंगे, जहाँ वे इस पर चर्चा करेंगे कि ब्लॉक कैसे संयुक्त राज्य अमेरिका और चीन से बराबरी कर सकता है और फंडिंग से जुड़े मसलों तथा अन्य समस्याओं का समाधान कैसे निकाल सकता है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/eu-leaders-seek-to-tackle-challenges-at-first-ever-ai-summit/articleshow/135792890.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 11:28"
+    },
+    {
+        "title": "सिंगापुर ने AI सर्वर धोखाधड़ी मामले में पाँचवें व्यक्ति पर आरोप लगाए हैं",
+        "summary": "सिंगापुर ने Dell, Super Micro Computer और Asustek Computer से खरीदे गए AI सर्वर के कथित तौर पर गलत एंड यूज़र बताने के मामले में पाँचवें व्यक्ति पर आरोप लगाया है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/singapore-charges-fifth-person-in-ai-server-fraud-case/articleshow/135789435.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 11:28"
+    },
+    {
         "title": "आमिर खान प्रोडक्शंस और फ़रहान अख्तर की एक्सेल एंटरटेनमेंट ने मिलकर बनाया माइक्रोड्रामा प्लैटफ़ॉर्म: क्या उम्मीद की जाए",
         "summary": "आमिर खान प्रोडक्शंस और एक्सेल एंटरटेनमेंट भारत में एक माइक्रोड्रामा प्लैटफ़ॉर्म लॉन्च करने के लिए पार्टनरशिप कर रहे हैं। यह वेंचर उनकी मौजूदा कॉन्टेंट लाइब्रेरी को ओरिजिनल प्रॉडक्शन और डिजिटल क्रिएटर पार्टनरशिप के साथ जोड़ देगा, जबकि एक टेलीकॉम पार्टनर डिस्ट्रिब्यूशन में मदद करेगा।",
         "link": "https://www.livemint.com/companies/news/aamir-khan-productions-farhan-akhtars-excel-entertainment-team-up-for-microdrama-platform-what-to-expect-11794550664310.html",
@@ -152,61 +208,5 @@
         "link": "https://www.livemint.com/technology/google-rolls-out-android-17-qpr2-for-pixel-phones-whats-new-eligible-devices-and-how-to-download-11794486862146.html",
         "source": "Livemint",
         "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "Xiaomi 18 Pro सीरीज़ 17 नवंबर को लॉन्च होगी: वॉच S5, स्मार्ट बैंड 11, क्लिप TWS और 4 स्मार्ट होम डिवाइस की पुष्टि की गई",
-        "summary": "Xiaomi 17 नवंबर को दुनिया भर में Xiaomi 18 Pro सीरीज़ के साथ-साथ Watch S5 41mm, Smart Band 11, Clip TWS ईयरबड्स और चार स्मार्ट होम अप्लायंसेज़ लॉन्च करेगा। इस लाइनअप में एक नया रोबॉट वैक्यूम क्लीनर भी शामिल होगा, जिससे कंपनी के वियरेबल, ऑडियो और स्मार्ट होम प्रॉडक्ट्स का पोर्टफ़ोलियो और भी बढ़ जाएगा।",
-        "link": "https://www.livemint.com/technology/gadgets/xiaomi-18-pro-series-launch-on-november-17-watch-s5-smart-band-11-clip-tws-and-4-smart-home-devices-confirmed-11794481655788.html",
-        "source": "Livemint",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "Vivo X500 सीरीज़ 26 नवंबर को भारत में होगी लॉन्च; 200MP कैमरे की संभावना जताई गई: अनुमानित कीमत और मुख्य स्पेसिफ़िकेशंस",
-        "summary": "Vivo 26 नवंबर को भारत में X500, X500 Pro और X500 Pro Max को नई वॉच GT2 के साथ लॉन्च करने वाला है। इन फ़्लैगशिप स्मार्टफ़ोन में 200MP तक के कैमरे, मीडियाटेक डाइमेंसिटी 9600 सीरीज़ के प्रोसेसर और 8,000mAh तक की बैटरी होने की उम्मीद है। खबरों के मुताबिक, इनकी शुरुआती कीमत ₹1,19,999 है।",
-        "link": "https://www.livemint.com/technology/gadgets/vivo-x500-series-india-launch-on-november-26-200mp-camera-tipped-expected-price-and-key-specifications-11794477511897.html",
-        "source": "Livemint",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "J.P. Morgan का कहना है कि जैसे-जैसे ह्यूमनॉइड रोबोट का इस्तेमाल बढ़ता जाएगा, वैसे-वैसे अमेरिका में उनका उत्पादन साल 2030 तक बढ़कर 4,00,000 तक पहुँच सकता है",
-        "summary": "अमेरिका-तकनीक/रिसर्च: J.P. Morgan का कहना है कि जैसे-जैसे ह्यूमनॉइड रोबॉट का इस्तेमाल बढ़ने लगेगा, वैसे-वैसे अमेरिका में उनका उत्पादन साल 2030 तक बढ़कर 4,00,000 तक पहुँच सकता है",
-        "link": "https://www.livemint.com/technology/us-humanoid-robot-production-could-hit-400-000-by-2030-as-deployment-ramps-j-p-morgan-says-11794476224679.html",
-        "source": "Livemint",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "भारत बन गया ChatGPT का सबसे बड़ा बाज़ार | OpenAI के इंडिया चीफ़ | कॉर्नर ऑफ़िस कन्वर्सेशन",
-        "summary": "",
-        "link": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135764629.cms",
-        "source": "Economic Times",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "भारत बन गया ChatGPT का सबसे बड़ा बाज़ार | OpenAI के इंडिया चीफ़ | कॉर्नर ऑफ़िस कन्वर्सेशन",
-        "summary": "",
-        "link": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135764546.cms",
-        "source": "Economic Times",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "भारत बन गया ChatGPT का सबसे बड़ा बाज़ार | OpenAI के इंडिया चीफ़ | कॉर्नर ऑफ़िस कन्वर्सेशन",
-        "summary": "",
-        "link": "https://economictimes.indiatimes.com/tech/technology/india-becomes-chatgpts-biggest-market-openais-india-chief-corner-office-conversation/videoshow/135763467.cms",
-        "source": "Economic Times",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "Alphabet की हांगकांग, सिंगापुर में पहली बार बॉन्ड बिक्री से शुरुआती ऑर्डर में ही करीब $5 बिलियन की रकम मिली",
-        "summary": "मज़बूत ऑर्डर बुक की बदौलत Alphabet के पास अपनी योजनाबद्ध फ़ाइनेंसिंग बढ़ाने की सहूलियत है, क्योंकि वह AI इंफ़्रास्ट्रक्चर में निवेश की रफ़्तार बढ़ा रहा है, भले ही हाल ही में टेक्नोलॉजी शेयरों में आई अस्थिरता की वजह से निवेशक ज़्यादा सतर्क हो गए हैं।",
-        "link": "https://economictimes.indiatimes.com/tech/technology/alphabets-debut-hong-kong-singapore-bond-sales-draw-about-5-billion-in-early-orders/articleshow/135759335.cms",
-        "source": "Economic Times",
-        "date": "12-11-2026 21:54"
-    },
-    {
-        "title": "निजी बिजली कंपनियों ने प्रोजेक्ट में देरी के मामले में सुरक्षा की मांग की",
-        "summary": "बिजली सचिव पंकज अग्रवाल को दिए गए एक ज्ञापन में, इलेक्ट्रिक पावर ट्रांसमिशन एसोसिएशन (EPTA) ने अंतर-राज्यीय ट्रांसमिशन परियोजनाओं को नियंत्रित करने वाले टैरिफ-आधारित प्रतिस्पर्धी बोली (TBCB) ढाँचे में बदलाव की माँग की है। इन बदलावों में वाणिज्यिक संचालन की मानित तिथि, टैरिफ की पूरी वसूली और प्रोटोकॉल शामिल हैं।",
-        "link": "https://economictimes.indiatimes.com/industry/energy/power/private-power-firms-demand-shield-against-project-delays/articleshow/135780874.cms",
-        "source": "Economic Times",
-        "date": "12-11-2026 20:19"
     }
 ]
