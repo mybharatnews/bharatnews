@@ -1,5 +1,54 @@
 [
     {
+        "title": "Microsoft का कहना है कि उसकी सेवाएँ धीरे-धीरे बहाल हो रही हैं; आइए जानें कि इस रुकावट के बीच कंपनियाँ किस तरह पारंपरिक तरीकों का सहारा ले रही हैं",
+        "summary": "Microsoft का कहना है कि 43 करोड़ से भी ज़्यादा लोग उसकी Microsoft 365 सेवाओं का इस्तेमाल करते हैं। उसने इस रुकावट की बात स्वीकार की है और कहा है कि वह सामान्य कामकाज बहाल करने की दिशा में काम कर रहा है।",
+        "link": "https://www.livemint.com/technology/tech-news/microsoft-says-services-recovering-gradually-heres-how-companies-are-resorting-to-traditional-methods-amid-disruption-11794589693746.html",
+        "source": "Livemint",
+        "date": "13-11-2026 21:31"
+    },
+    {
+        "title": "सोनी PS5 की दुनिया भर में 100 मिलियन से ज़्यादा बिक्री हुई: GTA 6 की वजह से इसकी रिलीज़ से पहले ही PlayStation 5 खरीदने की होड़ क्यों मच सकती है",
+        "summary": "सोनी के PlayStation 5 की दुनिया भर के रिटेलर्स को की गई कुल बिक्री 100 मिलियन यूनिट्स का आँकड़ा पार कर गई है। GTA 6 के 19 नवंबर, 2026 को लॉन्च होने वाला है। इस बहुप्रतीक्षित गेम की वजह से PS5 कंसोल की नई माँग पैदा हो सकती है और इससे सोनी के गेमिंग बिज़नेस को बढ़ावा मिल सकता है।",
+        "link": "https://www.livemint.com/technology/sony-ps5-sales-cross-100-million-worldwide-why-gta-6-could-trigger-a-fresh-playstation-5-buying-rush-before-its-launch-11794589385513.html",
+        "source": "Livemint",
+        "date": "13-11-2026 21:31"
+    },
+    {
+        "title": "Anthropic Claude AI डाउन, स्टेटस अपडेट: Claude API, Claude Code, कनेक्टर जैसी सर्विसेज़ डाउन हैं",
+        "summary": "Anthropic शुक्रवार को Claude.ai, उसके API, Claude Code और अन्य सेवाओं पर असर डालने वाली परफ़ॉर्मेंस में गिरावट की खबरों की जाँच कर रहा है। यूज़र्स ने ऑथेंटिकेशन से जुड़ी समस्याओं और चैटबॉट तथा कोडिंग टूल्स को ऐक्सेस करने में होने वाली दिक्कतों की रिपोर्ट की।",
+        "link": "https://www.livemint.com/technology/anthropic-claude-ai-down-status-update-services-including-claude-api-claude-code-connectors-down-11794578562208.html",
+        "source": "Livemint",
+        "date": "13-11-2026 21:31"
+    },
+    {
+        "title": "ज़ोहरान मामदानी ने ‘सर्वेलांस प्राइसिंग’ को खत्म करने वाले बिल का समर्थन किया: न्यूयॉर्क शहर के मेयर का कंपनियों को आपके डेटा का दुरुपयोग करने से रोकने का इरादा",
+        "summary": "न्यूयॉर्क सिटी काउंसिल ने एक विधेयक पारित किया है, जिसके तहत कंपनियों को ग्राहकों से एक जैसी चीज़ों और सेवाओं के लिए अलग-अलग कीमतें वसूलने के लिए व्यक्तिगत डेटा, ब्राउज़िंग हिस्ट्री और शॉपिंग की आदतों का इस्तेमाल करने से मना किया गया है।&amp;nbsp;",
+        "link": "https://www.livemint.com/technology/zohran-mamdani-backs-bill-to-end-surveillance-pricing-how-nyc-mayor-aims-to-stop-firms-from-misusing-your-data-11794567512546.html",
+        "source": "Livemint",
+        "date": "13-11-2026 21:31"
+    },
+    {
+        "title": "Simplify Alpha™ ने हैदराबाद में AI इंजीनियरिंग और इनोवेशन सेंटर खोला, जिसमें Simplify Healthcare® और SimplifyX™ भी शामिल हुए",
+        "summary": "Simplify Group™ की कंपनियों के लिए हैदराबाद, पुणे और मुंबई के बाद भारत का तीसरा लोकेशन बन गया है, जिससे ग्राहकों को डिलीवरी करने और विकास करने की क्षमता बढ़ गई है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/simplify-alpha-opens-ai-engineering-and-innovation-center-in-hyderabad-joined-by-simplify-healthcare-and-simplifyx/articleshow/135798924.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 21:31"
+    },
+    {
+        "title": "यूरोपीय संघ के नेताओं ने पहली बार आयोजित किए गए AI शिखर सम्मेलन में चुनौतियों से निपटने की कोशिश की",
+        "summary": "यूरोपीय संघ के नेता शुक्रवार को डबलिन में आर्टिफिशियल इंटेलिजेंस पर अपने पहले शिखर सम्मेलन के लिए इकट्ठा होंगे, जहाँ वे इस पर चर्चा करेंगे कि ब्लॉक कैसे संयुक्त राज्य अमेरिका और चीन की बराबरी कर सकता है और फंडिंग से जुड़े मसलों व अन्य समस्याओं से कैसे निपट सकता है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/eu-leaders-seek-to-tackle-challenges-at-first-ever-ai-summit/articleshow/135792890.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 21:32"
+    },
+    {
+        "title": "सिंगापुर ने AI सर्वर धोखाधड़ी मामले में पाँचवें व्यक्ति पर आरोप लगाए हैं",
+        "summary": "सिंगापुर ने Dell, Super Micro Computer और Asustek Computer से खरीदे गए AI सर्वर के कथित रूप से गलत एंड यूज़र बताने के मामले में पाँचवें व्यक्ति पर आरोप लगाया है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/singapore-charges-fifth-person-in-ai-server-fraud-case/articleshow/135789435.cms",
+        "source": "Economic Times",
+        "date": "13-11-2026 21:32"
+    },
+    {
         "title": "तेजस नेटवर्क्स की मार्च 2024 की समेकित शुद्ध बिक्री 1,326.88 करोड़ रुपये रही, जो सालाना आधार पर 343.3% ज़्यादा है",
         "summary": "Comment",
         "link": "https://www.moneycontrol.com/news/results/tejas-networks-consolidated-march-2024-net-sales-at-rs-132688-crore3433-y-o-y_17531131.html",
@@ -159,54 +208,5 @@
         "link": "https://www.livemint.com/market/stock-market-news/pulse-of-the-street-dalal-street-s-winning-streak-faces-an-inflation-test-11794572591011.html",
         "source": "Livemint",
         "date": "13-11-2026 14:47"
-    },
-    {
-        "title": "Paytm के शेयरों ने पाँच साल बाद IPO लिस्टिंग के दिन ₹1,955 का उच्चतम स्तर पार किया; निवेशकों का भरोसा किस वजह से बढ़ रहा है?",
-        "summary": "Paytm के शेयर लगभग 2% बढ़कर ₹1,960 पर पहुँच गए और पहली बार अपने IPO लिस्टिंग-डे के उच्चतम स्तर को पार कर गए। यह वृद्धि आरबीआई की ओर से सहायक कंपनी पीपीएसएल को प्रीपेड पेमेंट इंस्ट्रूमेंट्स, जिनमें डिजिटल वॉलेट भी शामिल हैं, जारी करने की प्रारंभिक मंज़ूरी मिलने के बाद हुई।&amp;nbsp;",
-        "link": "https://www.livemint.com/market/stock-market-news/paytm-shares-cross-rs-1-955-ipo-listing-day-high-after-nearly-five-years-whats-boosting-investor-confidence-11794575989775.html",
-        "source": "Livemint",
-        "date": "13-11-2026 14:47"
-    },
-    {
-        "title": "आउटलुक, टीम्स और कोपायलट में दुनिया भर में आई गड़बड़ी की वजह से प्री-मार्केट में Microsoft के शेयरों में लगभग 3% की गिरावट आई; आखिर गड़बड़ी हुई कहाँ?",
-        "summary": "Microsoft की 12 घंटे से भी ज़्यादा समय तक चली ग्लोबल आउटेज की वजह से 70 से भी ज़्यादा देशों में Outlook, Teams, Copilot और Microsoft 365 की अन्य सेवाओं में रुकावट पैदा हो गई।",
-        "link": "https://www.livemint.com/market/stock-market-news/microsoft-shares-fall-nearly-3-in-pre-market-as-global-outage-hits-outlook-teams-and-copilot-what-went-wrong-11794570500283.html",
-        "source": "Livemint",
-        "date": "13-11-2026 14:47"
-    },
-    {
-        "title": "Microsoft की सेवाएँ ठप: एयर इंडिया ने अपने ई-मेल का रूट बदला, इंडिगो और अकासा ने यात्रियों को सपोर्ट में देरी की चेतावनी दी",
-        "summary": "माइक्रोसॉफ़्ट की ग्लोबल आउटेज की वजह से एयर इंडिया, इंडिगो और अकासा एयर की ईमेल-आधारित ग्राहक सहायता सेवाएँ बाधित हो गई हैं, जिसके चलते एयरलाइंस को यात्रियों के लिए एडवाइजरी जारी करनी पड़ी।",
-        "link": "https://www.livemint.com/technology/tech-news/microsoft-services-down-air-india-reroutes-emails-indigo-and-akasa-warn-passengers-of-support-delays-11794564648364.html",
-        "source": "Livemint",
-        "date": "13-11-2026 11:27"
-    },
-    {
-        "title": "दक्षिण पूर्व एशियाई नेता, अपने अमेरिकी और चीनी समकक्षों के साथ मिलकर ऑनलाइन ठगी को लेकर फिर से चिंता जताएँगे",
-        "summary": "दक्षिण पूर्व एशियाई नेता, अपने अमेरिकी और चीनी समकक्षों के साथ मिलकर ऑनलाइन स्कैम को लेकर फिर से चिंता जताएँगे",
-        "link": "https://www.livemint.com/technology/southeast-asian-leaders-with-us-and-chinese-counterparts-will-renew-alarm-over-online-scams-11794563510300.html",
-        "source": "Livemint",
-        "date": "13-11-2026 11:27"
-    },
-    {
-        "title": "सबसे लंबे तकनीकी आउटेज में से एक के बाद Microsoft ने Outlook को ठीक करने की मुहिम छेड़ दी है",
-        "summary": "Microsoft Outlook, Teams, Copilot में आउटेज शुरू होने के आधे दिन से भी ज़्यादा समय बाद तक रुकावट बनी रही, जिससे 70 से भी ज़्यादा देशों के यूज़र प्रभावित हुए।",
-        "link": "https://www.livemint.com/technology/tech-news/microsoft-races-to-fix-outlook-after-one-of-longest-tech-outages-11794560700258.html",
-        "source": "Livemint",
-        "date": "13-11-2026 11:27"
-    },
-    {
-        "title": "Microsoft की आउटेज की वजह से एयरलाइन की कम्युनिकेशन सर्विसेज़ बाधित हुईं; भारतीय एयरलाइंस ने यात्रियों के लिए एडवाइज़री जारी की",
-        "summary": "Microsoft की सेवा में हुई वैश्विक रुकावट की वजह से दुनिया भर में एयरलाइंस के कामकाज में बाधा पैदा हुई है, जिसके चलते भारत की प्रमुख एयरलाइंस को यात्रियों के लिए एडवाइजरी जारी करनी पड़ी है।",
-        "link": "https://www.livemint.com/technology/microsoft-outage-disrupts-airline-communication-services-indian-carriers-issue-passenger-advisories-11794558774841.html",
-        "source": "Livemint",
-        "date": "13-11-2026 11:27"
-    },
-    {
-        "title": "दुनिया के प्रोडक्ट डेटा पर मालिकाना हक हासिल करने और AI शॉपिंग एजेंटों से मुकाबला करने की Amazon की योजना",
-        "summary": "रॉयटर्स द्वारा देखी गई एक आंतरिक डॉक्युमेंट और इस मामले से वाकिफ़ लोगों के अनुसार, World Product Graph नाम की यह पहल धरती पर बिक्री के लिए उपलब्ध लगभग हर आइटम के बारे में डेटा इकट्ठा करने की कोशिश करती है, चाहे वह आइटम Amazon के पास स्टॉक में हो या न हो।",
-        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/amazons-plan-to-own-the-worlds-product-data-and-fight-ai-shopping-agents/articleshow/135800426.cms",
-        "source": "Economic Times",
-        "date": "13-11-2026 11:27"
     }
 ]
