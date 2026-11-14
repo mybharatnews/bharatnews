@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-01f08ae8c837.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-14T22:37:00+05:30</news:publication_date>
+      <news:title>Apple साल 2027 की शुरुआत में तीन नए iPhones लॉन्च कर सकता है: iPhone 18, 18e और Air 2; क्या उम्मीद की जाए</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-672e4ca3bc55.html</loc>
     <lastmod>2026-11-15</lastmod>
     <news:news>
@@ -287,16 +297,6 @@
       <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-14T13:43:00+05:30</news:publication_date>
       <news:title>खरीदने के लिए डिविडेंड स्टॉक: TD पावर के शेयरों में 3 साल में 369% की तेज़ी, क्या आगे और बढ़त की संभावना है? र</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-26ec3511d4b1.html</loc>
-    <lastmod>2026-11-15</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-14T10:50:00+05:30</news:publication_date>
-      <news:title>ऑल्टिमीटर, एट्राइड्स ने Nvidia के बोर्ड से आग्रह किया कि वे जेन्सेन हुआंग की CEO के तौर पर वापसी के लिए रास्ता</news:title>
       <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
