@@ -1,5 +1,33 @@
 [
     {
+        "title": "ऑल्टिमीटर, एट्राइड्स ने Nvidia के बोर्ड से आग्रह किया कि वे जेन्सेन हुआंग की CEO के तौर पर वापसी के लिए रास्ता खुला रखें",
+        "summary": "कंपनी के बोर्ड को संबोधित एक पत्र में, अल्टिमेटर के सीईओ ब्रैड गेर्स्टनर और एट्रिड्स के मैनेजिंग पार्टनर और चीफ़ इन्वेस्टमेंट ऑफ़िसर गेविन बेकर ने कहा कि बोर्ड को हुआंग के इस्तीफ़े से जुड़े सभी तथ्यों का पता चलने से पहले ही किसी स्थायी उत्तराधिकारी की नियुक्ति करने की जल्दबाज़ी नहीं करनी चाहिए।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/altimeter-atreides-urge-nvidia-board-to-keep-door-open-for-jensen-huangs-return-as-ceo/articleshow/135827369.cms",
+        "source": "Economic Times",
+        "date": "14-11-2026 10:50"
+    },
+    {
+        "title": "Microsoft की सेवाएँ ठप होने की घटना से पता चलता है कि ज़रूरी सेवाओं के लिए किसी एक ही टेक्नोलॉजी प्रोवाइडर पर निर्भर रहना कितना जोखिम भरा हो सकता है",
+        "summary": "Outlook, Teams और AI सहायक Copilot सहित Microsoft 365 की सेवाओं में रुकावट आई। शुक्रवार को जब आउटेज का दूसरा दिन शुरू हुआ, तो Microsoft ने कहा कि उसे \"सुधार की दिशा में उत्साहजनक प्रगति\" दिखाई दे रही है। लेकिन कंपनी ने यह चेतावनी भी दी कि \"बार-बार आने वाली ऐक्सेस से जुड़ी समस्याएँ या ईमेल के देर से डिलीवर होने की समस्या\" कुछ समय तक बनी रह सकती है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/microsoft-outage-shows-the-risks-of-relying-on-a-single-technology-provider-for-essential-services/articleshow/135821607.cms",
+        "source": "Economic Times",
+        "date": "14-11-2026 10:50"
+    },
+    {
+        "title": "Nvidia से जुड़ा विवाद अमेरिका-चीन के बीच होने वाली AI से जुड़ी बातचीत पर छा गया है",
+        "summary": "जब अगले हफ़्ते डोनाल्ड ट्रम्प और शी जिनपिंग की मुलाकात होगी, तो उसमें AI बॉट्स के नियंत्रण से बाहर हो जाने और इंसानों द्वारा इस तकनीक का इस्तेमाल नुकसान पहुँचाने के लिए करने के मुद्दे शायद एजेंडे में शामिल होंगे। साथ ही, AI की सुरक्षा पर होने वाली बातचीत पर Nvidia स्कैंडल का साया भी मंडराता रहेगा। लेकिन इस बात की संभावना कम है कि यह घोटाला \"बैठक के एजेंडे पर हावी होगा\" या ट्रंप और शी के आपसी संबंधों को प्रभावित करेगा,",
+        "link": "https://economictimes.indiatimes.com/tech/technology/nvidia-scandal-looms-over-us-china-ai-talks/articleshow/135821307.cms",
+        "source": "Economic Times",
+        "date": "14-11-2026 10:50"
+    },
+    {
+        "title": "सॉफ़्टबैंक ने भारत में अपने निवेश को और कम किया, मीशो के 1,885 करोड़ रुपये मूल्य के शेयर बेचे",
+        "summary": "नेशनल स्टॉक एक्सचेंज (NSE) पर ब्लॉक डील के आँकड़ों के मुताबिक, हाल ही में हुए लेन-देन में सॉफ़्टबैंक की सहयोगी कंपनी SVF II Meerkat (DE) LLC ने बेंगलुरु स्थित मीशो के 7.64 करोड़ शेयर बेचे। शेयरों की बिक्री शुक्रवार को औसतन 246.75 रुपये प्रति शेयर की कीमत पर की गई, जिससे कुल बिक्री",
+        "link": "https://economictimes.indiatimes.com/tech/technology/softbank-further-trims-india-exposure-offloads-meesho-shares-worth-rs-1885-crore/articleshow/135821247.cms",
+        "source": "Economic Times",
+        "date": "14-11-2026 10:50"
+    },
+    {
         "title": "Google ने क्रिएटर इकॉनमी और माइक्रो-ड्रामा स्टार्टअप Rigi में ₹10 करोड़ का निवेश किया, इसका मूल्यांकन ₹670 करोड़ तक पहुँच गया — विवरण",
         "summary": "Google International ने क्रिएटर-इकॉनमी स्टार्टअप Rigi में 1.43% हिस्सेदारी के लिए ₹10 करोड़ का निवेश किया, जिससे कंपनी का मूल्यांकन ₹670 करोड़ आंका गया। रिगी की योजना इस फंडिंग का इस्तेमाल अपने मुफ़्त, विज्ञापन-समर्थित डिजिटल कॉन्टेंट और मनोरंजन संबंधी ऑफ़र को बढ़ाने के लिए करने की है।",
         "link": "https://www.livemint.com/companies/news/google-invests-rs-10-crore-in-creator-economy-and-micro-drama-startup-rigi-valuation-reaches-rs-670-crore-details-11794629036334.html",
@@ -180,33 +208,5 @@
         "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/eu-leaders-seek-to-tackle-challenges-at-first-ever-ai-summit/articleshow/135792890.cms",
         "source": "Economic Times",
         "date": "13-11-2026 21:32"
-    },
-    {
-        "title": "सिंगापुर ने AI सर्वर धोखाधड़ी मामले में पाँचवें व्यक्ति पर आरोप लगाए हैं",
-        "summary": "सिंगापुर ने Dell, Super Micro Computer और Asustek Computer से खरीदे गए AI सर्वर के कथित रूप से गलत एंड यूज़र बताने के मामले में पाँचवें व्यक्ति पर आरोप लगाया है।",
-        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/singapore-charges-fifth-person-in-ai-server-fraud-case/articleshow/135789435.cms",
-        "source": "Economic Times",
-        "date": "13-11-2026 21:32"
-    },
-    {
-        "title": "तेजस नेटवर्क्स की मार्च 2024 की समेकित शुद्ध बिक्री 1,326.88 करोड़ रुपये रही, जो सालाना आधार पर 343.3% ज़्यादा है",
-        "summary": "Comment",
-        "link": "https://www.moneycontrol.com/news/results/tejas-networks-consolidated-march-2024-net-sales-at-rs-132688-crore3433-y-o-y_17531131.html",
-        "source": "Moneycontrol",
-        "date": "13-11-2026 19:57"
-    },
-    {
-        "title": "अदानी ग्रुप ने कानूनी दायित्वों को कम करने के लिए तारली PSP प्रोजेक्ट की लागत कम करने के आरोपों को खारिज किया",
-        "summary": "समूह के प्रवक्ता ने एक बयान में कहा कि ऑनलाइन प्रस्ताव सिर्फ़ साइट की जाँच के उद्देश्य से पेश किया गया था, जबकि राज्य वन्यजीव बोर्ड (एसबीडब्ल्यूएल) ने परियोजना की कुल लागत 5,675 करोड़ रुपये मानी थी।",
-        "link": "https://economictimes.indiatimes.com/industry/renewables/adani-group-rejects-allegations-of-lowering-tarali-psp-project-costs-to-cut-statutory-obligations/articleshow/135810318.cms",
-        "source": "Economic Times",
-        "date": "13-11-2026 19:58"
-    },
-    {
-        "title": "येस बैंक ने एटी-1 बॉन्ड आदेश पर पुनर्विचार के लिए सुप्रीम कोर्ट में याचिका दायर की",
-        "summary": "येस बैंक ने अपने अतिरिक्त टियर-1 (AT-1) बॉन्डों की ₹8,415 करोड़ की राइट-ऑफ़ को रद्द करने वाले अक्टूबर के अपने फ़ैसले की समीक्षा करने का अनुरोध करते हुए सुप्रीम कोर्ट का दरवाज़ा खटखटाया है। यह कदम एक्सिस ट्रस्टी सर्विसेज़ द्वारा बॉन्डधारकों की ओर से दायर अवमानना याचिका के बाद उठाया गया है, जिसमें बैंक पर यह आरोप लगाया गया है कि उसने ________ प्रदान करने में नाकाम रहा।",
-        "link": "https://economictimes.indiatimes.com/industry/banking/finance/banking/yes-bank-files-supreme-court-petition-seeking-review-of-at-1-bond-order/articleshow/135810272.cms",
-        "source": "Economic Times",
-        "date": "13-11-2026 19:58"
     }
 ]
