@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-781b654705a2.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-15T11:25:00+05:30</news:publication_date>
+      <news:title>Microsoft 365 से लेकर CrowdStrike तक - सबसे बड़े तकनीकी आउटेज, जिन्होंने दुनिया को लगभग ठप कर दिया था</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-c88f8c9bcc1a.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-15T11:25:00+05:30</news:publication_date>
+      <news:title>क्या आप सोच रहे हैं कि इस थैंक्सगिविंग पर दोस्तों और परिवार के सदस्यों को क्या गिफ़्ट दिया जाए? $92 में $100 क</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-0a6d5aefb861.html</loc>
     <lastmod>2026-11-15</lastmod>
     <news:news>
@@ -277,26 +297,6 @@
       <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-14T15:57:00+05:30</news:publication_date>
       <news:title>भारत की खपत की स्थिति अभी भी मज़बूत है, लेकिन ग्रामीण माँग पर मुद्रास्फीति का खतरा मंडरा रहा है: रिपोर्ट</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-50bad62b4949.html</loc>
-    <lastmod>2026-11-15</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-14T15:57:00+05:30</news:publication_date>
-      <news:title>फ़िक्की ने भारत-अफ़्रीका के बीच व्यापक व्यापारिक ढाँचे की माँग की</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-59356df1576b.html</loc>
-    <lastmod>2026-11-15</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-14T15:57:00+05:30</news:publication_date>
-      <news:title>भारत के अक्टूबर महीने के रिकॉर्ड तोड़ मर्चेंडाइज़ एक्सपोर्ट में पाँच सेक्टरों का योगदान 83% रहा: रिपोर्ट</news:title>
       <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
