@@ -1,5 +1,61 @@
 [
     {
+        "title": "JPMorgan Chase में हुई एक तकनीकी गड़बड़ी की वजह से अमेरिका के प्रमुख बैंकों की ऑनलाइन बैंकिंग सेवाओं में देरी हुई",
+        "summary": "JPMorgan Chase में हुई तकनीकी गड़बड़ी की वजह से अमेरिका के प्रमुख बैंकों की ऑनलाइन बैंकिंग सेवाओं में देरी हुई",
+        "link": "https://www.livemint.com/technology/a-technical-issue-at-jpmorgan-chase-triggers-online-banking-delays-for-major-us-banks-11794864334961.html",
+        "source": "Livemint",
+        "date": "16-11-2026 22:27"
+    },
+    {
+        "title": "Microsoft ने दुनिया भर में हुई आउटेज की वजह बताई: कैसे एक चार महीने पुराने सॉफ़्टवेयर बग की वजह से कामकाज बाधित हुआ और रिकवरी में देर हुई",
+        "summary": "एक सॉफ़्टवेयर दोष जो महीनों तक निष्क्रिय रहा, एक नियमित नेटवर्क फ़ेलओवर और सर्वर की क्षमता में अस्थायी कमी ने मिलकर एक वैश्विक आउटेज को जन्म दिया।",
+        "link": "https://www.livemint.com/technology/microsoft-explains-global-365-outage-how-a-four-month-old-software-bug-triggered-disruption-and-delayed-recovery-11794849255755.html",
+        "source": "Livemint",
+        "date": "16-11-2026 22:27"
+    },
+    {
+        "title": "AI के शेयरों को करेक्शन के जोखिम का सामना करना पड़ रहा है, क्योंकि US फेड ने बिग टेक के कर्ज़, डेटा सेंटर की बढ़ती लागतों और ऊँची कीमत के संकेत दिए हैं",
+        "summary": "अमेरिकी फ़ेडरल रिज़र्व ने AI सेक्टर में बढ़ते कर्ज़, सर्कुलर फ़ाइनेंसिंग और ऊँचे मूल्यांकनों को वित्तीय स्थिरता के लिए जोखिम के रूप में चिह्नित किया है। AI से होने वाले मुनाफ़े में कमी आने से शेयर बाज़ार में सुधार की ज़रूरत पैदा हो सकती है और लेनदारों व निवेशकों को नुकसान उठाना पड़ सकता है।",
+        "link": "https://www.livemint.com/technology/ai-stocks-face-correction-risk-as-us-fed-flags-big-tech-debt-rising-data-centre-costs-and-stretched-valuations-11794848120670.html",
+        "source": "Livemint",
+        "date": "16-11-2026 22:27"
+    },
+    {
+        "title": "Motorola Signature 27 बैटरी विवाद: कुछ खरीदारों को 7,000mAh की जगह 5,500mAh की बैटरी क्यों मिल सकती है?",
+        "summary": "Motorola Signature 27 का विज्ञापन 7,000mAh की बैटरी के साथ किया जाता है, लेकिन EU के नियामक रिकॉर्ड में एक और वैरिएंट दिखाया गया है, जिसमें 5,500mAh की बैटरी है। इस फ़र्क ने क्षेत्रीय स्पेसिफ़िकेशंस और खरीदारों की उम्मीदों को लेकर सवाल खड़े कर दिए हैं।",
+        "link": "https://www.livemint.com/technology/motorola-signature-27-battery-controversy-why-could-some-buyers-get-a-5-500mah-battery-instead-of-7000mah-11794837575397.html",
+        "source": "Livemint",
+        "date": "16-11-2026 22:27"
+    },
+    {
+        "title": "फ़्रैक्टल के CEO का कहना है कि वे 25 तक AI स्टार्टअप्स के साथ अधिग्रहण की बातचीत कर रहे हैं",
+        "summary": "एंटरप्राइज़ AI फ़र्म फ़्रैक्टल एनालिटिक्स अपने सीईओ के मुताबिक़, 20 से 25 स्टार्टअप्स के साथ सक्रिय रूप से बातचीत कर रही है, ताकि उन्हें संभावित रूप से अधिग्रहित किया जा सके। फ़्रैक्टल एनालिटिक्स का मकसद अपने वर्टिकल-स्पेसिफ़िक क्षमताओं को और मज़बूत करना और अत्याधुनिक AI मॉडल्स तक जल्द-से-जल्ड पहुँच हासिल करना है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/fractal-in-talks-with-up-to-25-ai-startups-for-acquisitions-ceo-says/articleshow/135886057.cms",
+        "source": "Economic Times",
+        "date": "16-11-2026 22:28"
+    },
+    {
+        "title": "IBM भारत में हर साल $3 बिलियन का निवेश कर रही है, $10 बिलियन का ग्लोबल क्वांटम पुश करने की योजना बना रही है: सीईओ",
+        "summary": "कृष्णा ने कहा कि AI की वजह से अगले दशक में 10-20% नौकरियाँ खत्म हो सकती हैं और बिज़नेस प्रॉसेस आउटसोर्सिंग (BPO) इंडस्ट्री में रोज़गार के सबसे ज़्यादा अवसरों में कटौती होने की संभावना है। उन्होंने यह भी कहा कि बिज़नेस और सरकारों को काम की प्रकृति में होने वाले बदलावों के लिए कर्मचारियों को तैयार करना होगा।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/ibm-investing-3-billion-annually-in-india-plans-10-billion-global-quantum-push-ceo/articleshow/135884070.cms",
+        "source": "Economic Times",
+        "date": "16-11-2026 22:28"
+    },
+    {
+        "title": "Mphasis का कहना है कि AI से पैदा होने वाले खतरों में वृद्धि के साथ-साथ क्लाइंट साइबर सुरक्षा पर खर्च बढ़ा रहे हैं",
+        "summary": "राकेश ने पिछले हफ़्ते कहा कि बैंक और बीमाकर्ता साइबर सुरक्षा पर होने वाले खर्च में वृद्धि का नेतृत्व कर रहे हैं, जिसमें बड़े तकनीकी बजट और नियामक आवश्यकताओं की भी मदद मिल रही है, जबकि रिटेलर्स और उपभोक्ता फर्में भी ग्राहकों के डेटा की सुरक्षा के लिए निवेश बढ़ा रही हैं। हालाँकि उन्होंने कोई आँकड़ा नहीं दिया।",
+        "link": "https://economictimes.indiatimes.com/tech/information-tech/mphasis-says-clients-boost-cybersecurity-spending-as-ai-driven-threats-rise/articleshow/135878211.cms",
+        "source": "Economic Times",
+        "date": "16-11-2026 22:28"
+    },
+    {
+        "title": "SK हाइनिक्स चिप सप्लायर्स की मदद के लिए पाँच साल में $1 बिलियन खर्च करेगा",
+        "summary": "दक्षिण कोरिया की कंपनी SK Hynix ने सोमवार को कहा कि वह अगले पाँच सालों में सेमीकंडक्टर सामग्रियों, पार्ट्स और उपकरणों के घरेलू सप्लायर्स को मदद देने के लिए 1.4 ट्रिलियन वॉन (1.05 बिलियन डॉलर) खर्च करने की योजना बना रही है। इसका मकसद बढ़ती प्रतिस्पर्धा के बीच अपनी सप्लाई चेन को मज़बूत करना है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/sk-hynix-to-spend-1-billion-over-five-years-to-support-chip-suppliers/articleshow/135878099.cms",
+        "source": "Economic Times",
+        "date": "16-11-2026 22:28"
+    },
+    {
         "title": "भारत को विमानों की कमी का सामना करना पड़ रहा है; और विमानों का ऑर्डर दिया जाएगा: पीयूष गोयल",
         "summary": "पीयूष गोयल ने हवाई यात्रा की बढ़ती माँग को पूरा करने के लिए 1,000 और सिविल एयरक्राफ़्ट खरीदने की योजना का खुलासा किया है। यह पहल ऐसे समय में की गई है, जब इंडिगो और एयर इंडिया जैसी भारतीय एयरलाइंस पहले ही प्रमुख निर्माताओं के पास काफ़ी बड़े ऑर्डर दे चुकी हैं। इसके अलावा, इस दिशा में लगातार प्रयास किए जा रहे हैं",
         "link": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/india-facing-aircraft-shortage-to-order-more-planes-piyush-goyal/articleshow/135899042.cms",
@@ -152,61 +208,5 @@
         "link": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-volatility-ebbs-as-equity-inflows-blunt-global-headwinds/articleshow/135883543.cms",
         "source": "Economic Times",
         "date": "16-11-2026 11:58"
-    },
-    {
-        "title": "Swiggy उन 10 मिडकैप शेयरों में शामिल है, जिनकी कीमत कैलेंडर वर्ष 2024 में 50% तक गिर गई",
-        "summary": "निफ़्टी मिडकैप 150 ने कैलेंडर वर्ष 2026 में लगभग 2% की बढ़त दर्ज की है, लेकिन इसके कई शेयरों में भारी गिरावट आई है। सबसे खराब प्रदर्शन करने वाली 10 कंपनियों में स्विगी, पीआई इंडस्ट्रीज़ और रेल विकास निगम सबसे आगे हैं, जिनके नुकसान 32% से लेकर 52% तक हैं।",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/news/swiggy-among-10-midcap-stocks-that-dropped-up-to-50-in-cy26/slideshow/135883464.cms",
-        "source": "Economic Times",
-        "date": "16-11-2026 11:58"
-    },
-    {
-        "title": "UPL के शेयर की कीमत से जुड़े लाइव अपडेट: UPL के बाज़ार में प्रदर्शन में थोड़ी गिरावट देखी गई",
-        "summary": "",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/upl-stock-price-live-updates-16-nov-2026/liveblog/135872604.cms",
-        "source": "Economic Times",
-        "date": "16-11-2026 11:58"
-    },
-    {
-        "title": "एकोर के विभाजन के बाद, ट्राइबो का लक्ष्य पाँच साल में 3,500-4,000 होटल हासिल करना है",
-        "summary": "यह होटल कंपनी ₹1,000-3,000 के कमरे के किराए वाले सेगमेंट पर दोगुनी मेहनत कर रही है, क्योंकि उसे लगता है कि तकनीक और केंद्रीकृत वितरण के ज़रिए वह इस बिखरे हुए बाज़ार को व्यवस्थित कर सकती है।",
-        "link": "https://www.livemint.com/companies/news/accor-split-treebo-target-3500-to-4000-hotels-11794802537569.html",
-        "source": "Livemint",
-        "date": "16-11-2026 07:05"
-    },
-    {
-        "title": "टाटा बोर्डरूम की लड़ाई: जिमी टाटा ने चंद्रशेकरन का साथ दिया, नोएल टाटा पर टाटा ट्रस्ट का इस्तेमाल करके टाटा संस पर कब्ज़ा करने का आरोप लगाया",
-        "summary": "जिमी नौवल टाटा ने टाटा ट्रस्ट्स के चेयरमैन नोएल टाटा के साथ तनाव के बीच टाटा संस के चेयरमैन एन. चंद्रशेखरन का समर्थन किया है और कंपनी को लिस्ट कराने की माँग की है। उनका कहना है कि लिस्टिंग से पारदर्शिता, जवाबदेही और गवर्नेंस में सुधार होगा और उन्होंने RBI से एक तय समय-सीमा तय करने का आग्रह किया है।",
-        "link": "https://www.livemint.com/companies/people/tata-boardroom-battle-jimmy-tata-backs-chandrasekaran-accuses-noel-tata-of-using-tata-trusts-for-takeover-of-tata-sons-11794810156997.html",
-        "source": "Livemint",
-        "date": "16-11-2026 07:05"
-    },
-    {
-        "title": "सुप्रीम कोर्ट ने वीडियोकॉन दिवालियापन मामले को नई बोलियों के लिए वापस भेजने के एनसीएलएटी के आदेश को बरकरार रखा",
-        "summary": "इस चुनौती का केंद्र यह था कि वेदांता समूह द्वारा समर्थित ट्विन स्टार ने वीडियोकॉन के असंतुष्ट लेनदारों को भुगतान करने का प्रस्ताव कैसे दिया और क्या समाधान योजना IBC के अनुरूप थी",
-        "link": "https://www.livemint.com/companies/news/sc-upholds-nclat-order-to-send-videocon-insolvency-case-back-for-fresh-bids-11794808015656.html",
-        "source": "Livemint",
-        "date": "16-11-2026 07:05"
-    },
-    {
-        "title": "SpaceX का लॉन्च: स्टारशिप के हवा में शानदार ढंग से कैच होने के बाद, मस्क की कंपनी गुरुवार को फ़ॉल्कन 9 लॉन्च करेगी",
-        "summary": "SpaceX कैलिफ़ोर्निया से फ़ैल्कन 9 रॉकेट के ज़रिए गोपनीय USSF-317 मिशन को लॉन्च करने की योजना बना रहा है, जिसके बूस्टर के प्रशांत महासागर में एक ड्रोनशिप पर लैंड करने की उम्मीद है। यह लॉन्च स्टारशिप फ़्लाइट 15 के बाद किया जाएगा, जिसने स्टारशिप के ऊपरी स्टेज को पहली बार टावर से कैच किया था।",
-        "link": "https://www.livemint.com/companies/news/spacex-launch-after-starship-s-spectacular-midair-catch-musk-s-firm-to-launch-falcon-9-on-thursday-11794808344348.html",
-        "source": "Livemint",
-        "date": "16-11-2026 07:06"
-    },
-    {
-        "title": "वित्त वर्ष'24 में Cyient DLM का टैक्स के बाद का मुनाफ़ा 93% बढ़ा",
-        "summary": "पूरे साल के लिए, कंपनी का राजस्व 1,192 करोड़ रुपये रहा, जो पिछले वित्तीय वर्ष की इसी अवधि की तुलना में 43.2 प्रतिशत ज़्यादा था।",
-        "link": "https://www.moneycontrol.com/news/business/cyient-dlm39s-profit-after-taxfy24-surges-93_17532091.html",
-        "source": "Moneycontrol",
-        "date": "16-11-2026 01:17"
-    },
-    {
-        "title": "भारतीय लोग खाड़ी देशों से परे छुट्टियों के लिए नए लोकप्रिय स्थलों की खोज कर रहे हैं",
-        "summary": "बढ़ते हवाई किराए और खाड़ी देशों की यात्राओं को लेकर बनी अनिश्चितता की वजह से भारतीय लोग छोटी, अनुभव-केंद्रित छुट्टियों की ओर रुख कर रहे हैं, जिसके चलते एशियाई डेस्टिनेशंस और एडवेंचर ट्रिप्स में दिलचस्पी बढ़ रही है।",
-        "link": "https://www.livemint.com/news/india/indians-explore-new-holiday-hotspots-beyond-the-gulf-11794570784923.html",
-        "source": "Livemint",
-        "date": "16-11-2026 01:17"
     }
 ]
