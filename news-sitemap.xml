@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-df11d9314614.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:05:00+05:30</news:publication_date>
+      <news:title>वित्त वर्ष&apos;27 में ईंधन, खाद्य पदार्थों और धातुओं की वजह से थोक महंगाई पर तीन मोर्चों से दबाव बनेगा: रिपोर्ट</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-c2a4cb732cda.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:05:00+05:30</news:publication_date>
+      <news:title>विदेश मंत्री बद्र अब्देलत्ती ने कहा कि मिस्र और भारत का लक्ष्य पाँच साल के अंदर द्विपक्षीय व्यापार में $12 बिल</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-2362aa83f041.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:05:00+05:30</news:publication_date>
+      <news:title>भारत की आर्थिक ताकत आकर्षक निवेश माहौल का आधार है: निर्मला सीतारमण</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-85a6758fc4b3.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:05:00+05:30</news:publication_date>
+      <news:title>भारत-यूरोपीय संघ को FTA का अधिकतम उपयोग सुनिश्चित करना चाहिए: राजदूत जीन-एरिक पैक्वेट</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-fc024715118e.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:06:00+05:30</news:publication_date>
+      <news:title>AI शॉपिंग एजेंट इंटरनेट कंपनियों को अपने क्षेत्र की रक्षा करने के लिए प्रेरित करते हैं</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-4879c334cc42.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:06:00+05:30</news:publication_date>
+      <news:title>एयरलाइंस ग्रीन फ़्यूल पॉलिसी के मसौदे में लागत, देयता, आपूर्ति में कमी से जुड़ी कानूनी स्पष्टता चाहती हैं</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-09537e7876b1.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-17T04:06:00+05:30</news:publication_date>
+      <news:title>शापूरजी पालोनजी मुंबई-पुणे कॉरिडोर में 900 एकड़ की टाउनशिप विकसित करेगी, आवासीय प्लॉटों से ₹6,000 करोड़ का राज</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-a48351d14f53.html</loc>
     <lastmod>2026-11-17</lastmod>
     <news:news>
@@ -227,76 +297,6 @@
       <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-16T22:28:00+05:30</news:publication_date>
       <news:title>फ़्रैक्टल के CEO का कहना है कि वे 25 तक AI स्टार्टअप्स के साथ अधिग्रहण की बातचीत कर रहे हैं</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-4ba25edb2bb5.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T22:28:00+05:30</news:publication_date>
-      <news:title>IBM भारत में हर साल $3 बिलियन का निवेश कर रही है, $10 बिलियन का ग्लोबल क्वांटम पुश करने की योजना बना रही है: स</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-ce461db36497.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T22:28:00+05:30</news:publication_date>
-      <news:title>Mphasis का कहना है कि AI से पैदा होने वाले खतरों में वृद्धि के साथ-साथ क्लाइंट साइबर सुरक्षा पर खर्च बढ़ा रहे </news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-13c970733375.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T22:28:00+05:30</news:publication_date>
-      <news:title>SK हाइनिक्स चिप सप्लायर्स की मदद के लिए पाँच साल में $1 बिलियन खर्च करेगा</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-a33f31da8537.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T19:45:00+05:30</news:publication_date>
-      <news:title>भारत को विमानों की कमी का सामना करना पड़ रहा है; और विमानों का ऑर्डर दिया जाएगा: पीयूष गोयल</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-e838953e16e7.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T19:45:00+05:30</news:publication_date>
-      <news:title>IDBI बैंक के कर्मचारी यूनियनों ने प्रस्तावित हिस्सेदारी बिक्री के खिलाफ़ 3 दिसंबर को राष्ट्रव्यापी हड़ताल का आ</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-d832d699c91f.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T19:46:00+05:30</news:publication_date>
-      <news:title>अदानी ग्रीन का कहना है कि तारली प्रोजेक्ट के तहत किसी भी संरक्षित क्षेत्र या वन भूमि का अतिक्रमण नहीं किया गया</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-1b91941999ea.html</loc>
-    <lastmod>2026-11-17</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-16T19:46:00+05:30</news:publication_date>
-      <news:title>विद्युतीकरण को बढ़ावा देने से वित्त वर्ष 2035 तक भारत के ऊर्जा आयात बिल में 40 प्रतिशत से ज़्यादा की कमी आ सकत</news:title>
       <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
