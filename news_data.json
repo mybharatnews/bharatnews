@@ -1,5 +1,61 @@
 [
     {
+        "title": "तकनीकी समस्याओं के बारे में जवाब देने के लिए व्हाइट हाउस पर सहयोगी देशों के दबाव के बीच ट्रम्प की आलोचना हो रही है",
+        "summary": "तकनीकी समस्याओं के बारे में जवाब देने के लिए व्हाइट हाउस पर सहयोगी देशों के दबाव के बीच ट्रम्प की आलोचना हो रही है",
+        "link": "https://www.livemint.com/technology/trump-faces-criticism-as-allies-press-the-white-house-for-answers-on-tech-problems-11794953754719.html",
+        "source": "Livemint",
+        "date": "17-11-2026 23:05"
+    },
+    {
+        "title": "अमेरिका में Apple की सेवाएँ ठप होने से हज़ारों लोग प्रभावित: iCloud, App Store, Apple Pay और Apple Music के यूज़र्स ने समस्याओं की सूचना दी",
+        "summary": "17 नवंबर को अमेरिका में Apple के हज़ारों यूज़र्स ने iCloud, App Store, Apple Pay और Apple Music में समस्याओं की रिपोर्ट की। आइए जानते हैं कि क्या हुआ और कौन-सी सेवाएँ प्रभावित हुईं।",
+        "link": "https://www.livemint.com/technology/apple-outage-hits-thousands-in-us-icloud-app-store-apple-pay-and-apple-music-users-report-issues-11794939399803.html",
+        "source": "Livemint",
+        "date": "17-11-2026 23:05"
+    },
+    {
+        "title": "CERT-In की फ़ाइल-सिस्टम मेटाडेटा के उजागर होने की चेतावनी के बाद eMudhra ने emBridge की सुरक्षा खामी को ठीक किया",
+        "summary": "CERT-In ने eMudhra की emBridge यूटिलिटी में एक कम गंभीरता वाली खामी की सूचना दी है, जो कंप्यूटर के कुछ OS वर्ज़न को प्रभावित करती है। एक ही नेटवर्क पर मौजूद कोई अनऑथेंटिकेटेड हमलावर फ़ाइल और डायरेक्टरी के नाम गिना सकता है, लेकिन फ़ाइलों को ऐक्सेस या उनमें बदलाव नहीं कर सकता, कोड रन नहीं कर सकता या क्रिप्टोग्राफ़िक कीज़ या टोकन पिन हासिल नहीं कर सकता।",
+        "link": "https://www.livemint.com/technology/emudhra-fixes-embridge-security-flaw-after-cert-in-warns-of-file-system-metadata-exposure-11794937852269.html",
+        "source": "Livemint",
+        "date": "17-11-2026 23:05"
+    },
+    {
+        "title": "iQOO 15 की चौथी जनरेशन की सिलिकॉन एनोड बैटरी टेक्नोलॉजी क्या है और यह गेमिंग और स्ट्रीमिंग के ज़्यादा घंटों का वादा कैसे करती है?",
+        "summary": "iQOO 15 की 7,000mAh की बैटरी में चौथी जनरेशन की सिलिकॉन एनोड टेक्नोलॉजी का इस्तेमाल किया गया है। कंपनी का दावा है कि यह बैटरी 10.5 घंटे तक गेमिंग, 32.6 घंटे तक वीडियो स्ट्रीमिंग और 22.6 घंटे तक सोशल मीडिया का इस्तेमाल करने की सुविधा देती है।&amp;nbsp;",
+        "link": "https://www.livemint.com/technology/what-is-iqoo-15s-4th-gen-silicon-anode-battery-technology-and-how-does-it-promise-longer-gaming-and-streaming-hours-11794925395727.html",
+        "source": "Livemint",
+        "date": "17-11-2026 23:05"
+    },
+    {
+        "title": "AI के प्रचार-प्रसार से परे: औद्योगिक AI भारत के कारखानों और बुनियादी ढाँचे को किस तरह नया रूप दे रहा है",
+        "summary": "जैसे-जैसे भारत आगे बढ़ रहा है, वैसे-वैसे आर्टिफ़िशियल इंटेलिजेंस की प्रौद्योगिकियाँ उसके विनिर्माण, इंफ़्रास्ट्रक्चर और परिवहन क्षेत्रों के ताने-बाने में समाहित होती जा रही हैं। इस इनोवेटिव इंटीग्रेशन से उत्पादकता बढ़ने और ज़्यादा टिकाऊ तौर-तरीके अपनाने की उम्मीद है, साथ ही कंपनियों को इंजन में कमी आने की संभावना है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/beyond-the-ai-hype-how-industrial-ai-is-reshaping-indias-factories-and-infrastructure/articleshow/135934331.cms",
+        "source": "Economic Times",
+        "date": "17-11-2026 23:05"
+    },
+    {
+        "title": "जेन्सेन हुआंग 1 दिसंबर को अमेरिकी हाउस की समितियों के सामने पेश होंगे",
+        "summary": "हाउस की समितियाँ जेन्सेन हुआंग और Nvidia के जनरल काउंसल टिम टेटर से कड़ी पूछताछ करेंगी, जो अगले दिन कांग्रेस के समक्ष पेश होंगे। यह घोटाला हुआंग के कथित चीनी जासूस एलिस हुआंग के साथ उनके प्रेम संबंध को लेकर है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/jensen-huang-to-appear-before-us-house-committees-on-december-1/articleshow/135932177.cms",
+        "source": "Economic Times",
+        "date": "17-11-2026 23:06"
+    },
+    {
+        "title": "अमेरिकी AI चिप प्रतिबंधों से दक्षिण पूर्व एशिया के डेटा सेंटर उद्योग में तेज़ी का रुख थम सकता है, शेयरों में गिरावट आई",
+        "summary": "नया नियम क्षेत्र की प्रमुख अर्थव्यवस्थाओं जैसे मलेशिया, सिंगापुर और थाईलैंड को उन्नत चिप्स की शिपमेंट पर पाबंदियाँ लगाता है, जिनका इस्तेमाल कुछ चीनी कंपनियाँ AI मॉडल को प्रशिक्षित करने के लिए कंप्यूटिंग पावर ऐक्सेस करने के लिए करती रही हैं। यह उन विदेशी डेटा सेंटर्स पर भी नई शर्तें लगाता है, जो \"काफ़ी बड़ी मात्रा में",
+        "link": "https://economictimes.indiatimes.com/tech/technology/us-ai-chip-curbs-threaten-southeast-asia-data-centre-boom-shares-slump/articleshow/135916332.cms",
+        "source": "Economic Times",
+        "date": "17-11-2026 23:06"
+    },
+    {
+        "title": "अमेरिका द्वारा चीन की चिप ऐक्सेस पर रोक लगाने की घोषणा के बाद सैमसंग इलेक्ट्रॉनिक्स और TSMC के शेयरों में गिरावट आई",
+        "summary": "ट्रंप प्रशासन के सोमवार को यह कहने के बाद कि वह चीन की उन्नत AI चिप्स तक पहुँच को और सीमित करेगा, सैमसंग इलेक्ट्रॉनिक्स और TSMC के शेयरों में मंगलवार को एशिया में गिरावट आई।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/samsung-electronics-tsmc-shares-fall-after-us-announces-curbs-on-chinas-chip-access/articleshow/135915493.cms",
+        "source": "Economic Times",
+        "date": "17-11-2026 23:06"
+    },
+    {
         "title": "What are India's leading enterprises learning from their AI deployments?",
         "summary": "Indian enterprises are moving AI into financial services, retail, supply chains and manufacturing. Survey findings show growing adoption and measurable returns, but data readiness, compliance and organisational change remain significant challenges.",
         "link": "https://economictimes.indiatimes.com/industry/services/education/what-are-indias-leading-enterprises-learning-from-their-ai-deployments/articleshow/135924723.cms",
@@ -152,61 +208,5 @@
         "link": "https://www.livemint.com/news/india/grapiii-restrictions-lifted-in-delhi-ncr-as-air-quality-improves-stage-i-and-ii-curbs-to-remain-in-effect-11794915907406.html",
         "source": "Livemint",
         "date": "17-11-2026 12:22"
-    },
-    {
-        "title": "भारत और स्वीडन जलवायु संबंधी औद्योगिक वादों को प्रोजेक्ट्स में बदलने की दिशा में आगे बढ़ रहे हैं",
-        "summary": "2027-2030 की पहल का फ़ोकस कम कार्बन वाली परियोजनाओं को बड़े पैमाने पर लागू करने, निजी पूंजी को जुटाने और स्टील, सीमेंट और परिवहन जैसे उन क्षेत्रों में कार्बन उत्सर्जन कम करने की प्रक्रिया को तेज़ी से आगे बढ़ाने पर होगा, जहाँ ऐसा करना मुश्किल है।",
-        "link": "https://www.livemint.com/news/india-sweden-push-to-turn-industrial-climate-pledges-into-projects-11794904190288.html",
-        "source": "Livemint",
-        "date": "17-11-2026 12:22"
-    },
-    {
-        "title": "UPI फ़्रॉड करने वालों द्वारा यूज़र्स को निशाना बनाने के नए तरीके अपनाने के चलते NPCI ने Android की सुरक्षा में मौजूद कमियों को दूर करने के लिए Google की मदद ली है",
-        "summary": "NPCI ने Android की सुरक्षा को मज़बूत बनाने और UPI से जुड़ी धोखाधड़ी को रोकने के लिए Google के साथ बातचीत शुरू कर दी है। यह कदम ऐसे समय में उठाया गया है, जब साइबर अपराधी भुगतान की जानकारी ऐक्सेस करने के लिए दुर्भावनापूर्ण ऐप्स और फ़ोन की कमज़ोरियों का तेज़ी से इस्तेमाल कर रहे हैं, वह भी तब, जब यूज़र अपनी OTP या पिन शेयर नहीं करते।",
-        "link": "https://www.livemint.com/news/india/npci-turns-to-google-to-fix-android-security-gaps-as-upi-fraudsters-find-new-ways-to-target-users-11794911187938.html",
-        "source": "Livemint",
-        "date": "17-11-2026 12:22"
-    },
-    {
-        "title": "मिंट की विस्तृत जानकारी | भारत में 14 लाख टन ई-कचरा पैदा होता है। इसमें क्या गड़बड़ है?",
-        "summary": "भारत में ई-कचरे की मात्रा बढ़ती जा रही है, लेकिन बताया जाता है कि इसका ज़्यादातर हिस्सा रजिस्टर्ड सिस्टम के बाहर प्रोसेस किया जाता है। अधिकारी रीसाइक्लिंग सुविधाओं का निरीक्षण कर रहे हैं और रीसाइक्लिंग से जुड़े दायित्वों को पूरा करने के लिए इलेक्ट्रॉनिक्स उत्पादकों द्वारा इस्तेमाल किए जाने वाले सर्टिफ़िकेट की जाँच को और भी सख्त बना रहे हैं।",
-        "link": "https://www.livemint.com/news/india-generates-14-lakh-tonnes-of-e-waste-why-is-its-recycling-system-falling-short-11794908791613.html",
-        "source": "Livemint",
-        "date": "17-11-2026 12:22"
-    },
-    {
-        "title": "तेल की कीमतों में गिरावट से ब्याज दरों में तेज़ी से बढ़ोतरी होने की आशंका कम होने के बाद भारतीय बॉन्डों में तेज़ी आई",
-        "summary": "मंगलवार को, भारतीय सरकारी बॉन्ड में काफ़ी तेज़ी देखी गई, जिसकी वजह गिरते हुए तेल के दाम थे, जिन्होंने बाज़ार के रुझान को बदल दिया। 6.94% 2036 बॉन्ड की यील्ड घटकर 7.2528% पर आ गई, जो पिछले दिन 7.3169% थी। विश्लेषकों का मानना है कि तेल की कम कीमतों से मुद्रास्फीति का दबाव कम हो सकता है और इससे रुपया मज़बूत हो सकता है,",
-        "link": "https://economictimes.indiatimes.com/markets/bonds/indian-bonds-surge-after-oil-slide-eases-aggressive-rate-hike-concerns/articleshow/135924727.cms",
-        "source": "Economic Times",
-        "date": "17-11-2026 12:22"
-    },
-    {
-        "title": "52 हफ़्तों के उच्चतम स्तर पर पहुँचने वाले 5 शेयरों में Eternal भी शामिल; एक महीने में शेयर की कीमत 15% तक बढ़ी",
-        "summary": "मंगलवार को एटरनल, डीएलएफ़ और कोटक महिंद्रा बैंक सहित पाँच बीएसई 100 शेयरों ने नए 52-सप्ताह के उच्च स्तर को छुआ। एटर्नल ने 15% की बढ़त के साथ मासिक लाभ में सबसे आगे रहा।",
-        "link": "https://economictimes.indiatimes.com/markets/stocks/news/eternal-among-5-stocks-hitting-52-week-highs-stock-rallies-up-to-15-in-a-month/slideshow/135924700.cms",
-        "source": "Economic Times",
-        "date": "17-11-2026 12:22"
-    },
-    {
-        "title": "डिज्नी ने कमाई के पूर्वानुमानों को पीछे छोड़ा, कॉन्टेंट पर खर्च बढ़ाने की योजना बनाई",
-        "summary": "एक उत्साहजनक फ़ाइनेंशियल अपडेट में, वॉल्ट डिज़्नी ने तिमाही राजस्व और आय में वृद्धि का खुलासा किया है, जिसका श्रेय थीम पार्क में ज़्यादा संख्या में आने वाले लोगों और NFL के प्रसारणों को दिया जाता है। भविष्य की बात करें, तो कंपनी की योजना अगले वित्तीय वर्ष में अपने कॉन्टेंट के बजट को बढ़ाकर $26 बिलियन करने और अपने लाभांश को 33% बढ़ाकर $ तक ले जाने की है।",
-        "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/disney-beats-earnings-forecasts-plans-to-increase-content-spending/articleshow/135923706.cms",
-        "source": "Economic Times",
-        "date": "17-11-2026 12:23"
-    },
-    {
-        "title": "मज़बूत इनफ़्लो, शॉर्ट में कमी से रुपया सात महीने के उच्चतम स्तर पर पहुँचा",
-        "summary": "विदेशी इक्विटी निवेश में हुई तेज़ी के बाद भारतीय रुपया काफ़ी मज़बूत हुआ और इसने सात महीनों में अपना उच्चतम स्तर हासिल किया। इस महीने 10 अरब डॉलर के प्रभावशाली निवेश के चलते रुपया डॉलर के मुकाबले 93.47 पर बंद हुआ और इस तरह इसमें यह उछाल आया। इसके अलावा, ट्रेडर्स ने डॉलर-रुपये में काफ़ी उतार-चढ़ाव देखा।",
-        "link": "https://economictimes.indiatimes.com/markets/forex/forex-news/robust-inflows-pullback-in-shorts-lift-rupee-to-seven-month-peak/articleshow/135921416.cms",
-        "source": "Economic Times",
-        "date": "17-11-2026 12:23"
-    },
-    {
-        "title": "JNK India IPO: A strong play on the domestic manufacturing push",
-        "summary": "Strong order book provides good revenue visibility and valuation looks reasonable",
-        "link": "https://www.moneycontrol.com/news/result-analysis/jnk-india-ipo-a-strong-playthe-domestic-manufacturing-push_17531311.html",
-        "source": "Moneycontrol",
-        "date": "17-11-2026 08:19"
     }
 ]
