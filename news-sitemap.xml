@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-d16adff448d2.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-18T09:51:00+05:30</news:publication_date>
+      <news:title>पिछले 12 महीनों में ज़्यादातर भारतीय फ़र्में AI एजेंट से जुड़ी घटना का शिकार हुईं; इनमें से सिर्फ़ 36% फ़र्मों</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-6e8eabaa5621.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-18T09:51:00+05:30</news:publication_date>
+      <news:title>OpenAI ने GPT-6.2 Astra, Sol लॉन्च किया, जिसका फ़ोकस पेशेवर काम और लागत-कुशलता पर है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-719c27395e69.html</loc>
     <lastmod>2026-11-18</lastmod>
     <news:news>
@@ -277,26 +297,6 @@
       <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-18T03:04:00+05:30</news:publication_date>
       <news:title>स्टॉक मार्केट आउटलुक टुडे, 18 नवंबर: सेंसेक्स, निफ्टी प्रेडिक्शन-DJIA, S&amp;amp;P, NASDAQ, GIFT निफ़्टी, कोस्पी, </news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-dbd5a0fdca94.html</loc>
-    <lastmod>2026-11-18</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-18T03:04:00+05:30</news:publication_date>
-      <news:title>रिलायंस, अल्ट्राटेक, हुंडई मोटर के शेयर: खरीदने के लिए टॉप 3 स्टॉक; जय ठक्कर की रेटिंग, टारगेट प्राइस, स्टॉप ल</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-784cd130423e.html</loc>
-    <lastmod>2026-11-18</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-18T03:04:00+05:30</news:publication_date>
-      <news:title>MarketSmith India की ओर से 18 नवंबर के लिए स्टॉक से जुड़े सुझाव</news:title>
       <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
