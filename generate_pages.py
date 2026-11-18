@@ -93,7 +93,7 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
         "dateModified": date_iso,
         "author": {"@type": "Organization", "name": SITE_NAME},
         "publisher": {"@type": "Organization", "name": SITE_NAME, "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/icon.png"}},
-        "image": f"{SITE_URL}/icon.png",
+        "image": f"{SITE_URL}/market.jpg",
         "mainEntityOfPage": {"@type": "WebPage", "@id": page_url},
         "articleSection": "Business",
         "inLanguage": "hi-IN",
@@ -235,14 +235,13 @@ def generate_article_page(news_item, index, all_news):
     <meta name="description" content="{s_esc}">
     <link rel="canonical" href="{page_url}">
     
-    <!-- ✅ ફેસબુક અને ટ્વિટર ઈમેજ માટે -->
     <meta property="og:title" content="{t_esc}">
     <meta property="og:description" content="{s_esc}">
     <meta property="og:url" content="{page_url}">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="{SITE_URL}/icon.png">
+    <meta property="og:image" content="{SITE_URL}/market.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{SITE_URL}/icon.png">
+    <meta name="twitter:image" content="{SITE_URL}/market.jpg">
     
     {structured_data}
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
@@ -273,6 +272,9 @@ def generate_article_page(news_item, index, all_news):
 </head>
 <body>
     <div class="container">
+        <!-- 👇 ન્યૂઝની અંદર ઈમેજ 👇 -->
+        <img src="../market.jpg" alt="News Image" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
+        
         <h1>{t_esc}</h1>
         <div class="source-box">📰 स्रोत: {src_esc} | 🕐 {dt_esc}</div>
         {full_article}
@@ -295,6 +297,14 @@ def generate_article_page(news_item, index, all_news):
 # ═══ Index Page (Home Page) ═══
 # ═══════════════════════════════════════════════════════
 def generate_index_page(news_list, generated_files):
+    
+    # 👇 1. ટોપ 5 ન્યૂઝનું લિસ્ટ બનાવો 👇
+    top_5_html = ""
+    for i in range(min(5, len(generated_files))):
+        top_title = escape_html(news_list[i].get('title', ''))
+        top_5_html += f'<li><a href="news/{generated_files[i]}" style="color: #feca57; text-decoration: none;">🔴 {top_title}</a></li>'
+
+    # 👇 2. ન્યૂઝ કાર્ડ્સમાં ઈમેજ ઉમેરો 👇
     news_cards = ""
     for news, filename in zip(news_list, generated_files):
         title = escape_html(news.get('title', ''))
@@ -303,9 +313,14 @@ def generate_index_page(news_list, generated_files):
         date = escape_html(news.get('date', ''))
         news_cards += f'''
         <article class="news-card">
-            <h2><a href="news/{filename}">{title}</a></h2>
-            <div class="news-meta">📰 {source} | 🕐 {date}</div>
-            <p>{summary}...</p>
+            <div style="display: flex; gap: 15px; align-items: flex-start;">
+                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
+                <div>
+                    <h2><a href="news/{filename}">{title}</a></h2>
+                    <div class="news-meta">📰 {source} | 🕐 {date}</div>
+                </div>
+            </div>
+            <p style="margin-top: 10px;">{summary}...</p>
             <a href="news/{filename}" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         '''
@@ -319,12 +334,11 @@ def generate_index_page(news_list, generated_files):
     <link rel="canonical" href="{SITE_URL}/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{SITE_URL}/rss.xml">
     
-    <!-- ✅ ફેસબુક અને ટ્વિટર ઈમેજ માટે -->
     <meta property="og:title" content="{SITE_NAME}">
     <meta property="og:description" content="भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स">
-    <meta property="og:image" content="{SITE_URL}/icon.png">
+    <meta property="og:image" content="{SITE_URL}/market.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{SITE_URL}/icon.png">
+    <meta name="twitter:image" content="{SITE_URL}/market.jpg">
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -340,42 +354,25 @@ def generate_index_page(news_list, generated_files):
         .social-links a {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }}
         .social-links .wa {{ background: #25d366; }} .social-links .tg {{ background: #0088cc; }} .social-links .fb {{ background: #1877f2; }}
         
-        /* ટોગલ બટન */
-        .theme-toggle {{
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #feca57;
-        }}
+        .theme-toggle {{ position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #feca57; }}
 
-        /* 👇 એપ ડાઉનલોડ બેનર નો CSS 👇 */
-        .app-download-banner {{
-            background: linear-gradient(135deg, #1e130c, #9a8478);
-            border-radius: 15px;
-            padding: 25px 20px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }}
+        .app-download-banner {{ background: linear-gradient(135deg, #1e130c, #9a8478); border-radius: 15px; padding: 25px 20px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }}
         .app-text h3 {{ color: #feca57; font-size: 22px; margin-bottom: 8px; }}
         .app-text p {{ color: #e0e0e0; font-size: 15px; margin-bottom: 20px; }}
         .app-buttons {{ display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }}
-        .btn-online, .btn-download {{
-            display: inline-block; padding: 12px 25px; text-decoration: none;
-            border-radius: 8px; font-weight: bold; font-size: 16px; color: white;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }}
+        .btn-online, .btn-download {{ display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; color: white; transition: transform 0.2s, box-shadow 0.2s; }}
         .btn-online {{ background: #00c853; box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3); }}
         .btn-online:hover {{ background: #00e676; transform: translateY(-3px); }}
         .btn-download {{ background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }}
         .btn-download:hover {{ background: #0d5bbf; transform: translateY(-3px); }}
 
+        /* ટોપ 5 બોક્સ */
+        .top-5-box {{ background: rgba(255, 107, 107, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #ff6b6b; }}
+        .top-5-box h3 {{ color: #ff6b6b; margin-bottom: 15px; }}
+        .top-5-box ul {{ list-style-type: none; padding-left: 0; line-height: 2; }}
+
         .news-card {{ background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: background 0.3s; }}
-        .news-card h2 {{ font-size: 20px; margin-bottom: 10px; line-height: 1.4; }}
+        .news-card h2 {{ font-size: 18px; margin-bottom: 10px; line-height: 1.4; }}
         .news-card h2 a {{ color: #feca57; text-decoration: none; }}
         .news-meta {{ color: #48dbfb; font-size: 13px; margin-bottom: 12px; }}
         .news-card p {{ color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }}
@@ -384,44 +381,24 @@ def generate_index_page(news_list, generated_files):
         footer {{ text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }}
         footer a {{ color: #48dbfb; text-decoration: none; }}
 
-        /* 👇 લાઇટ મોડ માટે CSS 👇 */
-        body.light-mode {{
-            background: #f4f4f9;
-            color: #333;
-        }}
-        body.light-mode header {{
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }}
-        body.light-mode header h1 {{
-            color: #d32f2f;
-        }}
-        body.light-mode .news-card {{
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }}
-        body.light-mode .news-card h2 a {{
-            color: #d32f2f;
-        }}
-        body.light-mode .news-card p {{
-            color: #555;
-        }}
-        body.light-mode .theme-toggle {{
-            color: #333;
-        }}
+        /* લાઇટ મોડ */
+        body.light-mode {{ background: #f4f4f9; color: #333; }}
+        body.light-mode header {{ background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }}
+        body.light-mode header h1 {{ color: #d32f2f; }}
+        body.light-mode .news-card {{ background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }}
+        body.light-mode .news-card h2 a {{ color: #d32f2f; }}
+        body.light-mode .news-card p {{ color: #555; }}
+        body.light-mode .theme-toggle {{ color: #333; }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <!-- થીમ ટોગલ બટન -->
             <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
             
-            <!-- 👇 લોગો અહીં ઉમેરો 👇 -->
             <div style="text-align: center; margin-bottom: 10px;">
                 <img src="icon.png" alt="{SITE_NAME}" style="max-width: 80px; height: auto; border-radius: 10px;">
             </div>
-            <!-- 👆 લોગો પૂરો 👆 -->
             
             <h1>{SITE_NAME}</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
@@ -432,7 +409,6 @@ def generate_index_page(news_list, generated_files):
             </div>
         </header>
 
-        <!-- એપ ડાઉનલોડ બેનર -->
         <div class="app-download-banner">
             <div class="app-text">
                 <h3>📱 Dravy's English Learning App</h3>
@@ -442,6 +418,14 @@ def generate_index_page(news_list, generated_files):
                 <a href="https://mybharatnews.github.io/kids-activity-app/" target="_blank" class="btn-online">🌐 ઓનલાઇન ખોલો</a>
                 <a href="https://mybharatnews.github.io/kids-activity-app/" download class="btn-download">⬇️ ઓફલાઇન ડાઉનલોડ કરો</a>
             </div>
+        </div>
+
+        <!-- 👇 ટોપ 5 સમાચાર બોક્સ 👇 -->
+        <div class="top-5-box">
+            <h3>🔥 આજના ટોપ 5 સમાચાર</h3>
+            <ul>
+                {top_5_html}
+            </ul>
         </div>
 
         {news_cards}
@@ -458,15 +442,14 @@ def generate_index_page(news_list, generated_files):
         </footer>
     </div>
 
-    <!-- થીમ બદલવા માટેની સ્ક્રિપ્ટ -->
     <script>
         function toggleTheme() {{
             document.body.classList.toggle('light-mode');
             const btn = document.getElementById('theme-btn');
             if(document.body.classList.contains('light-mode')) {{
-                btn.innerHTML = '☀️'; // લાઇટ મોડમાં સૂરજ
+                btn.innerHTML = '☀️';
             }} else {{
-                btn.innerHTML = '🌙'; // ડાર્ક મોડમાં ચંદ્ર
+                btn.innerHTML = '🌙';
             }}
         }}
     </script>
