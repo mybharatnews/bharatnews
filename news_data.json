@@ -1,5 +1,47 @@
 [
     {
+        "title": "BGMI के 4.7 अपडेट में एरांगेल, लिविक और विकेंडी में जॉर्मुंगैंडर सर्प की एंट्री हुई: क्या-क्या नया है और इसे कैसे डाउनलोड करें",
+        "summary": "KRAFTON इंडिया ने आज BGMI का 4.7 अपडेट जारी किया है, जिसमें विंटर-थीम वाला आर्कटिक क्रॉनिकल्स मोड पेश किया गया है, जिसमें एरांगेल, लिविक और विकेंडी में पौराणिक सर्प जोर्मंगैंडर को दिखाया गया है।",
+        "link": "https://www.livemint.com/technology/tech-news/bgmi-4-7-update-brings-jormungandr-serpent-to-erangel-livik-and-vikendi-whats-new-and-how-to-download-11794970951111.html",
+        "source": "Livemint",
+        "date": "18-11-2026 09:40"
+    },
+    {
+        "title": "Apple की सेवाएँ ठप: iPhone बनाने वाली कंपनी ने साइबर हमले की संभावना से इनकार किया, कहा कि आंतरिक अपडेट की वजह से हुई गड़बड़ी के बाद ज़्यादातर सिस्टम बहाल कर दिए गए हैं",
+        "summary": "Apple ने बताया कि एक इंटरनल अपडेट की वजह से iCloud, Apple Pay और अन्य सेवाओं में व्यापक स्तर पर रुकावटें आईं, लेकिन यह भी कहा कि ज़्यादातर सिस्टम बहाल कर दिए गए हैं। यह आउटेज हाल ही में Microsoft, अमेरिकी फ़्लाइट्स और प्रमुख बैंकों को प्रभावित करने वाली गड़बड़ियों के बाद हुआ है, जिससे सेवा की विश्वसनीयता को लेकर चिंताएँ बढ़ गई हैं।",
+        "link": "https://www.livemint.com/technology/tech-news/apple-outage-iphone-maker-rules-out-cyberattack-says-most-systems-restored-after-internal-update-caused-disruption-11794964303201.html",
+        "source": "Livemint",
+        "date": "18-11-2026 09:40"
+    },
+    {
+        "title": "अमेरिका और दक्षिण कोरिया ने जावा प्रोग्रामिंग लैंग्वेज में खामियों को लेकर तत्काल एडवाइजरी जारी कीं",
+        "summary": "लोकप्रिय प्रोग्रामिंग लैंग्वेज में खामियाँ पाए जाने के बाद, अमेरिकी और दक्षिण कोरियाई अधिकारियों ने साइबर सुरक्षा संबंधी एडवाइज़री जारी की हैं, जिनमें उन्होंने Java के यूज़र्स से सुरक्षा अपडेट तुरंत इंस्टॉल करने का आग्रह किया है।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/us-south-korea-issue-urgent-advisories-over-flaws-in-java-programming-language/articleshow/135953052.cms",
+        "source": "Economic Times",
+        "date": "18-11-2026 09:40"
+    },
+    {
+        "title": "'सब कुछ पहले जैसा ही है': Nvidia की कोलेट क्रेस ने पहला इम्तिहान पास किया, बोर्ड ने हुआंग को बाहर का रास्ता दिखाया",
+        "summary": "पिछले हफ़्ते जब यह खबर आई कि हुआंग का एक चीनी महिला व्यवसायी के साथ प्रेम संबंध है, जिसके चीनी सरकार के साथ संबंधों की अमेरिकी खुफिया एजेंसियाँ जाँच कर रही हैं, तो उन्होंने कंपनी की बागडोर अपने हाथों में ले ली। इन खुलासों की वजह से Nvidia के मार्केट वैल्यू में $700 बिलियन से भी ज़्यादा की गिरावट आई है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/business-as-usual-nvidias-colette-kress-passes-first-test-as-board-slams-door-on-huang/articleshow/135951551.cms",
+        "source": "Economic Times",
+        "date": "18-11-2026 09:40"
+    },
+    {
+        "title": "जावा प्रोग्रामिंग लैंग्वेज में खामियों को लेकर अमेरिका और दक्षिण कोरिया ने जारी की साइबर सुरक्षा से जुड़ी तत्काल एडवाइजरी",
+        "summary": "लोकप्रिय प्रोग्रामिंग लैंग्वेज में खामियाँ पाए जाने के बाद, अमेरिकी और दक्षिण कोरियाई अधिकारियों ने साइबर सुरक्षा संबंधी एडवाइज़री जारी की हैं, जिनमें उन्होंने Java के यूज़र्स से सुरक्षा अपडेट तुरंत इंस्टॉल करने का आग्रह किया है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/us-south-korea-issue-urgent-cybersecurity-advisories-over-flaws-in-java-programming-language/articleshow/135949613.cms",
+        "source": "Economic Times",
+        "date": "18-11-2026 09:40"
+    },
+    {
+        "title": "OpenAI ने GPT-6.2 Astra, Sol लॉन्च किया, जिसका फ़ोकस पेशेवर काम और लागत-कुशलता पर है",
+        "summary": "OpenAI ने दो नए आर्टिफ़िशियल इंटेलिजेंस मॉडल, GPT-6.2 Astra और GPT-6.2 Sol लॉन्च किए हैं, जिनमें पेशेवर और रोज़मर्रा के कामों के लिए बेहतर खूबियाँ मौजूद हैं। साथ ही, इनका मकसद व्यवसायों और डेवलपर्स के लिए उन्नत AI टूल्स का इस्तेमाल करने की लागत कम करना है।",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-launches-gpt-6-2-astra-sol-with-focus-on-professional-work-and-cost-efficiency/articleshow/135947489.cms",
+        "source": "Economic Times",
+        "date": "18-11-2026 09:40"
+    },
+    {
         "title": "मिड-कैप और स्मॉल-कैप पर गौर करने की ज़रूरत क्यों है",
         "summary": "मिड-कैप और स्मॉल-कैप उभरते सेक्टरों, मुनाफ़े के बढ़ते पूल और संभावित मार्केट लीडर्स में निवेश का मौका देते हैं, लेकिन संपदा सृजन के लिए कमाई में लगातार वृद्धि और वैल्यूएशन अनुशासन अभी भी सबसे अहम हैं।",
         "link": "https://www.livemint.com/money/personal-finance/india-mid-small-cap-stocks-growth-potential-investment-opportunities-11794984389738.html",
@@ -166,47 +208,5 @@
         "link": "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-18-november-from-marketsmith-india-11794929695417.html",
         "source": "Livemint",
         "date": "18-11-2026 03:04"
-    },
-    {
-        "title": "ICICI प्रु लाइफ़ का चौथी तिमाही का शुद्ध लाभ 26% घटकर 174 करोड़ रुपये रहा, बीमाकर्ता ने लाभांश की घोषणा की",
-        "summary": "शुद्ध प्रीमियम आय बढ़कर 14,788 करोड़ रुपये हो गई",
-        "link": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html",
-        "source": "Moneycontrol",
-        "date": "18-11-2026 01:03"
-    },
-    {
-        "title": "लेबल पर किए जाने वाले संदिग्ध दावों की वजह से उत्पाद पर प्रतिबंध लग सकता है",
-        "summary": "भारत का उपभोक्ता मामले मंत्रालय उत्पाद के लेबलों और ट्रेडमार्क की ज़्यादा सख्ती से जाँच करने पर विचार कर रहा है, जिसके तहत कंपनियों को अपने दावों को विश्वसनीय सबूतों के साथ प्रमाणित करना होगा। बिना सबूत के किए गए दावों के कारण जुर्माने लगाए जा सकते हैं या उत्पादों को लिस्ट से हटाने की सिफ़ारिश की जा सकती है, जिससे निर्माताओं के लिए अनुपालन से जुड़ी बाध्यताओं में वृद्धि होगी।",
-        "link": "https://www.livemint.com/news/india/consumer-affairs-ministry-review-misleading-product-claims-trademark-delisted-11794889912935.html",
-        "source": "Livemint",
-        "date": "18-11-2026 01:04"
-    },
-    {
-        "title": "FAA ने गड़बड़ी भरी फ़्लाइट को रोकने के लिए गियर लगाने का काम रोका",
-        "summary": "ट्रंप प्रशासन ने पिछले सप्ताह देश भर में हुई उड़ानें रुकने की घटना से जुड़ी हुई चीज़ों की और इंस्टॉलेशन पर रोक लगा दी है और हो सकता है कि वह इस विघटनकारी घटना के बाद अपने सिस्टम को बेहतर बनाने के लिए अतिरिक्त मदद की गुहार लगाए।",
-        "link": "https://www.livemint.com/news/us-news/faa-pauses-installation-of-gear-tied-to-messy-flight-halt-11794955885284.html",
-        "source": "Livemint",
-        "date": "18-11-2026 01:04"
-    },
-    {
-        "title": "अमेरिकी इलेक्ट्रॉनिक जासूसी एजेंसी के गोपनीय नेटवर्क में रुकावट आई",
-        "summary": "एक अमेरिकी अधिकारी और इस मामले की जानकारी रखने वाले एक अन्य व्यक्ति के मुताबिक, नेशनल सिक्योरिटी एजेंसी के उस गोपनीय कंप्यूटर नेटवर्क में गड़बड़ी आ गई है, जिसका इस्तेमाल एजेंसी आंतरिक संचार और अन्य दैनिक कामकाज के लिए करती है।",
-        "link": "https://www.livemint.com/news/us-news/us-electronic-spy-agency-suffers-classified-network-outage-11794941399379.html",
-        "source": "Livemint",
-        "date": "18-11-2026 01:04"
-    },
-    {
-        "title": "चीन के मार्केट शेयर में बढ़ोतरी के साथ ही यूरोपीय संघ को बांग्लादेश के परिधानों का निर्यात लगभग 12% कम हो गया: क्या गड़बड़ हुई?",
-        "summary": "बताया जाता है कि बांग्लादेश को नौ महीनों की इस अवधि के दौरान निर्यात मूल्य के रूप में करीब 1.82 अरब यूरो का नुकसान हुआ, जिससे वह EU के 11 सबसे बड़े परिधान निर्यातकों में सबसे खराब प्रदर्शन करने वाला निर्यातक बन गया।",
-        "link": "https://www.livemint.com/news/world/bangladesh-apparel-exports-to-eu-fall-nearly-12-as-china-gains-market-share-what-went-wrong-11794937183115.html",
-        "source": "Livemint",
-        "date": "18-11-2026 01:04"
-    },
-    {
-        "title": "Nvidia की कमाई अनुमान से ज़्यादा रही; अब सभी की नज़रें कॉल पर हैं",
-        "summary": "Nvidia के शेयरों में तब तेज़ी आई, जब कंपनी ने मंगलवार को अपनी मज़बूत तिमाही नतीजों और अगली तिमाही के अनुमानों का खुलासा किया। यह जेन्सेन हुआंग के सीईओ पद से इस्तीफ़ा देने के बाद कंपनी का पहला बड़ा इवेंट था।",
-        "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/nvidia-earnings-beat-estimates-attention-turns-to-call/articleshow/135944112.cms",
-        "source": "Economic Times",
-        "date": "18-11-2026 01:04"
     }
 ]
