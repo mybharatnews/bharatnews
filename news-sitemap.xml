@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-aa04c570605b.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <news:news>
+      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
+      <news:publication_date>2026-11-18T09:20:00+05:30</news:publication_date>
+      <news:title>मिड-कैप और स्मॉल-कैप पर गौर करने की ज़रूरत क्यों है</news:title>
+      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
+    </news:news>
+  </url>
+  <url>
     <loc>https://mybharatnews.github.io/bharatnews/news/market-news-1c29da68965f.html</loc>
     <lastmod>2026-11-18</lastmod>
     <news:news>
@@ -287,16 +297,6 @@
       <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
       <news:publication_date>2026-11-18T01:04:00+05:30</news:publication_date>
       <news:title>Nvidia की कमाई अनुमान से ज़्यादा रही; अब सभी की नज़रें कॉल पर हैं</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://mybharatnews.github.io/bharatnews/news/market-news-e69f1c6cee4f.html</loc>
-    <lastmod>2026-11-18</lastmod>
-    <news:news>
-      <news:publication><news:name>भारत न्यूज़</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>2026-11-18T01:04:00+05:30</news:publication_date>
-      <news:title>Nike ने अपने हालिया बदलाव के तहत 2031 तक अपनी आय में $5 बिलियन की और वृद्धि का लक्ष्य रखा है</news:title>
       <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
     </news:news>
   </url>
