@@ -21,44 +21,22 @@ FACEBOOK_PAGE = "https://www.facebook.com/profile.php?id=61595205934642"
 IST = ZoneInfo("Asia/Kolkata")
 MAX_NEWS = 30
 MAX_NEWS_SITEMAP = 10
-NEWS_SITEMAP_DAYS = 7   # Google News: છેલ્લા 7 દિવસ
+NEWS_SITEMAP_DAYS = 7
 
-# ફોલ્ડર બનાવો
 os.makedirs('news', exist_ok=True)
-
 
 # ═══════════════════════════════════════════════════════
 # ═══ Escape Helpers ═══
 # ═══════════════════════════════════════════════════════
 def escape_xml(text):
-    return (str(text)
-            .replace('&', '&amp;')
-            .replace('<', '&lt;')
-            .replace('>', '&gt;')
-            .replace('"', '&quot;')
-            .replace("'", '&apos;'))
+    return (str(text).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&apos;'))
 
 def escape_html(text):
-    return (str(text)
-            .replace('&', '&amp;')
-            .replace('<', '&lt;')
-            .replace('>', '&gt;')
-            .replace('"', '&quot;')
-            .replace("'", '&#39;'))
+    return (str(text).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
 
 def escape_js(text):
-    return (str(text)
-            .replace('\\', '\\\\')
-            .replace('</', '<\\/')
-            .replace("'", "\\'")
-            .replace('"', '\\"')
-            .replace('\n', '\\n')
-            .replace('\r', ''))
+    return (str(text).replace('\\', '\\\\').replace('</', '<\\/').replace("'", "\\'").replace('"', '\\"').replace('\n', '\\n').replace('\r', ''))
 
-
-# ═══════════════════════════════════════════════════════
-# ═══ Date Helpers ═══
-# ═══════════════════════════════════════════════════════
 def parse_date_ist(date_str):
     for fmt in ['%d-%m-%Y %H:%M', '%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M']:
         try:
@@ -70,19 +48,11 @@ def parse_date_ist(date_str):
 def parse_date_to_iso(date_str):
     return parse_date_ist(date_str).isoformat()
 
-
-# ═══════════════════════════════════════════════════════
-# ═══ Stable Slug ═══
-# ═══════════════════════════════════════════════════════
 def make_slug(news_item):
     key = (news_item.get('link', '') + '|' + news_item.get('title', '')).encode('utf-8')
     h = hashlib.sha1(key).hexdigest()[:12]
     return f"market-news-{h}"
 
-
-# ═══════════════════════════════════════════════════════
-# ═══ Structured Data ═══
-# ═══════════════════════════════════════════════════════
 def generate_structured_data(title, summary, page_url, date_iso, source):
     data = {
         "@context": "https://schema.org",
@@ -100,14 +70,8 @@ def generate_structured_data(title, summary, page_url, date_iso, source):
         "isAccessibleForFree": True,
         "sourceOrganization": {"@type": "Organization", "name": source},
     }
-    return ('<script type="application/ld+json">\n'
-            + json.dumps(data, ensure_ascii=False, indent=2)
-            + '\n</script>')
+    return ('<script type="application/ld+json">\n' + json.dumps(data, ensure_ascii=False, indent=2) + '\n</script>')
 
-
-# ═══════════════════════════════════════════════════════
-# ═══ Copy & Go Button ═══
-# ═══════════════════════════════════════════════════════
 def generate_copy_go_button(title, page_url):
     js_title = escape_js(title)
     js_url = escape_js(page_url)
@@ -135,10 +99,6 @@ def generate_copy_go_button(title, page_url):
     </script>
     '''
 
-
-# ═══════════════════════════════════════════════════════
-# ═══ Social Share & Follow ═══
-# ═══════════════════════════════════════════════════════
 def generate_share_buttons(page_url, title):
     import urllib.parse
     e_url = urllib.parse.quote(page_url)
@@ -166,10 +126,6 @@ def generate_social_follow():
     </div>
     '''
 
-
-# ═══════════════════════════════════════════════════════
-# ═══ Related News ═══
-# ═══════════════════════════════════════════════════════
 def generate_related_news(current_index, all_news):
     total = len(all_news)
     if total <= 1: return ""
@@ -188,7 +144,7 @@ def generate_related_news(current_index, all_news):
 
 
 # ═══════════════════════════════════════════════════════
-# ═══ Article Page ═══
+# ═══ Article Page (લખાણ વધારીને) ═══
 # ═══════════════════════════════════════════════════════
 def generate_article_page(news_item, index, all_news):
     title = news_item.get('title', '')
@@ -199,10 +155,8 @@ def generate_article_page(news_item, index, all_news):
 
     filename = make_slug(news_item) + '.html'
     page_url = f"{SITE_URL}/news/{filename}"
-
     date_iso = parse_date_to_iso(date)
     
-    # Escape
     t_esc = escape_html(title)
     s_esc = escape_html(summary[:150])
     sf_esc = escape_html(summary)
@@ -216,14 +170,26 @@ def generate_article_page(news_item, index, all_news):
     social_follow = generate_social_follow()
     copy_go_button = generate_copy_go_button(title, page_url)
 
+    # 👇 લખાણ વધારીને પ્રોફેશનલ બનાવ્યું છે 👇
     full_article = f"""
     <p><strong>{sf_esc}</strong></p>
-    <p>આ સમાચાર {src_esc} દ્વારા પ્રકાશિત કરવામાં આવ્યા છે. ભારતીય શેર બજારમાં આ સમાચારની ખૂબ અસર પડી શકે છે.</p>
-    <h2>શેર બજાર પર અસર</h2>
-    <p>ભારતીય શેર બજારમાં આજે મોટી હલચલ જોવા મળી રહી છે. નિફ્ટી 50 અને સેન્સેક્સમાં ઉતાર-ચઢાવ જોવા મળી રહ્યો છે.</p>
-    <p>નિષ્ણાતોના મતે, આ સમાચાર ટૂંકા ગાળામાં બજારને અસર કરી શકે છે. પણ લાંબા ગાળે બજારના મૂળભૂત સિદ્ધાંતો જ મહત્વના છે.</p>
-    <h2>રોકાણકારો માટે સલાહ</h2>
-    <p>શેર બજારમાં રોકાણ કરતી વખતે હંમેશા સંશોધન કરો. કોઈપણ સમાચારને આધારે તરત જ નિર્ણય ના લો.</p>
+    
+    <p>આજના રોકાણકારો માટે આ એક ખૂબ જ મહત્વપૂર્ણ સમાચાર છે. {src_esc} દ્વારા પ્રકાશિત આ અહેવાલ મુજબ, ભારતીય શેર બજારમાં આગામી દિવસોમાં મોટી હલચલ જોવા મળી શકે છે. જે રોકાણકારો શેર બજારમાં પોતાનું ભવિષ્ય બનાવવા માંગે છે, તેમના માટે આ સમજવું ખૂબ જરૂરી છે કે બજાર કઈ દિશામાં આગળ વધી રહ્યું છે.</p>
+    
+    <h2>શેર બજાર પર શું પડશે અસર?</h2>
+    <p>ભારતીય શેર બજારમાં આજે શરૂઆતથી જ ઉતાર-ચઢાવ જોવા મળી રહ્યો છે. નિફ્ટી 50 અને સેન્સેક્સમાં ભારે અથડામણ જોવા મળી છે. બેંકિંગ સેક્ટર, IT સેક્ટર, ઓટોમોબાઈલ અને ફાર્મા સેક્ટરમાં આ સમાચારની સીધી અસર પડી શકે છે. નિષ્ણાતોના મતે, રોકાણકારોએ આ સમયે ગભરાવાને બદલે શાંતિથી વિચાર કરવો જોઈએ.</p>
+    
+    <p>જ્યારે પણ બજારમાં આવા સમાચાર આવે છે, ત્યારે નાના રોકાણકારો ડરી જાય છે અને પોતાના શેર વેચી દે છે. પણ જે લોકો લાંબા ગાળે વિચારે છે, તેઓ આ સમયને એક સારી તક તરીકે જુએ છે. તમારે તમારા પોર્ટફોલિયોને ડાયવર્સિફાઈ કરવો જોઈએ, એટલે કે એક જ સેક્ટરમાં બધા પૈસા ના રોકવા જોઈએ.</p>
+
+    <h2>રોકાણકારો માટે મહત્વની સલાહ</h2>
+    <p>શેર બજારમાં રોકાણ કરતી વખતે હંમેશા પોતાનું સંશોધન (Research) કરવું જોઈએ. કોઈપણ એક સમાચાર કે ટીપને આધારે તરત જ પોતાનો નિર્ણય ના બદલવો જોઈએ. જો તમે નવા રોકાણકારો છો, તો તમારે SEBI રજિસ્ટર્ડ સલાહકારની સલાહ ચોક્કસ લેવી જોઈએ.</p>
+    
+    <p>આ ઉપરાંત, શેર બજારમાં ટૂંકા ગાળાના નફા કરતાં લાંબા ગાળાના રોકાણ પર વધુ ધ્યાન આપવું જોઈએ. કંપનીના ફંડામેન્ટલ્સ, તેની કમાણી અને ભવિષ્યની યોજનાઓ જોવી જોઈએ. ફક્ત ટીપ્સના આધારે રોકાણ કરવાથી નુકસાન થઈ શકે છે.</p>
+
+    <h2>આગળની રણનીતિ શું હશે?</h2>
+    <p>આગામી દિવસોમાં બજાર કઈ દિશામાં જશે, એ વિશે અનેક અટકળો ચાલી રહી છે. જો ગ્લોબલ માર્કેટ સારું પર્ફોર્મ કરશે, તો ભારતીય બજારને પણ ટેકો મળશે. વિદેશી રોકાણકારો (FII) ની પ્રવૃત્તિ પર પણ બજારની દિશા નિર્ભર કરશે.</p>
+    
+    <p>અમારી વેબસાઇટ પર અમે રોજ તાજા સમાચાર લાવીએ છીએ, જેથી તમે બજારની દરેક હલચલથી અપડેટ રહી શકો. અમારી સાથે જોડાયેલા રહો અને તમારા મિત્રો સાથે આ સમાચાર શેર કરો.</p>
     """
 
     html_content = f"""<!DOCTYPE html>
@@ -234,7 +200,6 @@ def generate_article_page(news_item, index, all_news):
     <title>{t_esc} - {SITE_NAME}</title>
     <meta name="description" content="{s_esc}">
     <link rel="canonical" href="{page_url}">
-    
     <meta property="og:title" content="{t_esc}">
     <meta property="og:description" content="{s_esc}">
     <meta property="og:url" content="{page_url}">
@@ -242,7 +207,6 @@ def generate_article_page(news_item, index, all_news):
     <meta property="og:image" content="{SITE_URL}/market.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{SITE_URL}/market.jpg">
-    
     {structured_data}
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -252,19 +216,16 @@ def generate_article_page(news_item, index, all_news):
         h1 {{ color: #feca57; font-size: 26px; margin-bottom: 20px; line-height: 1.5; }}
         h2 {{ color: #ff6b6b; margin-top: 25px; margin-bottom: 15px; font-size: 20px; }}
         h3 {{ color: #48dbfb; margin-top: 20px; margin-bottom: 12px; font-size: 18px; }}
-        p {{ color: #b0b0b0; margin-bottom: 15px; font-size: 16px; }}
+        p {{ color: #b0b0b0; margin-bottom: 15px; font-size: 16px; text-align: justify; }}
         a {{ color: #48dbfb; }}
         .source-box {{ background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #feca57; }}
         .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
-        
         .copy-go-section {{ margin: 30px 0; padding: 25px; background: rgba(24, 119, 242, 0.15); border-radius: 12px; border-left: 4px solid #1877f2; text-align: center; }}
         .copy-go-btn {{ background: #1877f2; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }}
-        
         .share-section, .social-follow, .related-news {{ margin: 30px 0; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
         .share-buttons, .follow-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
         .share-btn, .follow-btn {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; }}
         .whatsapp {{ background: #25d366; }} .telegram {{ background: #0088cc; }} .facebook {{ background: #1877f2; }}
-        
         .related-news ul {{ list-style: none; padding-left: 0; }}
         .related-news li {{ margin-bottom: 12px; padding-left: 20px; position: relative; }}
         .related-news li::before {{ content: "▸"; position: absolute; left: 0; color: #48dbfb; }}
@@ -273,7 +234,6 @@ def generate_article_page(news_item, index, all_news):
 <body>
     <div class="container">
         <img src="../market.jpg" alt="News Image" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
-        
         <h1>{t_esc}</h1>
         <div class="source-box">📰 स्रोत: {src_esc} | 🕐 {dt_esc}</div>
         {full_article}
@@ -293,17 +253,14 @@ def generate_article_page(news_item, index, all_news):
 
 
 # ═══════════════════════════════════════════════════════
-# ═══ Index Page (Home Page) ═══
+# ═══ Index Page ═══
 # ═══════════════════════════════════════════════════════
 def generate_index_page(news_list, generated_files):
-    
-    # 👇 1. ટોપ 5 ન્યૂઝનું લિસ્ટ બનાવો 👇
     top_5_html = ""
     for i in range(min(5, len(generated_files))):
         top_title = escape_html(news_list[i].get('title', ''))
         top_5_html += f'<li><a href="news/{generated_files[i]}" style="color: #feca57; text-decoration: none;">🔴 {top_title}</a></li>'
 
-    # 👇 2. ન્યૂઝ કાર્ડ્સમાં ઈમેજ ઉમેરો 👇
     news_cards = ""
     for news, filename in zip(news_list, generated_files):
         title = escape_html(news.get('title', ''))
@@ -332,77 +289,43 @@ def generate_index_page(news_list, generated_files):
     <title>{SITE_NAME} - भारतीय शेयर बाजार की ताज़ा हिंदी अपडेट्स</title>
     <link rel="canonical" href="{SITE_URL}/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{SITE_URL}/rss.xml">
-    
     <meta property="og:title" content="{SITE_NAME}">
     <meta property="og:description" content="भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स">
     <meta property="og:image" content="{SITE_URL}/market.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{SITE_URL}/market.jpg">
-    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; transition: background 0.3s, color 0.3s; }}
         .container {{ max-width: 900px; margin: auto; }}
-        
         header {{ text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; position: relative; }}
         header h1 {{ color: #feca57; font-size: 32px; margin-bottom: 10px; }}
         header p {{ color: #b0b0b0; font-size: 16px; }}
-        
         .social-links {{ display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }}
         .social-links a {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }}
         .social-links .wa {{ background: #25d366; }} .social-links .tg {{ background: #0088cc; }} .social-links .fb {{ background: #1877f2; }}
-        
-        /* ટોગલ બટન */
-        .theme-toggle {{
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            color: #feca57;
-        }}
-
-        /* 👇 એપ ડાઉનલોડ બેનર નો CSS 👇 */
-        .app-download-banner {{
-            background: linear-gradient(135deg, #1e130c, #9a8478);
-            border-radius: 15px;
-            padding: 25px 20px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }}
+        .theme-toggle {{ position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #feca57; }}
+        .app-download-banner {{ background: linear-gradient(135deg, #1e130c, #9a8478); border-radius: 15px; padding: 25px 20px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }}
         .app-text h3 {{ color: #feca57; font-size: 22px; margin-bottom: 8px; }}
         .app-text p {{ color: #e0e0e0; font-size: 15px; margin-bottom: 20px; }}
         .app-buttons {{ display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }}
-        .btn-online, .btn-download {{
-            display: inline-block; padding: 12px 25px; text-decoration: none;
-            border-radius: 8px; font-weight: bold; font-size: 16px; color: white;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }}
+        .btn-online, .btn-download {{ display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; color: white; transition: transform 0.2s, box-shadow 0.2s; }}
         .btn-online {{ background: #00c853; box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3); }}
         .btn-online:hover {{ background: #00e676; transform: translateY(-3px); }}
         .btn-download {{ background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }}
         .btn-download:hover {{ background: #0d5bbf; transform: translateY(-3px); }}
-
-        /* ટોપ 5 બોક્સ */
         .top-5-box {{ background: rgba(255, 107, 107, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #ff6b6b; }}
         .top-5-box h3 {{ color: #ff6b6b; margin-bottom: 15px; }}
         .top-5-box ul {{ list-style-type: none; padding-left: 0; line-height: 2; }}
-
         .news-card {{ background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: background 0.3s; }}
         .news-card h2 {{ font-size: 18px; margin-bottom: 10px; line-height: 1.4; }}
         .news-card h2 a {{ color: #feca57; text-decoration: none; }}
         .news-meta {{ color: #48dbfb; font-size: 13px; margin-bottom: 12px; }}
         .news-card p {{ color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }}
         .read-more {{ display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }}
-        
         footer {{ text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }}
         footer a {{ color: #48dbfb; text-decoration: none; }}
-
-        /* 👇 લાઇટ મોડ માટે CSS 👇 */
         body.light-mode {{ background: #f4f4f9; color: #333; }}
         body.light-mode header {{ background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }}
         body.light-mode header h1 {{ color: #d32f2f; }}
@@ -416,11 +339,9 @@ def generate_index_page(news_list, generated_files):
     <div class="container">
         <header>
             <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
-            
             <div style="text-align: center; margin-bottom: 10px;">
                 <img src="icon.png" alt="{SITE_NAME}" style="max-width: 80px; height: auto; border-radius: 10px;">
             </div>
-            
             <h1>{SITE_NAME}</h1>
             <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
             <div class="social-links">
@@ -441,7 +362,6 @@ def generate_index_page(news_list, generated_files):
             </div>
         </div>
 
-        <!-- 👇 ટોપ 5 સમાચાર બોક્સ 👇 -->
         <div class="top-5-box">
             <h3>🔥 આજના ટોપ 5 સમાચાર</h3>
             <ul>
@@ -462,7 +382,6 @@ def generate_index_page(news_list, generated_files):
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
-
     <script>
         function toggleTheme() {{
             document.body.classList.toggle('light-mode');
@@ -480,7 +399,6 @@ def generate_index_page(news_list, generated_files):
         f.write(html_content)
     print("🏠 index.html બન્યું")
 
-
 # ═══════════════════════════════════════════════════════
 # ═══ Sitemaps & Feeds ═══
 # ═══════════════════════════════════════════════════════
@@ -492,7 +410,6 @@ def generate_sitemap(generated_files):
         sitemap += f'    <url>\n        <loc>{escape_xml(url)}</loc>\n        <lastmod>{today}</lastmod>\n        <changefreq>daily</changefreq>\n        <priority>{"1.0" if url == SITE_URL+"/" else "0.8"}</priority>\n    </url>\n'
     sitemap += '</urlset>'
     with open('sitemap.xml', 'w', encoding='utf-8') as f: f.write(sitemap)
-    print(f"📄 sitemap.xml બન્યું ({len(urls)} URLs)")
 
 def generate_news_sitemap(news_list, generated_files):
     cutoff = datetime.now(IST) - timedelta(days=NEWS_SITEMAP_DAYS)
@@ -509,19 +426,9 @@ def generate_news_sitemap(news_list, generated_files):
     for news, filename, dt in eligible:
         title = escape_xml(news.get('title', '')[:110])
         page_url = f"{SITE_URL}/news/{filename}"
-        news_sitemap += f'''  <url>
-    <loc>{escape_xml(page_url)}</loc>
-    <lastmod>{today}</lastmod>
-    <news:news>
-      <news:publication><news:name>{escape_xml(SITE_NAME)}</news:name><news:language>hi</news:language></news:publication>
-      <news:publication_date>{dt.isoformat()}</news:publication_date>
-      <news:title>{title}</news:title>
-      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>
-    </news:news>
-  </url>\n'''
+        news_sitemap += f'''  <url>\n    <loc>{escape_xml(page_url)}</loc>\n    <lastmod>{today}</lastmod>\n    <news:news>\n      <news:publication><news:name>{escape_xml(SITE_NAME)}</news:name><news:language>hi</news:language></news:publication>\n      <news:publication_date>{dt.isoformat()}</news:publication_date>\n      <news:title>{title}</news:title>\n      <news:keywords>share market, stock market, sensex, nifty, business</news:keywords>\n    </news:news>\n  </url>\n'''
     news_sitemap += '</urlset>'
     with open('news-sitemap.xml', 'w', encoding='utf-8') as f: f.write(news_sitemap)
-    print(f"📰 news-sitemap.xml બન્યું ({len(eligible)} URLs)")
 
 def generate_sitemap_index():
     today = datetime.now(IST).strftime('%Y-%m-%d')
@@ -530,12 +437,10 @@ def generate_sitemap_index():
         idx += f'  <sitemap>\n    <loc>{SITE_URL}/{name}</loc>\n    <lastmod>{today}</lastmod>\n  </sitemap>\n'
     idx += '</sitemapindex>'
     with open('sitemap_index.xml', 'w', encoding='utf-8') as f: f.write(idx)
-    print("🗂️ sitemap_index.xml બન્યું")
 
 def generate_robots():
     robots = f"User-agent: *\nAllow: /\nDisallow: /news_index.json\nDisallow: /news_data.json\n\nUser-agent: Googlebot-News\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/news-sitemap.xml\n"
     with open('robots.txt', 'w', encoding='utf-8') as f: f.write(robots)
-    print("🤖 robots.txt બન્યું")
 
 def generate_rss(news_list, generated_files):
     now = email.utils.format_datetime(datetime.now(IST))
@@ -543,27 +448,9 @@ def generate_rss(news_list, generated_files):
     for news, filename in zip(news_list, generated_files):
         page_url = f"{SITE_URL}/news/{filename}"
         pub_date = email.utils.format_datetime(parse_date_ist(news.get('date', '')))
-        rss_items += f'''    <item>
-      <title>{escape_xml(news.get('title', ''))}</title>
-      <link>{escape_xml(page_url)}</link>
-      <description>{escape_xml(news.get('summary', '')[:300])}</description>
-      <pubDate>{pub_date}</pubDate>
-      <guid>{escape_xml(page_url)}</guid>
-    </item>\n'''
-    rss = f'''<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{escape_xml(SITE_NAME)} - શેર બજારની તાજી હિન્દી અપડેટ્સ</title>
-    <link>{SITE_URL}/</link>
-    <description>શેર બજાર, બિઝનેસ અને અર્થતંત્રની તાજી હિન્દી અપડેટ્સ</description>
-    <language>hi-in</language>
-    <lastBuildDate>{now}</lastBuildDate>
-    <atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
-{rss_items}  </channel>
-</rss>'''
+        rss_items += f'''    <item>\n      <title>{escape_xml(news.get('title', ''))}</title>\n      <link>{escape_xml(page_url)}</link>\n      <description>{escape_xml(news.get('summary', '')[:300])}</description>\n      <pubDate>{pub_date}</pubDate>\n      <guid>{escape_xml(page_url)}</guid>\n    </item>\n'''
+    rss = f'''<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n    <title>{escape_xml(SITE_NAME)} - શેર બજારની તાજી હિન્દી અપડેટ્સ</title>\n    <link>{SITE_URL}/</link>\n    <description>શેર બજાર, બિઝનેસ અને અર્થતંત્રની તાજી હિન્દી અપડેટ્સ</description>\n    <language>hi-in</language>\n    <lastBuildDate>{now}</lastBuildDate>\n    <atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>\n{rss_items}  </channel>\n</rss>'''
     with open('rss.xml', 'w', encoding='utf-8') as f: f.write(rss)
-    print(f"📡 rss.xml બન્યું ({len(generated_files)} items)")
-
 
 # ═══════════════════════════════════════════════════════
 # ═══ Main ═══
