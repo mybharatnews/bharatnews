@@ -50,32 +50,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 30px 20px; line-height: 1.8; }
-        .container { max-width: 800px; margin: auto; background: rgba(255,255,255,0.07); padding: 30px; border-radius: 15px; }
-        h1 { color: #feca57; font-size: 26px; margin-bottom: 20px; line-height: 1.5; }
-        h2 { color: #ff6b6b; margin-top: 25px; margin-bottom: 15px; font-size: 20px; }
-        h3 { color: #48dbfb; margin-top: 20px; margin-bottom: 12px; font-size: 18px; }
-        p { color: #b0b0b0; margin-bottom: 15px; font-size: 16px; text-align: justify; }
-        a { color: #48dbfb; }
-        .source-box { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #feca57; }
-        .back-btn { display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }
-        .copy-go-section { margin: 30px 0; padding: 25px; background: rgba(24, 119, 242, 0.15); border-radius: 12px; border-left: 4px solid #1877f2; text-align: center; }
-        .copy-go-btn { background: #1877f2; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }
-        .share-section, .social-follow, .related-news { margin: 30px 0; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }
-        .share-buttons, .follow-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
-        .share-btn, .follow-btn { padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; }
+        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background-color: #f4f6f8; color: #333; line-height: 1.8; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 15px; }
+        
+        /* હેડર અને મેનૂ */
+        .header-top { background-color: #fff; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #28a745; border-radius: 8px 8px 0 0; }
+        .logo-text { font-size: 22px; font-weight: bold; color: #222; text-decoration: none; }
+        .logo-text span { color: #28a745; }
+        .navbar { background-color: #28a745; padding: 10px 15px; display: flex; gap: 15px; overflow-x: auto; border-radius: 0 0 8px 8px; margin-bottom: 20px; }
+        .navbar a { color: white; font-weight: 600; font-size: 14px; white-space: nowrap; text-decoration: none; }
+        
+        /* મુખ્ય કન્ટેન્ટ */
+        .article-box { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        h1 { color: #222; font-size: 24px; margin-bottom: 15px; line-height: 1.4; }
+        h2 { color: #28a745; margin-top: 25px; margin-bottom: 15px; font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        h3 { color: #007bff; margin-top: 20px; margin-bottom: 12px; font-size: 18px; }
+        p { color: #444; margin-bottom: 15px; font-size: 16px; text-align: justify; }
+        a { color: #007bff; }
+        
+        .source-box { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745; font-size: 14px; color: #555; }
+        .back-btn { display: inline-block; background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; margin-top: 20px; font-weight: 600; }
+        
+        /* શેરિંગ અને ફોલો બટન */
+        .copy-go-section, .share-section, .social-follow, .related-news { margin: 25px 0; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #ddd; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .copy-go-btn { background: #1877f2; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 16px; }
+        .share-buttons, .follow-buttons { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 15px; }
+        .share-btn, .follow-btn { padding: 10px 18px; border-radius: 6px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }
         .whatsapp { background: #25d366; } .telegram { background: #0088cc; } .facebook { background: #1877f2; }
-        .related-news ul { list-style: none; padding-left: 0; }
-        .related-news li { margin-bottom: 12px; padding-left: 20px; position: relative; }
-        .related-news li::before { content: "▸"; position: absolute; left: 0; color: #48dbfb; }
+        .related-news ul { list-style: none; padding-left: 0; text-align: left; }
+        .related-news li { margin-bottom: 10px; padding-left: 20px; position: relative; border-bottom: 1px dashed #eee; padding-bottom: 8px; }
+        .related-news li::before { content: "▸"; position: absolute; left: 0; color: #28a745; }
+        .related-news a { color: #333; font-weight: 500; text-decoration: none; }
+        
+        /* ફૂટર */
+        footer { text-align: center; padding: 20px; color: #666; font-size: 13px; margin-top: 30px; border-top: 1px solid #ddd; }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="../market.jpg" alt="News Image" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
-        <h1>ऐंथ्रोपिक के शेयरों में ब्लॉकबस्टर डेब्यू के साथ 21% की भारी उछाल: क्या AI दिग्गज अपना $1.8 ट्रिलियन का मूल्यांकन सही ठहरा सकता है?</h1>
-        <div class="source-box">📰 स्रोत: Livemint | 🕐 20-11-2026 02:30</div>
-        
+        <header>
+            <div class="header-top">
+                <a href="../index.html" class="logo-text">भारत <span>न्यूज़</span></a>
+            </div>
+            <nav class="navbar">
+                <a href="../index.html">होम (Home)</a>
+                <a href="#">बिज़नेस (Business)</a>
+                <a href="#">शेयर बाज़ार (Markets)</a>
+                <a href="#">टेक्नोलॉजी (Tech)</a>
+            </nav>
+        </header>
+
+        <main class="article-box">
+            <img src="../market.jpg" alt="News Image" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+            <h1>ऐंथ्रोपिक के शेयरों में ब्लॉकबस्टर डेब्यू के साथ 21% की भारी उछाल: क्या AI दिग्गज अपना $1.8 ट्रिलियन का मूल्यांकन सही ठहरा सकता है?</h1>
+            <div class="source-box">📰 स्रोत: Livemint | 🕐 20-11-2026 02:30</div>
+            
+            
             <p><strong>नैस्डैक में अपनी लिस्टिंग के दौरान एंथ्रोपिक के शेयरों में तेज़ी आई और कंपनी का मूल्यांकन लगभग $1.8 ट्रिलियन तक पहुँच गया, जिससे यह अब तक का सबसे बड़ा पब्लिक ऑफ़रिंग बन गया। Claude के निर्माता ने अपने IPO में $81.3 बिलियन जुटाए और प्राइवेट प्लेसमेंट के ज़रिए $26 बिलियन और हासिल किए।</strong></p>
             <p>आज के निवेशकों के लिए Livemint का यह समाचार बहुत महत्वपूर्ण है। भारतीय शेयर बाजार में आने वाले दिनों में इस समाचार का बड़ा असर देखने को मिल सकता है। जो निवेशक लंबी अवधि के लिए सोचते हैं, उनके लिए यह समझना जरूरी है।</p>
             <h2>बाजार पर क्या पड़ेगा असर?</h2>
@@ -83,7 +113,12 @@
             <h2>निवेशकों के लिए सलाह</h2>
             <p>शेयर बाजार में निवेश करते समय हमेशा अपना खुद का रिसर्च करना चाहिए। किसी एक टिप के आधार पर तुरंत फैसला नहीं बदलना चाहिए। अपने पोर्टफोलियो में विविधता लानी चाहिए।</p>
             
-        <div class="source-box"><strong>मूल स्रोत:</strong> <a href="https://www.livemint.com/market/stock-market-news/anthropic-shares-soar-21-in-blockbuster-debut-can-the-ai-giant-justify-its-1-8-trillion-valuation-11795138481055.html" target="_blank" rel="nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
+            
+            <div class="source-box"><strong>मूल स्रोत:</strong> <a href="https://www.livemint.com/market/stock-market-news/anthropic-shares-soar-21-in-blockbuster-debut-can-the-ai-giant-justify-its-1-8-trillion-valuation-11795138481055.html" target="_blank" rel="nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
+            
+            <a href="../index.html" class="back-btn">← होम पेज पर जाएं</a>
+        </main>
+
         
     <div class="copy-go-section">
         <h3>📤 Post to Facebook Page</h3>
@@ -122,8 +157,11 @@
         </div>
     </div>
     
-        <div class="related-news"><h3>📚 આ પણ વાંચો</h3><ul><li><a href="market-news-0af824ed898b.html">स्टॉक मार्केट आउटलुक टुडे, 20 नवंबर: सेंसेक्स, निफ़्टी की प्रिडिक्शन-DJIA, S&amp;amp</a></li><li><a href="market-news-eb105824be65.html">राजा वेंकटरामन 20 नवंबर के लिए तीन स्टॉक सुझाते हैं</a></li><li><a href="market-news-5a01cdf6ef8c.html">M&amp;amp;M, बैंक ऑफ़ बड़ौदा के शेयर: खरीदने के लिए टॉप 2 स्टॉक; चंदन तापरिया की ओर </a></li><li><a href="market-news-6abc7c342717.html">एन्थ्रोपिक के IPO से AI ट्रेड को लेकर उम्मीदें फिर से जगाने में नाकाम रहने के चल</a></li><li><a href="market-news-6abed4738c18.html">एन्थ्रोपिक के IPO से हज़ारों कर्मचारी करोड़पति बन सकते हैं, जिनमें जूनियर स्टाफ़</a></li></ul></div>
-        <a href="../index.html" class="back-btn">← होम पेज पर जाएं</a>
+        <div class="related-news"><h3>📚 આ પણ વાંચો</h3><ul><li><a href="market-news-0af824ed898b.html">स्टॉक मार्केट आउटलुक टुडे, 20 नवंबर: सेंसेक्स, निफ़्टी की प्रिडिक्शन-DJIA, S&amp;amp</a></li><li><a href="market-news-ff57d019d18d.html">‘Capital markets must shift focus from speculation to funding productive enterpr</a></li><li><a href="market-news-84b522441282.html">After mega listing, Anthropic emerges among the most traded stocks by Indian ret</a></li><li><a href="market-news-6abc7c342717.html">एन्थ्रोपिक के IPO से AI ट्रेड को लेकर उम्मीदें फिर से जगाने में नाकाम रहने के चल</a></li><li><a href="market-news-6abed4738c18.html">एन्थ्रोपिक के IPO से हज़ारों कर्मचारी करोड़पति बन सकते हैं, जिनमें जूनियर स्टाफ़</a></li></ul></div>
+
+        <footer>
+            <p>© 2026 भारत न्यूज़. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
