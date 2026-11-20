@@ -6,6 +6,7 @@ import hashlib
 import email.utils
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+import random
 
 # ═══════════════════════════════════════════════════════
 # ═══ Site Information ═══
@@ -144,7 +145,7 @@ def generate_related_news(current_index, all_news):
 
 
 # ═══════════════════════════════════════════════════════
-# ═══ Article Page (લખાણ વધારીને) ═══
+# ═══ Article Page (નવી ડિઝાઇન સાથે) ═══
 # ═══════════════════════════════════════════════════════
 def generate_article_page(news_item, index, all_news):
     title = news_item.get('title', '')
@@ -170,9 +171,7 @@ def generate_article_page(news_item, index, all_news):
     social_follow = generate_social_follow()
     copy_go_button = generate_copy_go_button(title, page_url)
 
-    # 👇 ન્યૂઝના ટાઇટલ પ્રમાણે લખાણ બદલાશે (100% હિન્દી) 👇
-    import random
-    
+    # લખાણ જનરેટ કરવા માટે
     title_lower = title.lower()
     
     if "bgmi" in title_lower or "game" in title_lower or "gaming" in title_lower or "update" in title_lower:
@@ -199,6 +198,8 @@ def generate_article_page(news_item, index, all_news):
         ]
     
     full_article = random.choice(templates)
+    
+    # સમાચાર પેજની નવી ડિઝાઇન (Moneycontrol જેવી)
     html_content = f"""<!DOCTYPE html>
 <html lang="{SITE_LANG}">
 <head>
@@ -218,38 +219,76 @@ def generate_article_page(news_item, index, all_news):
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 30px 20px; line-height: 1.8; }}
-        .container {{ max-width: 800px; margin: auto; background: rgba(255,255,255,0.07); padding: 30px; border-radius: 15px; }}
-        h1 {{ color: #feca57; font-size: 26px; margin-bottom: 20px; line-height: 1.5; }}
-        h2 {{ color: #ff6b6b; margin-top: 25px; margin-bottom: 15px; font-size: 20px; }}
-        h3 {{ color: #48dbfb; margin-top: 20px; margin-bottom: 12px; font-size: 18px; }}
-        p {{ color: #b0b0b0; margin-bottom: 15px; font-size: 16px; text-align: justify; }}
-        a {{ color: #48dbfb; }}
-        .source-box {{ background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #feca57; }}
-        .back-btn {{ display: inline-block; background: linear-gradient(90deg, #ff6b6b, #ee5a6f); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: 600; }}
-        .copy-go-section {{ margin: 30px 0; padding: 25px; background: rgba(24, 119, 242, 0.15); border-radius: 12px; border-left: 4px solid #1877f2; text-align: center; }}
-        .copy-go-btn {{ background: #1877f2; color: white; padding: 15px 30px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }}
-        .share-section, .social-follow, .related-news {{ margin: 30px 0; padding: 20px; background: rgba(72, 219, 251, 0.08); border-radius: 12px; border-left: 4px solid #48dbfb; }}
-        .share-buttons, .follow-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }}
-        .share-btn, .follow-btn {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; }}
+        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background-color: #f4f6f8; color: #333; line-height: 1.8; }}
+        .container {{ max-width: 800px; margin: 20px auto; padding: 0 15px; }}
+        
+        /* હેડર અને મેનૂ */
+        .header-top {{ background-color: #fff; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #28a745; border-radius: 8px 8px 0 0; }}
+        .logo-text {{ font-size: 22px; font-weight: bold; color: #222; text-decoration: none; }}
+        .logo-text span {{ color: #28a745; }}
+        .navbar {{ background-color: #28a745; padding: 10px 15px; display: flex; gap: 15px; overflow-x: auto; border-radius: 0 0 8px 8px; margin-bottom: 20px; }}
+        .navbar a {{ color: white; font-weight: 600; font-size: 14px; white-space: nowrap; text-decoration: none; }}
+        
+        /* મુખ્ય કન્ટેન્ટ */
+        .article-box {{ background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }}
+        h1 {{ color: #222; font-size: 24px; margin-bottom: 15px; line-height: 1.4; }}
+        h2 {{ color: #28a745; margin-top: 25px; margin-bottom: 15px; font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 5px; }}
+        h3 {{ color: #007bff; margin-top: 20px; margin-bottom: 12px; font-size: 18px; }}
+        p {{ color: #444; margin-bottom: 15px; font-size: 16px; text-align: justify; }}
+        a {{ color: #007bff; }}
+        
+        .source-box {{ background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #28a745; font-size: 14px; color: #555; }}
+        .back-btn {{ display: inline-block; background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; margin-top: 20px; font-weight: 600; }}
+        
+        /* શેરિંગ અને ફોલો બટન */
+        .copy-go-section, .share-section, .social-follow, .related-news {{ margin: 25px 0; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #ddd; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }}
+        .copy-go-btn {{ background: #1877f2; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 16px; }}
+        .share-buttons, .follow-buttons {{ display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 15px; }}
+        .share-btn, .follow-btn {{ padding: 10px 18px; border-radius: 6px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }}
         .whatsapp {{ background: #25d366; }} .telegram {{ background: #0088cc; }} .facebook {{ background: #1877f2; }}
-        .related-news ul {{ list-style: none; padding-left: 0; }}
-        .related-news li {{ margin-bottom: 12px; padding-left: 20px; position: relative; }}
-        .related-news li::before {{ content: "▸"; position: absolute; left: 0; color: #48dbfb; }}
+        .related-news ul {{ list-style: none; padding-left: 0; text-align: left; }}
+        .related-news li {{ margin-bottom: 10px; padding-left: 20px; position: relative; border-bottom: 1px dashed #eee; padding-bottom: 8px; }}
+        .related-news li::before {{ content: "▸"; position: absolute; left: 0; color: #28a745; }}
+        .related-news a {{ color: #333; font-weight: 500; text-decoration: none; }}
+        
+        /* ફૂટર */
+        footer {{ text-align: center; padding: 20px; color: #666; font-size: 13px; margin-top: 30px; border-top: 1px solid #ddd; }}
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="../market.jpg" alt="News Image" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
-        <h1>{t_esc}</h1>
-        <div class="source-box">📰 स्रोत: {src_esc} | 🕐 {dt_esc}</div>
-        {full_article}
-        <div class="source-box"><strong>मूल स्रोत:</strong> <a href="{lnk_esc}" target="_blank" rel="nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
+        <header>
+            <div class="header-top">
+                <a href="../index.html" class="logo-text">भारत <span>न्यूज़</span></a>
+            </div>
+            <nav class="navbar">
+                <a href="../index.html">होम (Home)</a>
+                <a href="#">बिज़नेस (Business)</a>
+                <a href="#">शेयर बाज़ार (Markets)</a>
+                <a href="#">टेक्नोलॉजी (Tech)</a>
+            </nav>
+        </header>
+
+        <main class="article-box">
+            <img src="../market.jpg" alt="News Image" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+            <h1>{t_esc}</h1>
+            <div class="source-box">📰 स्रोत: {src_esc} | 🕐 {dt_esc}</div>
+            
+            {full_article}
+            
+            <div class="source-box"><strong>मूल स्रोत:</strong> <a href="{lnk_esc}" target="_blank" rel="nofollow">पूरी न्यूज़ यहाँ पढ़ें →</a></div>
+            
+            <a href="../index.html" class="back-btn">← होम पेज पर जाएं</a>
+        </main>
+
         {copy_go_button}
         {share_buttons}
         {social_follow}
         {related_news}
-        <a href="../index.html" class="back-btn">← होम पेज पर जाएं</a>
+
+        <footer>
+            <p>© 2026 {SITE_NAME}. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>"""
@@ -260,13 +299,13 @@ def generate_article_page(news_item, index, all_news):
 
 
 # ═══════════════════════════════════════════════════════
-# ═══ Index Page ═══
+# ═══ Index Page (નવી ડિઝાઇન સાથે) ═══
 # ═══════════════════════════════════════════════════════
 def generate_index_page(news_list, generated_files):
     top_5_html = ""
     for i in range(min(5, len(generated_files))):
         top_title = escape_html(news_list[i].get('title', ''))
-        top_5_html += f'<li><a href="news/{generated_files[i]}" style="color: #feca57; text-decoration: none;">🔴 {top_title}</a></li>'
+        top_5_html += f'<li><a href="news/{generated_files[i]}" style="color: #333; text-decoration: none; font-weight: 500;">🔴 {top_title}</a></li>'
 
     news_cards = ""
     for news, filename in zip(news_list, generated_files):
@@ -276,14 +315,14 @@ def generate_index_page(news_list, generated_files):
         date = escape_html(news.get('date', ''))
         news_cards += f'''
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/{filename}">{title}</a></h2>
                     <div class="news-meta">📰 {source} | 🕐 {date}</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">{summary}...</p>
+            <p class="news-desc">{summary}...</p>
             <a href="news/{filename}" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         '''
@@ -301,61 +340,88 @@ def generate_index_page(news_list, generated_files):
     <meta property="og:image" content="{SITE_URL}/market.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{SITE_URL}/market.jpg">
+    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; transition: background 0.3s, color 0.3s; }}
-        .container {{ max-width: 900px; margin: auto; }}
-        header {{ text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; position: relative; }}
-        header h1 {{ color: #feca57; font-size: 32px; margin-bottom: 10px; }}
-        header p {{ color: #b0b0b0; font-size: 16px; }}
-        .social-links {{ display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }}
-        .social-links a {{ padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }}
-        .social-links .wa {{ background: #25d366; }} .social-links .tg {{ background: #0088cc; }} .social-links .fb {{ background: #1877f2; }}
-        .theme-toggle {{ position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #feca57; }}
-        .app-download-banner {{ background: linear-gradient(135deg, #1e130c, #9a8478); border-radius: 15px; padding: 25px 20px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }}
-        .app-text h3 {{ color: #feca57; font-size: 22px; margin-bottom: 8px; }}
-        .app-text p {{ color: #e0e0e0; font-size: 15px; margin-bottom: 20px; }}
-        .app-buttons {{ display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }}
-        .btn-online, .btn-download {{ display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; color: white; transition: transform 0.2s, box-shadow 0.2s; }}
-        .btn-online {{ background: #00c853; box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3); }}
-        .btn-online:hover {{ background: #00e676; transform: translateY(-3px); }}
-        .btn-download {{ background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }}
-        .btn-download:hover {{ background: #0d5bbf; transform: translateY(-3px); }}
-        .top-5-box {{ background: rgba(255, 107, 107, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #ff6b6b; }}
-        .top-5-box h3 {{ color: #ff6b6b; margin-bottom: 15px; }}
-        .top-5-box ul {{ list-style-type: none; padding-left: 0; line-height: 2; }}
-        .news-card {{ background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: background 0.3s; }}
-        .news-card h2 {{ font-size: 18px; margin-bottom: 10px; line-height: 1.4; }}
-        .news-card h2 a {{ color: #feca57; text-decoration: none; }}
-        .news-meta {{ color: #48dbfb; font-size: 13px; margin-bottom: 12px; }}
-        .news-card p {{ color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }}
-        .read-more {{ display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }}
-        footer {{ text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }}
-        footer a {{ color: #48dbfb; text-decoration: none; }}
-        body.light-mode {{ background: #f4f4f9; color: #333; }}
-        body.light-mode header {{ background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }}
-        body.light-mode header h1 {{ color: #d32f2f; }}
-        body.light-mode .news-card {{ background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }}
-        body.light-mode .news-card h2 a {{ color: #d32f2f; }}
-        body.light-mode .news-card p {{ color: #555; }}
-        body.light-mode .theme-toggle {{ color: #333; }}
+        body {{ font-family: 'Noto Sans Devanagari', Arial, sans-serif; background-color: #f4f6f8; color: #333; line-height: 1.6; transition: background 0.3s, color 0.3s; }}
+        a {{ text-decoration: none; }}
+        .container {{ max-width: 800px; margin: 20px auto; padding: 0 15px; }}
+
+        .header-top {{ background-color: #fff; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #28a745; border-radius: 8px 8px 0 0; }}
+        .logo-area {{ display: flex; align-items: center; gap: 10px; }}
+        .logo-area img {{ width: 40px; height: 40px; border-radius: 5px; }}
+        .logo-text {{ font-size: 22px; font-weight: bold; color: #222; }}
+        .logo-text span {{ color: #28a745; }}
+        .theme-toggle {{ background: none; border: 1px solid #ddd; padding: 5px 10px; border-radius: 5px; font-size: 18px; cursor: pointer; }}
+
+        .navbar {{ background-color: #28a745; padding: 10px 15px; display: flex; gap: 15px; overflow-x: auto; border-radius: 0 0 8px 8px; margin-bottom: 20px; }}
+        .navbar a {{ color: white; font-weight: 600; font-size: 14px; white-space: nowrap; }}
+        .navbar a:hover {{ text-decoration: underline; }}
+
+        .app-download-banner {{ background: #fff; border: 1px solid #ddd; border-left: 5px solid #1877f2; border-radius: 8px; padding: 15px; margin-bottom: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }}
+        .app-text h3 {{ color: #1877f2; font-size: 18px; margin-bottom: 5px; }}
+        .app-text p {{ color: #555; font-size: 14px; margin-bottom: 15px; }}
+        .app-buttons {{ display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }}
+        .btn-online, .btn-download {{ display: inline-block; padding: 10px 20px; border-radius: 6px; font-weight: bold; font-size: 14px; color: white; transition: 0.2s; }}
+        .btn-online {{ background: #00c853; }}
+        .btn-download {{ background: #1877f2; }}
+
+        .social-links {{ display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }}
+        .social-links a {{ padding: 8px 15px; border-radius: 6px; color: white; font-weight: 600; font-size: 13px; }}
+        .social-links .wa {{ background: #25d366; }} 
+        .social-links .tg {{ background: #0088cc; }} 
+        .social-links .fb {{ background: #1877f2; }}
+
+        .top-5-box {{ background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid #ff6b6b; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }}
+        .top-5-box h3 {{ color: #d32f2f; margin-bottom: 10px; font-size: 18px; }}
+        .top-5-box ul {{ list-style-type: none; padding-left: 0; }}
+        .top-5-box li {{ margin-bottom: 10px; font-size: 15px; line-height: 1.5; border-bottom: 1px dashed #eee; padding-bottom: 8px; }}
+        .top-5-box li:last-child {{ border-bottom: none; }}
+        .top-5-box a:hover {{ color: #28a745; }}
+
+        .section-title {{ font-size: 20px; color: #222; margin-bottom: 15px; border-left: 4px solid #28a745; padding-left: 10px; }}
+        .news-card {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.2s; }}
+        .news-flex {{ display: flex; gap: 15px; align-items: flex-start; }}
+        .news-flex img {{ width: 100px; height: 80px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }}
+        .news-content h2 {{ font-size: 16px; margin-bottom: 8px; line-height: 1.4; }}
+        .news-content h2 a {{ color: #222; }}
+        .news-meta {{ color: #777; font-size: 12px; margin-bottom: 10px; }}
+        .news-desc {{ color: #555; font-size: 14px; margin-bottom: 10px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }}
+        .read-more {{ display: inline-block; color: #007bff; font-weight: 600; font-size: 14px; }}
+        .read-more:hover {{ text-decoration: underline; }}
+
+        footer {{ text-align: center; padding: 20px; color: #666; font-size: 13px; margin-top: 30px; border-top: 1px solid #ddd; }}
+        footer a {{ color: #007bff; }}
+
+        body.dark-mode {{ background-color: #121212; color: #e0e0e0; }}
+        body.dark-mode .header-top, body.dark-mode .app-download-banner, body.dark-mode .top-5-box, body.dark-mode .news-card {{ background-color: #1e1e1e; border-color: #333; }}
+        body.dark-mode .logo-text {{ color: #fff; }}
+        body.dark-mode .theme-toggle {{ color: #fff; border-color: #555; }}
+        body.dark-mode .news-content h2 a {{ color: #e0e0e0; }}
+        body.dark-mode .news-desc {{ color: #aaa; }}
+        body.dark-mode .top-5-box a {{ color: #e0e0e0; }}
+        body.dark-mode .top-5-box li {{ border-bottom-color: #333; }}
+        body.dark-mode footer {{ border-top-color: #333; }}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
-            <div style="text-align: center; margin-bottom: 10px;">
-                <img src="icon.png" alt="{SITE_NAME}" style="max-width: 80px; height: auto; border-radius: 10px;">
+            <div class="header-top">
+                <div class="logo-area">
+                    <img src="icon.png" alt="{SITE_NAME}">
+                    <div class="logo-text">भारत <span>न्यूज़</span></div>
+                </div>
+                <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
             </div>
-            <h1>{SITE_NAME}</h1>
-            <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
-            <div class="social-links">
-                <a href="{WHATSAPP_CHANNEL}" target="_blank" class="wa">💬 WhatsApp</a>
-                <a href="{TELEGRAM_CHANNEL}" target="_blank" class="tg">📢 Telegram</a>
-                <a href="{FACEBOOK_PAGE}" target="_blank" class="fb">📘 Facebook</a>
-            </div>
+            <nav class="navbar">
+                <a href="/">होम (Home)</a>
+                <a href="#">बिज़नेस (Business)</a>
+                <a href="#">शेयर बाज़ार (Markets)</a>
+                <a href="#">टेक्नोलॉजी (Tech)</a>
+            </nav>
         </header>
 
         <div class="app-download-banner">
@@ -370,12 +436,20 @@ def generate_index_page(news_list, generated_files):
         </div>
 
         <div class="top-5-box">
-            <h3>🔥 આજના ટોપ 5 સમાચાર</h3>
+            <h3>🔥 आज के टॉप 5 समाचार</h3>
             <ul>
                 {top_5_html}
             </ul>
         </div>
 
+        <div class="social-links">
+            <a href="{WHATSAPP_CHANNEL}" target="_blank" class="wa">💬 WhatsApp</a>
+            <a href="{TELEGRAM_CHANNEL}" target="_blank" class="tg">📢 Telegram</a>
+            <a href="{FACEBOOK_PAGE}" target="_blank" class="fb">📘 Facebook</a>
+        </div>
+
+        <h2 class="section-title">ताज़ा खबरें (Latest News)</h2>
+        
         {news_cards}
 
         <footer>
@@ -389,22 +463,29 @@ def generate_index_page(news_list, generated_files):
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
+
     <script>
         function toggleTheme() {{
-            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-mode');
             const btn = document.getElementById('theme-btn');
-            if(document.body.classList.contains('light-mode')) {{
-                btn.innerHTML = '☀️'; 
+            if(document.body.classList.contains('dark-mode')) {{
+                btn.innerHTML = '☀️';
+                localStorage.setItem('theme', 'dark');
             }} else {{
-                btn.innerHTML = '🌙'; 
+                btn.innerHTML = '🌙';
+                localStorage.setItem('theme', 'light');
             }}
+        }}
+        if (localStorage.getItem('theme') === 'dark') {{
+            document.body.classList.add('dark-mode');
+            document.getElementById('theme-btn').innerHTML = '☀️';
         }}
     </script>
 </body>
 </html>"""
+
     with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html_content)
-    print("🏠 index.html બન્યું")
 
 # ═══════════════════════════════════════════════════════
 # ═══ Sitemaps & Feeds ═══
