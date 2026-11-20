@@ -11,63 +11,114 @@
     <meta property="og:image" content="https://mybharatnews.github.io/bharatnews/market.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://mybharatnews.github.io/bharatnews/market.jpg">
+    
+    <!-- ફોન્ટ -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* બેઝિક સેટિંગ */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; padding: 20px; line-height: 1.7; transition: background 0.3s, color 0.3s; }
-        .container { max-width: 900px; margin: auto; }
-        header { text-align: center; padding: 40px 20px; background: rgba(255,255,255,0.05); border-radius: 15px; margin-bottom: 30px; position: relative; }
-        header h1 { color: #feca57; font-size: 32px; margin-bottom: 10px; }
-        header p { color: #b0b0b0; font-size: 16px; }
-        .social-links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
-        .social-links a { padding: 10px 18px; border-radius: 8px; text-decoration: none; color: white; font-weight: 600; font-size: 14px; }
-        .social-links .wa { background: #25d366; } .social-links .tg { background: #0088cc; } .social-links .fb { background: #1877f2; }
-        .theme-toggle { position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; color: #feca57; }
-        .app-download-banner { background: linear-gradient(135deg, #1e130c, #9a8478); border-radius: 15px; padding: 25px 20px; margin-bottom: 30px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .app-text h3 { color: #feca57; font-size: 22px; margin-bottom: 8px; }
-        .app-text p { color: #e0e0e0; font-size: 15px; margin-bottom: 20px; }
-        .app-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn-online, .btn-download { display: inline-block; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; color: white; transition: transform 0.2s, box-shadow 0.2s; }
-        .btn-online { background: #00c853; box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3); }
-        .btn-online:hover { background: #00e676; transform: translateY(-3px); }
-        .btn-download { background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }
-        .btn-download:hover { background: #0d5bbf; transform: translateY(-3px); }
-        .top-5-box { background: rgba(255, 107, 107, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #ff6b6b; }
-        .top-5-box h3 { color: #ff6b6b; margin-bottom: 15px; }
-        .top-5-box ul { list-style-type: none; padding-left: 0; line-height: 2; }
-        .news-card { background: rgba(255,255,255,0.07); padding: 25px; border-radius: 12px; margin-bottom: 20px; transition: background 0.3s; }
-        .news-card h2 { font-size: 18px; margin-bottom: 10px; line-height: 1.4; }
-        .news-card h2 a { color: #feca57; text-decoration: none; }
-        .news-meta { color: #48dbfb; font-size: 13px; margin-bottom: 12px; }
-        .news-card p { color: #b0b0b0; font-size: 15px; margin-bottom: 12px; }
-        .read-more { display: inline-block; color: #ff6b6b; text-decoration: none; font-weight: 600; font-size: 14px; }
-        footer { text-align: center; padding: 30px 20px; color: #666; font-size: 13px; }
-        footer a { color: #48dbfb; text-decoration: none; }
-        body.light-mode { background: #f4f4f9; color: #333; }
-        body.light-mode header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        body.light-mode header h1 { color: #d32f2f; }
-        body.light-mode .news-card { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        body.light-mode .news-card h2 a { color: #d32f2f; }
-        body.light-mode .news-card p { color: #555; }
-        body.light-mode .theme-toggle { color: #333; }
+        body { font-family: 'Noto Sans Devanagari', Arial, sans-serif; background-color: #f4f6f8; color: #333; line-height: 1.6; transition: background 0.3s, color 0.3s; }
+        a { text-decoration: none; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 15px; }
+
+        /* ઉપરનું લોગો અને હેડર */
+        .header-top { background-color: #fff; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #28a745; border-radius: 8px 8px 0 0; }
+        .logo-area { display: flex; align-items: center; gap: 10px; }
+        .logo-area img { width: 40px; height: 40px; border-radius: 5px; }
+        .logo-text { font-size: 22px; font-weight: bold; color: #222; }
+        .logo-text span { color: #28a745; }
+        
+        /* થીમ ટોગલ (Dark/Light) */
+        .theme-toggle { background: none; border: 1px solid #ddd; padding: 5px 10px; border-radius: 5px; font-size: 18px; cursor: pointer; }
+
+        /* નેવિગેશન મેનૂ (લીલું) */
+        .navbar { background-color: #28a745; padding: 10px 15px; display: flex; gap: 15px; overflow-x: auto; border-radius: 0 0 8px 8px; margin-bottom: 20px; }
+        .navbar a { color: white; font-weight: 600; font-size: 14px; white-space: nowrap; }
+        .navbar a:hover { text-decoration: underline; }
+
+        /* એપ ડાઉનલોડ બેનર */
+        .app-download-banner { background: #fff; border: 1px solid #ddd; border-left: 5px solid #1877f2; border-radius: 8px; padding: 15px; margin-bottom: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .app-text h3 { color: #1877f2; font-size: 18px; margin-bottom: 5px; }
+        .app-text p { color: #555; font-size: 14px; margin-bottom: 15px; }
+        .app-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .btn-online, .btn-download { display: inline-block; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; color: white; transition: 0.2s; }
+        .btn-online { background: #00c853; }
+        .btn-online:hover { background: #00e676; }
+        .btn-download { background: #1877f2; }
+        .btn-download:hover { background: #0d5bbf; }
+
+        /* સોશિયલ લિંક્સ */
+        .social-links { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+        .social-links a { padding: 8px 15px; border-radius: 6px; text-decoration: none; color: white; font-weight: 600; font-size: 13px; }
+        .social-links .wa { background: #25d366; } 
+        .social-links .tg { background: #0088cc; } 
+        .social-links .fb { background: #1877f2; }
+
+        /* ટોપ 5 બોક્સ */
+        .top-5-box { background: #fff; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 5px solid #ff6b6b; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .top-5-box h3 { color: #d32f2f; margin-bottom: 10px; font-size: 18px; }
+        .top-5-box ul { list-style-type: none; padding-left: 0; }
+        .top-5-box li { margin-bottom: 10px; font-size: 15px; line-height: 1.5; border-bottom: 1px dashed #eee; padding-bottom: 8px; }
+        .top-5-box li:last-child { border-bottom: none; }
+        .top-5-box a { color: #333; font-weight: 500; }
+        .top-5-box a:hover { color: #28a745; }
+
+        /* ન્યૂઝ કાર્ડ ડિઝાઇન */
+        .section-title { font-size: 20px; color: #222; margin-bottom: 15px; border-left: 4px solid #28a745; padding-left: 10px; }
+        .news-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.2s; }
+        .news-card:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .news-flex { display: flex; gap: 15px; align-items: flex-start; }
+        .news-flex img { width: 100px; height: 80px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+        .news-content h2 { font-size: 16px; margin-bottom: 8px; line-height: 1.4; }
+        .news-content h2 a { color: #222; }
+        .news-content h2 a:hover { color: #007bff; }
+        .news-meta { color: #777; font-size: 12px; margin-bottom: 10px; }
+        .news-desc { color: #555; font-size: 14px; margin-bottom: 10px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .read-more { display: inline-block; color: #007bff; font-weight: 600; font-size: 14px; }
+        .read-more:hover { text-decoration: underline; }
+
+        /* ફૂટર */
+        footer { text-align: center; padding: 20px; color: #666; font-size: 13px; margin-top: 30px; border-top: 1px solid #ddd; }
+        footer a { color: #007bff; }
+        footer a:hover { text-decoration: underline; }
+
+        /* ડાર્ક મોડ (Dark Mode) સેટિંગ */
+        body.dark-mode { background-color: #121212; color: #e0e0e0; }
+        body.dark-mode .header-top, body.dark-mode .app-download-banner, body.dark-mode .top-5-box, body.dark-mode .news-card { background-color: #1e1e1e; border-color: #333; }
+        body.dark-mode .logo-text { color: #fff; }
+        body.dark-mode .theme-toggle { color: #fff; border-color: #555; }
+        body.dark-mode .news-content h2 a { color: #e0e0e0; }
+        body.dark-mode .news-desc { color: #aaa; }
+        body.dark-mode .top-5-box a { color: #e0e0e0; }
+        body.dark-mode .top-5-box li { border-bottom-color: #333; }
+        body.dark-mode footer { border-top-color: #333; }
     </style>
 </head>
 <body>
     <div class="container">
+        
+        <!-- હેડર અને લોગો -->
         <header>
-            <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
-            <div style="text-align: center; margin-bottom: 10px;">
-                <img src="icon.png" alt="भारत न्यूज़" style="max-width: 80px; height: auto; border-radius: 10px;">
+            <div class="header-top">
+                <div class="logo-area">
+                    <img src="icon.png" alt="ભારત ન્યૂઝ લોગો">
+                    <div class="logo-text">भारत <span>न्यूज़</span></div>
+                </div>
+                <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
             </div>
-            <h1>भारत न्यूज़</h1>
-            <p>भारतीय शेयर बाजार और बिजनेस की ताज़ा हिंदी अपडेट्स</p>
-            <div class="social-links">
-                <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" class="wa">💬 WhatsApp</a>
-                <a href="https://t.me/indianews_official" target="_blank" class="tg">📢 Telegram</a>
-                <a href="https://www.facebook.com/profile.php?id=61595205934642" target="_blank" class="fb">📘 Facebook</a>
-            </div>
+            
+            <!-- લીલું નેવિગેશન મેનૂ -->
+            <nav class="navbar">
+                <a href="/">होम (Home)</a>
+                <a href="#">बिज़नेस (Business)</a>
+                <a href="#">शेयर बाज़ार (Markets)</a>
+                <a href="#">टेक्नोलॉजी (Tech)</a>
+                <a href="#">क्रिकेट (Cricket)</a>
+            </nav>
         </header>
 
+        <!-- એપ ડાઉનલોડ બેનર -->
         <div class="app-download-banner">
             <div class="app-text">
                 <h3>📱 Dravy's English Learning App</h3>
@@ -79,375 +130,389 @@
             </div>
         </div>
 
+        <!-- ટોપ 5 સમાચાર -->
         <div class="top-5-box">
-            <h3>🔥 આજના ટોપ 5 સમાચાર</h3>
+            <h3>🔥 आज के टॉप 5 समाचार</h3>
             <ul>
-                <li><a href="news/market-news-76e5560c5850.html" style="color: #feca57; text-decoration: none;">🔴 ₹300 की राइड का किराया ₹800 हो गया है: दिल्ली-NCR में टैक्सी हड़ताल की वजह से कैसे बढ़ रहे हैं ओला, उबर और रैपिडो के किराये</a></li><li><a href="news/market-news-90988341d76d.html" style="color: #feca57; text-decoration: none;">🔴 कयामत के दिन का डर, बिजली गुल होने की अफवाहें और तकनीकी खराबी: अमेरिकी लोग क्यों आपातकालीन चीज़ों का स्टॉक जमा करने में जुटे हुए हैं</a></li><li><a href="news/market-news-d0d7ed8d9961.html" style="color: #feca57; text-decoration: none;">🔴 कोलकाता से वाइस सिटी तक: रूपा बिस्वास का 1982 का बंगाली गाना &#39;आज शनिवार&#39; GTA VI के इन-गेम रेडियो पर नए दर्शकों तक पहुँच रहा है</a></li><li><a href="news/market-news-7ffadf2a6304.html" style="color: #feca57; text-decoration: none;">🔴 सीजीएसटी ने हरियाणा के पान मसाला यूनिट में ₹116 करोड़ के उपकर की चोरी का पता लगाया, मालिक को किया गिरफ्तार</a></li><li><a href="news/market-news-c995db9e83dd.html" style="color: #feca57; text-decoration: none;">🔴 निवेशकों के भारतीय शेयरों में सुरक्षित ठिकाना तलाशने और शॉर्ट पोजीशन बंद होने के चलते रुपया 93/USD से ऊपर चला गया</a></li>
+                <li><a href="news/market-news-76e5560c5850.html">🔴 ₹300 की राइड का किराया ₹800 हो गया है: दिल्ली-NCR में टैक्सी हड़ताल की वजह से कैसे बढ़ रहे हैं ओला, उबर और रैपिडो के किराये</a></li>
+                <li><a href="news/market-news-90988341d76d.html">🔴 कयामत के दिन का डर, बिजली गुल होने की अफवाहें और तकनीकी खराबी: अमेरिकी लोग क्यों आपातकालीन चीज़ों का स्टॉक जमा करने में जुटे हुए हैं</a></li>
+                <li><a href="news/market-news-d0d7ed8d9961.html">🔴 कोलकाता से वाइस सिटी तक: रूपा बिस्वास का 1982 का बंगाली गाना 'आज शनिवार' GTA VI के इन-गेम रेडियो पर नए दर्शकों तक पहुँच रहा है</a></li>
+                <li><a href="news/market-news-7ffadf2a6304.html">🔴 सीजीएसटी ने हरियाणा के पान मसाला यूनिट में ₹116 करोड़ के उपकर की चोरी का पता लगाया, मालिक को किया गिरफ्तार</a></li>
+                <li><a href="news/market-news-c995db9e83dd.html">🔴 निवेशकों के भारतीय शेयरों में सुरक्षित ठिकाना तलाशने और शॉर्ट पोजीशन बंद होने के चलते रुपया 93/USD से ऊपर चला गया</a></li>
             </ul>
         </div>
 
-        
+        <!-- સોશિયલ મીડિયા લિંક્સ -->
+        <div class="social-links">
+            <a href="https://whatsapp.com/channel/0029VbD6VLP6buMSzAGWNE3V" target="_blank" class="wa">💬 WhatsApp</a>
+            <a href="https://t.me/indianews_official" target="_blank" class="tg">📢 Telegram</a>
+            <a href="https://www.facebook.com/profile.php?id=61595205934642" target="_blank" class="fb">📘 Facebook</a>
+        </div>
+
+        <h2 class="section-title">ताज़ा खबरें (Latest News)</h2>
+
+        <!-- સમાચાર કાર્ડ્સ (અહીં તમારા બધા સમાચાર છે) -->
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-76e5560c5850.html">₹300 की राइड का किराया ₹800 हो गया है: दिल्ली-NCR में टैक्सी हड़ताल की वजह से कैसे बढ़ रहे हैं ओला, उबर और रैपिडो के किराये</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 12:05</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">दक्षिण दिल्ली से नोएडा तक की कैब राइड का किराया, जो आमतौर पर ₹300 होता है, परिवहनकर्मियों के विरोध-प्रदर्शन के चलते बढ़कर ₹800 तक पहुँच गया। एक ओर जहा...</p>
+            <p class="news-desc">दक्षिण दिल्ली से नोएडा तक की कैब राइड का किराया, जो आमतौर पर ₹300 होता है, परिवहनकर्मियों के विरोध-प्रदर्शन के चलते बढ़कर ₹800 तक पहुँच गया। एक ओर जहा...</p>
             <a href="news/market-news-76e5560c5850.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-90988341d76d.html">कयामत के दिन का डर, बिजली गुल होने की अफवाहें और तकनीकी खराबी: अमेरिकी लोग क्यों आपातकालीन चीज़ों का स्टॉक जमा करने में जुटे हुए हैं</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 12:05</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">कयामत के आने के डर, 90 दिनों तक बिजली न आने की वायरल अफवाहों और तकनीकी खराबी की वजह से अमेरिकी लोग खाने-पीने की चीज़ें, बोतलबंद पानी, जनरेटर और आपातका...</p>
+            <p class="news-desc">कयामत के आने के डर, 90 दिनों तक बिजली न आने की वायरल अफवाहों और तकनीकी खराबी की वजह से अमेरिकी लोग खाने-पीने की चीज़ें, बोतलबंद पानी, जनरेटर और आपातका...</p>
             <a href="news/market-news-90988341d76d.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
-                    <h2><a href="news/market-news-d0d7ed8d9961.html">कोलकाता से वाइस सिटी तक: रूपा बिस्वास का 1982 का बंगाली गाना &#39;आज शनिवार&#39; GTA VI के इन-गेम रेडियो पर नए दर्शकों तक पहुँच रहा है</a></h2>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
+                    <h2><a href="news/market-news-d0d7ed8d9961.html">कोलकाता से वाइस सिटी तक: रूपा बिस्वास का 1982 का बंगाली गाना 'आज शनिवार' GTA VI के इन-गेम रेडियो पर नए दर्शकों तक पहुँच रहा है</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 12:05</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">रूपा बिस्वास का गाना &#39;आज शनिवार&#39; गेम के इन-कार रेडियो स्टेशनों में से एक पर सुनाई देता है। इस गाने के शामिल होने से दशकों पुराना यह भारतीय गाना एक नए ...</p>
+            <p class="news-desc">रूपा बिस्वास का गाना 'आज शनिवार' गेम के इन-कार रेडियो स्टेशनों में से एक पर सुनाई देता है। इस गाने के शामिल होने से दशकों पुराना यह भारतीय गाना एक नए ...</p>
             <a href="news/market-news-d0d7ed8d9961.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-7ffadf2a6304.html">सीजीएसटी ने हरियाणा के पान मसाला यूनिट में ₹116 करोड़ के उपकर की चोरी का पता लगाया, मालिक को किया गिरफ्तार</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 12:05</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">1 फ़रवरी 2026 को उपकर लागू किए जाने के बाद से अधिकारी पान मसाला और तंबाकू निर्माण क्षेत्र में कथित टैक्स चोरी पर सख्ती बरत रहे हैं।...</p>
+            <p class="news-desc">1 फ़रवरी 2026 को उपकर लागू किए जाने के बाद से अधिकारी पान मसाला और तंबाकू निर्माण क्षेत्र में कथित टैक्स चोरी पर सख्ती बरत रहे हैं।...</p>
             <a href="news/market-news-7ffadf2a6304.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-c995db9e83dd.html">निवेशकों के भारतीय शेयरों में सुरक्षित ठिकाना तलाशने और शॉर्ट पोजीशन बंद होने के चलते रुपया 93/USD से ऊपर चला गया</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 12:05</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">भारतीय रुपया अप्रैल के बाद पहली बार 93 रुपए प्रति डॉलर के स्तर को पार कर गया है। यह सुधार नवंबर में भारतीय इक्विटी में हुए $12 बिलियन से भी ज़्यादा के...</p>
+            <p class="news-desc">भारतीय रुपया अप्रैल के बाद पहली बार 93 रुपए प्रति डॉलर के स्तर को पार कर गया है। यह सुधार नवंबर में भारतीय इक्विटी में हुए $12 बिलियन से भी ज़्यादा के...</p>
             <a href="news/market-news-c995db9e83dd.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-06bdb548aaaa.html">अमेरिकी प्री-मार्केट ट्रेडिंग में एंथ्रोपिक के शेयरों में 7% की गिरावट के साथ इसकी शुरुआती रैली की चमक फीकी पड़ गई</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 12:06</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">वैश्विक स्तर पर शेयर बेचने की लहर और AI ट्रेड को लेकर चिंताओं के चलते, एंथ्रोपिक के रिकॉर्ड-ब्रेकिंग IPO डेब्यू के आस-पास मौजूद उत्साह पर पानी फिर गया...</p>
+            <p class="news-desc">वैश्विक स्तर पर शेयर बेचने की लहर और AI ट्रेड को लेकर चिंताओं के चलते, एंथ्रोपिक के रिकॉर्ड-ब्रेकिंग IPO डेब्यू के आस-पास मौजूद उत्साह पर पानी फिर गया...</p>
             <a href="news/market-news-06bdb548aaaa.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
-                    <h2><a href="news/market-news-dd3e752c7181.html">रुपये में तेज़ मज़बूती से वित्त वर्ष&#39;27 में IT कंपनियों की कमाई 13% तक कम हो सकती है: रिपोर्ट</a></h2>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
+                    <h2><a href="news/market-news-dd3e752c7181.html">रुपये में तेज़ मज़बूती से वित्त वर्ष'27 में IT कंपनियों की कमाई 13% तक कम हो सकती है: रिपोर्ट</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 12:06</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">एक नई रिपोर्ट के मुताबिक, भारतीय रुपये की मज़बूती की वजह से भारतीय IT कंपनियों की कमाई में कमी आ सकती है। विदेशी मुद्राओं के मुकाबले रुपए के मज़बूत हो...</p>
+            <p class="news-desc">एक नई रिपोर्ट के मुताबिक, भारतीय रुपये की मज़बूती की वजह से भारतीय IT कंपनियों की कमाई में कमी आ सकती है। विदेशी मुद्राओं के मुकाबले रुपए के मज़बूत हो...</p>
             <a href="news/market-news-dd3e752c7181.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-472cde646892.html">सेबी की योजना अन्य बाजारों में मौजूद न होने वाली FPI से जुड़ी बाधाओं को दूर करने के लिए परामर्श पत्र जारी करने की है</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 12:06</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">SEBI विदेशी पोर्टफ़ोलियो निवेशकों के लिए नियमों को सरल बनाने के उद्देश्य से एक परामर्श पत्र जारी करने वाला है। इसका उद्देश्य वैश्विक निवेशकों के लिए भ...</p>
+            <p class="news-desc">SEBI विदेशी पोर्टफ़ोलियो निवेशकों के लिए नियमों को सरल बनाने के उद्देश्य से एक परामर्श पत्र जारी करने वाला है। इसका उद्देश्य वैश्विक निवेशकों के लिए भ...</p>
             <a href="news/market-news-472cde646892.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-8f85307c6894.html">Apple ने iPhone कैमरे के जनक को खो दिया</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 07:38</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">जॉन मैकॉर्माक ने कैमरा और फ़ोटो सॉफ़्टवेयर के प्रमुख के रूप में आठ साल से भी ज़्यादा समय बिताने के बाद Apple से रिटायरमेंट ले ली है। उनके जाने से बड़े...</p>
+            <p class="news-desc">जॉन मैकॉर्माक ने कैमरा और फ़ोटो सॉफ़्टवेयर के प्रमुख के रूप में आठ साल से भी ज़्यादा समय बिताने के बाद Apple से रिटायरमेंट ले ली है। उनके जाने से बड़े...</p>
             <a href="news/market-news-8f85307c6894.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-3344468030c5.html">भारत की सोलर सेल क्षमता में तेज़ वृद्धि से मार्जिन कम हो सकता है, इससे इंटीग्रेटेड मैन्यूफ़ैक्चरर्स को फ़ायदा होगा: रिपोर्ट</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 07:38</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">भारत के सोलर मैन्युफैक्चरिंग सेक्टर में घरेलू सेल उत्पादन क्षमता में तेज़ी आने के साथ बदलाव आने की उम्मीद है। क्षमता में इस वृद्धि से आपूर्ति की कमी क...</p>
+            <p class="news-desc">भारत के सोलर मैन्युफैक्चरिंग सेक्टर में घरेलू सेल उत्पादन क्षमता में तेज़ी आने के साथ बदलाव आने की उम्मीद है। क्षमता में इस वृद्धि से आपूर्ति की कमी क...</p>
             <a href="news/market-news-3344468030c5.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-8f21bac677bc.html">देखे जाने से लेकर चुने जाने तक: रणनीतिक पार्टनरशिप की ताकत</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 07:38</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">एक मज़बूत ब्रांड बनाने के लिए सिर्फ़ विज़िबिलिटी से ज़्यादा की ज़रूरत होती है। इसके लिए सही ऑडियंस, सार्थक बातचीत और भरोसेमंद प्लैटफ़ॉर्म की ज़रूरत हो...</p>
+            <p class="news-desc">एक मज़बूत ब्रांड बनाने के लिए सिर्फ़ विज़िबिलिटी से ज़्यादा की ज़रूरत होती है। इसके लिए सही ऑडियंस, सार्थक बातचीत और भरोसेमंद प्लैटफ़ॉर्म की ज़रूरत हो...</p>
             <a href="news/market-news-8f21bac677bc.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-1731f20d1322.html">Nike बनेगा फ़ॉर्मूला वन का आधिकारिक परिधान और वर्दी पार्टनर</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 07:38</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">फ़ॉर्मूला वन ने Nike के साथ पार्टनरशिप की है, जिसके तहत Nike साल 2027 से इसका आधिकारिक परिधान और यूनिफ़ॉर्म सप्लायर बन जाएगा। इस सहयोग में इवेंट स्टाफ...</p>
+            <p class="news-desc">फ़ॉर्मूला वन ने Nike के साथ पार्टनरशिप की है, जिसके तहत Nike साल 2027 से इसका आधिकारिक परिधान और यूनिफ़ॉर्म सप्लायर बन जाएगा। इस सहयोग में इवेंट स्टाफ...</p>
             <a href="news/market-news-1731f20d1322.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-ee8516a500cc.html">रोटियों को लपेटने से लेकर ₹10– ₹500 के नोटों को स्टोर करने तक: एल्युमिनियम फ़ॉइल की मदद से आप घर पर आपातकालीन कैश कैसे सुरक्षित रख सकते हैं</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 07:39</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">घर पर ₹5,000 या इससे ज़्यादा राशि रखना आपात स्थितियों में मददगार हो सकता है, लेकिन कैश को सही तरीके से रखना ज़रूरी है। जानें कि करेंसी नोटों को एल्युम...</p>
+            <p class="news-desc">घर पर ₹5,000 या इससे ज़्यादा राशि रखना आपात स्थितियों में मददगार हो सकता है, लेकिन कैश को सही तरीके से रखना ज़रूरी है। जानें कि करेंसी नोटों को एल्युम...</p>
             <a href="news/market-news-ee8516a500cc.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-12309ab4aa62.html">सोने, चाँदी के ईटीएफ़ में 7.5% तक की गिरावट : फेड की ओर से ब्याज दरों में बढ़ोतरी की आशंकाओं के बीच बुलियन की बिक्री क्यों बढ़ रही है?</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 07:39</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">वैश्विक बुलियन की कीमतों में गिरावट जारी रहने के चलते 20 नवंबर को गोल्ड और सिल्वर ईटीएफ़ में 7.5% तक की गिरावट देखी गई। अमेरिकी ब्याज दरों में बढ़ोतरी...</p>
+            <p class="news-desc">वैश्विक बुलियन की कीमतों में गिरावट जारी रहने के चलते 20 नवंबर को गोल्ड और सिल्वर ईटीएफ़ में 7.5% तक की गिरावट देखी गई। अमेरिकी ब्याज दरों में बढ़ोतरी...</p>
             <a href="news/market-news-12309ab4aa62.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-07d18b85a590.html">सोने की कीमतें लगभग ₹1.2 लाख, जो अपने उच्चतम स्तर से 32% कम हैं: साल 1980 से अब तक 4 में से 3 साल पॉज़िटिव रिटर्न के साथ खत्म हुए हैं। क्या साल 2026 में भी ऐसा ही होगा?</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 07:39</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">सोने की कीमतें जनवरी में अपने चरम स्तर से लगभग 32% गिर गई हैं। ऐतिहासिक डेटा से पता चलता है कि अस्थायी रूप से 10-15% के करेक्शन के बावजूद, सोने ने 198...</p>
+            <p class="news-desc">सोने की कीमतें जनवरी में अपने चरम स्तर से लगभग 32% गिर गई हैं। ऐतिहासिक डेटा से पता चलता है कि अस्थायी रूप से 10-15% के करेक्शन के बावजूद, सोने ने 198...</p>
             <a href="news/market-news-07d18b85a590.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-f028da608684.html">केरल लाभों को बहाल करने पर विचार कर रहा है: छुट्टी सरेंडर करने से लेकर वेतन संशोधन और मेडिसेप तक—देखें कि क्या-क्या बहाल किया जा सकता है</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 07:39</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">सीएम वी.डी. सतीशन के अनुसार, केरल राज्य सरकार कर्मचारियों के लाभों को चरणबद्ध तरीके से बहाल करने पर विचार कर रही है, जिनमें छुट्टी सरेंडर करना, वेतन म...</p>
+            <p class="news-desc">सीएम वी.डी. सतीशन के अनुसार, केरल राज्य सरकार कर्मचारियों के लाभों को चरणबद्ध तरीके से बहाल करने पर विचार कर रही है, जिनमें छुट्टी सरेंडर करना, वेतन म...</p>
             <a href="news/market-news-f028da608684.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
-                    <h2><a href="news/market-news-18dd0e153fa2.html">सेंसेक्स आज | शेयर बाज़ार लाइव: आज ये शेयर खरीदें: यूनाइटेड ब्रूअरीज़ (₹1,270.45)</a></h2>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
+                    <h2><a href="news/market-news-18dd0e153fa2.html">सेंसेक्स आज | शेयर बाज़ार लाइव: आज ये शेयर खरीदें: यूनाइटेड ब्रूअरीज़ (₹1,270.45)</a></h2>
                     <div class="news-meta">📰 Hindu Business Line | 🕐 20-11-2026 02:29</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">सेंसेक्स, निफ़्टी, शेयर की कीमतें लाइव: शेयर ने ₹1,130 पर सपोर्ट मिलने के बाद रिकवरी शुरू की...</p>
+            <p class="news-desc">सेंसेक्स, निफ़्टी, शेयर की कीमतें लाइव: शेयर ने ₹1,130 पर सपोर्ट मिलने के बाद रिकवरी शुरू की...</p>
             <a href="news/market-news-18dd0e153fa2.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-c2f51e755f7b.html">$2 ट्रिलियन के मूल्यांकन तक पहुँचने का एंथ्रोपिक का सफ़र: 2021 से 2026 तक की प्रमुख उपलब्धियाँ</a></h2>
                     <div class="news-meta">📰 Hindu Business Line | 🕐 20-11-2026 02:29</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">Claude के डेवलपर का सार्वजनिक बाज़ारों में उभार कई फंडिंग राउंड, प्रमुख AI लॉन्च और हाई-प्रोफ़ाइल कानूनी व नियामक लड़ाइयों के बाद हुआ।...</p>
+            <p class="news-desc">Claude के डेवलपर का सार्वजनिक बाजारों में उभार कई फंडिंग राउंड, प्रमुख AI लॉन्च और हाई-प्रोफ़ाइल कानूनी व नियामक लड़ाइयों के बाद हुआ।...</p>
             <a href="news/market-news-c2f51e755f7b.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-6abed4738c18.html">एन्थ्रोपिक के IPO से हज़ारों कर्मचारी करोड़पति बन सकते हैं, जिनमें जूनियर स्टाफ़ भी शामिल हैं</a></h2>
                     <div class="news-meta">📰 Hindu Business Line | 🕐 20-11-2026 02:29</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">यह संभावित अप्रत्याशित लाभ इस बात को उजागर करता है कि स्टॉक-आधारित मुआवज़े ने क्लाउड निर्माता को अपनी तेज़ी से बढ़ती कंपनी में प्रतिभाओं को आकर्षित कर...</p>
+            <p class="news-desc">यह संभावित अप्रत्याशित लाभ इस बात को उजागर करता है कि स्टॉक-आधारित मुआवज़े ने क्लाउड निर्माता को अपनी तेज़ी से बढ़ती कंपनी में प्रतिभाओं को आकर्षित कर...</p>
             <a href="news/market-news-6abed4738c18.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-6abc7c342717.html">एन्थ्रोपिक के IPO से AI ट्रेड को लेकर उम्मीदें फिर से जगाने में नाकाम रहने के चलते अमेरिकी स्टॉक में 2% की गिरावट आई</a></h2>
                     <div class="news-meta">📰 Hindu Business Line | 🕐 20-11-2026 02:29</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">AI इंफ़्रास्ट्रक्चर पर होने वाले खर्चों, सेमीकंडक्टर के वैल्यूएशन और अमेरिकी ब्याज दरों से जुड़ी संभावनाओं को लेकर चिंताओं के बीच वॉल स्ट्रीट में बिकव...</p>
+            <p class="news-desc">AI इंफ़्रास्ट्रक्चर पर होने वाले खर्चों, सेमीकंडक्टर के वैल्यूएशन और अमेरिकी ब्याज दरों से जुड़ी संभावनाओं को लेकर चिंताओं के बीच वॉल स्ट्रीट में बिकव...</p>
             <a href="news/market-news-6abc7c342717.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-96b82ff9e3fe.html">ऐंथ्रोपिक के शेयरों में ब्लॉकबस्टर डेब्यू के साथ 21% की भारी उछाल: क्या AI दिग्गज अपना $1.8 ट्रिलियन का मूल्यांकन सही ठहरा सकता है?</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 02:30</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">नैस्डैक में अपनी लिस्टिंग के दौरान एंथ्रोपिक के शेयरों में तेज़ी आई और कंपनी का मूल्यांकन लगभग $1.8 ट्रिलियन तक पहुँच गया, जिससे यह अब तक का सबसे बड़ा...</p>
+            <p class="news-desc">नैस्डैक में अपनी लिस्टिंग के दौरान एंथ्रोपिक के शेयरों में तेज़ी आई और कंपनी का मूल्यांकन लगभग $1.8 ट्रिलियन तक पहुँच गया, जिससे यह अब तक का सबसे बड़ा...</p>
             <a href="news/market-news-96b82ff9e3fe.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
-                    <h2><a href="news/market-news-0af824ed898b.html">स्टॉक मार्केट आउटलुक टुडे, 20 नवंबर: सेंसेक्स, निफ़्टी की प्रिडिक्शन-DJIA, S&amp;amp;P, नैस्डैक, GIFT निफ़्टी, कोस्पी, निक्केई, ताइवान के संकेत</a></h2>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
+                    <h2><a href="news/market-news-0af824ed898b.html">स्टॉक मार्केट आउटलुक टुडे, 20 नवंबर: सेंसेक्स, निफ़्टी की प्रिडिक्शन-DJIA, S&amp;P, नैस्डैक, GIFT निफ़्टी, कोस्पी, निक्केई, ताइवान के संकेत</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 02:30</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">शुक्रवार को भारतीय बाज़ार गिरावट के साथ खुल सकते हैं, क्योंकि वैश्विक स्तर पर टेक्नोलॉजी शेयरों की बिकवाली के चलते एशियाई शेयर गिर गए। यह निराशाजनक रु...</p>
+            <p class="news-desc">शुक्रवार को भारतीय बाज़ार गिरावट के साथ खुल सकते हैं, क्योंकि वैश्विक स्तर पर टेक्नोलॉजी शेयरों की बिकवाली के चलते एशियाई शेयर गिर गए। यह निराशाजनक रु...</p>
             <a href="news/market-news-0af824ed898b.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-eb105824be65.html">राजा वेंकटरामन 20 नवंबर के लिए तीन स्टॉक सुझाते हैं</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 02:30</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">मार्केट एक्सपर्ट राजा वेंकटरामन 20 नवंबर के लिए अपने टॉप स्टॉक पिक शेयर कर रहे हैं। यहाँ उनका तकनीकी दृष्टिकोण और ट्रेडिंग की रणनीति दी गई है।...</p>
+            <p class="news-desc">मार्केट एक्सपर्ट राजा वेंकटरामन 20 नवंबर के लिए अपने टॉप स्टॉक पिक शेयर कर रहे हैं। यहाँ उनका तकनीकी दृष्टिकोण और ट्रेडिंग की रणनीति दी गई है।...</p>
             <a href="news/market-news-eb105824be65.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
-                    <h2><a href="news/market-news-5a01cdf6ef8c.html">M&amp;amp;M, बैंक ऑफ़ बड़ौदा के शेयर: खरीदने के लिए टॉप 2 स्टॉक; चंदन तापरिया की ओर से अनुमानित रिटर्न, रेटिंग और टारगेट प्राइस जानें</a></h2>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
+                    <h2><a href="news/market-news-5a01cdf6ef8c.html">M&amp;M, बैंक ऑफ़ बड़ौदा के शेयर: खरीदने के लिए टॉप 2 स्टॉक; चंदन तापरिया की ओर से अनुमानित रिटर्न, रेटिंग और टारगेट प्राइस जानें</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 02:30</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">विदेशी निवेश और कम होते कमोडिटी की कीमतों की वजह से व्यापक स्तर पर बाज़ार में तेजी देखी गई, जिससे सेंसेक्स और निफ़्टी नौ महीने के उच्चतम स्तर पर बंद ह...</p>
+            <p class="news-desc">विदेशी निवेश और कम होते कमोडिटी की कीमतों की वजह से व्यापक स्तर पर बाज़ार में तेजी देखी गई, जिससे सेंसेक्स और निफ़्टी नौ महीने के उच्चतम स्तर पर बंद ह...</p>
             <a href="news/market-news-5a01cdf6ef8c.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-f2286c2d0467.html">सरकार ने हाइवे पर सुरक्षा जाँच को और मज़बूत बनाने के लिए स्वतंत्र ऑडिटर्स की एक पैनल बनाई है</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 00:44</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">इस पहल के तहत, सड़क परिवहन और राजमार्ग मंत्रालय (MoRTH) योग्य सड़क सुरक्षा ऑडिटरों का एक पैनल तैयार करेगा, जिससे राजमार्ग डेवलपर्स और रियायतकर्ताओं को...</p>
+            <p class="news-desc">इस पहल के तहत, सड़क परिवहन और राजमार्ग मंत्रालय (MoRTH) योग्य सड़क सुरक्षा ऑडिटरों का एक पैनल तैयार करेगा, जिससे राजमार्ग डेवलपर्स और रियायतकर्ताओं को...</p>
             <a href="news/market-news-f2286c2d0467.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-f763dab5e5be.html">रिपोर्ट: अमेरिका और चीन AI के विस्तार में सबसे आगे, 2030 तक डेटा सेंटर से होने वाले कार्बन उत्सर्जन में 70% की बढ़ोतरी का अनुमान</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 00:44</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">अंतर्राष्ट्रीय ऊर्जा एजेंसी (IEA) के अनुसार, अगले चार वर्षों में AI डेटासेंटरों द्वारा की जाने वाली बिजली की खपत दोगुनी होने की संभावना है। इन डेटासें...</p>
+            <p class="news-desc">अंतर्राष्ट्रीय ऊर्जा एजेंसी (IEA) के अनुसार, अगले चार वर्षों में AI डेटासेंटरों द्वारा की जाने वाली बिजली की खपत दोगुनी होने की संभावना है। इन डेटासें...</p>
             <a href="news/market-news-f763dab5e5be.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-e3dc9f3db750.html">मुकदमे के अनुसार, न्यूयॉर्क सिटी में घोड़े की गाड़ी पर लगा प्रतिबंध असंवैधानिक है</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 00:44</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">घोड़ों से खींची जाने वाली गाड़ियों पर प्रतिबंध लगाने वाला न्यूयॉर्क सिटी का बिल्कुल नया कानून असंवैधानिक है। यह दावा इस कानून को रोकने की माँग करते हु...</p>
+            <p class="news-desc">घोड़ों से खींची जाने वाली गाड़ियों पर प्रतिबंध लगाने वाला न्यूयॉर्क सिटी का बिल्कुल नया कानून असंवैधानिक है। यह दावा इस कानून को रोकने की माँग करते हु...</p>
             <a href="news/market-news-e3dc9f3db750.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-6507170d97ea.html">GTA 6 के डेवलपर्स को Rockstar के ‘सबसे बड़े’ गेम पर काम करने के बावजूद छंटनी का डर सता रहा है: ‘हमें कोई संकेत नहीं मिला है’</a></h2>
                     <div class="news-meta">📰 Livemint | 🕐 20-11-2026 00:44</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">नौकरी की सुरक्षा को लेकर बढ़ती चिंताओं ने Rockstar North के कर्मचारियों को भी सामूहिक कार्रवाई पर विचार करने के लिए प्रेरित किया है।...</p>
+            <p class="news-desc">नौकरी की सुरक्षा को लेकर बढ़ती चिंताओं ने Rockstar North के कर्मचारियों को भी सामूहिक कार्रवाई पर विचार करने के लिए प्रेरित किया है।...</p>
             <a href="news/market-news-6507170d97ea.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-49c86ae363fe.html">रिपोर्ट में कहा गया है कि चीन के साथ संबंध होने की वजह से AMD पर अमेरिका की कड़ी नज़र पड़ सकती है, जिसके चलते कंपनी के शेयरों में 8% की गिरावट आई है</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 00:44</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">AMD के शेयरों में 8% की गिरावट आई, क्योंकि एक रिपोर्ट में कंपनी को कुछ चीनी फ़र्मों से जोड़कर देखा गया, जिनमें से कुछ फ़र्में अमेरिकी सरकार की काली सू...</p>
+            <p class="news-desc">AMD के शेयरों में 8% की गिरावट आई, क्योंकि एक रिपोर्ट में कंपनी को कुछ चीनी फ़र्मों से जोड़कर देखा गया, जिनमें से कुछ फ़र्में अमेरिकी सरकार की काली सू...</p>
             <a href="news/market-news-49c86ae363fe.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
         
         <article class="news-card">
-            <div style="display: flex; gap: 15px; align-items: flex-start;">
-                <img src="market.jpg" alt="News Image" style="width: 100px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
-                <div>
+            <div class="news-flex">
+                <img src="market.jpg" alt="News Image">
+                <div class="news-content">
                     <h2><a href="news/market-news-5fef5857116b.html">Amundi के CIO का कहना है कि वे फ़्रांस के बॉन्ड को लेकर मंदी की उम्मीद नहीं कर रहे हैं, AI अभी रीप्राइसिंग के शुरुआती चरण में है</a></h2>
                     <div class="news-meta">📰 Economic Times | 🕐 20-11-2026 00:44</div>
                 </div>
             </div>
-            <p style="margin-top: 10px;">बढ़ती यील्ड और वित्तीय प्रबंधन को लेकर चिंताओं के बीच, Amundi ने फ़्रेंच सरकारी बॉन्ड के मामले में सतर्कता बरतने का फ़ैसला किया है। चीफ़ इन्वेस्टमेंट ...</p>
+            <p class="news-desc">बढ़ती यील्ड और वित्तीय प्रबंधन को लेकर चिंताओं के बीच, Amundi ने फ़्रेंच सरकारी बॉन्ड के मामले में सतर्कता बरतने का फ़ैसला किया है। चीफ़ इन्वेस्टमेंट ...</p>
             <a href="news/market-news-5fef5857116b.html" class="read-more">पूरी खबर पढ़ें →</a>
         </article>
-        
 
+        <!-- ફૂટર -->
         <footer>
             <p style="margin-bottom: 10px;">
                 <a href="about.html">About Us</a> | 
@@ -459,15 +524,25 @@
             <p>📡 <a href="rss.xml">RSS Feed</a> | 🗺️ <a href="sitemap.xml">Sitemap</a></p>
         </footer>
     </div>
+
+    <!-- થીમ બદલવાની સ્ક્રિપ્ટ -->
     <script>
         function toggleTheme() {
-            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-mode');
             const btn = document.getElementById('theme-btn');
-            if(document.body.classList.contains('light-mode')) {
-                btn.innerHTML = '☀️'; 
+            if(document.body.classList.contains('dark-mode')) {
+                btn.innerHTML = '☀️'; // લાઇટ મોડ આઇકોન
+                localStorage.setItem('theme', 'dark');
             } else {
-                btn.innerHTML = '🌙'; 
+                btn.innerHTML = '🌙'; // ડાર્ક મોડ આઇકોન
+                localStorage.setItem('theme', 'light');
             }
+        }
+
+        // પેજ લોડ થાય ત્યારે થીમ ચેક કરવા માટે
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.getElementById('theme-btn').innerHTML = '☀️';
         }
     </script>
 </body>
