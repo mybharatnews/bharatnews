@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारत न्यूज़ - टेस्ट डिज़ाइन</title>
+    <style>
+        /* બેઝિક સેટિંગ */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f8; color: #333; }
+        a { text-decoration: none; color: inherit; }
+
+        /* ઉપરનું લોગો અને હેડર (Moneycontrol જેવું) */
+        .header-top { background-color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #007bff; }
+        .logo { font-size: 24px; font-weight: bold; color: #007bff; }
+        .logo span { color: #28a745; } /* લીલો રંગ */
+        
+        /* નેવિગેશન મેનૂ */
+        .navbar { background-color: #28a745; padding: 10px 20px; display: flex; gap: 20px; overflow-x: auto; }
+        .navbar a { color: white; font-weight: 600; font-size: 15px; padding: 5px 0; white-space: nowrap; }
+        .navbar a:hover { text-decoration: underline; }
+
+        /* મુખ્ય કન્ટેનર */
+        .container { max-width: 800px; margin: 20px auto; padding: 0 15px; }
+        
+        /* સેક્શન ટાઇટલ */
+        .section-title { font-size: 20px; color: #222; margin-bottom: 15px; border-left: 4px solid #28a745; padding-left: 10px; }
+
+        /* ન્યૂઝ કાર્ડ ડિઝાઇન */
+        .news-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.2s; }
+        .news-card:hover { box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .news-title { font-size: 16px; font-weight: bold; color: #222; margin-bottom: 8px; line-height: 1.4; }
+        .news-desc { font-size: 14px; color: #555; margin-bottom: 12px; line-height: 1.5; }
+        .read-more { display: inline-block; color: #007bff; font-weight: bold; font-size: 14px; }
+        
+        /* ફૂટર */
+        .footer { text-align: center; padding: 20px; background: #fff; margin-top: 30px; border-top: 1px solid #ddd; font-size: 14px; color: #777; }
+    </style>
+</head>
+<body>
+
+    <!-- હેડર ભાગ -->
+    <header>
+        <div class="header-top">
+            <div class="logo">भारत <span>न्यूज़</span></div>
+            <div>🔍 (Search)</div>
+        </div>
+        <nav class="navbar">
+            <a href="#">होम (Home)</a>
+            <a href="#">बिज़नेस (Business)</a>
+            <a href="#">शेयर बाज़ार (Markets)</a>
+            <a href="#">टेक्नोलॉजी (Tech)</a>
+            <a href="#">क्रिकेट (Cricket)</a>
+        </nav>
+    </header>
+
+    <!-- મુખ્ય સમાચાર ભાગ -->
+    <main class="container">
+        <h2 class="section-title">ताज़ा खबरें (Latest News)</h2>
+
+        <!-- સેમ્પલ કાર્ડ 1 -->
+        <div class="news-card">
+            <h3 class="news-title">दक्षिण दिल्ली से नोएडा तक की कैब राइड का किराया बढ़ा</h3>
+            <p class="news-desc">परिवहनकर्मियों के विरोध-प्रदर्शन के चलते किराया जो आमतौर पर ₹300 होता है, वह बढ़कर ₹800 तक पहुँच गया है...</p>
+            <a href="#" class="read-more">पूरी खबर पढ़ें →</a>
+        </div>
+
+        <!-- સેમ્પલ કાર્ડ 2 -->
+        <div class="news-card">
+            <h3 class="news-title">भारतीय रुपया अप्रैल के बाद पहली बार 93 रुपए प्रति डॉलर के स्तर को पार</h3>
+            <p class="news-desc">यह सुधार नवंबर में भारतीय इक्विटी में हुए $12 बिलियन से भी ज़्यादा के निवेश के कारण देखा जा रहा है...</p>
+            <a href="#" class="read-more">पूरी खबर पढ़ें →</a>
+        </div>
+
+        <!-- સેમ્પલ કાર્ડ 3 -->
+        <div class="news-card">
+            <h3 class="news-title">वैश्विक बुलियन की कीमतों में गिरावट, गोल्ड और सिल्वर ETF में 7.5% तक की गिरावट</h3>
+            <p class="news-desc">अमेरिकी ब्याज दरों में बढ़ोतरी की आशंका के चलते 20 नवंबर को सोने-ચાંદીમાં મોટો ઘટાડો જોવા મળ્યો...</p>
+            <a href="#" class="read-more">पूरी खबर पढ़ें →</a>
+        </div>
+
+    </main>
+
+    <!-- ફૂટર ભાગ -->
+    <footer class="footer">
+        <p>© 2026 भारत न्यूज़ | सर्वाधिकार सुरक्षित</p>
+    </footer>
+
+</body>
+</html>
