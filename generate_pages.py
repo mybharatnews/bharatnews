@@ -412,7 +412,7 @@ def generate_index_page(news_list, generated_files):
             <div class="header-top">
                 <div class="logo-area">
                     <img src="icon.png" alt="{SITE_NAME}">
-                    <div class="logo-text">भारत <span>न्यूज़</span></div>
+                    <h1 class="logo-text">भारत <span>न्यूज़</span></h1>
                 </div>
                 <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">🌙</button>
             </div>
