@@ -210,7 +210,6 @@ def generate_article_page(news_item, index, all_news):
     <link rel="canonical" href="{page_url}">
     <meta property="og:title" content="{t_esc}">
     <meta property="og:description" content="{s_esc}">
-    <meta property="og:type" content="website">
     <meta property="og:url" content="{page_url}">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{SITE_URL}/market.jpg">
