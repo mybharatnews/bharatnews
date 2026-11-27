@@ -1,5 +1,61 @@
 [
     {
+        "title": "Cloud One पर साइबर हमला: बताया जा रहा है कि अमेरिकी वायु सेना के प्लैटफ़ॉर्म, जिसे टेक दिग्गज Microsoft, Amazon, Oracle और Alphabet का समर्थन प्राप्त है, को हैक कर लिया गया है",
+        "summary": "रॉयटर्स के मुताबिक, अमेरिकी वायु सेना के क्लाउड वन प्लैटफ़ॉर्म पर हुए साइबर हमले की वजह से कामकाज बाधित हो गया। जाँच-पड़ताल करने वाले लोग क्लाउड इंफ़्रास्ट्रक्चर की निगरानी करने वाले इसके कंट्रोल प्लेन में हुई संभावित सेंध की जाँच कर रहे हैं। हमलावरों की पहचान, उनके ऐक्सेस की सीमा और यह कि क्या डेटा चोरी हुआ है, ये बातें अभी भी अज्ञात हैं।",
+        "link": "https://www.livemint.com/technology/cloud-one-cyberattack-us-air-force-platform-backed-by-tech-giants-microsoft-amazon-oracle-alphabet-reportedly-hacked-11795798278354.html",
+        "source": "Livemint",
+        "date": "27-11-2026 21:34"
+    },
+    {
+        "title": "भारत में लॉन्च हुआ Instagram for TV: Apple TV, Fire TV, Google TV पर रील्स देखने का तरीका जानें",
+        "summary": "Meta ने भारत में Instagram for TV लॉन्च करने की घोषणा की है, जिससे यूज़र बड़ी स्क्रीन पर रील्स, स्टोरीज और क्रिएटर कॉन्टेंट देख सकेंगे। यह ऐप Apple TV, Amazon Fire TV और Google TV को सपोर्ट करेगा और इसमें पर्सनलाइज़्ड वीडियो चैनल और स्मार्टफ़ोन कास्टिंग जैसी सुविधाएँ शामिल होंगी।",
+        "link": "https://www.livemint.com/technology/tech-news/instagram-for-tv-launches-in-india-heres-how-to-watch-reels-on-apple-tv-fire-tv-google-tv-11795797072312.html",
+        "source": "Livemint",
+        "date": "27-11-2026 21:34"
+    },
+    {
+        "title": "GTA 6 की वजह से फ़्रेंचाइज़ी के मोबाइल गेम के डाउनलोड में लगभग 290% की बढ़ोतरी हुई और पहले ही हफ़्ते में यह संख्या 23 लाख तक पहुँच गई",
+        "summary": "GTA 6 के क्रेज़ के बीच, कई लोगों ने GTA फ़्रेंचाइज़ी के दूसरे वीडियो गेम की ओर रुख किया, जिससे ऐप के कुल डाउनलोड और खिलाड़ियों की ऐक्टिविटी में बढ़ोतरी हुई। ऐसा लगता है कि इसका असर अन्य गेमिंग ऐप्लिकेशंस पर भी पड़ा है, जिनमें PlayStation भी शामिल है, जिसे 16 से 22 नवंबर के बीच 13 लाख बार डाउनलोड किया गया।",
+        "link": "https://www.livemint.com/technology/gta-6-drives-nearly-290-surge-in-franchise-s-mobile-game-downloads-hits-2-3-million-in-first-week-11795781907406.html",
+        "source": "Livemint",
+        "date": "27-11-2026 21:34"
+    },
+    {
+        "title": "AI से भूमिकाओं के मिश्रण में बदलाव आ रहा है, लेकिन इससे भर्ती पर रोक नहीं लगेगी: विशेषज्ञ",
+        "summary": "AI से भूमिकाओं के मिश्रण में बदलाव आ रहा है, लेकिन इससे भर्तियों पर रोक नहीं लगेगी: एक्सपर्ट्स",
+        "link": "https://www.livemint.com/technology/ai-reshaping-role-mix-not-triggering-hiring-freeze-experts-11795781439893.html",
+        "source": "Livemint",
+        "date": "27-11-2026 21:34"
+    },
+    {
+        "title": "जापान की जेरा ने डेटा सेंटर बनाने के लिए एंथ्रोपिक और मेटा के साथ बातचीत शुरू की",
+        "summary": "जापान की अग्रणी बिजली उत्पादन कंपनी JERA, टोक्यो क्षेत्र में अपने संयंत्रों के आस-पास अत्याधुनिक डेटा सेंटर स्थापित करने के लिए अमेरिका की प्रमुख टेक कंपनियों के साथ सक्रिय रूप से काम कर रही है। यह पहल जापान में AI इंफ़्रास्ट्रक्चर को बढ़ावा देने के लिए JERA के हालिया सहयोग के बाद की गई है, जिसमें Dell Technologies और RHAELM शामिल थे। एक ऐतिहासिक",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/japans-jera-enters-talks-with-anthropic-meta-to-build-data-centres/articleshow/136210887.cms",
+        "source": "Economic Times",
+        "date": "27-11-2026 21:35"
+    },
+    {
+        "title": "Nvidia के बॉस जेन्सेन हुआंग की वापसी से महिलाएँ निराश और चिंतित हैं",
+        "summary": "Nvidia में जेन्सेन हुआंग की चौंकाने वाली वापसी की खबर अभी-अभी आई ही थी कि राष्ट्रपति डोनाल्ड ट्रम्प ने Nvidia के को-फ़ाउंडर की एक AI-जनरेटेड इमेज पोस्ट की, जिसमें वे एक लाल ब्रा पकड़े हुए थे और सुरक्षाकर्मी उन्हें स्टेज से बाहर ले जा रहे थे, जबकि उनके चेहरे पर खून के धब्बे थे।  17 नवंबर को बोर्ड के अध्यक्ष हार्वे जॉन ने",
+        "link": "https://economictimes.indiatimes.com/tech/tech-bytes/women-express-frustration-concern-over-nvidia-boss-jensen-huangs-return/articleshow/136210795.cms",
+        "source": "Economic Times",
+        "date": "27-11-2026 21:35"
+    },
+    {
+        "title": "WhatsApp यूज़र्स को ऐप में ही ट्रैवल eSIM खरीदने की सुविधा देगा; जियो और वेरिजॉन इसके पार्टनर हैं",
+        "summary": "कंपनी ने कहा कि वह Jio, Smart Axiata, Smart Communications और Verizon जैसे eSIM प्रोवाइडर्स और टेलीकॉम पार्टनर्स के साथ मिलकर काम कर रही है और जल्द ही चुनिंदा देशों में इस सुविधा को शुरू करेगी। कंपनी ने न तो देशों के नाम बताए और न ही कीमतों का ब्यौरा दिया।",
+        "link": "https://economictimes.indiatimes.com/tech/tech-bytes/whatsapp-to-let-users-buy-travel-esims-in-app-jio-verizon-among-partners/articleshow/136210712.cms",
+        "source": "Economic Times",
+        "date": "27-11-2026 21:35"
+    },
+    {
+        "title": "X ने 13 से 17 साल के टीन उपयोगकर्ताओं के लिए पैरेंटल कंट्रोल की सुविधा शुरू की है",
+        "summary": "मैशेबल के मुताबिक, एलन मस्क के स्वामित्व वाले सोशल मीडिया प्लैटफ़ॉर्म X ने 13 से 17 साल की उम्र के किशोर यूज़र्स के लिए पैरेंटल कंट्रोल की सुविधा शुरू की है, जिससे माता-पिता और अभिभावक अपने बच्चों की ऐक्टिविटी पर नज़र रख सकते हैं और प्लैटफ़ॉर्म पर कुछ खास सुरक्षा सेटिंग्स मैनेज कर सकते हैं।",
+        "link": "https://economictimes.indiatimes.com/tech/technology/x-introduces-parental-controls-for-teen-users-aged-13-to-17/articleshow/136207989.cms",
+        "source": "Economic Times",
+        "date": "27-11-2026 21:35"
+    },
+    {
         "title": "सूत्रों का कहना है कि अरमानी के उत्तराधिकारी फ़ैशन हाउस की हिस्सेदारी की बिक्री के तहत उसका एक छोटा-सा हिस्सा खरीदने पर विचार कर रहे हैं",
         "summary": "अर्मानी-M",
         "link": "https://www.livemint.com/companies/armani-heirs-consider-buying-small-slice-of-fashion-house-in-stake-sale-sources-say-11795805621602.html",
@@ -152,61 +208,5 @@
         "link": "https://www.livemint.com/money/personal-finance/income-tax-deadline-30-november-who-needs-to-file-itr-by-this-date-check-eligibility-applicable-rules-and-key-details-11795766523525.html",
         "source": "Livemint",
         "date": "27-11-2026 08:56"
-    },
-    {
-        "title": "सोने की कीमत का पूर्वानुमान: एक्सपर्ट का कहना है कि दिसंबर में फेड की ओर से की जाने वाली ब्याज दरों में बढ़ोतरी की वजह से 2026 के अंत तक सोने की कीमत में होने वाली रिकवरी सीमित होकर ₹1.30 लाख प्रति 10 ग्राम तक रह सकती है",
-        "summary": "सोने की कीमतें हालिया निम्नतम स्तरों से उबर गई हैं, लेकिन दिसंबर में अमेरिकी फेडरल रिज़र्व द्वारा की जाने वाली ब्याज दरों में बढ़ोतरी की उम्मीद की जा रही है, जो आगे की बढ़त को सीमित कर सकती है। एक विशेषज्ञ का अनुमान है कि दिसंबर 2026 के अंत तक घरेलू सोने की कीमतें 10 ग्राम के लिए ₹1.30 लाख तक पहुँच जाएँगी। क्या निवेशकों को अभी खरीदना चाहिए या करेक्शन का इंतज़ार करना चाहिए?",
-        "link": "https://www.livemint.com/money/personal-finance/gold-price-forecast-fed-rate-hike-in-december-may-limit-recovery-to-1-30-lakh-per-10-grams-by-2026-end-says-expert-11795762496058.html",
-        "source": "Livemint",
-        "date": "27-11-2026 08:56"
-    },
-    {
-        "title": "बिज़नेस में अपनी हिस्सेदारी बेचने से लेकर तिरुपति में  ₹207 करोड़ का सोना दान करने तक: चेन्नई के उद्यमी वर्धमान जैन की कहानी",
-        "summary": "चेन्नई के उद्यमी वर्धमान जैन और उनकी पत्नी ने तिरुमला मंदिर को 207 करोड़ रुपये मूल्य का 121 किलोग्राम सोना दान किया। व्यवसाय में अपनी हिस्सेदारी बेचने के बाद किए गए इस दान में 46 सोने के आभूषण और देवी पद्मावती के लिए एक सोने की साड़ी शामिल है।",
-        "link": "https://www.livemint.com/money/personal-finance/from-selling-business-stake-to-donating-207-crore-in-gold-at-tirupati-the-story-of-chennai-entrepreneur-vardhaman-jain-11795761471453.html",
-        "source": "Livemint",
-        "date": "27-11-2026 08:56"
-    },
-    {
-        "title": "सोने की कीमतें ₹1.25 लाख के आस-पास बनी हुई हैं: 2027 का आउटलुक, प्रमुख कारक और निवेशकों को क्या करना चाहिए; विशेषज्ञों की राय",
-        "summary": "सोने की कीमतें हाल ही में बढ़कर लगभग ₹1.25 लाख प्रति 10 ग्राम के स्तर पर पहुँच गई हैं। मौद्रिक सख्ती से पैदा हुए अल्पकालिक दबाव के बावजूद, केंद्रीय बैंकों की ओर से सोने की खरीद और निवेश की मज़बूत माँग की वजह से सोने के भविष्य को लेकर सकारात्मक रुझान बना हुआ है। यहाँ बताया गया है कि भारतीय निवेशकों को 2027 में क्या उम्मीद करनी चाहिए।",
-        "link": "https://www.livemint.com/money/personal-finance/gold-prices-hover-around-1-25-lakh-2027-outlook-key-drivers-and-what-investors-should-do-experts-weigh-in-11795756071676.html",
-        "source": "Livemint",
-        "date": "27-11-2026 08:56"
-    },
-    {
-        "title": "प्रधानमंत्री ने कहा कि वियतनाम ने अमेरिका के साथ व्यापार वार्ता में बहुत मज़बूत प्रतिबद्धताएँ जताई हैं",
-        "summary": "वियतनाम एक व्यापार समझौते को अंतिम रूप देने के लिए संयुक्त राज्य अमेरिका के साथ बातचीत के उन्नत चरण में है। प्रधानमंत्री ले मिन्ह हंग ने घोषणा की कि टैरिफ पहले के प्रस्तावों की तुलना में काफ़ी कम होंगे। समझौते की अंतिम बारीकियों पर काम चल रहा है और इसे जल्द ही अंतिम रूप दिया जाना चाहिए। ये प्रतिबद्धताएँ दर्शाती हैं कि",
-        "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/vietnam-us-trade-talks-strong-commitments-lower-tariffs-deal/articleshow/136207839.cms",
-        "source": "Economic Times",
-        "date": "27-11-2026 03:43"
-    },
-    {
-        "title": "चिप की बढ़ती कीमतों के चलते साल 2026 में भारत के स्मार्टफ़ोन बाज़ार की वार्षिक आय में पहली बार गिरावट आने की संभावना",
-        "summary": "चिप की कीमतें बढ़ने के साथ-साथ मैन्युफ़ैक्चरिंग की लागत भी बढ़ती जा रही है, जिससे हैंडसेट बनाने वाली कंपनियों के सामने एक ऐसी चुनौती खड़ी हो गई है, जिसका कोई भी समाधान उन्हें पसंद नहीं आएगा: या तो वे अतिरिक्त खर्च खुद उठाएँ और अपने मुनाफ़े में कमी आने दें या फिर इस खर्च का बोझ खरीदारों पर डाल दें।",
-        "link": "https://www.livemint.com/industry/india-smartphone-sales-market-in-2026-11795667015685.html",
-        "source": "Livemint",
-        "date": "27-11-2026 03:43"
-    },
-    {
-        "title": "FMCG की दिग्गज कंपनियाँ परिचित स्नैक्स को नए मौकों के लिए नया रूप दे रही हैं, लेकिन उन्हें बार-बार खरीदारी करने की चुनौती का सामना करना पड़ रहा है",
-        "summary": "₹10 के प्रोटीन बाइट्स से लेकर घर पर स्नैक्स बनाने के किट तक, कंपनियाँ मुख्य कैटगरी के परिपक्व होने के साथ-साथ जानी-पहचानी ब्रांडों को नए फ़ॉर्मेट में पेश कर रही हैं। लेकिन ज़्यादा इनपुट और पैकेजिंग लागतें और कम बार होने वाली रिपीट पर्चेज़ से यह परखने का मौका मिलेगा कि शुरुआती प्रयास लंबे समय तक चलने वाली ग्रोथ में बदल पाते हैं या नहीं।",
-        "link": "https://www.livemint.com/industry/retail/fmcg-giants-rework-familiar-snacks-for-new-occasions-but-face-a-repeat-buying-test-11795682908072.html",
-        "source": "Livemint",
-        "date": "27-11-2026 03:43"
-    },
-    {
-        "title": "सोनू निगम के मुंबई में प्रॉपर्टी पोर्टफ़ोलियो में इजाफ़ा हुआ: ₹17 करोड़ के ऑफ़िस निवेश से लेकर हाल ही में हुए ₹31.47 करोड़ के डील तक",
-        "summary": "सोनू निगम ने मुंबई के अंधेरी वेस्ट में 17 करोड़ रुपए में तीन कमर्शियल यूनिटें खरीदी हैं और उन्हें विक्रेता, सिंगुलर हेल्थ को हर महीने 12 लाख रुपए के मासिक किराए पर वापस लीज़ पर दे दिया है। इस 5 साल के एग्रीमेंट की आय का मूल्य लगभग ₹7.72 करोड़ है, जो मुंबई और कर्जत में उसके बताए गए प्रॉपर्टी ट्रांज़ैक्शन में शामिल है।",
-        "link": "https://www.livemint.com/industry/real-estate/sonu-nigam-s-mumbai-property-portfolio-grows-from-17-crore-office-investments-to-latest-31-47-crore-deal-11795700968508.html",
-        "source": "Livemint",
-        "date": "27-11-2026 03:44"
-    },
-    {
-        "title": "सेंसेक्स आज | शेयर बाज़ार लाइव: आज ये शेयर खरीदें: लोढ़ा डेवलपर्स (₹1,260) – खरीदें",
-        "summary": "सेंसेक्स, निफ़्टी, शेयर की कीमतें लाइव: लोढ़ा डेवलपर्स के शेयर की कीमत बढ़कर ₹1,360 तक पहुँच सकती है",
-        "link": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-27-november-2026/article71746210.ece",
-        "source": "Hindu Business Line",
-        "date": "27-11-2026 01:50"
     }
 ]
